@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class PopularCreatorsMainPage extends StatefulWidget {
   const PopularCreatorsMainPage({Key? key}) : super(key: key);
 
@@ -11,6 +10,24 @@ class PopularCreatorsMainPage extends StatefulWidget {
 class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [],
+        ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.calendar_month),
+            label: "Calendar",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.chat_outlined),
+            label: "Chat",
+          )
+        ],
+      ),
+    );
   }
 }
