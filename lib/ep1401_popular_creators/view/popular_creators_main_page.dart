@@ -13,7 +13,23 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
-          children: const [],
+          children: [
+            Row(
+              children: [
+                Text("March"),
+                Icon(Icons.keyboard_arrow_down),
+                OutlinedButton(onPressed: () {}, child: Text("Today")),
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.notifications_none),
+                )
+              ],
+            ),
+            Container(
+              height: 120,
+            ),
+            Expanded(child: Container())
+          ],
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
