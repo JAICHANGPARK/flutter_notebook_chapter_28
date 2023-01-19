@@ -1,5 +1,13 @@
 # flutter_notebook_chapter_28
 
+### EP1401
+
+- Popular creators
+- by DΞNYS
+- https://dribbble.com/shots/20402101-Popular-creators
+
+<img src="https://cdn.dribbble.com/userupload/4290355/file/large-47d1e7f3f82b44fd48db2f809d4e97d3.mp4" width="500px"/>
+
 A new Flutter project.
 
 ## Getting Started
