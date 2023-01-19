@@ -28,7 +28,18 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
             Container(
               height: 120,
             ),
-            Expanded(child: Container())
+            Expanded(
+              child: Container(
+                color: Colors.grey[100],
+                child: SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      Text("Find your program"),
+                    ],
+                  ),
+                ),
+              ),
+            )
           ],
         ),
       ),
