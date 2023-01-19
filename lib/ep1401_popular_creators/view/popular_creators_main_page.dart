@@ -25,6 +25,18 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
           BottomNavigationBarItem(
             icon: Icon(Icons.chat_outlined),
             label: "Chat",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.explore_outlined),
+            label: "Discover",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.library_books),
+            label: "Library",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.apps),
+            label: "Dashboard",
           )
         ],
       ),
