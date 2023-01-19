@@ -35,6 +35,20 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
                   child: Column(
                     children: [
                       Text("Find your program"),
+                      Container(
+                        height: 140,
+                        color: Colors.blue,
+                      ),
+                      Text("Find your program"),
+                      Container(
+                        height: 100,
+                        color: Colors.blue,
+                      ),
+                      Text("Find your program"),
+                      Container(
+                        height: 140,
+                        color: Colors.blue,
+                      )
                     ],
                   ),
                 ),
