@@ -13,11 +13,11 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
-          children: [],
+          children: const [],
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        items: [
+        items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.calendar_month),
             label: "Calendar",
