@@ -114,6 +114,29 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
                         margin: const EdgeInsets.symmetric(vertical: 16),
                         height: 100,
                         color: Colors.blue,
+                        child: ListView.builder(
+                            scrollDirection: Axis.horizontal,
+                            itemBuilder: (context, _) {
+                              return Column(
+                                children: [
+                                  CircleAvatar(
+                                    radius: 32,
+                                  ),
+                                  SizedBox(
+                                    height: 4,
+                                  ),
+                                  Text("Dream")
+                                ],
+                              );
+                            }),
+                        // child: Column(
+                        //   children: [
+                        //     CircleAvatar(
+                        //       radius: 32,
+                        //     ),
+                        //     Text("Dream")
+                        //   ],
+                        // ),
                       ),
                       const Text(
                         "Find your program",
