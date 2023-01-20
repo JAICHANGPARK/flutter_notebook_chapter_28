@@ -95,6 +95,7 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
       bottomNavigationBar: SizedBox(
         height: 80,
         child: BottomNavigationBar(
+          type: BottomNavigationBarType.fixed,
           unselectedItemColor: Colors.grey,
           selectedItemColor: Colors.black,
           items: const [
