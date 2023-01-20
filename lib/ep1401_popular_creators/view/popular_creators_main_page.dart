@@ -126,7 +126,54 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
                       Container(
                         margin: const EdgeInsets.symmetric(vertical: 16),
                         height: 200,
-                        color: Colors.blue,
+                        child: ListView.builder(
+                            scrollDirection: Axis.horizontal,
+                            itemCount: 10,
+                            itemBuilder: (context, index) {
+                              return Container(
+                                margin: const EdgeInsets.only(right: 16),
+                                width: 160,
+                                decoration: BoxDecoration(
+                                  color: Colors.orange,
+                                  borderRadius: BorderRadius.circular(4),
+                                  image: const DecorationImage(
+                                    image: NetworkImage(
+                                        "https://cdn.pixabay.com/photo/2016/03/27/07/08/man-1282232_960_720.jpg"),
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                                padding: const EdgeInsets.all(16),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.end,
+                                  children: [
+                                    Row(
+                                      children: [
+                                        Text(
+                                          "Beginner",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 14,
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                    SizedBox(
+                                      height: 6,
+                                    ),
+                                    Text(
+                                      "START HERE",
+                                      style: TextStyle(
+                                        fontStyle: FontStyle.italic,
+                                        color: Colors.white,
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              );
+                            }),
                       )
                     ],
                   ),
