@@ -66,7 +66,7 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
                       Container(
                         height: 160,
                         margin: const EdgeInsets.symmetric(vertical: 16),
-                        color: Colors.blue,
+                        // color: Colors.blue,
                         child: ListView.builder(
                             scrollDirection: Axis.horizontal,
                             itemCount: 10,
@@ -82,6 +82,20 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
                                         "https://cdn.pixabay.com/photo/2017/08/07/14/02/man-2604149_960_720.jpg"),
                                     fit: BoxFit.cover,
                                   ),
+                                ),
+                                padding: EdgeInsets.all(16),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.end,
+                                  children: [
+                                    Text(
+                                      "#BuildMuscle",
+                                      style: TextStyle(
+                                        fontStyle: FontStyle.italic,
+                                        color: Colors.white,
+                                      ),
+                                    )
+                                  ],
                                 ),
                               );
                             }),
