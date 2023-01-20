@@ -148,13 +148,15 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
                                   mainAxisAlignment: MainAxisAlignment.end,
                                   children: [
                                     Row(
-                                      children: [
+                                      children: const [
                                         Icon(
                                           Icons.network_cell,
                                           size: 18,
                                           color: Colors.white,
                                         ),
-                                        SizedBox(width: 4,),
+                                        SizedBox(
+                                          width: 4,
+                                        ),
                                         Text(
                                           "Beginner",
                                           style: TextStyle(
@@ -164,10 +166,10 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
                                         )
                                       ],
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 6,
                                     ),
-                                    Text(
+                                    const Text(
                                       "START HERE",
                                       style: TextStyle(
                                         fontStyle: FontStyle.italic,
