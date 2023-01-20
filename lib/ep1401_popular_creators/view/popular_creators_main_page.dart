@@ -13,6 +13,7 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Row(
               children: [
@@ -33,6 +34,7 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
                 color: Colors.grey[100],
                 child: SingleChildScrollView(
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text("Find your program"),
                       Container(
