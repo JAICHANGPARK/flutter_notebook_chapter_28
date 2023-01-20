@@ -113,20 +113,23 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
                       Container(
                         margin: const EdgeInsets.symmetric(vertical: 16),
                         height: 100,
-                        color: Colors.blue,
                         child: ListView.builder(
                             scrollDirection: Axis.horizontal,
                             itemBuilder: (context, _) {
-                              return Column(
-                                children: [
-                                  CircleAvatar(
-                                    radius: 32,
-                                  ),
-                                  SizedBox(
-                                    height: 4,
-                                  ),
-                                  Text("Dream")
-                                ],
+                              return Padding(
+                                padding: const EdgeInsets.only(right: 16),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: const [
+                                    CircleAvatar(
+                                      radius: 32,
+                                    ),
+                                    SizedBox(
+                                      height: 4,
+                                    ),
+                                    Text("Dream")
+                                  ],
+                                ),
                               );
                             }),
                         // child: Column(
