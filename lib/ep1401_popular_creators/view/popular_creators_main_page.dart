@@ -67,6 +67,18 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
                         height: 160,
                         margin: const EdgeInsets.symmetric(vertical: 16),
                         color: Colors.blue,
+                        child: ListView.builder(
+                            scrollDirection: Axis.horizontal,
+                            itemCount: 10,
+                            itemBuilder: (context, index) {
+                              return Container(
+                                margin: EdgeInsets.only(right: 16),
+                                width: 160,
+                                decoration: BoxDecoration(
+                                  color: Colors.orange,
+                                ),
+                              );
+                            }),
                       ),
                       const Text(
                         "Find your program",
