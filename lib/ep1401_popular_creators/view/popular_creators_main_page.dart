@@ -71,6 +71,8 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        unselectedItemColor: Colors.grey,
+        selectedItemColor: Colors.black,
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.calendar_month),
