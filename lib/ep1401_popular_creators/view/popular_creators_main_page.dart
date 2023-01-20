@@ -72,10 +72,11 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
                             itemCount: 10,
                             itemBuilder: (context, index) {
                               return Container(
-                                margin: EdgeInsets.only(right: 16),
+                                margin: const EdgeInsets.only(right: 16),
                                 width: 160,
-                                decoration: BoxDecoration(
+                                decoration:  BoxDecoration(
                                   color: Colors.orange,
+                                  borderRadius: BorderRadius.circular(8),
                                 ),
                               );
                             }),
