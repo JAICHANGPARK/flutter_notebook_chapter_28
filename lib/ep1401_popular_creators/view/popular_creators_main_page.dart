@@ -74,9 +74,14 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
                               return Container(
                                 margin: const EdgeInsets.only(right: 16),
                                 width: 160,
-                                decoration:  BoxDecoration(
+                                decoration: BoxDecoration(
                                   color: Colors.orange,
-                                  borderRadius: BorderRadius.circular(8),
+                                  borderRadius: BorderRadius.circular(4),
+                                  image: DecorationImage(
+                                    image: NetworkImage(
+                                        "https://cdn.pixabay.com/photo/2017/08/07/14/02/man-2604149_960_720.jpg"),
+                                    fit: BoxFit.cover,
+                                  ),
                                 ),
                               );
                             }),
