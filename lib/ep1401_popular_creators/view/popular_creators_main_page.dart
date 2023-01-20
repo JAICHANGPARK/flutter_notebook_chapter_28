@@ -8,6 +8,8 @@ class PopularCreatorsMainPage extends StatefulWidget {
 }
 
 class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
+  int _index = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -60,7 +62,8 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
                         margin: EdgeInsets.symmetric(vertical: 16),
                         color: Colors.blue,
                       ),
-                      Text("Find your program",
+                      Text(
+                        "Find your program",
                         style: TextStyle(
                           fontSize: 16,
                           color: Colors.blueGrey,
@@ -72,7 +75,8 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
                         height: 100,
                         color: Colors.blue,
                       ),
-                      Text("Find your program",
+                      Text(
+                        "Find your program",
                         style: TextStyle(
                           fontSize: 16,
                           color: Colors.blueGrey,
@@ -95,6 +99,12 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
       bottomNavigationBar: SizedBox(
         height: 80,
         child: BottomNavigationBar(
+          currentIndex: _index,
+          onTap: (idx) {
+            setState(() {
+              _index = idx;
+            });
+          },
           type: BottomNavigationBarType.fixed,
           unselectedItemColor: Colors.grey,
           selectedItemColor: Colors.black,
