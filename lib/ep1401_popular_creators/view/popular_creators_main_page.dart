@@ -87,8 +87,8 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   mainAxisAlignment: MainAxisAlignment.end,
-                                  children: [
-                                    const Text(
+                                  children: const [
+                                    Text(
                                       "#BuildMuscle",
                                       style: TextStyle(
                                         fontStyle: FontStyle.italic,
