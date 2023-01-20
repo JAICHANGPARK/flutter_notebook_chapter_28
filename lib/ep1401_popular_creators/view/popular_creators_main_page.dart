@@ -21,25 +21,25 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
               padding: const EdgeInsets.all(16.0),
               child: Row(
                 children: [
-                  Text(
+                  const Text(
                     "March",
                     style: TextStyle(
                       fontSize: 28,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  Icon(Icons.keyboard_arrow_down),
-                  Spacer(),
+                  const Icon(Icons.keyboard_arrow_down),
+                  const Spacer(),
                   OutlinedButton(
                     onPressed: () {},
-                    child: Text("Today"),
                     style: OutlinedButton.styleFrom(
                       foregroundColor: Colors.black,
                     ),
+                    child: const Text("Today"),
                   ),
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(Icons.notifications_none),
+                    icon: const Icon(Icons.notifications_none),
                   )
                 ],
               ),
@@ -49,13 +49,13 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
             ),
             Expanded(
               child: Container(
-                padding: EdgeInsets.fromLTRB(16, 24, 0, 0),
+                padding: const EdgeInsets.fromLTRB(16, 24, 0, 0),
                 color: Colors.grey[100],
                 child: SingleChildScrollView(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
+                      const Text(
                         "Find your program",
                         style: TextStyle(
                           fontSize: 16,
@@ -65,10 +65,10 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
                       ),
                       Container(
                         height: 160,
-                        margin: EdgeInsets.symmetric(vertical: 16),
+                        margin: const EdgeInsets.symmetric(vertical: 16),
                         color: Colors.blue,
                       ),
-                      Text(
+                      const Text(
                         "Find your program",
                         style: TextStyle(
                           fontSize: 16,
@@ -77,11 +77,11 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
                         ),
                       ),
                       Container(
-                        margin: EdgeInsets.symmetric(vertical: 16),
+                        margin: const EdgeInsets.symmetric(vertical: 16),
                         height: 100,
                         color: Colors.blue,
                       ),
-                      Text(
+                      const Text(
                         "Find your program",
                         style: TextStyle(
                           fontSize: 16,
@@ -90,7 +90,7 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
                         ),
                       ),
                       Container(
-                        margin: EdgeInsets.symmetric(vertical: 16),
+                        margin: const EdgeInsets.symmetric(vertical: 16),
                         height: 200,
                         color: Colors.blue,
                       )
