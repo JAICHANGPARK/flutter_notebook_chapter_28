@@ -41,7 +41,7 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
             ),
             Expanded(
               child: Container(
-                padding: EdgeInsets.fromLTRB(16, 24, 0, 16),
+                padding: EdgeInsets.fromLTRB(16, 24, 0, 0),
                 color: Colors.grey[100],
                 child: SingleChildScrollView(
                   child: Column(
@@ -56,7 +56,7 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
                         ),
                       ),
                       Container(
-                        height: 140,
+                        height: 160,
                         margin: EdgeInsets.symmetric(vertical: 16),
                         color: Colors.blue,
                       ),
@@ -68,6 +68,7 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
                         ),
                       ),
                       Container(
+                        margin: EdgeInsets.symmetric(vertical: 16),
                         height: 100,
                         color: Colors.blue,
                       ),
@@ -79,7 +80,8 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
                         ),
                       ),
                       Container(
-                        height: 140,
+                        margin: EdgeInsets.symmetric(vertical: 16),
+                        height: 200,
                         color: Colors.blue,
                       )
                     ],
