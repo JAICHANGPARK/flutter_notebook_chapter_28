@@ -50,7 +50,7 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
             Expanded(
               child: Container(
                 padding: const EdgeInsets.fromLTRB(16, 24, 0, 0),
-                color: Colors.grey[100],
+                color: Colors.grey[200],
                 child: SingleChildScrollView(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
