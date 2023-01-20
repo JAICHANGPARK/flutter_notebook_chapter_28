@@ -30,7 +30,13 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
                   ),
                   Icon(Icons.keyboard_arrow_down),
                   Spacer(),
-                  OutlinedButton(onPressed: () {}, child: Text("Today")),
+                  OutlinedButton(
+                    onPressed: () {},
+                    child: Text("Today"),
+                    style: OutlinedButton.styleFrom(
+                      foregroundColor: Colors.black,
+                    ),
+                  ),
                   IconButton(
                     onPressed: () {},
                     icon: Icon(Icons.notifications_none),
