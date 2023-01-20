@@ -37,10 +37,11 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
               ),
             ),
             Container(
-              height: 120,
+              height: 100,
             ),
             Expanded(
               child: Container(
+                padding: EdgeInsets.fromLTRB(16, 16, 0, 16),
                 color: Colors.grey[100],
                 child: SingleChildScrollView(
                   child: Column(
