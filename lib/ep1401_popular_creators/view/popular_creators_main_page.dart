@@ -127,9 +127,12 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
                                 children: const [
                                   CircleAvatar(
                                     radius: 32,
+                                    backgroundImage: NetworkImage(
+                                      "https://cdn.pixabay.com/photo/2016/11/18/22/10/man-1837119_960_720.jpg",
+                                    ),
                                   ),
                                   SizedBox(
-                                    height: 4,
+                                    height: 8,
                                   ),
                                   Text("Dream")
                                 ],
