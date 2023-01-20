@@ -68,41 +68,44 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
                         margin: const EdgeInsets.symmetric(vertical: 16),
                         // color: Colors.blue,
                         child: ListView.builder(
-                            scrollDirection: Axis.horizontal,
-                            itemCount: 10,
-                            itemBuilder: (context, index) {
-                              return Container(
-                                margin: const EdgeInsets.only(right: 16),
-                                width: 160,
-                                decoration: BoxDecoration(
-                                  color: Colors.orange,
-                                  borderRadius: BorderRadius.circular(4),
-                                  image: const DecorationImage(
-                                    image: NetworkImage(
-                                        "https://cdn.pixabay.com/photo/2017/08/07/14/02/man-2604149_960_720.jpg"),
-                                    fit: BoxFit.cover,
-                                  ),
+                          scrollDirection: Axis.horizontal,
+                          itemCount: 10,
+                          itemBuilder: (context, index) {
+                            return Container(
+                              margin: const EdgeInsets.only(right: 16),
+                              width: 160,
+                              decoration: BoxDecoration(
+                                color: Colors.orange,
+                                borderRadius: BorderRadius.circular(4),
+                                image: const DecorationImage(
+                                  image: NetworkImage(
+                                      "https://cdn.pixabay.com/photo/2017/08/07/14/02/man-2604149_960_720.jpg"),
+                                  fit: BoxFit.cover,
                                 ),
-                                padding: const EdgeInsets.all(16),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  mainAxisAlignment: MainAxisAlignment.end,
-                                  children: const [
-                                    Text(
-                                      "#BuildMuscle",
-                                      style: TextStyle(
-                                        fontStyle: FontStyle.italic,
-                                        color: Colors.white,
-                                        fontSize: 18,
-                                        fontWeight: FontWeight.bold,
-                                      ),
-                                    )
-                                  ],
-                                ),
-                              );
-                            }),
+                              ),
+                              padding: const EdgeInsets.all(16),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.end,
+                                children: const [
+                                  Text(
+                                    "#BuildMuscle",
+                                    style: TextStyle(
+                                      fontStyle: FontStyle.italic,
+                                      color: Colors.white,
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  )
+                                ],
+                              ),
+                            );
+                          },
+                        ),
                       ),
-                      SizedBox(height: 16,),
+                      const SizedBox(
+                        height: 16,
+                      ),
                       const Text(
                         "Find your program",
                         style: TextStyle(
@@ -115,34 +118,29 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
                         margin: const EdgeInsets.symmetric(vertical: 16),
                         height: 100,
                         child: ListView.builder(
-                            scrollDirection: Axis.horizontal,
-                            itemBuilder: (context, _) {
-                              return Padding(
-                                padding: const EdgeInsets.only(right: 16),
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: const [
-                                    CircleAvatar(
-                                      radius: 32,
-                                    ),
-                                    SizedBox(
-                                      height: 4,
-                                    ),
-                                    Text("Dream")
-                                  ],
-                                ),
-                              );
-                            }),
-                        // child: Column(
-                        //   children: [
-                        //     CircleAvatar(
-                        //       radius: 32,
-                        //     ),
-                        //     Text("Dream")
-                        //   ],
-                        // ),
+                          scrollDirection: Axis.horizontal,
+                          itemBuilder: (context, _) {
+                            return Padding(
+                              padding: const EdgeInsets.only(right: 16),
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: const [
+                                  CircleAvatar(
+                                    radius: 32,
+                                  ),
+                                  SizedBox(
+                                    height: 4,
+                                  ),
+                                  Text("Dream")
+                                ],
+                              ),
+                            );
+                          },
+                        ),
                       ),
-                      SizedBox(height: 16,),
+                      const SizedBox(
+                        height: 16,
+                      ),
                       const Text(
                         "Find your program",
                         style: TextStyle(
