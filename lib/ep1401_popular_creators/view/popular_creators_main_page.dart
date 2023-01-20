@@ -15,16 +15,26 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Row(
-              children: [
-                Text("March"),
-                Icon(Icons.keyboard_arrow_down),
-                OutlinedButton(onPressed: () {}, child: Text("Today")),
-                IconButton(
-                  onPressed: () {},
-                  icon: Icon(Icons.notifications_none),
-                )
-              ],
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(
+                children: [
+                  Text(
+                    "March",
+                    style: TextStyle(
+                      fontSize: 28,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Icon(Icons.keyboard_arrow_down),
+                  Spacer(),
+                  OutlinedButton(onPressed: () {}, child: Text("Today")),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.notifications_none),
+                  )
+                ],
+              ),
             ),
             Container(
               height: 120,
