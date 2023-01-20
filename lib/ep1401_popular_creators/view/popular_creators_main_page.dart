@@ -41,23 +41,43 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
             ),
             Expanded(
               child: Container(
-                padding: EdgeInsets.fromLTRB(16, 16, 0, 16),
+                padding: EdgeInsets.fromLTRB(16, 24, 0, 16),
                 color: Colors.grey[100],
                 child: SingleChildScrollView(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Find your program"),
+                      Text(
+                        "Find your program",
+                        style: TextStyle(
+                          fontSize: 16,
+                          color: Colors.blueGrey,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                       Container(
                         height: 140,
+                        margin: EdgeInsets.symmetric(vertical: 16),
                         color: Colors.blue,
                       ),
-                      Text("Find your program"),
+                      Text("Find your program",
+                        style: TextStyle(
+                          fontSize: 16,
+                          color: Colors.blueGrey,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                       Container(
                         height: 100,
                         color: Colors.blue,
                       ),
-                      Text("Find your program"),
+                      Text("Find your program",
+                        style: TextStyle(
+                          fontSize: 16,
+                          color: Colors.blueGrey,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                       Container(
                         height: 140,
                         color: Colors.blue,
