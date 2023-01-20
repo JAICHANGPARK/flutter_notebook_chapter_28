@@ -102,6 +102,7 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
                               );
                             }),
                       ),
+                      SizedBox(height: 16,),
                       const Text(
                         "Find your program",
                         style: TextStyle(
@@ -141,6 +142,7 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
                         //   ],
                         // ),
                       ),
+                      SizedBox(height: 16,),
                       const Text(
                         "Find your program",
                         style: TextStyle(
