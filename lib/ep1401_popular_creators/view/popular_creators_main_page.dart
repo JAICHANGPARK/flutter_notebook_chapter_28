@@ -132,7 +132,7 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
                             itemBuilder: (context, index) {
                               return Container(
                                 margin: const EdgeInsets.only(right: 16),
-                                width: 160,
+                                width: 180,
                                 decoration: BoxDecoration(
                                   color: Colors.orange,
                                   borderRadius: BorderRadius.circular(4),
@@ -149,11 +149,17 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
                                   children: [
                                     Row(
                                       children: [
+                                        Icon(
+                                          Icons.network_cell,
+                                          size: 18,
+                                          color: Colors.white,
+                                        ),
+                                        SizedBox(width: 4,),
                                         Text(
                                           "Beginner",
                                           style: TextStyle(
                                             color: Colors.white,
-                                            fontSize: 14,
+                                            fontSize: 12,
                                           ),
                                         )
                                       ],
