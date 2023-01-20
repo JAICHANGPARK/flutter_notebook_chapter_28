@@ -70,31 +70,34 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
           ],
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        unselectedItemColor: Colors.grey,
-        selectedItemColor: Colors.black,
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.calendar_month),
-            label: "Calendar",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.chat_outlined),
-            label: "Chat",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.explore_outlined),
-            label: "Discover",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.library_books),
-            label: "Library",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.apps),
-            label: "Dashboard",
-          )
-        ],
+      bottomNavigationBar: SizedBox(
+        height: 80,
+        child: BottomNavigationBar(
+          unselectedItemColor: Colors.grey,
+          selectedItemColor: Colors.black,
+          items: const [
+            BottomNavigationBarItem(
+              icon: Icon(Icons.calendar_month),
+              label: "Calendar",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.chat_outlined),
+              label: "Chat",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.explore_outlined),
+              label: "Discover",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.library_books),
+              label: "Library",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.apps),
+              label: "Dashboard",
+            )
+          ],
+        ),
       ),
     );
   }
