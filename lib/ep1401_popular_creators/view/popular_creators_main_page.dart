@@ -77,22 +77,24 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
                                 decoration: BoxDecoration(
                                   color: Colors.orange,
                                   borderRadius: BorderRadius.circular(4),
-                                  image: DecorationImage(
+                                  image: const DecorationImage(
                                     image: NetworkImage(
                                         "https://cdn.pixabay.com/photo/2017/08/07/14/02/man-2604149_960_720.jpg"),
                                     fit: BoxFit.cover,
                                   ),
                                 ),
-                                padding: EdgeInsets.all(16),
+                                padding: const EdgeInsets.all(16),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   mainAxisAlignment: MainAxisAlignment.end,
                                   children: [
-                                    Text(
+                                    const Text(
                                       "#BuildMuscle",
                                       style: TextStyle(
                                         fontStyle: FontStyle.italic,
                                         color: Colors.white,
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
                                       ),
                                     )
                                   ],
