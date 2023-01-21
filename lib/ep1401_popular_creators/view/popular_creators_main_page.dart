@@ -263,7 +263,7 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
         ),
       ),
       floatingActionButton: SpeedDial(
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
         backgroundColor: Colors.red,
         openCloseDial: isDialOpen,
         onClose: () {
@@ -277,10 +277,28 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
         children: [
           SpeedDialChild(
             label: "Book session",
-            child: Icon(
+            child: const Icon(
               Icons.book,
             ),
             // shape: RoundedRectangleBorder(),
+          ),
+          SpeedDialChild(
+            label: "Book class",
+            child: const Icon(
+              Icons.book,
+            ),
+          ),
+          SpeedDialChild(
+            label: "Create Session",
+            child: const Icon(
+              Icons.book,
+            ),
+          ),
+          SpeedDialChild(
+            label: "Add From Library",
+            child: const Icon(
+              Icons.book,
+            ),
           ),
         ],
       ),
