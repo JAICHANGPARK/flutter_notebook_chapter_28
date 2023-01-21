@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:date_picker_timeline/date_picker_timeline.dart';
 
 class PopularCreatorsMainPage extends StatefulWidget {
   const PopularCreatorsMainPage({Key? key}) : super(key: key);
@@ -46,6 +47,9 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
             ),
             Container(
               height: 100,
+              child: DatePicker(
+                DateTime.now(),
+              ),
             ),
             Expanded(
               child: Container(
