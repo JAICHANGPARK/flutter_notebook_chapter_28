@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:date_picker_timeline/date_picker_timeline.dart';
+import 'package:flutter_speed_dial/flutter_speed_dial.dart';
 
 class PopularCreatorsMainPage extends StatefulWidget {
   const PopularCreatorsMainPage({Key? key}) : super(key: key);
@@ -10,6 +11,7 @@ class PopularCreatorsMainPage extends StatefulWidget {
 
 class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
   int _index = 0;
+  ValueNotifier<bool> isDialOpen = ValueNotifier(false);
 
   @override
   Widget build(BuildContext context) {
@@ -259,6 +261,28 @@ class _PopularCreatorsMainPageState extends State<PopularCreatorsMainPage> {
             )
           ],
         ),
+      ),
+      floatingActionButton: SpeedDial(
+        child: Icon(Icons.add),
+        backgroundColor: Colors.red,
+        openCloseDial: isDialOpen,
+        onClose: () {
+          print("Dial onClose");
+          isDialOpen.value = false;
+        },
+        onOpen: () {
+          isDialOpen.value = true;
+          print("Dial onOpen");
+        },
+        children: [
+          SpeedDialChild(
+            label: "Book session",
+            child: Icon(
+              Icons.book,
+            ),
+            // shape: RoundedRectangleBorder(),
+          ),
+        ],
       ),
     );
   }
