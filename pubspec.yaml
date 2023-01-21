@@ -19,6 +19,7 @@ dependencies:
   google_fonts: any
   freezed_annotation: any
   json_annotation: any
+  flutter_speed_dial: ^6.2.0
 
 dev_dependencies:
   flutter_test:
