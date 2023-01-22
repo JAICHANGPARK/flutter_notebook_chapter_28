@@ -42,19 +42,31 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
         elevation: 0,
       ),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
             margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
             height: 360,
             color: Colors.blue,
           ),
-          Text(
-            "Popular Books",
-            style: GoogleFonts.dmSerifDisplay(
-              fontWeight: FontWeight.bold,
-              fontSize: 24
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: Text(
+              "Popular Books",
+              style: GoogleFonts.dmSerifDisplay(fontWeight: FontWeight.normal, fontSize: 22),
             ),
-          )
+          ),
+          Expanded(
+            child: ListView.builder(
+                itemCount: 10,
+                itemBuilder: (context, index) {
+              return Container(
+                height: 100,
+                color: Colors.grey,
+
+              );
+            }),
+          ),
         ],
       ),
       bottomNavigationBar: BottomAppBar(
