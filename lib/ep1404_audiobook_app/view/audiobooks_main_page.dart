@@ -44,15 +44,16 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
       bottomNavigationBar: BottomAppBar(
         elevation: 8,
         child: Container(
-          padding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
+          padding: EdgeInsets.symmetric(horizontal: 32, vertical: 8),
           height: 72,
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Icon(
-                    Icons.home,
+                    Icons.home_filled,
                     size: 32,
                   ),
                   SizedBox(
@@ -60,6 +61,55 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                   ),
                   CircleAvatar(
                     radius: 3,
+                    backgroundColor: _primaryGold,
+                  )
+                ],
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.apps,
+                    size: 32,
+                  ),
+                  SizedBox(
+                    height: 6,
+                  ),
+                  CircleAvatar(
+                    radius: 3,
+                    // backgroundColor: _primaryGold,
+                  )
+                ],
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.bookmarks_outlined,
+                    size: 32,
+                  ),
+                  SizedBox(
+                    height: 6,
+                  ),
+                  CircleAvatar(
+                    radius: 3,
+                    backgroundColor: Colors.transparent,
+                  )
+                ],
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.home_filled,
+                    size: 32,
+                  ),
+                  SizedBox(
+                    height: 6,
+                  ),
+                  CircleAvatar(
+                    radius: 3,
+                    backgroundColor: _primaryGold,
                   )
                 ],
               )
