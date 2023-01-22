@@ -54,7 +54,7 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                 children: [
                   Icon(
                     Icons.home_filled,
-                    size: 32,
+                    size: 28,
                   ),
                   SizedBox(
                     height: 6,
@@ -70,7 +70,7 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                 children: [
                   Icon(
                     Icons.apps,
-                    size: 32,
+                    size: 28,
                   ),
                   SizedBox(
                     height: 6,
