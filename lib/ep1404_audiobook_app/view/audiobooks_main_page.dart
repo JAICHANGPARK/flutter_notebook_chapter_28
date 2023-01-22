@@ -18,6 +18,14 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
         ],
         title: Text("Booksbury"),
       ),
+      bottomNavigationBar: BottomAppBar(
+        child: Container(
+          height: 80,
+          child: Row(
+            children: [],
+          ),
+        ),
+      ),
     );
   }
 }
