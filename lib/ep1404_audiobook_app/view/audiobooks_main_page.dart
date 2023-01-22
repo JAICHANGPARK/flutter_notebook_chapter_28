@@ -64,13 +64,15 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
           ),
           Expanded(
             child: ListView.builder(
-                itemCount: 10,
-                itemBuilder: (context, index) {
-                  return Container(
-                    height: 100,
-                    color: Colors.grey,
-                  );
-                }),
+              itemCount: 10,
+              itemBuilder: (context, index) {
+                return Container(
+                  height: 80,
+                  margin: EdgeInsets.fromLTRB(16, 0, 16, 16),
+                  color: Colors.grey,
+                );
+              },
+            ),
           ),
         ],
       ),
