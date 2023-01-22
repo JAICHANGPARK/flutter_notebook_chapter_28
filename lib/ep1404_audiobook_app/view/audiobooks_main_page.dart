@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class AudioBooksMainPage extends StatefulWidget {
   const AudioBooksMainPage({Key? key}) : super(key: key);
 
@@ -11,6 +10,14 @@ class AudioBooksMainPage extends StatefulWidget {
 class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        actions: [
+          IconButton(onPressed: () {}, icon: Icon(Icons.notifications_none)),
+          IconButton(onPressed: () {}, icon: Icon(Icons.search)),
+        ],
+        title: Text("Booksbury"),
+      ),
+    );
   }
 }
