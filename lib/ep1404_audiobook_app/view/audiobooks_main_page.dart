@@ -9,8 +9,8 @@ class AudioBooksMainPage extends StatefulWidget {
 }
 
 class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
-  Color _primaryBlack = Color(0xff2f2f2f);
-  Color _primaryGold = Color(0xffBFA054);
+  final Color _primaryBlack = const Color(0xff2f2f2f);
+  final Color _primaryGold = const Color(0xffBFA054);
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
       appBar: AppBar(
         backgroundColor: Colors.white,
         leading: IconButton(
-          icon: Icon(Icons.menu_book),
+          icon: const Icon(Icons.menu_book),
           onPressed: () {},
         ),
         actions: [
@@ -45,7 +45,10 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
-            margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+            margin: const EdgeInsets.symmetric(
+              horizontal: 16,
+              vertical: 16,
+            ),
             height: 360,
             color: Colors.blue,
           ),
@@ -53,26 +56,28 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
             padding: const EdgeInsets.symmetric(horizontal: 16),
             child: Text(
               "Popular Books",
-              style: GoogleFonts.dmSerifDisplay(fontWeight: FontWeight.normal, fontSize: 22),
+              style: GoogleFonts.dmSerifDisplay(
+                fontWeight: FontWeight.normal,
+                fontSize: 22,
+              ),
             ),
           ),
           Expanded(
             child: ListView.builder(
                 itemCount: 10,
                 itemBuilder: (context, index) {
-              return Container(
-                height: 100,
-                color: Colors.grey,
-
-              );
-            }),
+                  return Container(
+                    height: 100,
+                    color: Colors.grey,
+                  );
+                }),
           ),
         ],
       ),
       bottomNavigationBar: BottomAppBar(
         elevation: 8,
         child: Container(
-          padding: EdgeInsets.symmetric(horizontal: 32, vertical: 8),
+          padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 8),
           height: 72,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -80,11 +85,11 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(
+                  const Icon(
                     Icons.home_filled,
                     size: 28,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 6,
                   ),
                   CircleAvatar(
@@ -96,14 +101,14 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(
+                  const Icon(
                     Icons.apps,
                     size: 28,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 6,
                   ),
-                  CircleAvatar(
+                  const CircleAvatar(
                     radius: 3,
                     backgroundColor: Colors.transparent,
                   )
@@ -112,14 +117,14 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(
+                  const Icon(
                     Icons.bookmarks_outlined,
                     size: 28,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 6,
                   ),
-                  CircleAvatar(
+                  const CircleAvatar(
                     radius: 3,
                     backgroundColor: Colors.transparent,
                   )
@@ -128,14 +133,14 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(
+                  const Icon(
                     Icons.person_outlined,
                     size: 28,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 6,
                   ),
-                  CircleAvatar(
+                  const CircleAvatar(
                     radius: 3,
                     backgroundColor: Colors.transparent,
                   )
