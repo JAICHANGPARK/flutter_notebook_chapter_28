@@ -77,7 +77,7 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                   ),
                   CircleAvatar(
                     radius: 3,
-                    // backgroundColor: _primaryGold,
+                    backgroundColor: Colors.transparent,
                   )
                 ],
               ),
@@ -86,7 +86,7 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                 children: [
                   Icon(
                     Icons.bookmarks_outlined,
-                    size: 32,
+                    size: 28,
                   ),
                   SizedBox(
                     height: 6,
@@ -101,15 +101,15 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Icon(
-                    Icons.home_filled,
-                    size: 32,
+                    Icons.person_outlined,
+                    size: 28,
                   ),
                   SizedBox(
                     height: 6,
                   ),
                   CircleAvatar(
                     radius: 3,
-                    backgroundColor: _primaryGold,
+                    backgroundColor: Colors.transparent,
                   )
                 ],
               )
