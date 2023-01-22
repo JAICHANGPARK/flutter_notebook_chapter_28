@@ -8,21 +8,43 @@ class AudioBooksMainPage extends StatefulWidget {
 }
 
 class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
+  Color _primaryBlack = Color(0xff2f2f2f);
+  Color _primaryGold = Color(0xffBFA054);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         actions: [
-          IconButton(onPressed: () {}, icon: Icon(Icons.notifications_none)),
-          IconButton(onPressed: () {}, icon: Icon(Icons.search)),
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(Icons.notifications_none),
+            color: _primaryBlack,
+          ),
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(Icons.search),
+            color: _primaryBlack,
+          ),
         ],
-        title: Text("Booksbury"),
+        title: const Text("Booksbury"),
       ),
       bottomNavigationBar: BottomAppBar(
         child: Container(
           height: 80,
           child: Row(
-            children: [],
+            children: [
+              Column(
+                children: [
+                  Icon(
+                    Icons.home,
+                  ),
+                  CircleAvatar(
+                    radius: 3,
+                  )
+                ],
+              )
+            ],
           ),
         ),
       ),
