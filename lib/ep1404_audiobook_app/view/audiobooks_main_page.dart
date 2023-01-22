@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class AudioBooksMainPage extends StatefulWidget {
   const AudioBooksMainPage({Key? key}) : super(key: key);
@@ -15,6 +16,11 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.white,
+        leading: IconButton(
+          icon: Icon(Icons.menu_book),
+          onPressed: () {},
+        ),
         actions: [
           IconButton(
             onPressed: () {},
@@ -27,17 +33,30 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
             color: _primaryBlack,
           ),
         ],
-        title: const Text("Booksbury"),
+        title: Text(
+          "Booksbury",
+          style: GoogleFonts.dmSerifDisplay(),
+        ),
+        foregroundColor: _primaryBlack,
+        elevation: 0,
       ),
+      backgroundColor: Colors.white,
       bottomNavigationBar: BottomAppBar(
+        elevation: 8,
         child: Container(
-          height: 80,
+          padding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
+          height: 72,
           child: Row(
             children: [
               Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Icon(
                     Icons.home,
+                    size: 32,
+                  ),
+                  SizedBox(
+                    height: 6,
                   ),
                   CircleAvatar(
                     radius: 3,
