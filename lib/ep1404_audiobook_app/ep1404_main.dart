@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_28/ep1404_audiobook_app/view/audiobooks_main_page.dart';
 
 void main() {
-  runApp(AudiobooksApp());
+  runApp(const AudiobooksApp());
 }
 
 class AudiobooksApp extends StatelessWidget {
@@ -10,7 +10,7 @@ class AudiobooksApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: AudioBooksMainPage(),
     );
   }
