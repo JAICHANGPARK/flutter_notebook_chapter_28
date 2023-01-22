@@ -15,6 +15,7 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.white,
         leading: IconButton(
@@ -40,7 +41,22 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
         foregroundColor: _primaryBlack,
         elevation: 0,
       ),
-      backgroundColor: Colors.white,
+      body: Column(
+        children: [
+          Container(
+            margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+            height: 360,
+            color: Colors.blue,
+          ),
+          Text(
+            "Popular Books",
+            style: GoogleFonts.dmSerifDisplay(
+              fontWeight: FontWeight.bold,
+              fontSize: 24
+            ),
+          )
+        ],
+      ),
       bottomNavigationBar: BottomAppBar(
         elevation: 8,
         child: Container(
