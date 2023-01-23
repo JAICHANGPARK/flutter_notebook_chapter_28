@@ -185,7 +185,6 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
               itemCount: 10,
               itemBuilder: (context, index) {
                 return Container(
-
                   margin: const EdgeInsets.fromLTRB(16, 0, 16, 16),
                   color: Colors.grey,
                   child: Row(
@@ -193,9 +192,14 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                       Container(
                         height: 64,
                         width: 64,
-                        decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(8)),
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                          borderRadius: BorderRadius.circular(8),
+                        ),
                       ),
-                      SizedBox(width: 16,),
+                      SizedBox(
+                        width: 16,
+                      ),
                       Expanded(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -204,7 +208,20 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                               "History of the Ancient World's Society",
                               style: GoogleFonts.dmSerifDisplay(),
                             ),
-                            Text("Dr abcdefg hijk")
+                            Text("Dr abcdefg hijk"),
+                            Row(
+                              children: [
+                                ...List.generate(
+                                  5,
+                                  (index) => Icon(
+                                    Icons.star,
+                                    size: 14,
+                                    color: _primaryGold,
+                                  ),
+                                ),
+                                Text("80 Ratings")
+                              ],
+                            )
                           ],
                         ),
                       )
