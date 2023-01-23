@@ -55,7 +55,7 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
             decoration: BoxDecoration(
               color: Colors.blue,
               borderRadius: BorderRadius.circular(8),
-              image: DecorationImage(
+              image: const DecorationImage(
                 image: NetworkImage("https://cdn.pixabay.com/photo/2014/12/09/21/01/still-life-562357_960_720.jpg"),
                 fit: BoxFit.cover,
               ),
@@ -72,7 +72,7 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                       child: BackdropFilter(
                         filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
                         child: IconButton(
-                          icon: Icon(Icons.bookmarks_outlined),
+                          icon: const Icon(Icons.bookmarks_outlined),
                           onPressed: () {},
                           color: Colors.white,
                         ),
@@ -89,7 +89,7 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                       decoration: BoxDecoration(
                         color: Colors.white.withOpacity(0.6),
                       ),
-                      padding: EdgeInsets.all(8),
+                      padding: const EdgeInsets.all(8),
                       child: BackdropFilter(
                         filter: ImageFilter.blur(sigmaY: 1, sigmaX: 1),
                         child: Row(
@@ -109,7 +109,10 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                                 Text(
                                   "Word from A to Z",
                                   style: GoogleFonts.dmSerifDisplay(
-                                    color: Colors.white, fontWeight: FontWeight.w400, fontSize: 16,),
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w400,
+                                    fontSize: 16,
+                                  ),
                                 ),
                               ],
                             ),
@@ -118,7 +121,7 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                               children: [
                                 Row(
                                   children: [
-                                    CircleAvatar(
+                                    const CircleAvatar(
                                       radius: 12,
                                       backgroundColor: Colors.white,
                                       foregroundColor: Colors.black,
@@ -126,7 +129,7 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                                         Icons.play_arrow,
                                       ),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       width: 5,
                                     ),
                                     Text(
@@ -137,18 +140,19 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                                     )
                                   ],
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 6,
                                 ),
                                 Row(
                                   children: [
-                                    CircleAvatar(
+                                    const CircleAvatar(
                                       radius: 12,
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       width: 5,
                                     ),
-                                    Text("Dream Walker",
+                                    Text(
+                                      "Dream Walker",
                                       style: GoogleFonts.dmSerifDisplay(
                                         color: Colors.white,
                                       ),
@@ -182,7 +186,7 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
               itemBuilder: (context, index) {
                 return Container(
                   height: 80,
-                  margin: EdgeInsets.fromLTRB(16, 0, 16, 16),
+                  margin: const EdgeInsets.fromLTRB(16, 0, 16, 16),
                   color: Colors.grey,
                 );
               },
