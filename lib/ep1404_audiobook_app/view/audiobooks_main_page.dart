@@ -66,14 +66,15 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                     right: 16,
                     top: 16,
                     child: ClipRRect(
-
+                      borderRadius: BorderRadius.circular(8),
                       child: Container(
-                        color: Colors.white.withOpacity(0.6),
+                        color: Colors.white.withOpacity(0.4),
                         child: BackdropFilter(
-                          filter: ImageFilter.blur(sigmaX: 6, sigmaY:6),
+                          filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
                           child: IconButton(
                             icon: Icon(Icons.bookmarks_outlined),
                             onPressed: () {},
+                            color: Colors.white,
                           ),
                         ),
                       ),
