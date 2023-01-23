@@ -96,9 +96,21 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text("Food in the Anecient"),
-                                Text("Word from A to Z"),
+                                Text(
+                                  "Food in the Anecient",
+                                  style: GoogleFonts.dmSerifDisplay(
+                                      color: Colors.white, fontWeight: FontWeight.w400, fontSize: 16),
+                                ),
+                                // SizedBox(
+                                //   height: 6,
+                                // ),
+                                Text(
+                                  "Word from A to Z",
+                                  style: GoogleFonts.dmSerifDisplay(
+                                    color: Colors.white, fontWeight: FontWeight.w400, fontSize: 16,),
+                                ),
                               ],
                             ),
                             Column(
@@ -108,8 +120,21 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                                   children: [
                                     CircleAvatar(
                                       radius: 12,
+                                      backgroundColor: Colors.white,
+                                      foregroundColor: Colors.black,
+                                      child: Icon(
+                                        Icons.play_arrow,
+                                      ),
                                     ),
-                                    Text("15th Listen")
+                                    SizedBox(
+                                      width: 5,
+                                    ),
+                                    Text(
+                                      "15th Listen",
+                                      style: GoogleFonts.dmSerifDisplay(
+                                        color: Colors.white,
+                                      ),
+                                    )
                                   ],
                                 ),
                                 SizedBox(
@@ -120,7 +145,14 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                                     CircleAvatar(
                                       radius: 12,
                                     ),
-                                    Text("Dream Walker")
+                                    SizedBox(
+                                      width: 5,
+                                    ),
+                                    Text("Dream Walker",
+                                      style: GoogleFonts.dmSerifDisplay(
+                                        color: Colors.white,
+                                      ),
+                                    )
                                   ],
                                 )
                               ],
