@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -61,12 +63,18 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
             child: Stack(
               children: [
                 Positioned(
+                    right: 16,
+                    top: 16,
                     child: Container(
-                  child: IconButton(
-                    icon: Icon(Icons.bookmarks_outlined),
-                    onPressed: () {},
-                  ),
-                ))
+                      color: Colors.white,
+                      child: BackdropFilter(
+                        filter: ImageFilter.blur(sigmaX: 4, sigmaY: 4),
+                        child: IconButton(
+                          icon: Icon(Icons.bookmarks_outlined),
+                          onPressed: () {},
+                        ),
+                      ),
+                    ))
               ],
             ),
           ),
