@@ -180,7 +180,9 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
               ),
             ),
           ),
-          SizedBox(height: 16,),
+          SizedBox(
+            height: 16,
+          ),
           Expanded(
             child: ListView.builder(
               itemCount: 10,
@@ -208,7 +210,15 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                               "History of the Ancient World's Society",
                               style: GoogleFonts.dmSerifDisplay(),
                             ),
-                             Text("Dr abcdefg hijk",   style: GoogleFonts.dmSerifDisplay(),),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(vertical: 4),
+                              child: Text(
+                                "Dr abcdefg hijk",
+                                style: GoogleFonts.dmSerifDisplay(
+                                  color: Colors.grey,
+                                ),
+                              ),
+                            ),
                             Row(
                               children: [
                                 ...List.generate(
@@ -219,7 +229,15 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                                     color: _primaryGold,
                                   ),
                                 ),
-                                const Text("80 Ratings")
+                                SizedBox(
+                                  width: 6,
+                                ),
+                                Text(
+                                  "80 Ratings",
+                                  style: GoogleFonts.dmSerifDisplay(
+                                    color: Colors.grey,
+                                  ),
+                                )
                               ],
                             )
                           ],
