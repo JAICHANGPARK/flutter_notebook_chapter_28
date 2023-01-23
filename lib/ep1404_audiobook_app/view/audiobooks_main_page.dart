@@ -50,7 +50,10 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
               vertical: 16,
             ),
             height: 360,
-            color: Colors.blue,
+
+            decoration: BoxDecoration(
+              color: Colors.blue,
+            ),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16),
