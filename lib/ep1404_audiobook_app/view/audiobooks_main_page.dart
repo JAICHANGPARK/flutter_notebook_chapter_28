@@ -13,6 +13,7 @@ class AudioBooksMainPage extends StatefulWidget {
 class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
   final Color _primaryBlack = const Color(0xff2f2f2f);
   final Color _primaryGold = const Color(0xffBFA054);
+  int _index = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -266,21 +267,28 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  const Icon(
-                    Icons.home_filled,
-                    size: 28,
-                  ),
-                  const SizedBox(
-                    height: 6,
-                  ),
-                  CircleAvatar(
-                    radius: 3,
-                    backgroundColor: _primaryGold,
-                  )
-                ],
+              GestureDetector(
+                onTap: (){
+                  setState(() {
+                    _index = 0;
+                  });
+                },
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Icon(
+                      Icons.home_filled,
+                      size: 28,
+                    ),
+                    const SizedBox(
+                      height: 6,
+                    ),
+                    CircleAvatar(
+                      radius: 3,
+                      backgroundColor: _primaryGold,
+                    )
+                  ],
+                ),
               ),
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
