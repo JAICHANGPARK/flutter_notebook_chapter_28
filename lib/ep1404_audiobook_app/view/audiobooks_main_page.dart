@@ -127,6 +127,7 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                                       foregroundColor: Colors.black,
                                       child: Icon(
                                         Icons.play_arrow,
+                                        size: 16,
                                       ),
                                     ),
                                     const SizedBox(
@@ -239,7 +240,10 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                                 ),
                                 Text(
                                   "80 Ratings",
-                                  style: GoogleFonts.dmSerifDisplay(color: Colors.grey, fontSize: 12),
+                                  style: GoogleFonts.dmSerifDisplay(
+                                    color: Colors.grey,
+                                    fontSize: 12,
+                                  ),
                                 )
                               ],
                             )
