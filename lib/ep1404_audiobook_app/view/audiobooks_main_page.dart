@@ -185,9 +185,31 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
               itemCount: 10,
               itemBuilder: (context, index) {
                 return Container(
-                  height: 80,
+
                   margin: const EdgeInsets.fromLTRB(16, 0, 16, 16),
                   color: Colors.grey,
+                  child: Row(
+                    children: [
+                      Container(
+                        height: 64,
+                        width: 64,
+                        decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(8)),
+                      ),
+                      SizedBox(width: 16,),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "History of the Ancient World's Society",
+                              style: GoogleFonts.dmSerifDisplay(),
+                            ),
+                            Text("Dr abcdefg hijk")
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
                 );
               },
             ),
