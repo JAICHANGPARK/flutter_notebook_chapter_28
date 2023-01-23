@@ -102,15 +102,15 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
               ),
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  const Icon(
+                children: const [
+                  Icon(
                     Icons.apps,
                     size: 28,
                   ),
-                  const SizedBox(
+                  SizedBox(
                     height: 6,
                   ),
-                  const CircleAvatar(
+                  CircleAvatar(
                     radius: 3,
                     backgroundColor: Colors.transparent,
                   )
@@ -118,15 +118,15 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
               ),
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  const Icon(
+                children: const [
+                  Icon(
                     Icons.bookmarks_outlined,
                     size: 28,
                   ),
-                  const SizedBox(
+                  SizedBox(
                     height: 6,
                   ),
-                  const CircleAvatar(
+                  CircleAvatar(
                     radius: 3,
                     backgroundColor: Colors.transparent,
                   )
@@ -134,15 +134,15 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
               ),
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  const Icon(
+                children: const [
+                  Icon(
                     Icons.person_outlined,
                     size: 28,
                   ),
-                  const SizedBox(
+                  SizedBox(
                     height: 6,
                   ),
-                  const CircleAvatar(
+                  CircleAvatar(
                     radius: 3,
                     backgroundColor: Colors.transparent,
                   )
