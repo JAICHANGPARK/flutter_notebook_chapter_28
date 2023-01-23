@@ -86,9 +86,47 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                   bottom: 0,
                   child: ClipRRect(
                     child: Container(
-                      height: 80,
                       decoration: BoxDecoration(
-                        color: Colors.white,
+                        color: Colors.white.withOpacity(0.6),
+                      ),
+                      padding: EdgeInsets.all(8),
+                      child: BackdropFilter(
+                        filter: ImageFilter.blur(sigmaY: 1, sigmaX: 1),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Column(
+                              children: [
+                                Text("Food in the Anecient"),
+                                Text("Word from A to Z"),
+                              ],
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  children: [
+                                    CircleAvatar(
+                                      radius: 12,
+                                    ),
+                                    Text("15th Listen")
+                                  ],
+                                ),
+                                SizedBox(
+                                  height: 6,
+                                ),
+                                Row(
+                                  children: [
+                                    CircleAvatar(
+                                      radius: 12,
+                                    ),
+                                    Text("Dream Walker")
+                                  ],
+                                )
+                              ],
+                            )
+                          ],
+                        ),
                       ),
                     ),
                   ),
