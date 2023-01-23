@@ -50,9 +50,24 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
               vertical: 16,
             ),
             height: 360,
-
             decoration: BoxDecoration(
               color: Colors.blue,
+              borderRadius: BorderRadius.circular(8),
+              image: DecorationImage(
+                image: NetworkImage("https://cdn.pixabay.com/photo/2014/12/09/21/01/still-life-562357_960_720.jpg"),
+                fit: BoxFit.cover,
+              ),
+            ),
+            child: Stack(
+              children: [
+                Positioned(
+                    child: Container(
+                  child: IconButton(
+                    icon: Icon(Icons.bookmarks_outlined),
+                    onPressed: () {},
+                  ),
+                ))
+              ],
             ),
           ),
           Padding(
