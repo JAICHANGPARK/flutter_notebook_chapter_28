@@ -180,7 +180,7 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 16,
           ),
           Expanded(
@@ -197,6 +197,11 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                         decoration: BoxDecoration(
                           color: Colors.blue,
                           borderRadius: BorderRadius.circular(8),
+                          image: const DecorationImage(
+                            image: NetworkImage(
+                                "https://cdn.pixabay.com/photo/2017/08/07/19/07/books-2606859_960_720.jpg"),
+                            fit: BoxFit.cover,
+                          ),
                         ),
                       ),
                       const SizedBox(
@@ -229,14 +234,12 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                                     color: _primaryGold,
                                   ),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   width: 6,
                                 ),
                                 Text(
                                   "80 Ratings",
-                                  style: GoogleFonts.dmSerifDisplay(
-                                    color: Colors.grey,
-                                  ),
+                                  style: GoogleFonts.dmSerifDisplay(color: Colors.grey, fontSize: 12),
                                 )
                               ],
                             )
