@@ -63,22 +63,36 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
             child: Stack(
               children: [
                 Positioned(
-                    right: 16,
-                    top: 16,
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(8),
-                      child: Container(
-                        color: Colors.white.withOpacity(0.4),
-                        child: BackdropFilter(
-                          filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
-                          child: IconButton(
-                            icon: Icon(Icons.bookmarks_outlined),
-                            onPressed: () {},
-                            color: Colors.white,
-                          ),
+                  right: 16,
+                  top: 16,
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(8),
+                    child: Container(
+                      color: Colors.white.withOpacity(0.4),
+                      child: BackdropFilter(
+                        filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
+                        child: IconButton(
+                          icon: Icon(Icons.bookmarks_outlined),
+                          onPressed: () {},
+                          color: Colors.white,
                         ),
                       ),
-                    ))
+                    ),
+                  ),
+                ),
+                Positioned(
+                  left: 0,
+                  right: 0,
+                  bottom: 0,
+                  child: ClipRRect(
+                    child: Container(
+                      height: 80,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                )
               ],
             ),
           ),
