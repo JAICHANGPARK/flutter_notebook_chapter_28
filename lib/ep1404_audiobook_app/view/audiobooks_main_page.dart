@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_28/ep1404_audiobook_app/domain/audiobooks_menu.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class AudioBooksMainPage extends StatefulWidget {
@@ -266,79 +267,31 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
           height: 72,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              GestureDetector(
-                onTap: (){
-                  setState(() {
-                    _index = 0;
-                  });
-                },
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    const Icon(
-                      Icons.home_filled,
-                      size: 28,
-                    ),
-                    const SizedBox(
-                      height: 6,
-                    ),
-                    CircleAvatar(
-                      radius: 3,
-                      backgroundColor: _primaryGold,
-                    )
-                  ],
-                ),
-              ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
-                  Icon(
-                    Icons.apps,
-                    size: 28,
-                  ),
-                  SizedBox(
-                    height: 6,
-                  ),
-                  CircleAvatar(
-                    radius: 3,
-                    backgroundColor: Colors.transparent,
-                  )
-                ],
-              ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
-                  Icon(
-                    Icons.bookmarks_outlined,
-                    size: 28,
-                  ),
-                  SizedBox(
-                    height: 6,
-                  ),
-                  CircleAvatar(
-                    radius: 3,
-                    backgroundColor: Colors.transparent,
-                  )
-                ],
-              ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
-                  Icon(
-                    Icons.person_outlined,
-                    size: 28,
-                  ),
-                  SizedBox(
-                    height: 6,
-                  ),
-                  CircleAvatar(
-                    radius: 3,
-                    backgroundColor: Colors.transparent,
-                  )
-                ],
-              )
-            ],
+            children: audiobooksMenu
+                .map((e) => GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          _index = 0;
+                        });
+                      },
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          const Icon(
+                            Icons.home_filled,
+                            size: 28,
+                          ),
+                          const SizedBox(
+                            height: 6,
+                          ),
+                          CircleAvatar(
+                            radius: 3,
+                            backgroundColor: _primaryGold,
+                          )
+                        ],
+                      ),
+                    ))
+                .toList(),
           ),
         ),
       ),
