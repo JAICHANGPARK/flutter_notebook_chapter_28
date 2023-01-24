@@ -11,7 +11,7 @@ class _AudioMarketPageState extends State<AudioMarketPage> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(16, 24, 16, 0),
+      padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
       child: Column(
         children: [
           Container(
