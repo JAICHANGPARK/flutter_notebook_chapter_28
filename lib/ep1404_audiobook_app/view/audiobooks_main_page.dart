@@ -271,14 +271,14 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                 .map((e) => GestureDetector(
                       onTap: () {
                         setState(() {
-                          _index = 0;
+                          _index = e.index ?? 0;
                         });
                       },
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          const Icon(
-                            Icons.home_filled,
+                          Icon(
+                            e.iconData,
                             size: 28,
                           ),
                           const SizedBox(
@@ -286,7 +286,7 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                           ),
                           CircleAvatar(
                             radius: 3,
-                            backgroundColor: _primaryGold,
+                            backgroundColor: _index == e.index ? _primaryGold : Colors.transparent,
                           )
                         ],
                       ),
