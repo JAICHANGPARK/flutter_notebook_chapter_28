@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_28/ep1404_audiobook_app/audiobooks_style.dart';
 import 'package:flutter_notebook_chapter_28/ep1404_audiobook_app/domain/audiobooks_menu.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -12,7 +13,6 @@ class AudioBooksMainPage extends StatefulWidget {
 }
 
 class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
-  
   int _index = 0;
 
   @override
@@ -29,27 +29,24 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
           IconButton(
             onPressed: () {},
             icon: const Icon(Icons.notifications_none),
-            color: _primaryBlack,
+            color: primaryBlack,
           ),
           IconButton(
             onPressed: () {},
             icon: const Icon(Icons.search),
-            color: _primaryBlack,
+            color: primaryBlack,
           ),
         ],
         title: Text(
           "Booksbury",
           style: GoogleFonts.dmSerifDisplay(),
         ),
-        foregroundColor: _primaryBlack,
+        foregroundColor: primaryBlack,
         elevation: 0,
       ),
       body: IndexedStack(
         index: _index,
-        children: [
-
-
-        ],
+        children: [],
       ),
       bottomNavigationBar: BottomAppBar(
         elevation: 8,
@@ -59,29 +56,31 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: audiobooksMenu
-                .map((e) => GestureDetector(
-                      onTap: () {
-                        setState(() {
-                          _index = e.index ?? 0;
-                        });
-                      },
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Icon(
-                            e.iconData,
-                            size: 28,
-                          ),
-                          const SizedBox(
-                            height: 6,
-                          ),
-                          CircleAvatar(
-                            radius: 3,
-                            backgroundColor: _index == e.index ? _primaryGold : Colors.transparent,
-                          )
-                        ],
-                      ),
-                    ))
+                .map(
+                  (e) => GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        _index = e.index ?? 0;
+                      });
+                    },
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          e.iconData,
+                          size: 28,
+                        ),
+                        const SizedBox(
+                          height: 6,
+                        ),
+                        CircleAvatar(
+                          radius: 3,
+                          backgroundColor: _index == e.index ? primaryGold : Colors.transparent,
+                        )
+                      ],
+                    ),
+                  ),
+                )
                 .toList(),
           ),
         ),

@@ -1,4 +1,8 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_28/ep1404_audiobook_app/audiobooks_style.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class AudioBooksHomePage extends StatelessWidget {
   const AudioBooksHomePage({Key? key}) : super(key: key);
@@ -161,8 +165,8 @@ class AudioBooksHomePage extends StatelessWidget {
                         color: Colors.blue,
                         borderRadius: BorderRadius.circular(8),
                         image: const DecorationImage(
-                          image: NetworkImage(
-                              "https://cdn.pixabay.com/photo/2017/08/07/19/07/books-2606859_960_720.jpg"),
+                          image:
+                              NetworkImage("https://cdn.pixabay.com/photo/2017/08/07/19/07/books-2606859_960_720.jpg"),
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -191,10 +195,10 @@ class AudioBooksHomePage extends StatelessWidget {
                             children: [
                               ...List.generate(
                                 5,
-                                    (index) => Icon(
+                                (index) => const Icon(
                                   Icons.star,
                                   size: 14,
-                                  color: _primaryGold,
+                                  color: primaryGold,
                                 ),
                               ),
                               const SizedBox(
