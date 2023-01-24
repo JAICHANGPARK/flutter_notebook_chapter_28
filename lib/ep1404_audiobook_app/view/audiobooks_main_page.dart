@@ -43,10 +43,10 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
       backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.white,
-        leading: IconButton(
+        leading: _index == 0 ? IconButton(
           icon: const Icon(Icons.menu_book),
           onPressed: () {},
-        ),
+        ): null,
         actions: [
           IconButton(
             onPressed: () {},
