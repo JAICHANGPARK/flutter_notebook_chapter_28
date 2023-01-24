@@ -3,6 +3,8 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_28/ep1404_audiobook_app/audiobooks_style.dart';
 import 'package:flutter_notebook_chapter_28/ep1404_audiobook_app/domain/audiobooks_menu.dart';
+import 'package:flutter_notebook_chapter_28/ep1404_audiobook_app/view/audiobooks_home_page.dart';
+import 'package:flutter_notebook_chapter_28/ep1404_audiobook_app/view/audiobooks_market_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class AudioBooksMainPage extends StatefulWidget {
@@ -46,7 +48,10 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
       ),
       body: IndexedStack(
         index: _index,
-        children: [],
+        children: [
+          AudioBooksHomePage(),
+          AudioMarketPage(),
+        ],
       ),
       bottomNavigationBar: BottomAppBar(
         elevation: 8,
