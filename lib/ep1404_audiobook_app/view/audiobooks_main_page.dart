@@ -17,6 +17,26 @@ class AudioBooksMainPage extends StatefulWidget {
 class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
   int _index = 0;
 
+  Widget buildAppbarTextWidget(int index) {
+    switch (index) {
+      case 0:
+        return Text(
+          "Booksbury",
+          style: GoogleFonts.dmSerifDisplay(),
+        );
+      case 1:
+        return Text(
+          "Explore Market",
+          style: GoogleFonts.dmSerifDisplay(),
+        );
+      default:
+        return Text(
+          "Booksbury",
+          style: GoogleFonts.dmSerifDisplay(),
+        );
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,10 +59,7 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
             color: primaryBlack,
           ),
         ],
-        title: Text(
-          "Booksbury",
-          style: GoogleFonts.dmSerifDisplay(),
-        ),
+        title: buildAppbarTextWidget(_index),
         foregroundColor: primaryBlack,
         elevation: 0,
       ),
