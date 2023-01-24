@@ -26,8 +26,19 @@ class _AudioMarketPageState extends State<AudioMarketPage> {
             ),
           ),
           Expanded(
-              child: GridView.builder(
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(), itemBuilder: (context, index) {}))
+            child: GridView.builder(
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2,
+                mainAxisSpacing: 16,
+                crossAxisSpacing: 16,
+              ),
+              itemBuilder: (context, index) {
+                return Container(
+                  color: Colors.grey,
+                );
+              },
+            ),
+          )
         ],
       ),
     );
