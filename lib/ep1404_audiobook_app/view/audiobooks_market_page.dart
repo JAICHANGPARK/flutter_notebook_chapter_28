@@ -32,6 +32,7 @@ class _AudioMarketPageState extends State<AudioMarketPage> {
                 mainAxisSpacing: 16,
                 crossAxisSpacing: 16,
               ),
+              itemCount: 100,
               itemBuilder: (context, index) {
                 return Container(
                   color: Colors.grey,
