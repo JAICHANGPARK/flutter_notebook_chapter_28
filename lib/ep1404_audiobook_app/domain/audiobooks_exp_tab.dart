@@ -4,3 +4,7 @@ class AudiobookExpTab {
 
   AudiobookExpTab({this.title, this.index});
 }
+
+List<AudiobookExpTab> audiobooksExploreTab = [
+
+];
