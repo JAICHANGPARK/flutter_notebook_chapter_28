@@ -70,16 +70,45 @@ class _AudioMarketPageState extends State<AudioMarketPage> {
                   itemCount: 100,
                   itemBuilder: (context, index) {
                     return Container(
-                      decoration: const BoxDecoration(
-                        color: Colors.grey,
-                      ),
+                      decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(8)),
+                      padding: EdgeInsets.all(8),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Expanded(child: Container()),
+                          Expanded(
+                              child: Container(
+                            decoration: BoxDecoration(color: Colors.orange, borderRadius: BorderRadius.circular(8)),
+                          )),
+                          SizedBox(height: 8,),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [],
+                            children: [
+                              Text("The Replica"),
+                              Text("By Dreamwalker"),
+                              SizedBox(
+                                height: 12,
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text("\$285"),
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.black,
+                                    ),
+                                    padding: EdgeInsets.symmetric(horizontal: 20, vertical: 4),
+                                    child: Center(
+                                      child: Text(
+                                        "Buy",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                        ),
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              )
+                            ],
                           )
                         ],
                       ),
