@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_28/ep1404_audiobook_app/audiobooks_style.dart';
 import 'package:flutter_notebook_chapter_28/ep1404_audiobook_app/domain/audiobooks_exp_tab.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class AudioMarketPage extends StatefulWidget {
   const AudioMarketPage({Key? key}) : super(key: key);
@@ -70,16 +71,25 @@ class _AudioMarketPageState extends State<AudioMarketPage> {
                   itemCount: 100,
                   itemBuilder: (context, index) {
                     return Container(
-                      decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(8)),
+                      decoration: BoxDecoration(
+                        color: AudiobooksStyles.secondaryGold,
+                        borderRadius: BorderRadius.circular(8),
+                      ),
                       padding: EdgeInsets.all(8),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Expanded(
-                              child: Container(
-                            decoration: BoxDecoration(color: Colors.orange, borderRadius: BorderRadius.circular(8)),
-                          )),
-                          SizedBox(height: 8,),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.orange,
+                                borderRadius: BorderRadius.circular(8),
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            height: 8,
+                          ),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -91,11 +101,13 @@ class _AudioMarketPageState extends State<AudioMarketPage> {
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Text("\$285"),
+                                  Text(
+                                    "\$285",
+                                    style: GoogleFonts.dmSerifDisplay(),
+                                  ),
                                   Container(
-                                    decoration: BoxDecoration(
-                                      color: Colors.black,
-                                    ),
+                                    decoration:
+                                        BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(4)),
                                     padding: EdgeInsets.symmetric(horizontal: 20, vertical: 4),
                                     child: Center(
                                       child: Text(
