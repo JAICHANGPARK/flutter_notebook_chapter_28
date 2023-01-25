@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
 
-const Color primaryBlack = Color(0xff2f2f2f);
-const Color primaryGold = Color(0xffBFA054);
+class AudiobooksStyles {
+  static const Color primaryBlack = Color(0xff2f2f2f);
+  static const Color primaryGold = Color(0xffBFA054);
+}
