@@ -23,23 +23,37 @@ class _AudioMarketPageState extends State<AudioMarketPage> {
               scrollDirection: Axis.horizontal,
               itemCount: audiobooksExploreTab.length,
               itemBuilder: (context, index) {
+                final item = audiobooksExploreTab[index];
                 return Container(
+                  margin: EdgeInsets.only(right: 16),
+                  padding: EdgeInsets.symmetric(
+                    horizontal: 16,
+                  ),
                   decoration: BoxDecoration(
                     border: Border.all(
                       color: AudiobooksStyles.primaryGold,
+                    ),
+                  ),
+                  child: Center(
+                    child: Text(
+                      "${item.tabIcon} ${item.title}",
                     ),
                   ),
                 );
               },
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 16,
           ),
           Expanded(
             child: GridView.builder(
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 2, mainAxisSpacing: 16, crossAxisSpacing: 16, childAspectRatio: 8 / 12),
+                crossAxisCount: 2,
+                mainAxisSpacing: 16,
+                crossAxisSpacing: 16,
+                childAspectRatio: 8 / 12,
+              ),
               itemCount: 100,
               itemBuilder: (context, index) {
                 return Container(
