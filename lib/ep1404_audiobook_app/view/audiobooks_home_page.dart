@@ -198,7 +198,7 @@ class AudioBooksHomePage extends StatelessWidget {
                                 (index) => const Icon(
                                   Icons.star,
                                   size: 14,
-                                  color: primaryGold,
+                                  color: AudiobooksStyles.primaryGold,
                                 ),
                               ),
                               const SizedBox(
