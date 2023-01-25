@@ -82,9 +82,13 @@ class _AudioMarketPageState extends State<AudioMarketPage> {
                           Expanded(
                             child: Container(
                               decoration: BoxDecoration(
-                                color: Colors.orange,
-                                borderRadius: BorderRadius.circular(8),
-                              ),
+                                  color: Colors.orange,
+                                  borderRadius: BorderRadius.circular(8),
+                                  image: DecorationImage(
+                                    image: NetworkImage(
+                                        "https://cdn.pixabay.com/photo/2019/02/14/07/28/painting-3995999_960_720.jpg"),
+                                    fit: BoxFit.cover,
+                                  )),
                             ),
                           ),
                           const SizedBox(
@@ -116,8 +120,10 @@ class _AudioMarketPageState extends State<AudioMarketPage> {
                                     style: GoogleFonts.dmSerifDisplay(fontSize: 16),
                                   ),
                                   Container(
-                                    decoration:
-                                        BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(4)),
+                                    decoration: BoxDecoration(
+                                      color: Colors.black,
+                                      borderRadius: BorderRadius.circular(4),
+                                    ),
                                     padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 4),
                                     child: const Center(
                                       child: Text(
