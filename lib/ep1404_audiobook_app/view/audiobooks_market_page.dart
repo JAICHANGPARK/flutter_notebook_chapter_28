@@ -10,34 +10,43 @@ class AudioMarketPage extends StatefulWidget {
 }
 
 class _AudioMarketPageState extends State<AudioMarketPage> {
+  int selectedIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
       child: Column(
         children: [
-          Container(
-            height: 48,
-            color: Colors.blue,
+          SizedBox(
+            height: 42,
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemCount: audiobooksExploreTab.length,
               itemBuilder: (context, index) {
                 final item = audiobooksExploreTab[index];
-                return Container(
-                  margin: const EdgeInsets.only(right: 16),
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 16,
-                  ),
-                  decoration: BoxDecoration(
-                    border: Border.all(
-                      color: AudiobooksStyles.primaryGold,
+                return InkWell(
+                  onTap: () {
+                    setState(() {
+                      selectedIndex = index;
+                    });
+                  },
+                  child: Container(
+                    margin: const EdgeInsets.only(right: 16),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 20,
                     ),
-                    borderRadius: BorderRadius.circular(8)
-                  ),
-                  child: Center(
-                    child: Text(
-                      "${item.tabIcon} ${item.title}",
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: AudiobooksStyles.primaryGold,
+                      ),
+                      borderRadius: BorderRadius.circular(8),
+                      color: Colors.white,
+                    ),
+                    child: Center(
+                      child: Text(
+                        "${item.tabIcon} ${item.title}",
+                      ),
                     ),
                   ),
                 );
