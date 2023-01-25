@@ -75,7 +75,7 @@ class _AudioMarketPageState extends State<AudioMarketPage> {
                         color: AudiobooksStyles.secondaryGold,
                         borderRadius: BorderRadius.circular(8),
                       ),
-                      padding: EdgeInsets.all(8),
+                      padding: const EdgeInsets.all(8),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -87,15 +87,25 @@ class _AudioMarketPageState extends State<AudioMarketPage> {
                               ),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 8,
                           ),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("The Replica"),
-                              Text("By Dreamwalker"),
-                              SizedBox(
+                              Text(
+                                "The Replica",
+                                style: GoogleFonts.dmSerifDisplay(
+                                  fontSize: 16,
+                                ),
+                              ),
+                              Text(
+                                "By Dreamwalker",
+                                style: GoogleFonts.dmSerifDisplay(
+                                  color: Colors.grey,
+                                ),
+                              ),
+                              const SizedBox(
                                 height: 12,
                               ),
                               Row(
@@ -103,13 +113,13 @@ class _AudioMarketPageState extends State<AudioMarketPage> {
                                 children: [
                                   Text(
                                     "\$285",
-                                    style: GoogleFonts.dmSerifDisplay(),
+                                    style: GoogleFonts.dmSerifDisplay(fontSize: 16),
                                   ),
                                   Container(
                                     decoration:
                                         BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(4)),
-                                    padding: EdgeInsets.symmetric(horizontal: 20, vertical: 4),
-                                    child: Center(
+                                    padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 4),
+                                    child: const Center(
                                       child: Text(
                                         "Buy",
                                         style: TextStyle(
