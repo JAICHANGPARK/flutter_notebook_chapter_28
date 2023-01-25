@@ -70,7 +70,19 @@ class _AudioMarketPageState extends State<AudioMarketPage> {
                   itemCount: 100,
                   itemBuilder: (context, index) {
                     return Container(
-                      color: Colors.grey,
+                      decoration: const BoxDecoration(
+                        color: Colors.grey,
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Expanded(child: Container()),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [],
+                          )
+                        ],
+                      ),
                     );
                   },
                 ),
