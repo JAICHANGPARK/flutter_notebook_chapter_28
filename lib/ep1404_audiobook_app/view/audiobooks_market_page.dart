@@ -41,7 +41,7 @@ class _AudioMarketPageState extends State<AudioMarketPage> {
                         color: AudiobooksStyles.primaryGold,
                       ),
                       borderRadius: BorderRadius.circular(8),
-                      color: Colors.white,
+                      color: selectedIndex == index ? AudiobooksStyles.secondaryGold : Colors.white,
                     ),
                     child: Center(
                       child: Text(
