@@ -67,7 +67,7 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
       ),
       body: IndexedStack(
         index: _index,
-        children: [
+        children: const [
           AudioBooksHomePage(),
           AudioMarketPage(),
         ],
