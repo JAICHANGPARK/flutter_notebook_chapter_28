@@ -64,9 +64,10 @@ class _AudioMarketPageState extends State<AudioMarketPage> {
                 GridView.builder(
                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2,
-                    mainAxisSpacing: 16,
-                    crossAxisSpacing: 16,
-                    childAspectRatio: 8 / 12,
+                    mainAxisSpacing: 20,
+                    crossAxisSpacing: 20,
+                    childAspectRatio: 7 / 12,
+
                   ),
                   itemCount: 100,
                   itemBuilder: (context, index) {
