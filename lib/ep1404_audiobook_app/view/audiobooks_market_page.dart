@@ -26,7 +26,7 @@ class _AudioMarketPageState extends State<AudioMarketPage> {
                 return Container(
                   decoration: BoxDecoration(
                     border: Border.all(
-                      color: primaryGold,
+                      color: AudiobooksStyles.primaryGold,
                     ),
                   ),
                 );
