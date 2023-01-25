@@ -53,16 +53,16 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
           IconButton(
             onPressed: () {},
             icon: const Icon(Icons.notifications_none),
-            color: primaryBlack,
+            color: AudiobooksStyles.primaryBlack,
           ),
           IconButton(
             onPressed: () {},
             icon: const Icon(Icons.search),
-            color: primaryBlack,
+            color: AudiobooksStyles.primaryBlack,
           ),
         ],
         title: buildAppbarTextWidget(_index),
-        foregroundColor: primaryBlack,
+        foregroundColor: AudiobooksStyles.primaryBlack,
         elevation: 0,
       ),
       body: IndexedStack(
@@ -99,7 +99,7 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                         ),
                         CircleAvatar(
                           radius: 3,
-                          backgroundColor: _index == e.index ? primaryGold : Colors.transparent,
+                          backgroundColor: _index == e.index ? AudiobooksStyles.primaryGold : Colors.transparent,
                         )
                       ],
                     ),
