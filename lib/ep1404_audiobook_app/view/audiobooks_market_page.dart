@@ -17,7 +17,7 @@ class _AudioMarketPageState extends State<AudioMarketPage> {
       child: Column(
         children: [
           Container(
-            height: 58,
+            height: 48,
             color: Colors.blue,
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
@@ -25,14 +25,15 @@ class _AudioMarketPageState extends State<AudioMarketPage> {
               itemBuilder: (context, index) {
                 final item = audiobooksExploreTab[index];
                 return Container(
-                  margin: EdgeInsets.only(right: 16),
-                  padding: EdgeInsets.symmetric(
+                  margin: const EdgeInsets.only(right: 16),
+                  padding: const EdgeInsets.symmetric(
                     horizontal: 16,
                   ),
                   decoration: BoxDecoration(
                     border: Border.all(
                       color: AudiobooksStyles.primaryGold,
                     ),
+                    borderRadius: BorderRadius.circular(8)
                   ),
                   child: Center(
                     child: Text(
