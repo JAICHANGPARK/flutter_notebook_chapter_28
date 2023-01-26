@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class AudiobooksDetailPage extends StatefulWidget {
-  const AudiobooksDetailPage({Key? key}) : super(key: key);
+  final String imgTag;
+
+  const AudiobooksDetailPage({Key? key, required this.imgTag}) : super(key: key);
 
   @override
   State<AudiobooksDetailPage> createState() => _AudiobooksDetailPageState();
@@ -28,6 +30,23 @@ class _AudiobooksDetailPageState extends State<AudiobooksDetailPage> {
         ],
         foregroundColor: Colors.black,
         elevation: 0,
+      ),
+      body: Column(
+        children: [
+          Hero(
+            tag: widget.imgTag,
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.orange,
+                borderRadius: BorderRadius.circular(8),
+                image: const DecorationImage(
+                  image: NetworkImage("https://cdn.pixabay.com/photo/2019/02/14/07/28/painting-3995999_960_720.jpg"),
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ),
+          )
+        ],
       ),
     );
   }
