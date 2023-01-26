@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_28/ep1404_audiobook_app/audiobooks_style.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class AudiobooksDetailPage extends StatefulWidget {
@@ -50,6 +51,40 @@ class _AudiobooksDetailPageState extends State<AudiobooksDetailPage> {
               ),
             ),
           ],
+        ),
+      ),
+      bottomNavigationBar: BottomAppBar(
+        child: Container(
+          height: 72,
+          decoration: BoxDecoration(
+            color: Colors.white,
+          ),
+          padding: EdgeInsets.all(16),
+          child: Row(
+            children: [
+              Expanded(
+                child: Container(
+                  decoration:
+                      BoxDecoration(color: AudiobooksStyles.primaryGold, borderRadius: BorderRadius.circular(4)),
+                  child: Row(
+                    children: [Icon(Icons.menu_book), Text("Start Reading")],
+                  ),
+                ),
+              ),
+              SizedBox(
+                width: 16,
+              ),
+              Expanded(
+                child: Container(
+                  decoration:
+                      BoxDecoration(color: AudiobooksStyles.primaryBlack, borderRadius: BorderRadius.circular(4)),
+                  child: Row(
+                    children: [Icon(Icons.play_circle_outline), Text("Play Audio")],
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
