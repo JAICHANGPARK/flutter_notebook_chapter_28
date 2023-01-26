@@ -65,9 +65,19 @@ class _AudiobooksDetailPageState extends State<AudiobooksDetailPage> {
               Expanded(
                 child: Container(
                   decoration:
-                      BoxDecoration(color: AudiobooksStyles.primaryGold, borderRadius: BorderRadius.circular(4)),
+                  BoxDecoration(color: AudiobooksStyles.primaryGold, borderRadius: BorderRadius.circular(4)),
                   child: Row(
-                    children: [Icon(Icons.menu_book), Text("Start Reading")],
+                    children: [
+                      Icon(
+                        Icons.menu_book,
+                        color: Colors.white,
+                      ),
+                      Text("Start Reading",
+                        style: GoogleFonts.dmSerifDisplay(
+                          color: Colors.white,
+                        ),
+                      )
+                    ],
                   ),
                 ),
               ),
@@ -77,9 +87,23 @@ class _AudiobooksDetailPageState extends State<AudiobooksDetailPage> {
               Expanded(
                 child: Container(
                   decoration:
-                      BoxDecoration(color: AudiobooksStyles.primaryBlack, borderRadius: BorderRadius.circular(4)),
-                  child: Row(
-                    children: [Icon(Icons.play_circle_outline), Text("Play Audio")],
+                  BoxDecoration(color: AudiobooksStyles.primaryBlack, borderRadius: BorderRadius.circular(4)),
+                  child: Center(
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.play_circle_outline,
+                          color: Colors.white,
+                        ),
+                        Text(
+                          "Play Audio",
+                          style: GoogleFonts.dmSerifDisplay(
+                            color: Colors.white,
+                          ),
+                        )
+                      ],
+                    ),
                   ),
                 ),
               ),
