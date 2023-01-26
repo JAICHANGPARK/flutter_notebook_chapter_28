@@ -50,6 +50,38 @@ class _AudiobooksDetailPageState extends State<AudiobooksDetailPage> {
                 ),
               ),
             ),
+            SizedBox(
+              height: 24,
+            ),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "The Homeric Hymns",
+                      style: GoogleFonts.dmSerifDisplay(
+                        fontSize: 24,
+                      ),
+                    ),
+                    Text(
+                      "By subtitle",
+                      style: GoogleFonts.dmSerifDisplay(
+                        color: Colors.grey,
+                      ),
+                    ),
+                  ],
+                ),
+                Spacer(),
+                Text(
+                  "\$757",
+                  style: GoogleFonts.dmSerifDisplay(
+                    fontSize: 24,
+                  ),
+                )
+              ],
+            )
           ],
         ),
       ),
@@ -76,7 +108,9 @@ class _AudiobooksDetailPageState extends State<AudiobooksDetailPage> {
                           Icons.menu_book,
                           color: AudiobooksStyles.primaryBlack,
                         ),
-                        SizedBox(width: 6,),
+                        SizedBox(
+                          width: 6,
+                        ),
                         Text(
                           "Start Reading",
                           style: GoogleFonts.dmSerifDisplay(
@@ -104,7 +138,10 @@ class _AudiobooksDetailPageState extends State<AudiobooksDetailPage> {
                         const Icon(
                           Icons.play_circle_outline,
                           color: Colors.white,
-                        ),  SizedBox(width: 6,),
+                        ),
+                        SizedBox(
+                          width: 6,
+                        ),
                         Text(
                           "Play Audio",
                           style: GoogleFonts.dmSerifDisplay(
