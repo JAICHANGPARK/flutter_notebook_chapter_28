@@ -81,6 +81,26 @@ class _AudiobooksDetailPageState extends State<AudiobooksDetailPage> {
                   ),
                 )
               ],
+            ),
+            Container(
+              height: 80,
+              color: Colors.blue,
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: AudiobooksStyles.secondaryGold,
+                        ),
+                        borderRadius: BorderRadius.circular(8)
+                      ),
+                    ),
+                  ),
+                  Expanded(child: Placeholder()),
+                  Expanded(child: Placeholder()),
+                ],
+              ),
             )
           ],
         ),
