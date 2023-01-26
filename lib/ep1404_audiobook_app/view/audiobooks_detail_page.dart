@@ -12,12 +12,22 @@ class _AudiobooksDetailPageState extends State<AudiobooksDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         centerTitle: true,
-        title: Text("Book Info", style: GoogleFonts.dmSerifDisplay(),),
+        title: Text(
+          "Book Info",
+          style: GoogleFonts.dmSerifDisplay(),
+        ),
+        backgroundColor: Colors.white,
         actions: [
-          Icon(Icons.bookmarks_outlined)
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.bookmarks_outlined),
+          )
         ],
+        foregroundColor: Colors.black,
+        elevation: 0,
       ),
     );
   }
