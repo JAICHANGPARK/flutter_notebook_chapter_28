@@ -76,7 +76,9 @@ class _AudioMarketPageState extends State<AudioMarketPage> {
                         if (context.mounted) {
                           Navigator.of(context).push(
                             MaterialPageRoute(
-                              builder: (_) => const AudiobooksDetailPage(),
+                              builder: (_) => AudiobooksDetailPage(
+                                imgTag: "img_$index",
+                              ),
                             ),
                           );
                         }
@@ -95,13 +97,14 @@ class _AudioMarketPageState extends State<AudioMarketPage> {
                                 tag: "img_$index",
                                 child: Container(
                                   decoration: BoxDecoration(
-                                      color: Colors.orange,
-                                      borderRadius: BorderRadius.circular(8),
-                                      image: const DecorationImage(
-                                        image: NetworkImage(
-                                            "https://cdn.pixabay.com/photo/2019/02/14/07/28/painting-3995999_960_720.jpg"),
-                                        fit: BoxFit.cover,
-                                      )),
+                                    color: Colors.orange,
+                                    borderRadius: BorderRadius.circular(8),
+                                    image: const DecorationImage(
+                                      image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2019/02/14/07/28/painting-3995999_960_720.jpg"),
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
                                 ),
                               ),
                             ),
