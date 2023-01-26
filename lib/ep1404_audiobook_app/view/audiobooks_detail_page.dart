@@ -26,7 +26,7 @@ class _AudiobooksDetailPageState extends State<AudiobooksDetailPage> {
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(Icons.bookmarks_outlined),
+            icon: const Icon(Icons.bookmarks_outlined),
           )
         ],
         foregroundColor: Colors.black,
@@ -56,46 +56,55 @@ class _AudiobooksDetailPageState extends State<AudiobooksDetailPage> {
       bottomNavigationBar: BottomAppBar(
         child: Container(
           height: 72,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             color: Colors.white,
           ),
-          padding: EdgeInsets.all(16),
+          padding: const EdgeInsets.all(16),
           child: Row(
             children: [
               Expanded(
                 child: Container(
-                  decoration:
-                  BoxDecoration(color: AudiobooksStyles.primaryGold, borderRadius: BorderRadius.circular(4)),
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.menu_book,
-                        color: Colors.white,
-                      ),
-                      Text("Start Reading",
-                        style: GoogleFonts.dmSerifDisplay(
-                          color: Colors.white,
-                        ),
-                      )
-                    ],
+                  decoration: BoxDecoration(
+                    color: AudiobooksStyles.primaryGold,
+                    borderRadius: BorderRadius.circular(4),
                   ),
-                ),
-              ),
-              SizedBox(
-                width: 16,
-              ),
-              Expanded(
-                child: Container(
-                  decoration:
-                  BoxDecoration(color: AudiobooksStyles.primaryBlack, borderRadius: BorderRadius.circular(4)),
                   child: Center(
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Icon(
+                        const Icon(
+                          Icons.menu_book,
+                          color: AudiobooksStyles.primaryBlack,
+                        ),
+                        SizedBox(width: 6,),
+                        Text(
+                          "Start Reading",
+                          style: GoogleFonts.dmSerifDisplay(
+                            color: AudiobooksStyles.primaryBlack,
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(
+                width: 16,
+              ),
+              Expanded(
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: AudiobooksStyles.primaryBlack,
+                    borderRadius: BorderRadius.circular(4),
+                  ),
+                  child: Center(
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        const Icon(
                           Icons.play_circle_outline,
                           color: Colors.white,
-                        ),
+                        ),  SizedBox(width: 6,),
                         Text(
                           "Play Audio",
                           style: GoogleFonts.dmSerifDisplay(
