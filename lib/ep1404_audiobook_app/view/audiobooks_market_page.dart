@@ -73,11 +73,13 @@ class _AudioMarketPageState extends State<AudioMarketPage> {
                   itemBuilder: (context, index) {
                     return GestureDetector(
                       onTap: () {
-                        Navigator.of(context).push(
-                          MaterialPageRoute(
-                            builder: (_) => const AudiobooksDetailPage(),
-                          ),
-                        );
+                        if (context.mounted) {
+                          Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (_) => const AudiobooksDetailPage(),
+                            ),
+                          );
+                        }
                       },
                       child: Container(
                         decoration: BoxDecoration(
@@ -89,15 +91,18 @@ class _AudioMarketPageState extends State<AudioMarketPage> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Expanded(
-                              child: Container(
-                                decoration: BoxDecoration(
-                                    color: Colors.orange,
-                                    borderRadius: BorderRadius.circular(8),
-                                    image: const DecorationImage(
-                                      image: NetworkImage(
-                                          "https://cdn.pixabay.com/photo/2019/02/14/07/28/painting-3995999_960_720.jpg"),
-                                      fit: BoxFit.cover,
-                                    )),
+                              child: Hero(
+                                tag: "img_$index",
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                      color: Colors.orange,
+                                      borderRadius: BorderRadius.circular(8),
+                                      image: const DecorationImage(
+                                        image: NetworkImage(
+                                            "https://cdn.pixabay.com/photo/2019/02/14/07/28/painting-3995999_960_720.jpg"),
+                                        fit: BoxFit.cover,
+                                      )),
+                                ),
                               ),
                             ),
                             const SizedBox(
