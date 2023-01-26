@@ -50,7 +50,7 @@ class _AudiobooksDetailPageState extends State<AudiobooksDetailPage> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 24,
             ),
             Row(
@@ -73,7 +73,7 @@ class _AudiobooksDetailPageState extends State<AudiobooksDetailPage> {
                     ),
                   ],
                 ),
-                Spacer(),
+                const Spacer(),
                 Text(
                   "\$757",
                   style: GoogleFonts.dmSerifDisplay(
@@ -83,8 +83,8 @@ class _AudiobooksDetailPageState extends State<AudiobooksDetailPage> {
               ],
             ),
             Container(
+              margin: const EdgeInsets.symmetric(vertical: 16),
               height: 80,
-              color: Colors.blue,
               child: Row(
                 children: [
                   Expanded(
@@ -93,15 +93,125 @@ class _AudiobooksDetailPageState extends State<AudiobooksDetailPage> {
                         border: Border.all(
                           color: AudiobooksStyles.secondaryGold,
                         ),
-                        borderRadius: BorderRadius.circular(8)
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: const [
+                          Text("Released"),
+                          SizedBox(
+                            height: 8,
+                          ),
+                          Text("2021"),
+                        ],
                       ),
                     ),
                   ),
-                  Expanded(child: Placeholder()),
-                  Expanded(child: Placeholder()),
+                  const SizedBox(
+                    width: 8,
+                  ),
+                  Expanded(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: AudiobooksStyles.secondaryGold,
+                        ),
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: const [
+                          Text("Released"),
+                          SizedBox(
+                            height: 8,
+                          ),
+                          Text("2021"),
+                        ],
+                      ),
+                    ),
+                  ),
+                  const SizedBox(
+                    width: 8,
+                  ),
+                  Expanded(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: AudiobooksStyles.secondaryGold,
+                        ),
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: const [
+                          Text("Released"),
+                          SizedBox(
+                            height: 8,
+                          ),
+                          Text("2021"),
+                        ],
+                      ),
+                    ),
+                  ),
                 ],
               ),
-            )
+            ),
+            Expanded(
+                child: DefaultTabController(
+              length: 4,
+              child: Column(
+                children: [
+                  SizedBox(
+                    height: 42,
+                    child: Stack(
+                      children: [
+                        Positioned(
+                          child: Container(
+                            height: 2,
+                            color: Colors.grey,
+                          ),
+                          left: 0,
+                          right: 0,
+                          bottom: 0,
+                        ),
+                        Positioned.fill(
+                            child: TabBar(
+                          labelColor: Colors.black,
+                          unselectedLabelColor: Colors.grey,
+                          indicatorColor: AudiobooksStyles.primaryBlack,
+                          tabs: [
+                            Tab(
+                              text: "Synopsis",
+                            ),
+                            Tab(
+                              text: "Synopsis",
+                            ),
+                            Tab(
+                              text: "Synopsis",
+                            ),
+                            Tab(
+                              text: "Synopsis",
+                            ),
+                          ],
+                        ))
+                      ],
+                    ),
+                  ),
+                  Expanded(
+                      child: TabBarView(
+                    children: [
+                      Container(),
+                      Container(),
+                      Container(),
+                      Container(),
+                    ],
+                  ))
+                ],
+              ),
+            ))
           ],
         ),
       ),
@@ -128,7 +238,7 @@ class _AudiobooksDetailPageState extends State<AudiobooksDetailPage> {
                           Icons.menu_book,
                           color: AudiobooksStyles.primaryBlack,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 6,
                         ),
                         Text(
@@ -159,7 +269,7 @@ class _AudiobooksDetailPageState extends State<AudiobooksDetailPage> {
                           Icons.play_circle_outline,
                           color: Colors.white,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 6,
                         ),
                         Text(
