@@ -24,9 +24,9 @@ class _SoundMusicPlayerLoginPageState extends State<SoundMusicPlayerLoginPage> {
             ),
           ),
           Positioned(
-            left: 0,
-            right: 0,
-            bottom: 0,
+            left: 16,
+            right: 16,
+            bottom: 24,
             top: 72,
             child: Column(
               children: const [
@@ -60,9 +60,20 @@ class _SoundMusicPlayerLoginPageState extends State<SoundMusicPlayerLoginPage> {
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                   ),
+                  textAlign: TextAlign.center,
                 ),
-                Text("Choose music according to your taste, create your own playlist to "
-                    "accompany your day!")
+                SizedBox(
+                  height: 32,
+                ),
+                Text(
+                  "Choose music according to your taste, create your own playlist to "
+                  "accompany your day!",
+                  style: TextStyle(
+                    color: Colors.grey,
+
+                  ),
+                  textAlign: TextAlign.center,
+                )
               ],
             ),
           )
