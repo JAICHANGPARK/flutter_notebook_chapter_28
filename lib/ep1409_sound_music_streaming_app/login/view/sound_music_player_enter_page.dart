@@ -29,20 +29,25 @@ class _SoundMusicPlayerLoginPageState extends State<SoundMusicPlayerLoginPage> {
             bottom: 0,
             top: 72,
             child: Column(
-              children: [
+              children: const [
                 Text.rich(
                   TextSpan(
                     children: [
                       TextSpan(
                         text: "S",
                         style: TextStyle(
-                          fontSize: 18,
+                          fontSize: 20,
                           fontWeight: FontWeight.bold,
                           color: Colors.indigo,
                         ),
                       ),
                       TextSpan(
                         text: "oundplay",
+                        style: TextStyle(
+                          fontSize: 16,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ],
                   ),
