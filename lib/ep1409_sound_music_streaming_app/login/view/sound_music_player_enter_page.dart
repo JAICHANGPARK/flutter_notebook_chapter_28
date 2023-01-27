@@ -56,14 +56,14 @@ class _SoundMusicPlayerLoginPageState extends State<SoundMusicPlayerLoginPage> {
                 const Text(
                   "Create Your Playrist,\nShare It With Other",
                   style: TextStyle(
-                    fontSize: 26,
+                    fontSize: 30,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                   ),
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(
-                  height: 32,
+                  height: 24,
                 ),
                 const Text(
                   "Choose music according to your taste, create your own playlist to "
@@ -81,7 +81,7 @@ class _SoundMusicPlayerLoginPageState extends State<SoundMusicPlayerLoginPage> {
                     shape: StadiumBorder(),
                     color: Colors.indigoAccent[700],
                   ),
-                  
+                  padding: EdgeInsets.symmetric(vertical: 20),
                   child: Center(
                     child: Text(
                       "Get Started",
