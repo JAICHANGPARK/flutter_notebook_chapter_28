@@ -29,7 +29,7 @@ class _SoundMusicPlayerLoginPageState extends State<SoundMusicPlayerLoginPage> {
             bottom: 24,
             top: 72,
             child: Column(
-              children: const [
+              children:  [
                 Text.rich(
                   TextSpan(
                     children: [
@@ -73,6 +73,12 @@ class _SoundMusicPlayerLoginPageState extends State<SoundMusicPlayerLoginPage> {
 
                   ),
                   textAlign: TextAlign.center,
+                ),
+                SizedBox(
+                  height: 32,
+                ),
+                Container(
+                  decoration: ShapeDecoration(shape: StadiumBorder()),
                 )
               ],
             ),
