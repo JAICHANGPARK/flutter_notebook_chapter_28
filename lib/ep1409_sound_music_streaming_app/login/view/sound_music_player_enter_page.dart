@@ -51,7 +51,18 @@ class _SoundMusicPlayerLoginPageState extends State<SoundMusicPlayerLoginPage> {
                       ),
                     ],
                   ),
-                )
+                ),
+                Spacer(),
+                Text(
+                  "Create Your Playrist,\nShare It With Other",
+                  style: TextStyle(
+                    fontSize: 26,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
+                ),
+                Text("Choose music according to your taste, create your own playlist to "
+                    "accompany your day!")
               ],
             ),
           )
