@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-// SMSA : Sound Music Streaming App 
+/// SMSA : Sound Music Streaming App
 class SMSAMainPage extends StatefulWidget {
   const SMSAMainPage({Key? key}) : super(key: key);
 
