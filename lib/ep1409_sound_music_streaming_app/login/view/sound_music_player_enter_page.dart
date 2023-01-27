@@ -16,7 +16,7 @@ class _SoundMusicPlayerLoginPageState extends State<SoundMusicPlayerLoginPage> {
         children: [
           Positioned.fill(
             child: Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 image: DecorationImage(
                     image: NetworkImage("https://cdn.pixabay.com/photo/2016/09/10/11/11/musician-1658887_960_720.jpg"),
                     fit: BoxFit.cover),
@@ -29,8 +29,8 @@ class _SoundMusicPlayerLoginPageState extends State<SoundMusicPlayerLoginPage> {
             bottom: 24,
             top: 72,
             child: Column(
-              children:  [
-                Text.rich(
+              children: [
+                const Text.rich(
                   TextSpan(
                     children: [
                       TextSpan(
@@ -52,8 +52,8 @@ class _SoundMusicPlayerLoginPageState extends State<SoundMusicPlayerLoginPage> {
                     ],
                   ),
                 ),
-                Spacer(),
-                Text(
+                const Spacer(),
+                const Text(
                   "Create Your Playrist,\nShare It With Other",
                   style: TextStyle(
                     fontSize: 26,
@@ -62,23 +62,28 @@ class _SoundMusicPlayerLoginPageState extends State<SoundMusicPlayerLoginPage> {
                   ),
                   textAlign: TextAlign.center,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 32,
                 ),
-                Text(
+                const Text(
                   "Choose music according to your taste, create your own playlist to "
                   "accompany your day!",
                   style: TextStyle(
                     color: Colors.grey,
-
                   ),
                   textAlign: TextAlign.center,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 32,
                 ),
                 Container(
-                  decoration: ShapeDecoration(shape: StadiumBorder()),
+                  decoration: const ShapeDecoration(
+                    shape: StadiumBorder(),
+                    color: Colors.indigo,
+                  ),
+                  child: Center(
+                    child: Text("Get Started"),
+                  ),
                 )
               ],
             ),
