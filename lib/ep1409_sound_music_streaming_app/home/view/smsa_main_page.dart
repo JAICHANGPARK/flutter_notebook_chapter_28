@@ -20,10 +20,17 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              IconButton(onPressed: () {}, icon: Icon(Icons.home_filled),),
-              IconButton(onPressed: () {}, icon: Icon(Icons.search)),
-              IconButton(onPressed: () {}, icon: Icon(Icons.favorite_border)),
-              IconButton(onPressed: () {}, icon: Icon(Icons.person_outlined)),
+              IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.home_filled),
+                iconSize: 30,
+              ),
+              IconButton(onPressed: () {}, icon: Icon(Icons.search),
+                iconSize: 30,),
+              IconButton(onPressed: () {}, icon: Icon(Icons.favorite_border),
+                iconSize: 30,),
+              IconButton(onPressed: () {}, icon: Icon(Icons.person_outlined),
+                iconSize: 30,),
             ],
           ),
         ),
