@@ -11,6 +11,23 @@ class SMSAMainPage extends StatefulWidget {
 class _SMSAMainPageState extends State<SMSAMainPage> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Scaffold(
+      backgroundColor: Colors.black,
+      bottomNavigationBar: BottomAppBar(
+        child: Container(
+          color: Colors.blue,
+          height: 72,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              IconButton(onPressed: () {}, icon: Icon(Icons.home_filled)),
+              IconButton(onPressed: () {}, icon: Icon(Icons.search)),
+              IconButton(onPressed: () {}, icon: Icon(Icons.favorite_border)),
+              IconButton(onPressed: () {}, icon: Icon(Icons.person_outlined)),
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }
