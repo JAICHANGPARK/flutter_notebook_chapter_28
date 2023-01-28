@@ -41,7 +41,20 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                         )
                       ],
                     ),
-                  )
+                  ),
+                  Container(
+                    height: 58,
+                    color: Colors.blue,
+                    child: Row(
+                      children: [],
+                    ),
+                  ),
+                  Expanded(
+                    child: Padding(
+                      padding: const EdgeInsets.fromLTRB(16, 16, 0, 0),
+                      child: Placeholder(),
+                    ),
+                  ),
                 ],
               ),
             ),
