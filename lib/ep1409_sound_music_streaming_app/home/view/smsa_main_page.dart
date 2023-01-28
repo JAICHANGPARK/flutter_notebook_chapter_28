@@ -49,9 +49,9 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                       children: [],
                     ),
                   ),
-                  Expanded(
+                  const Expanded(
                     child: Padding(
-                      padding: const EdgeInsets.fromLTRB(16, 16, 0, 0),
+                      padding: EdgeInsets.fromLTRB(16, 16, 0, 0),
                       child: Placeholder(),
                     ),
                   ),
