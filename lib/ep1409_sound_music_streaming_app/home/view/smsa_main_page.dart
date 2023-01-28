@@ -21,6 +21,18 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                 children: [],
               ),
             ),
+            Positioned(
+              right: 20,
+              left: 20,
+              bottom: 4,
+              child: Container(
+                height: 64,
+                decoration:  BoxDecoration(
+                  color: Colors.indigoAccent,
+                  borderRadius: BorderRadius.circular(8)
+                ),
+              ),
+            )
           ],
         ),
       ),
@@ -33,25 +45,25 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
             children: [
               IconButton(
                 onPressed: () {},
-                icon: Icon(Icons.home_filled),
+                icon: const Icon(Icons.home_filled),
                 iconSize: 30,
                 color: Colors.indigoAccent[700],
               ),
               IconButton(
                 onPressed: () {},
-                icon: Icon(Icons.search),
+                icon: const Icon(Icons.search),
                 iconSize: 30,
                 color: Colors.grey,
               ),
               IconButton(
                 onPressed: () {},
-                icon: Icon(Icons.favorite_border),
+                icon: const Icon(Icons.favorite_border),
                 iconSize: 30,
                 color: Colors.grey,
               ),
               IconButton(
                 onPressed: () {},
-                icon: Icon(Icons.person_outlined),
+                icon: const Icon(Icons.person_outlined),
                 iconSize: 30,
                 color: Colors.grey,
               ),
