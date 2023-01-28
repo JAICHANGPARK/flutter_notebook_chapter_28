@@ -19,25 +19,31 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
             Positioned.fill(
               child: Column(
                 children: [
-                  Row(
-                    children: [
-                      Text(
-                        "Good Morning\nHave a nice day!",
-                        style: TextStyle(
-                          color: Colors.white,
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        const Text(
+                          "Good Morning\nHave a nice day!",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20
+                          ),
+                          textAlign: TextAlign.start,
                         ),
-                        textAlign: TextAlign.start,
-                      ),
-                      CircleAvatar(
-                        backgroundColor: Colors.white.withOpacity(0.1),
-                        foregroundColor: Colors.white,
-                        child: IconButton(
-                          icon: Icon(
-                            Icons.notifications_none,
-                          ), onPressed: () {  },
-                        ),
-                      )
-                    ],
+                        CircleAvatar(
+                          backgroundColor: Colors.white.withOpacity(0.1),
+                          foregroundColor: Colors.white,
+                          child: IconButton(
+                            icon: const Icon(
+                              Icons.notifications_none,
+                            ),
+                            onPressed: () {},
+                          ),
+                        )
+                      ],
+                    ),
                   )
                 ],
               ),
