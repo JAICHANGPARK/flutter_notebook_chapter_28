@@ -92,18 +92,23 @@ class _SoundMusicPlayerLoginPageState extends State<SoundMusicPlayerLoginPage> {
                 const SizedBox(
                   height: 32,
                 ),
-                Container(
-                  decoration: ShapeDecoration(
-                    shape: const StadiumBorder(),
-                    color: Colors.indigoAccent[700],
-                  ),
-                  padding: const EdgeInsets.symmetric(vertical: 20),
-                  child: const Center(
-                    child: Text(
-                      "Get Started",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 18,
+                GestureDetector(
+                  onTap: (){
+                    Navigator.of(context).pushReplacementNamed("/home");
+                  },
+                  child: Container(
+                    decoration: ShapeDecoration(
+                      shape: const StadiumBorder(),
+                      color: Colors.indigoAccent[700],
+                    ),
+                    padding: const EdgeInsets.symmetric(vertical: 20),
+                    child: const Center(
+                      child: Text(
+                        "Get Started",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                        ),
                       ),
                     ),
                   ),
