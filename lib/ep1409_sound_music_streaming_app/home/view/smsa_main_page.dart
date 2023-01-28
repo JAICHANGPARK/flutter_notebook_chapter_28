@@ -59,8 +59,8 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
               ),
             ),
             Positioned(
-              right: 20,
-              left: 20,
+              right: 16,
+              left: 16,
               bottom: 4,
               child: Container(
                 height: 64,
