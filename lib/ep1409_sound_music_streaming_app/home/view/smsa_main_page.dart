@@ -18,7 +18,28 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
           children: [
             Positioned.fill(
               child: Column(
-                children: [],
+                children: [
+                  Row(
+                    children: [
+                      Text(
+                        "Good Morning\nHave a nice day!",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                        textAlign: TextAlign.start,
+                      ),
+                      CircleAvatar(
+                        backgroundColor: Colors.white.withOpacity(0.1),
+                        foregroundColor: Colors.white,
+                        child: IconButton(
+                          icon: Icon(
+                            Icons.notifications_none,
+                          ), onPressed: () {  },
+                        ),
+                      )
+                    ],
+                  )
+                ],
               ),
             ),
             Positioned(
@@ -27,10 +48,7 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
               bottom: 4,
               child: Container(
                 height: 64,
-                decoration:  BoxDecoration(
-                  color: Colors.indigoAccent,
-                  borderRadius: BorderRadius.circular(8)
-                ),
+                decoration: BoxDecoration(color: Colors.indigoAccent, borderRadius: BorderRadius.circular(8)),
               ),
             )
           ],
