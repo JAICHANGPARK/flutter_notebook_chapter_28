@@ -26,10 +26,7 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                       children: [
                         const Text(
                           "Good Morning\nHave a nice day!",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 20
-                          ),
+                          style: TextStyle(color: Colors.white, fontSize: 20),
                           textAlign: TextAlign.start,
                         ),
                         CircleAvatar(
@@ -54,7 +51,10 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
               bottom: 4,
               child: Container(
                 height: 64,
-                decoration: BoxDecoration(color: Colors.indigoAccent, borderRadius: BorderRadius.circular(8)),
+                decoration: BoxDecoration(
+                  color: Colors.indigoAccent,
+                  borderRadius: BorderRadius.circular(8),
+                ),
               ),
             )
           ],
