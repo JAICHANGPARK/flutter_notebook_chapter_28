@@ -14,8 +14,8 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
     return Scaffold(
       backgroundColor: Colors.black,
       bottomNavigationBar: BottomAppBar(
+        color: Colors.black,
         child: Container(
-          color: Colors.blue,
           height: 72,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -24,13 +24,27 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                 onPressed: () {},
                 icon: Icon(Icons.home_filled),
                 iconSize: 30,
+                color: Colors.indigoAccent[700],
               ),
-              IconButton(onPressed: () {}, icon: Icon(Icons.search),
-                iconSize: 30,),
-              IconButton(onPressed: () {}, icon: Icon(Icons.favorite_border),
-                iconSize: 30,),
-              IconButton(onPressed: () {}, icon: Icon(Icons.person_outlined),
-                iconSize: 30,),
+              IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.search),
+                iconSize: 30,
+                color: Colors.grey,
+              ),
+              IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.favorite_border),
+                iconSize: 30,
+
+                color: Colors.grey,
+              ),
+              IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.person_outlined),
+                iconSize: 30,
+                color: Colors.grey,
+              ),
             ],
           ),
         ),
