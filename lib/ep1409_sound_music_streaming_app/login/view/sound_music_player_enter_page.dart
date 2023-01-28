@@ -78,11 +78,11 @@ class _SoundMusicPlayerLoginPageState extends State<SoundMusicPlayerLoginPage> {
                 ),
                 Container(
                   decoration: ShapeDecoration(
-                    shape: StadiumBorder(),
+                    shape: const StadiumBorder(),
                     color: Colors.indigoAccent[700],
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 20),
-                  child: Center(
+                  padding: const EdgeInsets.symmetric(vertical: 20),
+                  child: const Center(
                     child: Text(
                       "Get Started",
                       style: TextStyle(
