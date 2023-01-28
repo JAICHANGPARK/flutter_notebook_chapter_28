@@ -13,6 +13,17 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
+      body: SafeArea(
+        child: Stack(
+          children: [
+            Positioned.fill(
+              child: Column(
+                children: [],
+              ),
+            ),
+          ],
+        ),
+      ),
       bottomNavigationBar: BottomAppBar(
         color: Colors.black,
         child: Container(
@@ -36,7 +47,6 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                 onPressed: () {},
                 icon: Icon(Icons.favorite_border),
                 iconSize: 30,
-
                 color: Colors.grey,
               ),
               IconButton(
