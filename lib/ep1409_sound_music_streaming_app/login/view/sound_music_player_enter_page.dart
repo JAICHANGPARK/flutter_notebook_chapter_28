@@ -23,6 +23,21 @@ class _SoundMusicPlayerLoginPageState extends State<SoundMusicPlayerLoginPage> {
               ),
             ),
           ),
+          Positioned.fill(
+              child: Container(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: [
+                  Colors.black.withOpacity(0.6),
+                  Colors.transparent,
+                  Colors.black.withOpacity(0.6),
+                  Colors.black,
+                ],
+              ),
+            ),
+          )),
           Positioned(
             left: 16,
             right: 16,
