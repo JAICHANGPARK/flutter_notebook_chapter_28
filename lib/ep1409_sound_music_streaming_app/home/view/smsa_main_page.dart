@@ -48,12 +48,6 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                     child: Row(
                       children: [
                         Container(
-                          child: Center(
-                            child: Text(
-                              "Music",
-                              style: TextStyle(color: Colors.white),
-                            ),
-                          ),
                           decoration: BoxDecoration(
                             color: Colors.indigoAccent[700],
                             borderRadius: BorderRadius.circular(32),
@@ -62,6 +56,12 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                             horizontal: 12,
                           ),
                           margin: EdgeInsets.only(right: 16),
+                          child: Center(
+                            child: Text(
+                              "Music",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ),
                         ),
                         Container(
                           child: Center(
