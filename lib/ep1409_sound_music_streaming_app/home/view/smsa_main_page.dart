@@ -79,10 +79,25 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                       ],
                     ),
                   ),
-                  const Expanded(
+                  Expanded(
                     child: Padding(
                       padding: EdgeInsets.fromLTRB(16, 16, 0, 0),
-                      child: Placeholder(),
+                      child: IndexedStack(
+                        index: _tabIndex,
+                        children: [
+                          for (var i = 0; i < smsaTabMenuData.length; i++)
+                            Container(
+                              child: Center(
+                                child: Text(
+                                  "${i}",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ),
+                            ),
+                        ],
+                      ),
                     ),
                   ),
                 ],
