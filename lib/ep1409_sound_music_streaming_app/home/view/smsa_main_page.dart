@@ -58,6 +58,7 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                             borderRadius: BorderRadius.circular(32)
                           ),
                           padding: EdgeInsets.symmetric(horizontal: 12,),
+                          margin: EdgeInsets.only(right: 16),
                         ),
                         Container(
                           child: Center(
