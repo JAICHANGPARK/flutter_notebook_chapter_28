@@ -44,7 +44,7 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                   ),
                   Container(
                     height: 52,
-                    color: Colors.blue,
+                    margin: EdgeInsets.only(left: 16),
                     child: Row(
                       children: [
                         Container(
@@ -55,7 +55,7 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                           padding: const EdgeInsets.symmetric(
                             horizontal: 12,
                           ),
-                          margin: const EdgeInsets.only(right: 16),
+                          margin: const EdgeInsets.only(right: 12),
                           child: const Center(
                             child: Text(
                               "Music",
@@ -64,8 +64,19 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                           ),
                         ),
                         Container(
+                          decoration: BoxDecoration(
+                            color: Colors.white.withOpacity(0.1),
+                            borderRadius: BorderRadius.circular(32),
+                          ),
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 12,
+                          ),
+                          margin: const EdgeInsets.only(right: 12),
                           child: const Center(
-                            child: Text("Podcast"),
+                            child: Text(
+                              "Podcast",
+                              style: TextStyle(color: Colors.white),
+                            ),
                           ),
                         ),
                       ],
