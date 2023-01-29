@@ -49,15 +49,18 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                       children: [
                         Container(
                           child: Center(
-                            child: Text("Music", style: TextStyle(
-                              color: Colors.white
-                            ),),
+                            child: Text(
+                              "Music",
+                              style: TextStyle(color: Colors.white),
+                            ),
                           ),
                           decoration: BoxDecoration(
                             color: Colors.indigoAccent[700],
-                            borderRadius: BorderRadius.circular(32)
+                            borderRadius: BorderRadius.circular(32),
                           ),
-                          padding: EdgeInsets.symmetric(horizontal: 12,),
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 12,
+                          ),
                           margin: EdgeInsets.only(right: 16),
                         ),
                         Container(
