@@ -166,7 +166,7 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                 },
                 icon: const Icon(Icons.search),
                 iconSize: 30,
-                color: Colors.grey,
+                color: _menuIndex == 1 ? Colors.indigoAccent[700] : Colors.grey,
               ),
               IconButton(
                 onPressed: () { setState(() {
@@ -174,7 +174,7 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                 });},
                 icon: const Icon(Icons.favorite_border),
                 iconSize: 30,
-                color: Colors.grey,
+                color: _menuIndex == 2 ? Colors.indigoAccent[700] : Colors.grey,
               ),
               IconButton(
                 onPressed: () {
@@ -184,7 +184,7 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                 },
                 icon: const Icon(Icons.person_outlined),
                 iconSize: 30,
-                color: Colors.grey,
+                color: _menuIndex == 3 ? Colors.indigoAccent[700] : Colors.grey,
               ),
             ],
           ),
