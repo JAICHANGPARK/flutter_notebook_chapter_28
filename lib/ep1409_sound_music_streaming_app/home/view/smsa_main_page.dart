@@ -88,6 +88,7 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                           SingleChildScrollView(
                             child: Column(
                               children: [
+                                SizedBox(height: 16,),
                                 Container(
                                   height: 200,
                                   color: Colors.blue,
@@ -100,13 +101,23 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                                   color: Colors.blue,
                                 ),
                                 SizedBox(height: 16,),
+                                Text("Popular today"),
                                 Container(
-                                  height: 160,
+                                  height: 200,
                                   color: Colors.blue,
                                 ),
                               ],
 
                             ),
+                          ),
+                          Center(
+                            child: Text(_tabIndex.toString()),
+                          ),
+                          Center(
+                            child: Text(_tabIndex.toString()),
+                          ),
+                          Center(
+                            child: Text(_tabIndex.toString()),
                           )
                           // for (var i = 0; i < smsaTabMenuData.length; i++)
                           //   Container(
