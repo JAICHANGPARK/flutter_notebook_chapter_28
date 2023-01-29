@@ -53,19 +53,26 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                     child: Row(
                       children: [
                         for (var i = 0; i < smsaTabMenuData.length; i++)
-                          Container(
-                            decoration: BoxDecoration(
-                              color: Colors.indigoAccent[700],
-                              borderRadius: BorderRadius.circular(32),
-                            ),
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 12,
-                            ),
-                            margin: const EdgeInsets.only(right: 12),
-                            child: const Center(
-                              child: Text(
-                                "Music",
-                                style: TextStyle(color: Colors.white),
+                          GestureDetector(
+                            onTap: (){
+                              setState(() {
+                                _tabIndex = i;
+                              });
+                            },
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: _tabIndex == i ? Colors.indigoAccent[700] : Colors.white.withOpacity(0.1),
+                                borderRadius: BorderRadius.circular(32),
+                              ),
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 12,
+                              ),
+                              margin: const EdgeInsets.only(right: 12),
+                              child: Center(
+                                child: Text(
+                                  smsaTabMenuData[i].title ?? "??",
+                                  style: TextStyle(color: Colors.white),
+                                ),
                               ),
                             ),
                           ),
