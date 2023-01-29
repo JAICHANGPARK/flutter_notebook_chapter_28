@@ -85,17 +85,40 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                       child: IndexedStack(
                         index: _tabIndex,
                         children: [
-                          for (var i = 0; i < smsaTabMenuData.length; i++)
-                            Container(
-                              child: Center(
-                                child: Text(
-                                  "${i}",
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                  ),
+                          SingleChildScrollView(
+                            child: Column(
+                              children: [
+                                Container(
+                                  height: 200,
+                                  color: Colors.blue,
                                 ),
-                              ),
+                                SizedBox(height: 16,),
+                                Text("Artis"),
+                                SizedBox(height: 16,),
+                                Container(
+                                  height: 100,
+                                  color: Colors.blue,
+                                ),
+                                SizedBox(height: 16,),
+                                Container(
+                                  height: 160,
+                                  color: Colors.blue,
+                                ),
+                              ],
+
                             ),
+                          )
+                          // for (var i = 0; i < smsaTabMenuData.length; i++)
+                          //   Container(
+                          //     child: Center(
+                          //       child: Text(
+                          //         "${i}",
+                          //         style: TextStyle(
+                          //           color: Colors.white,
+                          //         ),
+                          //       ),
+                          //     ),
+                          //   ),
                         ],
                       ),
                     ),
