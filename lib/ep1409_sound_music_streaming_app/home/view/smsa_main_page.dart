@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_28/ep1409_sound_music_streaming_app/home/domain/smsa_menu_data.dart';
+import 'package:flutter_notebook_chapter_28/ep1409_sound_music_streaming_app/home/domain/smsa_tab_menu_data.dart';
 
 /// SMSA : Sound Music Streaming App
 class SMSAMainPage extends StatefulWidget {
@@ -51,70 +52,71 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                     margin: EdgeInsets.only(left: 16),
                     child: Row(
                       children: [
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.indigoAccent[700],
-                            borderRadius: BorderRadius.circular(32),
-                          ),
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 12,
-                          ),
-                          margin: const EdgeInsets.only(right: 12),
-                          child: const Center(
-                            child: Text(
-                              "Music",
-                              style: TextStyle(color: Colors.white),
+                        for (var i = 0; i < smsaTabMenuData.length; i++)
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.indigoAccent[700],
+                              borderRadius: BorderRadius.circular(32),
+                            ),
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 12,
+                            ),
+                            margin: const EdgeInsets.only(right: 12),
+                            child: const Center(
+                              child: Text(
+                                "Music",
+                                style: TextStyle(color: Colors.white),
+                              ),
                             ),
                           ),
-                        ),
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.white.withOpacity(0.1),
-                            borderRadius: BorderRadius.circular(32),
-                          ),
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 12,
-                          ),
-                          margin: const EdgeInsets.only(right: 12),
-                          child: const Center(
-                            child: Text(
-                              "Podcast",
-                              style: TextStyle(color: Colors.white),
-                            ),
-                          ),
-                        ),
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.white.withOpacity(0.1),
-                            borderRadius: BorderRadius.circular(32),
-                          ),
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 12,
-                          ),
-                          margin: const EdgeInsets.only(right: 12),
-                          child: const Center(
-                            child: Text(
-                              "Event",
-                              style: TextStyle(color: Colors.white),
-                            ),
-                          ),
-                        ),
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.white.withOpacity(0.1),
-                            borderRadius: BorderRadius.circular(32),
-                          ),
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 12,
-                          ),
-                          margin: const EdgeInsets.only(right: 12),
-                          child: const Center(
-                            child: Text(
-                              "Artist",
-                              style: TextStyle(color: Colors.white),
-                            ),
-                          ),
-                        ),
+                        // Container(
+                        //   decoration: BoxDecoration(
+                        //     color: Colors.white.withOpacity(0.1),
+                        //     borderRadius: BorderRadius.circular(32),
+                        //   ),
+                        //   padding: const EdgeInsets.symmetric(
+                        //     horizontal: 12,
+                        //   ),
+                        //   margin: const EdgeInsets.only(right: 12),
+                        //   child: const Center(
+                        //     child: Text(
+                        //       "Podcast",
+                        //       style: TextStyle(color: Colors.white),
+                        //     ),
+                        //   ),
+                        // ),
+                        // Container(
+                        //   decoration: BoxDecoration(
+                        //     color: Colors.white.withOpacity(0.1),
+                        //     borderRadius: BorderRadius.circular(32),
+                        //   ),
+                        //   padding: const EdgeInsets.symmetric(
+                        //     horizontal: 12,
+                        //   ),
+                        //   margin: const EdgeInsets.only(right: 12),
+                        //   child: const Center(
+                        //     child: Text(
+                        //       "Event",
+                        //       style: TextStyle(color: Colors.white),
+                        //     ),
+                        //   ),
+                        // ),
+                        // Container(
+                        //   decoration: BoxDecoration(
+                        //     color: Colors.white.withOpacity(0.1),
+                        //     borderRadius: BorderRadius.circular(32),
+                        //   ),
+                        //   padding: const EdgeInsets.symmetric(
+                        //     horizontal: 12,
+                        //   ),
+                        //   margin: const EdgeInsets.only(right: 12),
+                        //   child: const Center(
+                        //     child: Text(
+                        //       "Artist",
+                        //       style: TextStyle(color: Colors.white),
+                        //     ),
+                        //   ),
+                        // ),
                       ],
                     ),
                   ),
