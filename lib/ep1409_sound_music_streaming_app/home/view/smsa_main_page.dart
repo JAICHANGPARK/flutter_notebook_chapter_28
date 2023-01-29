@@ -52,11 +52,11 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                             color: Colors.indigoAccent[700],
                             borderRadius: BorderRadius.circular(32),
                           ),
-                          padding: EdgeInsets.symmetric(
+                          padding: const EdgeInsets.symmetric(
                             horizontal: 12,
                           ),
-                          margin: EdgeInsets.only(right: 16),
-                          child: Center(
+                          margin: const EdgeInsets.only(right: 16),
+                          child: const Center(
                             child: Text(
                               "Music",
                               style: TextStyle(color: Colors.white),
@@ -64,7 +64,7 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                           ),
                         ),
                         Container(
-                          child: Center(
+                          child: const Center(
                             child: Text("Podcast"),
                           ),
                         ),
