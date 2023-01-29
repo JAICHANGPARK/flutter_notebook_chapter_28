@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_28/ep1409_sound_music_streaming_app/home/domain/smsa_menu_data.dart';
 
 /// SMSA : Sound Music Streaming App
 class SMSAMainPage extends StatefulWidget {
@@ -148,46 +149,47 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              IconButton(
-                onPressed: () {
-                  setState(() {
-                    _menuIndex = 0;
-                  });
-                },
-                icon: const Icon(Icons.home_filled),
-                iconSize: 30,
-                color: _menuIndex == 0 ? Colors.indigoAccent[700] : Colors.grey,
-              ),
-              IconButton(
-                onPressed: () {
-                  setState(() {
-                    _menuIndex = 1;
-                  });
-                },
-                icon: const Icon(Icons.search),
-                iconSize: 30,
-                color: _menuIndex == 1 ? Colors.indigoAccent[700] : Colors.grey,
-              ),
-              IconButton(
-                onPressed: () {
-                  setState(() {
-                    _menuIndex = 2;
-                  });
-                },
-                icon: const Icon(Icons.favorite_border),
-                iconSize: 30,
-                color: _menuIndex == 2 ? Colors.indigoAccent[700] : Colors.grey,
-              ),
-              IconButton(
-                onPressed: () {
-                  setState(() {
-                    _menuIndex = 3;
-                  });
-                },
-                icon: const Icon(Icons.person_outlined),
-                iconSize: 30,
-                color: _menuIndex == 3 ? Colors.indigoAccent[700] : Colors.grey,
-              ),
+              for (var i = 0; i < smsaMenuData.length; i++)
+                IconButton(
+                  onPressed: () {
+                    setState(() {
+                      _menuIndex = i;
+                    });
+                  },
+                  icon: Icon(smsaMenuData[i].iconData),
+                  iconSize: 30,
+                  color: _menuIndex == i ? Colors.indigoAccent[700] : Colors.grey,
+                ),
+              // IconButton(
+              //   onPressed: () {
+              //     setState(() {
+              //       _menuIndex = 1;
+              //     });
+              //   },
+              //   icon: const Icon(Icons.search),
+              //   iconSize: 30,
+              //   color: _menuIndex == 1 ? Colors.indigoAccent[700] : Colors.grey,
+              // ),
+              // IconButton(
+              //   onPressed: () {
+              //     setState(() {
+              //       _menuIndex = 2;
+              //     });
+              //   },
+              //   icon: const Icon(Icons.favorite_border),
+              //   iconSize: 30,
+              //   color: _menuIndex == 2 ? Colors.indigoAccent[700] : Colors.grey,
+              // ),
+              // IconButton(
+              //   onPressed: () {
+              //     setState(() {
+              //       _menuIndex = 3;
+              //     });
+              //   },
+              //   icon: const Icon(Icons.person_outlined),
+              //   iconSize: 30,
+              //   color: _menuIndex == 3 ? Colors.indigoAccent[700] : Colors.grey,
+              // ),
             ],
           ),
         ),
