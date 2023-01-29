@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class SmsaMenu{
+class SmsaMenu {
   IconData? iconData;
 
   SmsaMenu(this.iconData);
