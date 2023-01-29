@@ -43,10 +43,28 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                     ),
                   ),
                   Container(
-                    height: 58,
+                    height: 52,
                     color: Colors.blue,
                     child: Row(
-                      children: [],
+                      children: [
+                        Container(
+                          child: Center(
+                            child: Text("Music", style: TextStyle(
+                              color: Colors.white
+                            ),),
+                          ),
+                          decoration: BoxDecoration(
+                            color: Colors.indigoAccent[700],
+                            borderRadius: BorderRadius.circular(32)
+                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 12,),
+                        ),
+                        Container(
+                          child: Center(
+                            child: Text("Podcast"),
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                   const Expanded(
