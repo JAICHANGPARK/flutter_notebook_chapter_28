@@ -156,7 +156,7 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                 },
                 icon: const Icon(Icons.home_filled),
                 iconSize: 30,
-                color: Colors.indigoAccent[700],
+                color: _menuIndex == 0 ? Colors.indigoAccent[700] : Colors.grey,
               ),
               IconButton(
                 onPressed: () {
