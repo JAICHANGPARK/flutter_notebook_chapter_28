@@ -169,9 +169,11 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                 color: _menuIndex == 1 ? Colors.indigoAccent[700] : Colors.grey,
               ),
               IconButton(
-                onPressed: () { setState(() {
-                  _menuIndex = 2;
-                });},
+                onPressed: () {
+                  setState(() {
+                    _menuIndex = 2;
+                  });
+                },
                 icon: const Icon(Icons.favorite_border),
                 iconSize: 30,
                 color: _menuIndex == 2 ? Colors.indigoAccent[700] : Colors.grey,
