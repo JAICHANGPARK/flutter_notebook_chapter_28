@@ -54,7 +54,7 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                       children: [
                         for (var i = 0; i < smsaTabMenuData.length; i++)
                           GestureDetector(
-                            onTap: (){
+                            onTap: () {
                               setState(() {
                                 _tabIndex = i;
                               });
@@ -76,54 +76,6 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                               ),
                             ),
                           ),
-                        // Container(
-                        //   decoration: BoxDecoration(
-                        //     color: Colors.white.withOpacity(0.1),
-                        //     borderRadius: BorderRadius.circular(32),
-                        //   ),
-                        //   padding: const EdgeInsets.symmetric(
-                        //     horizontal: 12,
-                        //   ),
-                        //   margin: const EdgeInsets.only(right: 12),
-                        //   child: const Center(
-                        //     child: Text(
-                        //       "Podcast",
-                        //       style: TextStyle(color: Colors.white),
-                        //     ),
-                        //   ),
-                        // ),
-                        // Container(
-                        //   decoration: BoxDecoration(
-                        //     color: Colors.white.withOpacity(0.1),
-                        //     borderRadius: BorderRadius.circular(32),
-                        //   ),
-                        //   padding: const EdgeInsets.symmetric(
-                        //     horizontal: 12,
-                        //   ),
-                        //   margin: const EdgeInsets.only(right: 12),
-                        //   child: const Center(
-                        //     child: Text(
-                        //       "Event",
-                        //       style: TextStyle(color: Colors.white),
-                        //     ),
-                        //   ),
-                        // ),
-                        // Container(
-                        //   decoration: BoxDecoration(
-                        //     color: Colors.white.withOpacity(0.1),
-                        //     borderRadius: BorderRadius.circular(32),
-                        //   ),
-                        //   padding: const EdgeInsets.symmetric(
-                        //     horizontal: 12,
-                        //   ),
-                        //   margin: const EdgeInsets.only(right: 12),
-                        //   child: const Center(
-                        //     child: Text(
-                        //       "Artist",
-                        //       style: TextStyle(color: Colors.white),
-                        //     ),
-                        //   ),
-                        // ),
                       ],
                     ),
                   ),
