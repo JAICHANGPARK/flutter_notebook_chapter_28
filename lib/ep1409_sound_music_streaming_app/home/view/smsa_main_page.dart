@@ -9,6 +9,9 @@ class SMSAMainPage extends StatefulWidget {
 }
 
 class _SMSAMainPageState extends State<SMSAMainPage> {
+  int _tabIndex = 0;
+  int _menuIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -79,6 +82,38 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                             ),
                           ),
                         ),
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.white.withOpacity(0.1),
+                            borderRadius: BorderRadius.circular(32),
+                          ),
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 12,
+                          ),
+                          margin: const EdgeInsets.only(right: 12),
+                          child: const Center(
+                            child: Text(
+                              "Event",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.white.withOpacity(0.1),
+                            borderRadius: BorderRadius.circular(32),
+                          ),
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 12,
+                          ),
+                          margin: const EdgeInsets.only(right: 12),
+                          child: const Center(
+                            child: Text(
+                              "Artist",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ),
+                        ),
                       ],
                     ),
                   ),
@@ -108,31 +143,45 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
       ),
       bottomNavigationBar: BottomAppBar(
         color: Colors.black,
-        child: Container(
+        child: SizedBox(
           height: 72,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  setState(() {
+                    _menuIndex = 0;
+                  });
+                },
                 icon: const Icon(Icons.home_filled),
                 iconSize: 30,
                 color: Colors.indigoAccent[700],
               ),
               IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  setState(() {
+                    _menuIndex = 1;
+                  });
+                },
                 icon: const Icon(Icons.search),
                 iconSize: 30,
                 color: Colors.grey,
               ),
               IconButton(
-                onPressed: () {},
+                onPressed: () { setState(() {
+                  _menuIndex = 2;
+                });},
                 icon: const Icon(Icons.favorite_border),
                 iconSize: 30,
                 color: Colors.grey,
               ),
               IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  setState(() {
+                    _menuIndex = 3;
+                  });
+                },
                 icon: const Icon(Icons.person_outlined),
                 iconSize: 30,
                 color: Colors.grey,
