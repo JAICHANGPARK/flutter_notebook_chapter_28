@@ -188,6 +188,7 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                                       ),
                                     ),
                                     Container(
+                                      margin: EdgeInsets.only(top: 16),
                                       height: 200,
                                       color: Colors.blue,
                                     ),
