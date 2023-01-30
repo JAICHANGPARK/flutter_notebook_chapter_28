@@ -119,6 +119,21 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                                                       fit: BoxFit.cover,
                                                     ),
                                                   ),
+                                                  child: Stack(
+                                                    children: [
+                                                      Positioned(
+                                                        left: 8,
+                                                        bottom: 8,
+                                                        child: CircleAvatar(
+                                                          backgroundColor: Colors.black,
+                                                          foregroundColor: Colors.white,
+                                                          child: Icon(
+                                                            Icons.play_arrow,
+                                                          ),
+                                                        ),
+                                                      )
+                                                    ],
+                                                  ),
                                                 ),
                                                 const SizedBox(
                                                   height: 8,
