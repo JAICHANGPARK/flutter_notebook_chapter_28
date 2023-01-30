@@ -344,20 +344,25 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(8),
                                   color: Colors.indigo,
+                                  image: const DecorationImage(
+                                    image: NetworkImage(
+                                        "https://cdn.pixabay.com/photo/2017/01/30/15/23/memory-2021124_960_720.jpg"),
+                                    fit: BoxFit.cover,
+                                  ),
                                 ),
                               ),
                               Padding(
                                 padding: const EdgeInsets.all(8.0),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    const Text(
+                                  children: const [
+                                    Text(
                                       "Title Title Title",
                                       style: TextStyle(
                                         color: Colors.white,
                                       ),
                                     ),
-                                    const Text(
+                                    Text(
                                       "Subtitle Subtitle ",
                                       style: TextStyle(
                                         color: Colors.white,
@@ -365,6 +370,15 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                                     ),
                                   ],
                                 ),
+                              ),
+                              Spacer(),
+                              IconButton(
+                                onPressed: () {},
+                                icon: Icon(
+                                  Icons.play_arrow,
+                                ),
+                                color: Colors.white,
+                                iconSize: 32,
                               )
                             ],
                           ),
