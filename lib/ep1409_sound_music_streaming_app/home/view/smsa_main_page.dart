@@ -96,7 +96,7 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                                     const SizedBox(
                                       height: 16,
                                     ),
-                                    Container(
+                                    SizedBox(
                                       height: 180,
                                       child: ListView.builder(
                                         scrollDirection: Axis.horizontal,
@@ -159,7 +159,7 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                                     const SizedBox(
                                       height: 16,
                                     ),
-                                    Container(
+                                    SizedBox(
                                       height: 100,
                                       child: ListView.builder(
                                         scrollDirection: Axis.horizontal,
@@ -181,7 +181,7 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                                                 Text(
                                                   "Title",
                                                   style: TextStyle(
-                                                    fontWeight: FontWeight.bold,
+                                                    // fontWeight: FontWeight.bold,
                                                     color: Colors.white,
                                                   ),
                                                 ),
