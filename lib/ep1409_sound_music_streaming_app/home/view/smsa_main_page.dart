@@ -98,18 +98,24 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                                       height: 200,
                                       color: Colors.blue,
                                       child: ListView.builder(
-                                          scrollDirection: Axis.horizontal,
-                                          itemCount: 10,
-                                          itemBuilder: (context, index) {
-                                            return Container(
-                                              child: Column(
-                                                
-                                                children: [
-
-                                                ],
-                                              ),
-                                            );
-                                          }),
+                                        scrollDirection: Axis.horizontal,
+                                        itemCount: 10,
+                                        itemBuilder: (context, index) {
+                                          return Container(
+                                            margin: EdgeInsets.only(right: 12),
+                                            child: Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              children: [
+                                                Container(
+                                                  height: 120,
+                                                  width: 120,
+                                                  decoration: BoxDecoration(color: Colors.pink),
+                                                )
+                                              ],
+                                            ),
+                                          );
+                                        },
+                                      ),
                                     ),
                                     const SizedBox(
                                       height: 16,
