@@ -242,7 +242,7 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                                                     borderRadius: BorderRadius.circular(8),
                                                     image: const DecorationImage(
                                                       image: NetworkImage(
-                                                          "https://cdn.pixabay.com/photo/2016/08/15/16/48/vinyl-1595847_960_720.jpg"),
+                                                          "https://cdn.pixabay.com/photo/2015/07/10/13/18/guitar-839168_960_720.jpg"),
                                                       fit: BoxFit.cover,
                                                     ),
                                                   ),
@@ -341,7 +341,6 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                               Container(
                                 height: 58,
                                 width: 58,
-
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(8),
                                   color: Colors.indigo,
