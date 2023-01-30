@@ -95,7 +95,7 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                                       height: 16,
                                     ),
                                     Container(
-                                      height: 200,
+                                      height: 180,
                                       color: Colors.blue,
                                       child: ListView.builder(
                                         scrollDirection: Axis.horizontal,
@@ -109,7 +109,9 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                                                 Container(
                                                   height: 130,
                                                   width: 130,
-                                                  decoration: BoxDecoration(color: Colors.pink),
+                                                  decoration: BoxDecoration(color: Colors.pink,
+                                                  borderRadius: BorderRadius.circular(8)),
+                                                  
                                                 ),
                                                 SizedBox(
                                                   height: 8,
