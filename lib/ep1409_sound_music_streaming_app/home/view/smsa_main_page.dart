@@ -125,10 +125,12 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                                                         left: 8,
                                                         bottom: 8,
                                                         child: CircleAvatar(
+                                                          radius: 16,
                                                           backgroundColor: Colors.black,
                                                           foregroundColor: Colors.white,
                                                           child: Icon(
                                                             Icons.play_arrow,
+                                                            size: 20,
                                                           ),
                                                         ),
                                                       )
