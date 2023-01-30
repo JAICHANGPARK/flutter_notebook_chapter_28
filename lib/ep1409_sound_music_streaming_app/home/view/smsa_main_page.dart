@@ -219,10 +219,74 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                                         fontSize: 24,
                                       ),
                                     ),
-                                    Container(
-                                      margin: const EdgeInsets.only(top: 16),
-                                      height: 200,
-                                      color: Colors.blue,
+                                    const SizedBox(
+                                      height: 16,
+                                    ),
+                                    SizedBox(
+                                      height: 180,
+                                      child: ListView.builder(
+                                        scrollDirection: Axis.horizontal,
+                                        itemCount: 10,
+                                        itemBuilder: (context, index) {
+                                          return Container(
+                                            margin: const EdgeInsets.only(right: 12),
+                                            child: Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              children: [
+                                                Container(
+                                                  height: 130,
+                                                  width: 130,
+                                                  decoration: BoxDecoration(
+                                                    color: Colors.indigo,
+                                                    borderRadius: BorderRadius.circular(8),
+                                                    image: const DecorationImage(
+                                                      image: NetworkImage(
+                                                          "https://cdn.pixabay.com/photo/2016/08/15/16/48/vinyl-1595847_960_720.jpg"),
+                                                      fit: BoxFit.cover,
+                                                    ),
+                                                  ),
+                                                  child: Stack(
+                                                    children: const [
+                                                      Positioned(
+                                                        left: 8,
+                                                        bottom: 8,
+                                                        child: CircleAvatar(
+                                                          radius: 16,
+                                                          backgroundColor: Colors.black,
+                                                          foregroundColor: Colors.white,
+                                                          child: Icon(
+                                                            Icons.play_arrow,
+                                                            size: 20,
+                                                          ),
+                                                        ),
+                                                      )
+                                                    ],
+                                                  ),
+                                                ),
+                                                const SizedBox(
+                                                  height: 8,
+                                                ),
+                                                const Text(
+                                                  "Title Title",
+                                                  style: TextStyle(
+                                                    color: Colors.white,
+                                                    fontWeight: FontWeight.bold,
+                                                  ),
+                                                ),
+                                                const SizedBox(
+                                                  height: 4,
+                                                ),
+                                                Text(
+                                                  "Subtitle",
+                                                  style: TextStyle(
+                                                    color: Colors.white.withOpacity(0.4),
+                                                  ),
+                                                )
+                                              ],
+                                            ),
+                                          );
+                                        },
+                                      ),
                                     ),
                                   ],
                                 ),
