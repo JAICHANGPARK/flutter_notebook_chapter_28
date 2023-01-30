@@ -111,7 +111,19 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                                                   width: 130,
                                                   decoration: BoxDecoration(color: Colors.pink),
                                                 ),
-                                                Text("Title Title"),
+                                                SizedBox(
+                                                  height: 8,
+                                                ),
+                                                Text(
+                                                  "Title Title",
+                                                  style: TextStyle(
+                                                    color: Colors.white,
+                                                    fontWeight: FontWeight.bold,
+                                                  ),
+                                                ),
+                                                SizedBox(
+                                                  height: 4,
+                                                ),
                                                 Text("Subtitle")
                                               ],
                                             ),
