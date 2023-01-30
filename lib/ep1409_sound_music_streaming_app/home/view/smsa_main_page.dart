@@ -150,16 +150,21 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                                     ),
                                     Container(
                                       height: 100,
-                                      color: Colors.blue,
-                                      child: ListView.builder(itemBuilder: (context, index) {
-                                        return Column(
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [
-                                            CircleAvatar(),
-                                            Text("Title"),
-                                          ],
-                                        );
-                                      }),
+                                      child: ListView.builder(
+                                          scrollDirection: Axis.horizontal,
+                                          itemCount: 20,
+                                          itemBuilder: (context, index) {
+                                            return Padding(
+                                              padding: const EdgeInsets.only(right: 12),
+                                              child: Column(
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                children: [
+                                                  CircleAvatar(),
+                                                  Text("Title"),
+                                                ],
+                                              ),
+                                            );
+                                          }),
                                     ),
                                     const SizedBox(
                                       height: 16,
