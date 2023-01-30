@@ -98,7 +98,6 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                                     ),
                                     Container(
                                       height: 180,
-                                      color: Colors.blue,
                                       child: ListView.builder(
                                         scrollDirection: Axis.horizontal,
                                         itemCount: 10,
@@ -158,9 +157,20 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                                               padding: const EdgeInsets.only(right: 12),
                                               child: Column(
                                                 crossAxisAlignment: CrossAxisAlignment.start,
-                                                children: [
-                                                  CircleAvatar(),
-                                                  Text("Title"),
+                                                children: const [
+                                                  CircleAvatar(
+                                                    radius: 32,
+                                                  ),
+                                                  SizedBox(
+                                                    height: 8,
+                                                  ),
+                                                  Text(
+                                                    "Title",
+                                                    style: TextStyle(
+                                                      fontWeight: FontWeight.bold,
+                                                      color: Colors.white,
+                                                    ),
+                                                  ),
                                                 ],
                                               ),
                                             );
