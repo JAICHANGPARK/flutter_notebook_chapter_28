@@ -324,7 +324,7 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                   left: 16,
                   bottom: 4,
                   child: Container(
-                    height: 64,
+                    height: 68,
                     decoration: BoxDecoration(
                       color: Colors.indigoAccent,
                       borderRadius: BorderRadius.circular(8),
@@ -351,13 +351,13 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text(
+                                    const Text(
                                       "Title Title Title",
                                       style: TextStyle(
                                         color: Colors.white,
                                       ),
                                     ),
-                                    Text(
+                                    const Text(
                                       "Subtitle Subtitle ",
                                       style: TextStyle(
                                         color: Colors.white,
