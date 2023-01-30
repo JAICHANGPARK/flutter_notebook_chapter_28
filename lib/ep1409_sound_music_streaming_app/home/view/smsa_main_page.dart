@@ -328,6 +328,25 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                       color: Colors.indigoAccent,
                       borderRadius: BorderRadius.circular(8),
                     ),
+                    padding: EdgeInsets.symmetric(horizontal: 6, vertical: 6),
+                    child: Stack(
+                      children: [
+                        Row(
+                          children: [
+                            Container(
+                              height: 58,
+                              width: 58,
+                              color: Colors.indigo,
+                            ),
+                            Column(
+                              children: [
+
+                              ],
+                            )
+                          ],
+                        ),
+                      ],
+                    ),
                   ),
                 )
               ],
