@@ -111,7 +111,14 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                                                   height: 130,
                                                   width: 130,
                                                   decoration: BoxDecoration(
-                                                      color: Colors.pink, borderRadius: BorderRadius.circular(8)),
+                                                    color: Colors.indigo,
+                                                    borderRadius: BorderRadius.circular(8),
+                                                    image: const DecorationImage(
+                                                      image: NetworkImage(
+                                                          "https://cdn.pixabay.com/photo/2016/08/15/16/48/vinyl-1595847_960_720.jpg"),
+                                                      fit: BoxFit.cover,
+                                                    ),
+                                                  ),
                                                 ),
                                                 const SizedBox(
                                                   height: 8,
@@ -126,7 +133,12 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                                                 const SizedBox(
                                                   height: 4,
                                                 ),
-                                                const Text("Subtitle")
+                                                Text(
+                                                  "Subtitle",
+                                                  style: TextStyle(
+                                                    color: Colors.white.withOpacity(0.4),
+                                                  ),
+                                                )
                                               ],
                                             ),
                                           );
@@ -188,7 +200,7 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                                       ),
                                     ),
                                     Container(
-                                      margin: EdgeInsets.only(top: 16),
+                                      margin: const EdgeInsets.only(top: 16),
                                       height: 200,
                                       color: Colors.blue,
                                     ),
