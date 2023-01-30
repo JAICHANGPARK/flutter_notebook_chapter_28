@@ -136,7 +136,11 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                                     const SizedBox(
                                       height: 16,
                                     ),
-                                    const Text("Artis"),
+                                    const Text("Artis", style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.white,
+                                      fontSize: 24
+                                    ),),
                                     const SizedBox(
                                       height: 16,
                                     ),
