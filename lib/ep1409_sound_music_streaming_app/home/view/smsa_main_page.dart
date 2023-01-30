@@ -331,27 +331,35 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                     ),
                     child: Stack(
                       children: [
-                        Row(
-                          children: [
-                            Container(
-                              height: 58,
-                              width: 58,
-                              color: Colors.indigo,
-                            ),
-                            Column(
-                              children: [
-
-                              ],
-                            )
-                          ],
+                        Padding(
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 6,
+                            vertical: 6,
+                          ),
+                          child: Row(
+                            children: [
+                              Container(
+                                height: 58,
+                                width: 58,
+                                color: Colors.indigo,
+                              ),
+                              Column(
+                                children: [],
+                              )
+                            ],
+                          ),
                         ),
                         Positioned(
-                            left: 0,
-                            right: 0,
-                            bottom: 0,
-                            child: LinearPercentIndicator(
-                          lineHeight: 2,
-                        ))
+                          left: 0,
+                          right: 0,
+                          bottom: 0,
+                          child: LinearPercentIndicator(
+                            lineHeight: 2,
+                            padding: EdgeInsets.zero,
+                            percent: 0.45,
+                            progressColor: Colors.white,
+                          ),
+                        )
                       ],
                     ),
                   ),
