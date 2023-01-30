@@ -104,7 +104,7 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                                         itemCount: 10,
                                         itemBuilder: (context, index) {
                                           return Container(
-                                            margin: EdgeInsets.only(right: 12),
+                                            margin: const EdgeInsets.only(right: 12),
                                             child: Column(
                                               crossAxisAlignment: CrossAxisAlignment.start,
                                               children: [
@@ -115,20 +115,20 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                                                   borderRadius: BorderRadius.circular(8)),
                                                   
                                                 ),
-                                                SizedBox(
+                                                const SizedBox(
                                                   height: 8,
                                                 ),
-                                                Text(
+                                                const Text(
                                                   "Title Title",
                                                   style: TextStyle(
                                                     color: Colors.white,
                                                     fontWeight: FontWeight.bold,
                                                   ),
                                                 ),
-                                                SizedBox(
+                                                const SizedBox(
                                                   height: 4,
                                                 ),
-                                                Text("Subtitle")
+                                                const Text("Subtitle")
                                               ],
                                             ),
                                           );
@@ -149,6 +149,11 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                                     Container(
                                       height: 100,
                                       color: Colors.blue,
+                                      child: ListView.builder(itemBuilder: (context, index){
+                                        return Column(
+                                          children: [],
+                                        );
+                                      }),
                                     ),
                                     const SizedBox(
                                       height: 16,
