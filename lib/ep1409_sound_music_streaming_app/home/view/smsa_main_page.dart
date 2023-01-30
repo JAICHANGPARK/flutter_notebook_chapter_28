@@ -156,7 +156,7 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                                             return Padding(
                                               padding: const EdgeInsets.only(right: 12),
                                               child: Column(
-                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                crossAxisAlignment: CrossAxisAlignment.center,
                                                 children: const [
                                                   CircleAvatar(
                                                     radius: 32,
