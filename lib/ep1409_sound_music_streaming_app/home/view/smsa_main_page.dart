@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_28/ep1409_sound_music_streaming_app/home/domain/smsa_menu_data.dart';
 import 'package:flutter_notebook_chapter_28/ep1409_sound_music_streaming_app/home/domain/smsa_tab_menu_data.dart';
+import 'package:percent_indicator/percent_indicator.dart';
 
 /// SMSA : Sound Music Streaming App
 class SMSAMainPage extends StatefulWidget {
@@ -328,7 +329,6 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                       color: Colors.indigoAccent,
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    padding: EdgeInsets.symmetric(horizontal: 6, vertical: 6),
                     child: Stack(
                       children: [
                         Row(
@@ -345,6 +345,13 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                             )
                           ],
                         ),
+                        Positioned(
+                            left: 0,
+                            right: 0,
+                            bottom: 0,
+                            child: LinearPercentIndicator(
+                          lineHeight: 2,
+                        ))
                       ],
                     ),
                   ),
