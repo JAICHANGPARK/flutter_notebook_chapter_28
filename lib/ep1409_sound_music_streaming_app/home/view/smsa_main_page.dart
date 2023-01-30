@@ -52,7 +52,7 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                       ),
                       Container(
                         height: 52,
-                        margin: EdgeInsets.only(left: 16),
+                        margin: const EdgeInsets.only(left: 16),
                         child: Row(
                           children: [
                             for (var i = 0; i < smsaTabMenuData.length; i++)
@@ -74,7 +74,7 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                                   child: Center(
                                     child: Text(
                                       smsaTabMenuData[i].title ?? "??",
-                                      style: TextStyle(color: Colors.white),
+                                      style: const TextStyle(color: Colors.white),
                                     ),
                                   ),
                                 ),
@@ -84,35 +84,35 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                       ),
                       Expanded(
                         child: Padding(
-                          padding: EdgeInsets.fromLTRB(16, 16, 0, 0),
+                          padding: const EdgeInsets.fromLTRB(16, 16, 0, 0),
                           child: IndexedStack(
                             index: _tabIndex,
                             children: [
                               SingleChildScrollView(
                                 child: Column(
                                   children: [
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 16,
                                     ),
                                     Container(
                                       height: 200,
                                       color: Colors.blue,
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 16,
                                     ),
-                                    Text("Artis"),
-                                    SizedBox(
+                                    const Text("Artis"),
+                                    const SizedBox(
                                       height: 16,
                                     ),
                                     Container(
                                       height: 100,
                                       color: Colors.blue,
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 16,
                                     ),
-                                    Text("Popular today"),
+                                    const Text("Popular today"),
                                     Container(
                                       height: 200,
                                       color: Colors.blue,
