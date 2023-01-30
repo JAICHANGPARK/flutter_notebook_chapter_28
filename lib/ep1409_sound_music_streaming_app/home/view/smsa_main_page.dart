@@ -341,10 +341,31 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                               Container(
                                 height: 58,
                                 width: 58,
-                                color: Colors.indigo,
+
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(8),
+                                  color: Colors.indigo,
+                                ),
                               ),
-                              Column(
-                                children: [],
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      "Title Title Title",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                    Text(
+                                      "Subtitle Subtitle ",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               )
                             ],
                           ),
