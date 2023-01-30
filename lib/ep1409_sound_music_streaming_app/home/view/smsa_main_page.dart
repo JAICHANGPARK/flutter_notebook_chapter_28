@@ -111,9 +111,8 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                                                 Container(
                                                   height: 130,
                                                   width: 130,
-                                                  decoration: BoxDecoration(color: Colors.pink,
-                                                  borderRadius: BorderRadius.circular(8)),
-                                                  
+                                                  decoration: BoxDecoration(
+                                                      color: Colors.pink, borderRadius: BorderRadius.circular(8)),
                                                 ),
                                                 const SizedBox(
                                                   height: 8,
@@ -138,20 +137,27 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                                     const SizedBox(
                                       height: 16,
                                     ),
-                                    const Text("Artis", style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.white,
-                                      fontSize: 24
-                                    ),),
+                                    const Text(
+                                      "Artis",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                        fontSize: 24,
+                                      ),
+                                    ),
                                     const SizedBox(
                                       height: 16,
                                     ),
                                     Container(
                                       height: 100,
                                       color: Colors.blue,
-                                      child: ListView.builder(itemBuilder: (context, index){
+                                      child: ListView.builder(itemBuilder: (context, index) {
                                         return Column(
-                                          children: [],
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            CircleAvatar(),
+                                            Text("Title"),
+                                          ],
                                         );
                                       }),
                                     ),
