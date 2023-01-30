@@ -107,10 +107,12 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                                               crossAxisAlignment: CrossAxisAlignment.start,
                                               children: [
                                                 Container(
-                                                  height: 120,
-                                                  width: 120,
+                                                  height: 130,
+                                                  width: 130,
                                                   decoration: BoxDecoration(color: Colors.pink),
-                                                )
+                                                ),
+                                                Text("Title Title"),
+                                                Text("Subtitle")
                                               ],
                                             ),
                                           );
