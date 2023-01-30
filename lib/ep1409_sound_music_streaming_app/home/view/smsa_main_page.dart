@@ -376,6 +376,8 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                           child: LinearPercentIndicator(
                             lineHeight: 2,
                             padding: EdgeInsets.zero,
+                            fillColor: Colors.transparent,
+                            backgroundColor: Colors.transparent,
                             percent: 0.45,
                             progressColor: Colors.white,
                           ),
