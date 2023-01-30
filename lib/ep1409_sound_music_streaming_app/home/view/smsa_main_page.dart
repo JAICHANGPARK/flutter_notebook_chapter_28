@@ -120,7 +120,7 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                                                     ),
                                                   ),
                                                   child: Stack(
-                                                    children: [
+                                                    children: const [
                                                       Positioned(
                                                         left: 8,
                                                         bottom: 8,
