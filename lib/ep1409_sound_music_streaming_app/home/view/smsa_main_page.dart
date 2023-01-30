@@ -179,7 +179,14 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                                     const SizedBox(
                                       height: 16,
                                     ),
-                                    const Text("Popular today"),
+                                    const Text(
+                                      "Popular today",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                        fontSize: 24,
+                                      ),
+                                    ),
                                     Container(
                                       height: 200,
                                       color: Colors.blue,
