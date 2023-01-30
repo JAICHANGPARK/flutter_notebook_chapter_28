@@ -26,6 +26,7 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
               children: [
                 Positioned.fill(
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
@@ -90,6 +91,7 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                             children: [
                               SingleChildScrollView(
                                 child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     const SizedBox(
                                       height: 16,
