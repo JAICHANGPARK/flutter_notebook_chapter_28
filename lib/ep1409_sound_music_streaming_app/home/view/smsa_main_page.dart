@@ -162,31 +162,34 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                                     Container(
                                       height: 100,
                                       child: ListView.builder(
-                                          scrollDirection: Axis.horizontal,
-                                          itemCount: 20,
-                                          itemBuilder: (context, index) {
-                                            return Padding(
-                                              padding: const EdgeInsets.only(right: 12),
-                                              child: Column(
-                                                crossAxisAlignment: CrossAxisAlignment.center,
-                                                children: const [
-                                                  CircleAvatar(
-                                                    radius: 32,
+                                        scrollDirection: Axis.horizontal,
+                                        itemCount: 20,
+                                        itemBuilder: (context, index) {
+                                          return Padding(
+                                            padding: const EdgeInsets.only(right: 12),
+                                            child: Column(
+                                              crossAxisAlignment: CrossAxisAlignment.center,
+                                              children: const [
+                                                CircleAvatar(
+                                                  radius: 32,
+                                                  backgroundImage: NetworkImage(
+                                                      "https://cdn.pixabay.com/photo/2016/08/31/19/22/portrait-1634421_960_720.jpg"),
+                                                ),
+                                                SizedBox(
+                                                  height: 8,
+                                                ),
+                                                Text(
+                                                  "Title",
+                                                  style: TextStyle(
+                                                    fontWeight: FontWeight.bold,
+                                                    color: Colors.white,
                                                   ),
-                                                  SizedBox(
-                                                    height: 8,
-                                                  ),
-                                                  Text(
-                                                    "Title",
-                                                    style: TextStyle(
-                                                      fontWeight: FontWeight.bold,
-                                                      color: Colors.white,
-                                                    ),
-                                                  ),
-                                                ],
-                                              ),
-                                            );
-                                          }),
+                                                ),
+                                              ],
+                                            ),
+                                          );
+                                        },
+                                      ),
                                     ),
                                     const SizedBox(
                                       height: 16,
