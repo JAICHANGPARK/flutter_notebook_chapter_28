@@ -13,7 +13,7 @@ class _SmsaPlayerPageState extends State<SmsaPlayerPage> {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-          icon: Icon(
+          icon: const Icon(
             Icons.notifications_none,
           ),
           onPressed: () {},
@@ -21,7 +21,7 @@ class _SmsaPlayerPageState extends State<SmsaPlayerPage> {
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(
+            icon: const Icon(
               Icons.favorite_border,
             ),
           ),
