@@ -42,8 +42,15 @@ class _SmsaPlayerPageState extends State<SmsaPlayerPage> {
           children: [
             Container(
               height: MediaQuery.of(context).size.width / 1.2,
-              color: Colors.indigo,
               margin: const EdgeInsets.only(bottom: 24),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(8),
+                color: Colors.indigo,
+                image: DecorationImage(
+                  image: NetworkImage("https://cdn.pixabay.com/photo/2022/08/19/13/40/leaves-7396970_960_720.jpg"),
+                  fit: BoxFit.cover,
+                ),
+              ),
             ),
             const Text(
               "Album Title Album Title",
