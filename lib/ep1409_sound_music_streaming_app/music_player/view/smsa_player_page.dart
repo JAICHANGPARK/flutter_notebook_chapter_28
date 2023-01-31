@@ -35,6 +35,19 @@ class _SmsaPlayerPageState extends State<SmsaPlayerPage> {
         title: Text("Title"),
         centerTitle: true,
       ),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          children: [
+            Container(
+              height: MediaQuery.of(context).size.width / 1.1,
+              color: Colors.indigo,
+            ),
+            Text("Album Title Album Title"),
+            Text("subtitle"),
+          ],
+        ),
+      ),
       bottomNavigationBar: BottomAppBar(
         color: Colors.black,
         child: SizedBox(
