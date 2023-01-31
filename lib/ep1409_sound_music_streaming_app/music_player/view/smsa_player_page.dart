@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class SmsaPlayerPage extends StatefulWidget {
   const SmsaPlayerPage({Key? key}) : super(key: key);
 
@@ -11,6 +10,23 @@ class SmsaPlayerPage extends StatefulWidget {
 class _SmsaPlayerPageState extends State<SmsaPlayerPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        leading: IconButton(
+          icon: Icon(
+            Icons.notifications_none,
+          ),
+          onPressed: () {},
+        ),
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Icon(
+              Icons.favorite_border,
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
