@@ -64,7 +64,7 @@ class _SmsaPlayerPageState extends State<SmsaPlayerPage> {
               ),
             ),
             const SizedBox(
-              height: 32,
+              height: 24,
             ),
             const Text(
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
