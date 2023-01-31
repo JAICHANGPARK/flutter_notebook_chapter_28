@@ -371,10 +371,10 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                                   ],
                                 ),
                               ),
-                              Spacer(),
+                              const Spacer(),
                               IconButton(
                                 onPressed: () {},
-                                icon: Icon(
+                                icon: const Icon(
                                   Icons.play_arrow,
                                 ),
                                 color: Colors.white,
@@ -403,13 +403,13 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
               ],
             ),
             Center(
-              child: Text("${_menuIndex}"),
+              child: Text("$_menuIndex"),
             ),
             Center(
-              child: Text("${_menuIndex}"),
+              child: Text("$_menuIndex"),
             ),
             Center(
-              child: Text("${_menuIndex}"),
+              child: Text("$_menuIndex"),
             )
           ],
         ),
