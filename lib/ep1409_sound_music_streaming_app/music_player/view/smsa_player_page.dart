@@ -32,7 +32,7 @@ class _SmsaPlayerPageState extends State<SmsaPlayerPage> {
             ),
           ),
         ],
-        title: Text("Title"),
+        title: const Text("Title"),
         centerTitle: true,
       ),
       body: Padding(
@@ -42,9 +42,9 @@ class _SmsaPlayerPageState extends State<SmsaPlayerPage> {
             Container(
               height: MediaQuery.of(context).size.width / 1.1,
               color: Colors.indigo,
-              margin: EdgeInsets.only(bottom: 24),
+              margin: const EdgeInsets.only(bottom: 24),
             ),
-            Text(
+            const Text(
               "Album Title Album Title",
               style: TextStyle(
                 color: Colors.white,
@@ -52,17 +52,17 @@ class _SmsaPlayerPageState extends State<SmsaPlayerPage> {
                 fontSize: 32,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 16,
             ),
-            Text(
+            const Text(
               "subtitle",
               style: TextStyle(
                 color: Colors.grey,
                 fontWeight: FontWeight.bold,
               ),
             ),
-            Text(
+            const Text(
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
               style: TextStyle(
                 color: Colors.white,
@@ -73,33 +73,38 @@ class _SmsaPlayerPageState extends State<SmsaPlayerPage> {
               children: [
                 IconButton(
                   onPressed: () {},
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.skip_previous,
                   ),
+                  iconSize: 28,
                   color: Colors.white,
                 ),
                 IconButton(
                   onPressed: () {},
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.forward_10,
                   ),
+                  iconSize: 28,
                   color: Colors.grey,
                 ),
-                CircleAvatar(
+                const CircleAvatar(
                   backgroundColor: Colors.white,
+                  radius: 34,
                 ),
                 IconButton(
                   onPressed: () {},
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.forward_10,
                   ),
+                  iconSize: 28,
                   color: Colors.grey,
                 ),
                 IconButton(
                   onPressed: () {},
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.skip_next_outlined,
                   ),
+                  iconSize: 28,
                   color: Colors.white,
                 ),
               ],
