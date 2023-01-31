@@ -323,80 +323,85 @@ class _SMSAMainPageState extends State<SMSAMainPage> {
                   right: 16,
                   left: 16,
                   bottom: 4,
-                  child: Container(
-                    height: 68,
-                    decoration: BoxDecoration(
-                      color: Colors.indigoAccent,
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                    child: Stack(
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 6,
-                            vertical: 6,
-                          ),
-                          child: Row(
-                            children: [
-                              Container(
-                                height: 58,
-                                width: 58,
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(8),
-                                  color: Colors.indigo,
-                                  image: const DecorationImage(
-                                    image: NetworkImage(
-                                        "https://cdn.pixabay.com/photo/2017/01/30/15/23/memory-2021124_960_720.jpg"),
-                                    fit: BoxFit.cover,
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).pushNamed("/player");
+                    },
+                    child: Container(
+                      height: 68,
+                      decoration: BoxDecoration(
+                        color: Colors.indigoAccent,
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Stack(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 6,
+                              vertical: 6,
+                            ),
+                            child: Row(
+                              children: [
+                                Container(
+                                  height: 58,
+                                  width: 58,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(8),
+                                    color: Colors.indigo,
+                                    image: const DecorationImage(
+                                      image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2017/01/30/15/23/memory-2021124_960_720.jpg"),
+                                      fit: BoxFit.cover,
+                                    ),
                                   ),
                                 ),
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: const [
-                                    Text(
-                                      "Title Title Title",
-                                      style: TextStyle(
-                                        color: Colors.white,
+                                Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: const [
+                                      Text(
+                                        "Title Title Title",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                        ),
                                       ),
-                                    ),
-                                    Text(
-                                      "Subtitle Subtitle ",
-                                      style: TextStyle(
-                                        color: Colors.white,
+                                      Text(
+                                        "Subtitle Subtitle ",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                        ),
                                       ),
-                                    ),
-                                  ],
+                                    ],
+                                  ),
                                 ),
-                              ),
-                              const Spacer(),
-                              IconButton(
-                                onPressed: () {},
-                                icon: const Icon(
-                                  Icons.play_arrow,
-                                ),
-                                color: Colors.white,
-                                iconSize: 32,
-                              )
-                            ],
+                                const Spacer(),
+                                IconButton(
+                                  onPressed: () {},
+                                  icon: const Icon(
+                                    Icons.play_arrow,
+                                  ),
+                                  color: Colors.white,
+                                  iconSize: 32,
+                                )
+                              ],
+                            ),
                           ),
-                        ),
-                        Positioned(
-                          left: 0,
-                          right: 0,
-                          bottom: 0,
-                          child: LinearPercentIndicator(
-                            lineHeight: 2,
-                            padding: EdgeInsets.zero,
-                            fillColor: Colors.transparent,
-                            backgroundColor: Colors.transparent,
-                            percent: 0.45,
-                            progressColor: Colors.white,
-                          ),
-                        )
-                      ],
+                          Positioned(
+                            left: 0,
+                            right: 0,
+                            bottom: 0,
+                            child: LinearPercentIndicator(
+                              lineHeight: 2,
+                              padding: EdgeInsets.zero,
+                              fillColor: Colors.transparent,
+                              backgroundColor: Colors.transparent,
+                              percent: 0.45,
+                              progressColor: Colors.white,
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 )
