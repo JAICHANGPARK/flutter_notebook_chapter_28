@@ -76,16 +76,32 @@ class _SmsaPlayerPageState extends State<SmsaPlayerPage> {
                   icon: Icon(
                     Icons.skip_previous,
                   ),
+                  color: Colors.white,
                 ),
                 IconButton(
                   onPressed: () {},
                   icon: Icon(
                     Icons.forward_10,
                   ),
+                  color: Colors.grey,
                 ),
                 CircleAvatar(
                   backgroundColor: Colors.white,
-                )
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.forward_10,
+                  ),
+                  color: Colors.grey,
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.skip_next_outlined,
+                  ),
+                  color: Colors.white,
+                ),
               ],
             )
           ],
