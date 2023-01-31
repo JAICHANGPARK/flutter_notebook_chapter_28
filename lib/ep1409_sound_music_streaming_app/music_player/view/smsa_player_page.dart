@@ -42,9 +42,28 @@ class _SmsaPlayerPageState extends State<SmsaPlayerPage> {
             Container(
               height: MediaQuery.of(context).size.width / 1.1,
               color: Colors.indigo,
+              margin: EdgeInsets.only(bottom: 24),
             ),
-            Text("Album Title Album Title"),
-            Text("subtitle"),
+            Text(
+              "Album Title Album Title",
+              style: TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+                fontSize: 32,
+              ),
+            ),
+            SizedBox(
+              height: 16,
+            ),
+            Text(
+              "subtitle",
+              style: TextStyle(
+                color: Colors.grey,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Text(
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
           ],
         ),
       ),
