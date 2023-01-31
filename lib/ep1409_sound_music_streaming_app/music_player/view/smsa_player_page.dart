@@ -10,6 +10,7 @@ class SmsaPlayerPage extends StatefulWidget {
 
 class _SmsaPlayerPageState extends State<SmsaPlayerPage> {
   int _menuIndex = 0;
+  double _sliderValue = 0.0;
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +41,7 @@ class _SmsaPlayerPageState extends State<SmsaPlayerPage> {
         child: Column(
           children: [
             Container(
-              height: MediaQuery.of(context).size.width / 1.1,
+              height: MediaQuery.of(context).size.width / 1.2,
               color: Colors.indigo,
               margin: const EdgeInsets.only(bottom: 24),
             ),
@@ -62,7 +63,9 @@ class _SmsaPlayerPageState extends State<SmsaPlayerPage> {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            SizedBox(height: 32,),
+            const SizedBox(
+              height: 32,
+            ),
             const Text(
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
               style: TextStyle(
@@ -70,7 +73,9 @@ class _SmsaPlayerPageState extends State<SmsaPlayerPage> {
               ),
               textAlign: TextAlign.center,
             ),
-            SizedBox(height: 16,),
+            const SizedBox(
+              height: 16,
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -93,9 +98,15 @@ class _SmsaPlayerPageState extends State<SmsaPlayerPage> {
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
-                  child: const CircleAvatar(
+                  child: CircleAvatar(
                     backgroundColor: Colors.white,
+                    foregroundColor: Colors.black,
                     radius: 34,
+                    child: IconButton(
+                      onPressed: () {},
+                      icon: const Icon(Icons.play_arrow),
+                      iconSize: 38,
+                    ),
                   ),
                 ),
                 IconButton(
@@ -115,7 +126,14 @@ class _SmsaPlayerPageState extends State<SmsaPlayerPage> {
                   color: Colors.white,
                 ),
               ],
-            )
+            ),
+            Slider(
+                value: _sliderValue,
+                onChanged: (v) {
+                  setState(() {
+                    _sliderValue = v;
+                  });
+                })
           ],
         ),
       ),
