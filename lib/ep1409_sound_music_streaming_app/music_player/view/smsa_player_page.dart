@@ -62,6 +62,7 @@ class _SmsaPlayerPageState extends State<SmsaPlayerPage> {
                 fontWeight: FontWeight.bold,
               ),
             ),
+            SizedBox(height: 32,),
             const Text(
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
               style: TextStyle(
@@ -69,7 +70,10 @@ class _SmsaPlayerPageState extends State<SmsaPlayerPage> {
               ),
               textAlign: TextAlign.center,
             ),
+            SizedBox(height: 16,),
             Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 IconButton(
                   onPressed: () {},
@@ -87,9 +91,12 @@ class _SmsaPlayerPageState extends State<SmsaPlayerPage> {
                   iconSize: 28,
                   color: Colors.grey,
                 ),
-                const CircleAvatar(
-                  backgroundColor: Colors.white,
-                  radius: 34,
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                  child: const CircleAvatar(
+                    backgroundColor: Colors.white,
+                    radius: 34,
+                  ),
                 ),
                 IconButton(
                   onPressed: () {},
