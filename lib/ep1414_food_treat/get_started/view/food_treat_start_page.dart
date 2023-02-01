@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class FoodTreatStartPage extends StatefulWidget {
   const FoodTreatStartPage({Key? key}) : super(key: key);
@@ -17,8 +18,12 @@ class _FoodTreatStartPageState extends State<FoodTreatStartPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Hello from FoodTread!"),
-              Text("What brings you to us?"),
+              Text("Hello from FoodTread!", style: TextStyle(
+                fontSize: 18
+              ),),
+              Text("What brings you to us?", style: GoogleFonts.notoSerif(
+                fontSize: 48
+              ),),
               Container(
                 height: 300,
                 color: Colors.pink,
