@@ -4,7 +4,7 @@
 
 - FoodTreat – Onboarding 
 - by Magdalena Zych
-- https://dribbble.com/shots/20524657-FoodTreat-Onboarding/attachments/15560642?mode=media
+- https://dribbble.com/shots/20524657-FoodTreat-Onboarding/
 
 <img src="https://cdn.dribbble.com/users/4662435/screenshots/20524657/media/c44a1d7bc44fd8d29763ed58a1856b11.png" width="500px"/>
 
