@@ -42,6 +42,9 @@ class _FoodTreatStartPageState extends State<FoodTreatStartPage> {
                 ),
               ),
               Container(
+                decoration:
+                    BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(8), border: Border.all()),
+                padding: EdgeInsets.fromLTRB(8, 16, 16, 16),
                 child: Row(
                   children: [
                     Radio(
@@ -53,6 +56,9 @@ class _FoodTreatStartPageState extends State<FoodTreatStartPage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text("Healthy lifestyle"),
+                        SizedBox(
+                          height: 12,
+                        ),
                         Text("I want to improve health & lifestyle"),
                       ],
                     )
@@ -60,10 +66,8 @@ class _FoodTreatStartPageState extends State<FoodTreatStartPage> {
                 ),
               ),
               Container(
-                decoration: BoxDecoration(
-                  color: Colors.black,
-                ),
-                padding: EdgeInsets.symmetric(vertical: 24),
+                decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(16)),
+                padding: EdgeInsets.symmetric(vertical: 20),
                 child: Center(
                   child: Text(
                     "Get started",
