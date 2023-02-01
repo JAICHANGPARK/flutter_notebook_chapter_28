@@ -18,12 +18,14 @@ class _FoodTreatStartPageState extends State<FoodTreatStartPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Hello from FoodTread!", style: TextStyle(
-                fontSize: 18
-              ),),
-              Text("What brings you to us?", style: GoogleFonts.notoSerif(
-                fontSize: 48
-              ),),
+              Text(
+                "Hello from FoodTread!",
+                style: TextStyle(fontSize: 18),
+              ),
+              Text(
+                "What brings you to us?",
+                style: GoogleFonts.notoSerif(fontSize: 48),
+              ),
               Container(
                 height: 300,
                 color: Colors.pink,
