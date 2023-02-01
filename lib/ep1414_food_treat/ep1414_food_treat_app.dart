@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 void main() {
   runApp(FoodTreatApp());
 }
@@ -10,6 +9,11 @@ class FoodTreatApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      initialRoute: "/",
+      routes: {
+        "/": (ctx) => FoodTreatApp(),
+      },
+    );
   }
 }
