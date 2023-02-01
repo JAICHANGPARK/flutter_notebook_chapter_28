@@ -58,6 +58,7 @@ class _FoodTreatStartPageState extends State<FoodTreatStartPage> {
                 ),
               ),
               Container(
+                margin: EdgeInsets.only(bottom: 16),
                 decoration: BoxDecoration(
                   color: Colors.grey,
                   borderRadius: BorderRadius.circular(8),
@@ -93,6 +94,7 @@ class _FoodTreatStartPageState extends State<FoodTreatStartPage> {
                     style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
+                      fontSize: 16
                     ),
                   ),
                 ),
