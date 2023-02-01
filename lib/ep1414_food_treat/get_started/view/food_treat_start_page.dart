@@ -30,6 +30,22 @@ class _FoodTreatStartPageState extends State<FoodTreatStartPage> {
                   )
                 ],
               ),
+            ),
+            Container(
+              child: Row(
+                children: [
+                  Radio(
+                    value: 1,
+                    groupValue: 1,
+                    onChanged: (v) {},
+                  ),
+                  Column(
+                    children: [
+                      Text("Healthy lifestyle"),
+                    ],
+                  )
+                ],
+              ),
             )
           ],
         ),
