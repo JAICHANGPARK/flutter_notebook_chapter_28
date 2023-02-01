@@ -26,11 +26,20 @@ class _FoodTreatStartPageState extends State<FoodTreatStartPage> {
                 "What brings you to us?",
                 style: GoogleFonts.notoSerif(fontSize: 48),
               ),
+              Spacer(),
               Container(
-                height: 300,
+                height: 360,
                 color: Colors.pink,
               ),
+              Spacer(),
               Container(
+                margin: EdgeInsets.only(bottom: 16),
+                decoration: BoxDecoration(
+                  color: Colors.grey,
+                  borderRadius: BorderRadius.circular(8),
+                  border: Border.all(),
+                ),
+                padding: EdgeInsets.fromLTRB(8, 16, 16, 16),
                 child: Row(
                   children: [
                     Radio(
@@ -49,8 +58,11 @@ class _FoodTreatStartPageState extends State<FoodTreatStartPage> {
                 ),
               ),
               Container(
-                decoration:
-                    BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(8), border: Border.all()),
+                decoration: BoxDecoration(
+                  color: Colors.grey,
+                  borderRadius: BorderRadius.circular(8),
+                  border: Border.all(),
+                ),
                 padding: EdgeInsets.fromLTRB(8, 16, 16, 16),
                 child: Row(
                   children: [
