@@ -86,15 +86,18 @@ class _FoodTreatStartPageState extends State<FoodTreatStartPage> {
                 ),
               ),
               Container(
-                decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(16)),
-                padding: EdgeInsets.symmetric(vertical: 20),
+                decoration: BoxDecoration(
+                  color: Colors.black,
+                  borderRadius: BorderRadius.circular(16),
+                ),
+                padding: EdgeInsets.symmetric(vertical: 16),
                 child: Center(
                   child: Text(
                     "Get started",
                     style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
-                      fontSize: 16
+                      fontSize: 16,
                     ),
                   ),
                 ),
