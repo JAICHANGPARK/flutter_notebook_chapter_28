@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(FoodTreatApp());
+  runApp(const FoodTreatApp());
 }
 
 class FoodTreatApp extends StatelessWidget {
@@ -12,7 +12,7 @@ class FoodTreatApp extends StatelessWidget {
     return MaterialApp(
       initialRoute: "/",
       routes: {
-        "/": (ctx) => FoodTreatApp(),
+        "/": (ctx) => const FoodTreatApp(),
       },
     );
   }
