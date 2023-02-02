@@ -131,10 +131,17 @@ class _FoodTreatStartPageState extends State<FoodTreatStartPage> {
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: const [
-                            Text("Healthy lifestyle"),
-                            SizedBox(
-                              height: 12,
+                            Text(
+                              "Healthy lifestyle",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18,
+                              ),
                             ),
+                            SizedBox(
+                              height: 8,
+                            ),
+
                             Text("I want to improve health & lifestyle"),
                           ],
                         )
