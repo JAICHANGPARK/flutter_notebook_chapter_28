@@ -11,12 +11,18 @@ class FoodTreadTreatmentPage extends StatefulWidget {
 class _FoodTreadTreatmentPageState extends State<FoodTreadTreatmentPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: Text("Treatment"),
-
-      ),
+    return Stack(
+      children: [
+        Positioned.fill(child: child),
+        Positioned.fill(
+          child: Scaffold(
+            appBar: AppBar(
+              centerTitle: true,
+              title: Text("Treatment"),
+            ),
+          ),
+        ),
+      ],
     );
   }
 }
