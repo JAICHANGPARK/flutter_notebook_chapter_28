@@ -41,7 +41,10 @@ class _FoodTreatStartPageState extends State<FoodTreatStartPage> {
                   ),
                   Text(
                     "What brings you to us?",
-                    style: GoogleFonts.notoSerif(fontSize: 48),
+                    style: GoogleFonts.notoSerif(
+                      fontSize: 48,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                   const Spacer(),
                   Container(
