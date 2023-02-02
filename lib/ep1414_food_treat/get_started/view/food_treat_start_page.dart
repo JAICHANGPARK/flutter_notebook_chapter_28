@@ -9,6 +9,8 @@ class FoodTreatStartPage extends StatefulWidget {
 }
 
 class _FoodTreatStartPageState extends State<FoodTreatStartPage> {
+  bool selectedValue = true;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -71,10 +73,14 @@ class _FoodTreatStartPageState extends State<FoodTreatStartPage> {
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Radio(
-                          value: 1,
-                          groupValue: 1,
-                          onChanged: (v) {},
+                        Radio<bool>(
+                          value: true,
+                          groupValue: selectedValue,
+                          onChanged: (v) {
+                            setState(() {
+                              selectedValue = v ?? true;
+                            });
+                          },
                           activeColor: const Color.fromRGBO(250, 142, 81, 1),
                         ),
                         Column(
@@ -105,17 +111,22 @@ class _FoodTreatStartPageState extends State<FoodTreatStartPage> {
                   Container(
                     margin: const EdgeInsets.only(bottom: 16),
                     decoration: BoxDecoration(
-                      color: Colors.grey,
+                      color: Colors.white,
                       borderRadius: BorderRadius.circular(8),
                       border: Border.all(),
                     ),
-                    padding: const EdgeInsets.fromLTRB(8, 16, 16, 16),
+                    padding: const EdgeInsets.fromLTRB(8, 20, 16, 20),
                     child: Row(
                       children: [
-                        Radio(
-                          value: 1,
-                          groupValue: 1,
-                          onChanged: (v) {},
+                        Radio<bool>(
+                          value: false,
+                          groupValue: selectedValue,
+                          onChanged: (v) {
+                            setState(() {
+                              selectedValue = v ?? false;
+                            });
+                          },
+                          activeColor: const Color.fromRGBO(250, 142, 81, 1),
                         ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
