@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_28/ep1414_food_treat/get_started/widgets/food_treat_backgroud_widget.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class FoodTreatStartPage extends StatefulWidget {
@@ -16,7 +17,7 @@ class _FoodTreatStartPageState extends State<FoodTreatStartPage> {
     return Scaffold(
       body: Stack(
         children: [
-
+          const FootTreatBackgroundWidget(),
           SafeArea(
             child: Padding(
               padding: const EdgeInsets.all(16.0),
