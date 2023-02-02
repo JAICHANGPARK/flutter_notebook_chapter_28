@@ -56,6 +56,11 @@ class _FoodTreadTreatmentPageState extends State<FoodTreadTreatmentPage> {
                     ),
                     child: Stack(
                       children: [
+                        Positioned.fill(
+                          child: Column(
+                            children: [],
+                          ),
+                        ),
                         Positioned(
                           left: 16,
                           right: 16,
@@ -68,7 +73,13 @@ class _FoodTreadTreatmentPageState extends State<FoodTreadTreatmentPage> {
                             ),
                             padding: EdgeInsets.symmetric(vertical: 16),
                             child: Center(
-                              child: Text("I'm not diagnosed yey"),
+                              child: Text(
+                                "I'm not diagnosed yet",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 16,
+                                ),
+                              ),
                             ),
                           ),
                         )
