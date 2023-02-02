@@ -23,6 +23,8 @@ class _FoodTreatStartPageState extends State<FoodTreatStartPage> {
                     Color.fromRGBO(248, 190, 167, 1),
                     Color.fromRGBO(250, 204, 192, 1),
                   ],
+                  begin: Alignment.bottomLeft,
+                  end: Alignment.topRight,
                 ),
               ),
             ),
