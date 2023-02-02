@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_28/ep1414_food_treat/get_started/widgets/food_treat_backgroud_widget.dart';
 
 
 class FoodTreadTreatmentPage extends StatefulWidget {
@@ -13,7 +14,7 @@ class _FoodTreadTreatmentPageState extends State<FoodTreadTreatmentPage> {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        Positioned.fill(child: child),
+        FootTreatBackgroundWidget(),
         Positioned.fill(
           child: Scaffold(
             appBar: AppBar(
