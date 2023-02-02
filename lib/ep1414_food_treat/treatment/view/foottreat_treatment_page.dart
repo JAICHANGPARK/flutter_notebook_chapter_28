@@ -23,9 +23,7 @@ class _FoodTreadTreatmentPageState extends State<FoodTreadTreatmentPage> {
                   child: Row(
                     children: [
                       IconButton(
-                        onPressed: () {
-                          Navigator.of(context).pop();
-                        },
+                        onPressed: () => Navigator.of(context).pop(),
                         icon: const Icon(
                           Icons.arrow_back,
                         ),
