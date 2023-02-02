@@ -60,7 +60,7 @@ class _FoodTreatStartPageState extends State<FoodTreatStartPage> {
                   Container(
                     margin: const EdgeInsets.only(bottom: 16),
                     decoration: BoxDecoration(
-                      color: Colors.grey,
+                      color: Color.fromRGBO(254, 223, 204, 1),
                       borderRadius: BorderRadius.circular(8),
                       border: Border.all(),
                     ),
@@ -71,6 +71,7 @@ class _FoodTreatStartPageState extends State<FoodTreatStartPage> {
                           value: 1,
                           groupValue: 1,
                           onChanged: (v) {},
+                          activeColor: Color.fromRGBO(250, 142, 81, 1),
                         ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -79,6 +80,7 @@ class _FoodTreatStartPageState extends State<FoodTreatStartPage> {
                               "Treatment",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
+                                fontSize: 16
                               ),
                             ),
                             SizedBox(
