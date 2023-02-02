@@ -141,8 +141,13 @@ class _FoodTreatStartPageState extends State<FoodTreatStartPage> {
                             SizedBox(
                               height: 8,
                             ),
-
-                            Text("I want to improve health & lifestyle"),
+                            Text(
+                              "I want to improve health & lifestyle",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.grey,
+                              ),
+                            ),
                           ],
                         )
                       ],
