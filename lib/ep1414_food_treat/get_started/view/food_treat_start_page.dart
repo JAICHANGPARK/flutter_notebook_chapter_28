@@ -16,21 +16,7 @@ class _FoodTreatStartPageState extends State<FoodTreatStartPage> {
     return Scaffold(
       body: Stack(
         children: [
-          Positioned.fill(
-            child: Container(
-              decoration: const BoxDecoration(
-                gradient: LinearGradient(
-                  colors: [
-                    Color.fromRGBO(247, 178, 142, 1),
-                    Color.fromRGBO(248, 190, 167, 1),
-                    Color.fromRGBO(250, 204, 192, 1),
-                  ],
-                  begin: Alignment.bottomLeft,
-                  end: Alignment.topRight,
-                ),
-              ),
-            ),
-          ),
+
           SafeArea(
             child: Padding(
               padding: const EdgeInsets.all(16.0),
