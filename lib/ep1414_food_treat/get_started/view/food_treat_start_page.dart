@@ -16,11 +16,14 @@ class _FoodTreatStartPageState extends State<FoodTreatStartPage> {
         children: [
           Positioned.fill(
             child: Container(
-              decoration: BoxDecoration(
-                gradient: LinearGradient(colors: [
-                  Color.fromRGBO(247, 178, 142, 1),
-                  Color.fromRGBO(248, 190, 167, 1),
-                ]),
+              decoration: const BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [
+                    Color.fromRGBO(247, 178, 142, 1),
+                    Color.fromRGBO(248, 190, 167, 1),
+                    Color.fromRGBO(250, 204, 192, 1),
+                  ],
+                ),
               ),
             ),
           ),
