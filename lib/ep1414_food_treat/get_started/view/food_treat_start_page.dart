@@ -64,8 +64,9 @@ class _FoodTreatStartPageState extends State<FoodTreatStartPage> {
                       borderRadius: BorderRadius.circular(8),
                       border: Border.all(),
                     ),
-                    padding: const EdgeInsets.fromLTRB(8, 16, 16, 16),
+                    padding: const EdgeInsets.fromLTRB(8, 20, 16, 20),
                     child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Radio(
                           value: 1,
@@ -80,7 +81,7 @@ class _FoodTreatStartPageState extends State<FoodTreatStartPage> {
                               "Treatment",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
-                                fontSize: 16,
+                                fontSize: 18,
                               ),
                             ),
                             SizedBox(
