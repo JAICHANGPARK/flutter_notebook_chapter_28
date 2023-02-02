@@ -18,7 +18,7 @@ class _FoodTreatStartPageState extends State<FoodTreatStartPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
+              const Text(
                 "Hello from FoodTread!",
                 style: TextStyle(fontSize: 18),
               ),
@@ -26,20 +26,20 @@ class _FoodTreatStartPageState extends State<FoodTreatStartPage> {
                 "What brings you to us?",
                 style: GoogleFonts.notoSerif(fontSize: 48),
               ),
-              Spacer(),
+              const Spacer(),
               Container(
                 height: 360,
                 color: Colors.pink,
               ),
-              Spacer(),
+              const Spacer(),
               Container(
-                margin: EdgeInsets.only(bottom: 16),
+                margin: const EdgeInsets.only(bottom: 16),
                 decoration: BoxDecoration(
                   color: Colors.grey,
                   borderRadius: BorderRadius.circular(8),
                   border: Border.all(),
                 ),
-                padding: EdgeInsets.fromLTRB(8, 16, 16, 16),
+                padding: const EdgeInsets.fromLTRB(8, 16, 16, 16),
                 child: Row(
                   children: [
                     Radio(
@@ -58,13 +58,13 @@ class _FoodTreatStartPageState extends State<FoodTreatStartPage> {
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(bottom: 16),
+                margin: const EdgeInsets.only(bottom: 16),
                 decoration: BoxDecoration(
                   color: Colors.grey,
                   borderRadius: BorderRadius.circular(8),
                   border: Border.all(),
                 ),
-                padding: EdgeInsets.fromLTRB(8, 16, 16, 16),
+                padding: const EdgeInsets.fromLTRB(8, 16, 16, 16),
                 child: Row(
                   children: [
                     Radio(
@@ -90,8 +90,8 @@ class _FoodTreatStartPageState extends State<FoodTreatStartPage> {
                   color: Colors.black,
                   borderRadius: BorderRadius.circular(16),
                 ),
-                padding: EdgeInsets.symmetric(vertical: 16),
-                child: Center(
+                padding: const EdgeInsets.symmetric(vertical: 16),
+                child: const Center(
                   child: Text(
                     "Get started",
                     style: TextStyle(
