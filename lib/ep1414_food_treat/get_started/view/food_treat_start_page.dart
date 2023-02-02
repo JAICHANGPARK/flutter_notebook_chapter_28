@@ -45,7 +45,7 @@ class _FoodTreatStartPageState extends State<FoodTreatStartPage> {
                   ),
                   const Spacer(),
                   Container(
-                    height: 360,
+                    height: 340,
                     color: Colors.transparent,
                     child: Center(
                       child: Text(
@@ -75,7 +75,15 @@ class _FoodTreatStartPageState extends State<FoodTreatStartPage> {
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: const [
-                            Text("Treatment"),
+                            Text(
+                              "Treatment",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 8,
+                            ),
                             Text("I would like to treat specific aliment"),
                           ],
                         )
