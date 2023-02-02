@@ -80,13 +80,19 @@ class _FoodTreatStartPageState extends State<FoodTreatStartPage> {
                               "Treatment",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
-                                fontSize: 16
+                                fontSize: 16,
                               ),
                             ),
                             SizedBox(
                               height: 8,
                             ),
-                            Text("I would like to treat specific aliment"),
+                            Text(
+                              "I would like to treat specific aliment",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.grey,
+                              ),
+                            ),
                           ],
                         )
                       ],
