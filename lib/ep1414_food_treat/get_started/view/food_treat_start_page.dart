@@ -46,7 +46,15 @@ class _FoodTreatStartPageState extends State<FoodTreatStartPage> {
                   const Spacer(),
                   Container(
                     height: 360,
-                    color: Colors.pink,
+                    color: Colors.transparent,
+                    child: Center(
+                      child: Text(
+                        "🍒",
+                        style: TextStyle(
+                          fontSize: 240,
+                        ),
+                      ),
+                    ),
                   ),
                   const Spacer(),
                   Container(
