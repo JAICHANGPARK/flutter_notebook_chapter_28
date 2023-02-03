@@ -26,23 +26,23 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                     Expanded(
                       child: Container(
                         decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
-                        padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
-                        child: TextField(
+                        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                        child: const TextField(
                           decoration: InputDecoration(
                               border: InputBorder.none, icon: Icon(Icons.search), hintText: "Search..."),
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 16,
                     ),
-                    CircleAvatar(
+                    const CircleAvatar(
                       radius: 28,
                     )
                   ],
                 ),
               ),
-              TabBar(
+              const TabBar(
                 tabs: [
                   Tab(
                     icon: Icon(Icons.sell),
@@ -69,7 +69,7 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                 labelColor: Colors.black,
                 unselectedLabelColor: Colors.grey,
               ),
-              Expanded(child: TabBarView(
+              const Expanded(child: TabBarView(
                 children: [
                   Placeholder(),
                   Placeholder(),
