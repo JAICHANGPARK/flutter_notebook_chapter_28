@@ -16,7 +16,7 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
       backgroundColor: const Color.fromRGBO(244, 246, 248, 1),
       bottomNavigationBar: BottomAppBar(
         color: Colors.white,
-        height: 80,
+        height: 84,
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Row(
