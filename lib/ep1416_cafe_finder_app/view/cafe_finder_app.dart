@@ -66,29 +66,43 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
               Column(
                 children: [
                   IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      setState(() {
+                        selectedIndex = 2;
+                      });
+                    },
                     icon: const Icon(Icons.chat_outlined),
                     iconSize: 26,
+                    color: selectedIndex == 2 ? Colors.black : Colors.grey,
                   ),
-                  // CircleAvatar(
-                  //   radius: 4,
-                  //   backgroundColor: Colors.black,
-                  // )
+                  selectedIndex == 2
+                      ? const CircleAvatar(
+                          radius: 4,
+                          backgroundColor: Colors.black,
+                        )
+                      : Container()
                 ],
               ),
               Column(
                 children: [
                   IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      setState(() {
+                        selectedIndex = 3;
+                      });
+                    },
                     icon: const Icon(
                       Icons.person_outline,
                     ),
                     iconSize: 26,
+                    color: selectedIndex == 3 ? Colors.black : Colors.grey,
                   ),
-                  // CircleAvatar(
-                  //   radius: 4,
-                  //   backgroundColor: Colors.black,
-                  // )
+                  selectedIndex == 3
+                      ? const CircleAvatar(
+                    radius: 4,
+                    backgroundColor: Colors.black,
+                  )
+                      : Container()
                 ],
               )
             ],
