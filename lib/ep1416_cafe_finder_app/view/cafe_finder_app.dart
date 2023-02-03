@@ -22,7 +22,53 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                 IconButton(
                   onPressed: () {},
                   icon: Icon(Icons.home_filled),
+                  iconSize: 26,
+                ),
+                CircleAvatar(
+                  radius: 4,
+                  backgroundColor: Colors.black,
                 )
+              ],
+            ),
+            Column(
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.favorite_border),
+                  iconSize: 26,
+                ),
+                // CircleAvatar(
+                //   radius: 4,
+                //   backgroundColor: Colors.black,
+                // )
+              ],
+            ),
+            Column(
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.chat_outlined),
+                  iconSize: 26,
+                ),
+                // CircleAvatar(
+                //   radius: 4,
+                //   backgroundColor: Colors.black,
+                // )
+              ],
+            ),
+            Column(
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.person_outline,
+                  ),
+                  iconSize: 26,
+                ),
+                // CircleAvatar(
+                //   radius: 4,
+                //   backgroundColor: Colors.black,
+                // )
               ],
             )
           ],
