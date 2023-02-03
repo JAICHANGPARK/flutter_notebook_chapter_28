@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class CafeFinderApp extends StatefulWidget {
-  const CafeFinderApp({Key? key}) : super(key: key);
+class CafeFinderMainPage extends StatefulWidget {
+  const CafeFinderMainPage({Key? key}) : super(key: key);
 
   @override
-  State<CafeFinderApp> createState() => _CafeFinderAppState();
+  State<CafeFinderMainPage> createState() => _CafeFinderMainPageState();
 }
 
-class _CafeFinderAppState extends State<CafeFinderApp> {
+class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold();
