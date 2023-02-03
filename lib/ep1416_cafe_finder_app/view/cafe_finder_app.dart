@@ -50,21 +50,24 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                   ),
                   Tab(
                     icon: Icon(Icons.star_border),
-                    text: "Termurah",
+                    text: "Terfavorite",
                   ),
                   Tab(
                     icon: Icon(Icons.favorite_border),
-                    text: "Termurah",
+                    text: "Terlaris",
                   ),
                   Tab(
                     icon: Icon(Icons.campaign_outlined),
-                    text: "Termurah",
+                    text: "Promo",
                   ),
                   Tab(
                     icon: Icon(Icons.meeting_room_outlined),
-                    text: "Termurah",
+                    text: "Indoor",
                   ),
                 ],
+                indicatorColor: Colors.black,
+                labelColor: Colors.black,
+                unselectedLabelColor: Colors.grey,
               ),
               Expanded(child: Placeholder()),
             ],
