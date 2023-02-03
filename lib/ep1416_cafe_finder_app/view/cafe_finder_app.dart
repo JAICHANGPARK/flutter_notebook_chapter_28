@@ -100,41 +100,45 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                                       bottom: 0,
                                       top: 0,
                                       child: Container(
-                                        decoration: const BoxDecoration(
-                                          color: Colors.blue,
+                                        decoration: BoxDecoration(
+                                          color: Colors.white,
+                                          borderRadius: BorderRadius.circular(12),
                                         ),
                                         child: Column(
                                           children: [
                                             Container(
-                                              height: 280,
-                                              decoration: BoxDecoration(
-                                                color: Colors.pink
-                                              ),
+                                              height: 260,
+                                              decoration: BoxDecoration(color: Colors.pink),
                                             ),
-                                            const Column(
-                                              children: [
-                                                Row(
-                                                  children: [
-                                                    Text(
-                                                      "Title & Title Kitchen",
-                                                    ),
-                                                    Icon(
-                                                      Icons.star,
-                                                      color: Colors.orange,
-                                                    ),
-                                                    Text("4.8"),
-                                                  ],
-                                                ),
-                                                Text("Coffee, Western, Local"),
-                                                Row(
-                                                  children: [
-                                                    Text("Rp. 15k - 35k"),
-                                                    Icon(Icons.access_time),
-                                                    Text("Buka"),
-                                                    Icon(Icons.favorite_border)
-                                                  ],
-                                                )
-                                              ],
+                                            Container(
+                                              color: Colors.white,
+                                              padding: EdgeInsets.all(12),
+                                              child: const Column(
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                children: [
+                                                  Row(
+                                                    children: [
+                                                      Text(
+                                                        "Title & Title Kitchen",
+                                                      ),
+                                                      Icon(
+                                                        Icons.star,
+                                                        color: Colors.orange,
+                                                      ),
+                                                      Text("4.8"),
+                                                    ],
+                                                  ),
+                                                  Text("Coffee, Western, Local"),
+                                                  Row(
+                                                    children: [
+                                                      Text("Rp. 15k - 35k"),
+                                                      Icon(Icons.access_time),
+                                                      Text("Buka"),
+                                                      Icon(Icons.favorite_border)
+                                                    ],
+                                                  )
+                                                ],
+                                              ),
                                             )
                                           ],
                                         ),
