@@ -108,7 +108,19 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                                           children: [
                                             Container(
                                               height: 260,
-                                              decoration: const BoxDecoration(color: Colors.pink),
+                                              decoration: const BoxDecoration(
+                                                color: Colors.pink,
+                                                borderRadius: BorderRadius.only(
+                                                  topLeft: Radius.circular(12),
+                                                  topRight: Radius.circular(12),
+                                                ),
+                                                image: DecorationImage(
+                                                  image: NetworkImage(
+                                                    "https://cdn.pixabay.com/photo/2016/11/29/12/54/cafe-1869656_960_720.jpg",
+                                                  ),
+                                                  fit: BoxFit.cover,
+                                                ),
+                                              ),
                                             ),
                                             Container(
                                               padding: const EdgeInsets.all(12),
