@@ -23,11 +23,14 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                 children: [
                   Expanded(
                     child: Container(
-                      decoration: BoxDecoration(color: Colors.white),
+                      decoration: BoxDecoration(color: Colors.white,
+                      borderRadius: BorderRadius.circular(8)),
                       padding: EdgeInsets.symmetric(horizontal: 16),
                       child: TextField(
                         decoration: InputDecoration(
                           border: InputBorder.none,
+                          icon: Icon(Icons.search),
+                          hintText: "Search..."
                         ),
                       ),
                     ),
