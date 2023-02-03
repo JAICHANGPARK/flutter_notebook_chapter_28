@@ -17,77 +17,82 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
       bottomNavigationBar: BottomAppBar(
         color: Colors.white,
         height: 80,
-        child: Row(
-          children: [
-            Column(
-              children: [
-                IconButton(
-                  onPressed: () {
-                    setState(() {
-                      selectedIndex = 0;
-                    });
-                  },
-                  icon: const Icon(Icons.home_filled),
-                  iconSize: 26,
-                  color: selectedIndex == 0 ? Colors.black : Colors.grey,
-                ),
-                selectedIndex == 0
-                    ? const CircleAvatar(
-                        radius: 4,
-                        backgroundColor: Colors.black,
-                      )
-                    : Container(),
-              ],
-            ),
-            Column(
-              children: [
-                IconButton(
-                  onPressed: () {
-                    setState(() {
-                      selectedIndex = 1;
-                    });
-                  },
-                  icon: const Icon(Icons.favorite_border),
-                  iconSize: 26,
-                  color: selectedIndex == 1 ? Colors.black : Colors.grey,
-                ),
-                selectedIndex == 1
-                    ? const CircleAvatar(
-                        radius: 4,
-                        backgroundColor: Colors.black,
-                      )
-                    : Container(),
-              ],
-            ),
-            Column(
-              children: [
-                IconButton(
-                  onPressed: () {},
-                  icon: const Icon(Icons.chat_outlined),
-                  iconSize: 26,
-                ),
-                // CircleAvatar(
-                //   radius: 4,
-                //   backgroundColor: Colors.black,
-                // )
-              ],
-            ),
-            Column(
-              children: [
-                IconButton(
-                  onPressed: () {},
-                  icon: const Icon(
-                    Icons.person_outline,
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              Column(
+                children: [
+                  IconButton(
+                    onPressed: () {
+                      setState(() {
+                        selectedIndex = 0;
+                      });
+                    },
+                    icon: const Icon(Icons.home_filled),
+                    iconSize: 26,
+                    color: selectedIndex == 0 ? Colors.black : Colors.grey,
                   ),
-                  iconSize: 26,
-                ),
-                // CircleAvatar(
-                //   radius: 4,
-                //   backgroundColor: Colors.black,
-                // )
-              ],
-            )
-          ],
+                  selectedIndex == 0
+                      ? const CircleAvatar(
+                          radius: 4,
+                          backgroundColor: Colors.black,
+                        )
+                      : Container(),
+                ],
+              ),
+              Column(
+                children: [
+                  IconButton(
+                    onPressed: () {
+                      setState(() {
+                        selectedIndex = 1;
+                      });
+                    },
+                    icon: const Icon(Icons.favorite_border),
+                    iconSize: 26,
+                    color: selectedIndex == 1 ? Colors.black : Colors.grey,
+                  ),
+                  selectedIndex == 1
+                      ? const CircleAvatar(
+                          radius: 4,
+                          backgroundColor: Colors.black,
+                        )
+                      : Container(),
+                ],
+              ),
+              Column(
+                children: [
+                  IconButton(
+                    onPressed: () {},
+                    icon: const Icon(Icons.chat_outlined),
+                    iconSize: 26,
+                  ),
+                  // CircleAvatar(
+                  //   radius: 4,
+                  //   backgroundColor: Colors.black,
+                  // )
+                ],
+              ),
+              Column(
+                children: [
+                  IconButton(
+                    onPressed: () {},
+                    icon: const Icon(
+                      Icons.person_outline,
+                    ),
+                    iconSize: 26,
+                  ),
+                  // CircleAvatar(
+                  //   radius: 4,
+                  //   backgroundColor: Colors.black,
+                  // )
+                ],
+              )
+            ],
+          ),
         ),
       ),
     );
