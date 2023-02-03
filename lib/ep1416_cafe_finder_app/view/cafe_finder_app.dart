@@ -111,7 +111,7 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                                               decoration: BoxDecoration(color: Colors.pink),
                                             ),
                                             Container(
-                                              color: Colors.white,
+
                                               padding: EdgeInsets.all(12),
                                               child: const Column(
                                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -144,7 +144,7 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                                                     ),
                                                   ),
                                                   SizedBox(
-                                                    height: 8,
+                                                    height: 12,
                                                   ),
                                                   Row(
                                                     children: [
@@ -155,9 +155,10 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                                                         ),
                                                       ),
                                                       SizedBox(
-                                                        width: 12,
+                                                        width: 24,
                                                       ),
-                                                      Icon(Icons.access_time),
+                                                      Icon(Icons.access_time,
+                                                      size: 18,),
                                                       SizedBox(
                                                         width: 6,
                                                       ),
