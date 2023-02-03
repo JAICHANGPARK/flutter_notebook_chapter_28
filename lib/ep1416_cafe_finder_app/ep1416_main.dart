@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_28/ep1416_cafe_finder_app/view/cafe_finder_app.dart';
 
 void main() {
-  runApp(CafeFinderApp());
+  runApp(const CafeFinderApp());
 }
 
 class CafeFinderApp extends StatelessWidget {
@@ -10,7 +10,7 @@ class CafeFinderApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: CafeFinderMainPage(),
     );
   }
