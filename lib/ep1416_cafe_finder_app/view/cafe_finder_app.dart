@@ -106,7 +106,10 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                                         child: Column(
                                           children: [
                                             Container(
-                                              height: 300,
+                                              height: 280,
+                                              decoration: BoxDecoration(
+                                                color: Colors.pink
+                                              ),
                                             ),
                                             const Column(
                                               children: [
@@ -120,6 +123,15 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                                                       color: Colors.orange,
                                                     ),
                                                     Text("4.8"),
+                                                  ],
+                                                ),
+                                                Text("Coffee, Western, Local"),
+                                                Row(
+                                                  children: [
+                                                    Text("Rp. 15k - 35k"),
+                                                    Icon(Icons.access_time),
+                                                    Text("Buka"),
+                                                    Icon(Icons.favorite_border)
                                                   ],
                                                 )
                                               ],
