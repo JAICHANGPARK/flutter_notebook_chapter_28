@@ -93,6 +93,11 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                 ],
               ),
             ),
+            Center(child: Text(selectedIndex.toString()),),
+            Center(child: Text(selectedIndex.toString()),),
+            Center(child: Text(selectedIndex.toString()),),
+            Center(child: Text(selectedIndex.toString()),),
+
           ],
         ),
       ),
