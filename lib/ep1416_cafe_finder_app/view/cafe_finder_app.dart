@@ -108,11 +108,10 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                                           children: [
                                             Container(
                                               height: 260,
-                                              decoration: BoxDecoration(color: Colors.pink),
+                                              decoration: const BoxDecoration(color: Colors.pink),
                                             ),
                                             Container(
-
-                                              padding: EdgeInsets.all(12),
+                                              padding: const EdgeInsets.all(12),
                                               child: const Column(
                                                 crossAxisAlignment: CrossAxisAlignment.start,
                                                 children: [
@@ -120,7 +119,10 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                                                     children: [
                                                       Text(
                                                         "Title & Title Kitchen",
-                                                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                                                        style: TextStyle(
+                                                          fontWeight: FontWeight.bold,
+                                                          fontSize: 16,
+                                                        ),
                                                       ),
                                                       Spacer(),
                                                       Icon(
@@ -136,6 +138,9 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                                                         ),
                                                       ),
                                                     ],
+                                                  ),
+                                                  SizedBox(
+                                                    height: 4,
                                                   ),
                                                   Text(
                                                     "Coffee, Western, Local",
@@ -157,15 +162,19 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                                                       SizedBox(
                                                         width: 24,
                                                       ),
-                                                      Icon(Icons.access_time,
-                                                      size: 18,),
+                                                      Icon(
+                                                        Icons.access_time,
+                                                        size: 18,
+                                                      ),
                                                       SizedBox(
                                                         width: 6,
                                                       ),
                                                       Text("Buka"),
-
                                                       Spacer(),
-                                                      Icon(Icons.favorite_border)
+                                                      Icon(
+                                                        Icons.favorite_border,
+                                                        color: Colors.grey,
+                                                      )
                                                     ],
                                                   )
                                                 ],
