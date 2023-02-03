@@ -81,23 +81,31 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                     unselectedLabelColor: Colors.grey,
                   ),
                   const Expanded(
-                      child: TabBarView(
-                    children: [
-                      Placeholder(),
-                      Placeholder(),
-                      Placeholder(),
-                      Placeholder(),
-                      Placeholder(),
-                    ],
-                  )),
+                    child: TabBarView(
+                      children: [
+                        Placeholder(),
+                        Placeholder(),
+                        Placeholder(),
+                        Placeholder(),
+                        Placeholder(),
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
-            Center(child: Text(selectedIndex.toString()),),
-            Center(child: Text(selectedIndex.toString()),),
-            Center(child: Text(selectedIndex.toString()),),
-            Center(child: Text(selectedIndex.toString()),),
-
+            Center(
+              child: Text(selectedIndex.toString()),
+            ),
+            Center(
+              child: Text(selectedIndex.toString()),
+            ),
+            Center(
+              child: Text(selectedIndex.toString()),
+            ),
+            Center(
+              child: Text(selectedIndex.toString()),
+            ),
           ],
         ),
       ),
