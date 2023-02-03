@@ -16,79 +16,84 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
       backgroundColor: const Color.fromRGBO(244, 246, 248, 1),
       resizeToAvoidBottomInset: false,
       body: SafeArea(
-        child: DefaultTabController(
-          length: 5,
-          child: Column(
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: Row(
-                  children: [
-                    Expanded(
-                      child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(8),
-                        ),
-                        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
-                        child: const TextField(
-                          decoration: InputDecoration(
-                            border: InputBorder.none,
-                            icon: Icon(Icons.search),
-                            hintText: "Search...",
+        child: IndexedStack(
+          index: selectedIndex,
+          children: [
+            DefaultTabController(
+              length: 5,
+              child: Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                            child: const TextField(
+                              decoration: InputDecoration(
+                                border: InputBorder.none,
+                                icon: Icon(Icons.search),
+                                hintText: "Search...",
+                              ),
+                            ),
                           ),
                         ),
+                        const SizedBox(
+                          width: 16,
+                        ),
+                        const CircleAvatar(
+                          radius: 28,
+                        )
+                      ],
+                    ),
+                  ),
+                  const TabBar(
+                    isScrollable: true,
+                    tabs: [
+                      Tab(
+                        icon: Icon(Icons.sell),
+                        text: "Termurah",
                       ),
-                    ),
-                    const SizedBox(
-                      width: 16,
-                    ),
-                    const CircleAvatar(
-                      radius: 28,
-                    )
-                  ],
-                ),
-              ),
-              const TabBar(
-                isScrollable: true,
-                tabs: [
-                  Tab(
-                    icon: Icon(Icons.sell),
-                    text: "Termurah",
+                      Tab(
+                        icon: Icon(Icons.star_border),
+                        text: "Terfavorite",
+                      ),
+                      Tab(
+                        icon: Icon(Icons.favorite_border),
+                        text: "Terlaris",
+                      ),
+                      Tab(
+                        icon: Icon(Icons.campaign_outlined),
+                        text: "Promo",
+                      ),
+                      Tab(
+                        icon: Icon(Icons.meeting_room_outlined),
+                        text: "Indoor",
+                      ),
+                    ],
+                    indicatorColor: Colors.black,
+                    labelColor: Colors.black,
+                    unselectedLabelColor: Colors.grey,
                   ),
-                  Tab(
-                    icon: Icon(Icons.star_border),
-                    text: "Terfavorite",
-                  ),
-                  Tab(
-                    icon: Icon(Icons.favorite_border),
-                    text: "Terlaris",
-                  ),
-                  Tab(
-                    icon: Icon(Icons.campaign_outlined),
-                    text: "Promo",
-                  ),
-                  Tab(
-                    icon: Icon(Icons.meeting_room_outlined),
-                    text: "Indoor",
-                  ),
+                  const Expanded(
+                      child: TabBarView(
+                    children: [
+                      Placeholder(),
+                      Placeholder(),
+                      Placeholder(),
+                      Placeholder(),
+                      Placeholder(),
+                    ],
+                  )),
                 ],
-                indicatorColor: Colors.black,
-                labelColor: Colors.black,
-                unselectedLabelColor: Colors.grey,
               ),
-              const Expanded(
-                  child: TabBarView(
-                children: [
-                  Placeholder(),
-                  Placeholder(),
-                  Placeholder(),
-                  Placeholder(),
-                  Placeholder(),
-                ],
-              )),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
       bottomNavigationBar: BottomAppBar(
