@@ -14,6 +14,7 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color.fromRGBO(244, 246, 248, 1),
+      resizeToAvoidBottomInset: false,
       body: SafeArea(
         child: DefaultTabController(
           length: 5,
@@ -43,6 +44,7 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                 ),
               ),
               const TabBar(
+                isScrollable: true,
                 tabs: [
                   Tab(
                     icon: Icon(Icons.sell),
