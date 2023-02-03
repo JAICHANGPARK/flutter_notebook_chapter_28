@@ -14,6 +14,31 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color.fromRGBO(244, 246, 248, 1),
+      body: SafeArea(
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Container(
+                      decoration: BoxDecoration(color: Colors.white),
+                      child: TextField(),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 16,
+                  ),
+                  CircleAvatar(
+                    radius: 30,
+                  )
+                ],
+              ),
+            )
+          ],
+        ),
+      ),
       bottomNavigationBar: BottomAppBar(
         color: Colors.white,
         height: 84,
@@ -99,9 +124,9 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                   ),
                   selectedIndex == 3
                       ? const CircleAvatar(
-                    radius: 4,
-                    backgroundColor: Colors.black,
-                  )
+                          radius: 4,
+                          backgroundColor: Colors.black,
+                        )
                       : Container()
                 ],
               )
