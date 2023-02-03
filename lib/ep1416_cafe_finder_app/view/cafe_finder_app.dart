@@ -26,11 +26,17 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                   children: [
                     Expanded(
                       child: Container(
-                        decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(8),
+                        ),
                         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
                         child: const TextField(
                           decoration: InputDecoration(
-                              border: InputBorder.none, icon: Icon(Icons.search), hintText: "Search..."),
+                            border: InputBorder.none,
+                            icon: Icon(Icons.search),
+                            hintText: "Search...",
+                          ),
                         ),
                       ),
                     ),
@@ -71,7 +77,8 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                 labelColor: Colors.black,
                 unselectedLabelColor: Colors.grey,
               ),
-              const Expanded(child: TabBarView(
+              const Expanded(
+                  child: TabBarView(
                 children: [
                   Placeholder(),
                   Placeholder(),
