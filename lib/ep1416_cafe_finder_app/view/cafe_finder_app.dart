@@ -120,20 +120,50 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                                                     children: [
                                                       Text(
                                                         "Title & Title Kitchen",
+                                                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                                                       ),
+                                                      Spacer(),
                                                       Icon(
                                                         Icons.star,
                                                         color: Colors.orange,
+                                                        size: 16,
                                                       ),
-                                                      Text("4.8"),
+                                                      SizedBox(width: 6),
+                                                      Text(
+                                                        "4.8",
+                                                        style: TextStyle(
+                                                          fontWeight: FontWeight.bold,
+                                                        ),
+                                                      ),
                                                     ],
                                                   ),
-                                                  Text("Coffee, Western, Local"),
+                                                  Text(
+                                                    "Coffee, Western, Local",
+                                                    style: TextStyle(
+                                                      color: Colors.grey,
+                                                    ),
+                                                  ),
+                                                  SizedBox(
+                                                    height: 8,
+                                                  ),
                                                   Row(
                                                     children: [
-                                                      Text("Rp. 15k - 35k"),
+                                                      Text(
+                                                        "Rp. 15k - 35k",
+                                                        style: TextStyle(
+                                                          fontWeight: FontWeight.bold,
+                                                        ),
+                                                      ),
+                                                      SizedBox(
+                                                        width: 12,
+                                                      ),
                                                       Icon(Icons.access_time),
+                                                      SizedBox(
+                                                        width: 6,
+                                                      ),
                                                       Text("Buka"),
+
+                                                      Spacer(),
                                                       Icon(Icons.favorite_border)
                                                     ],
                                                   )
