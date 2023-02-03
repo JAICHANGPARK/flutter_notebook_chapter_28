@@ -88,8 +88,8 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                           child: ListView(
                             children: [
                               Container(
-                                height: 300,
-                                decoration: BoxDecoration(
+                                height: 360,
+                                decoration: const BoxDecoration(
                                   color: Colors.grey,
                                 ),
                                 child: Stack(
@@ -100,8 +100,31 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                                       bottom: 0,
                                       top: 0,
                                       child: Container(
-                                        decoration: BoxDecoration(
+                                        decoration: const BoxDecoration(
                                           color: Colors.blue,
+                                        ),
+                                        child: Column(
+                                          children: [
+                                            Container(
+                                              height: 300,
+                                            ),
+                                            const Column(
+                                              children: [
+                                                Row(
+                                                  children: [
+                                                    Text(
+                                                      "Title & Title Kitchen",
+                                                    ),
+                                                    Icon(
+                                                      Icons.star,
+                                                      color: Colors.orange,
+                                                    ),
+                                                    Text("4.8"),
+                                                  ],
+                                                )
+                                              ],
+                                            )
+                                          ],
                                         ),
                                       ),
                                     )
@@ -111,10 +134,10 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                             ],
                           ),
                         ),
-                        Placeholder(),
-                        Placeholder(),
-                        Placeholder(),
-                        Placeholder(),
+                        const Placeholder(),
+                        const Placeholder(),
+                        const Placeholder(),
+                        const Placeholder(),
                       ],
                     ),
                   ),
