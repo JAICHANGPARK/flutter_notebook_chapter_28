@@ -80,11 +80,36 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                     labelColor: Colors.black,
                     unselectedLabelColor: Colors.grey,
                   ),
-                   Expanded(
+                  Expanded(
                     child: TabBarView(
                       children: [
-                        ListView(
-                          children: [],
+                        Padding(
+                          padding: const EdgeInsets.all(12.0),
+                          child: ListView(
+                            children: [
+                              Container(
+                                height: 300,
+                                decoration: BoxDecoration(
+                                  color: Colors.grey,
+                                ),
+                                child: Stack(
+                                  children: [
+                                    Positioned(
+                                      left: 8,
+                                      right: 0,
+                                      bottom: 0,
+                                      top: 0,
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.blue,
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
                         ),
                         Placeholder(),
                         Placeholder(),
