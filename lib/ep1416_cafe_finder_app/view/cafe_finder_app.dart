@@ -29,6 +29,7 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                   },
                   icon: const Icon(Icons.home_filled),
                   iconSize: 26,
+                  color: selectedIndex == 0 ? Colors.black : Colors.grey,
                 ),
                 selectedIndex == 0
                     ? const CircleAvatar(
@@ -48,6 +49,7 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                   },
                   icon: const Icon(Icons.favorite_border),
                   iconSize: 26,
+                  color: selectedIndex == 1 ? Colors.black : Colors.grey,
                 ),
                 selectedIndex == 1
                     ? const CircleAvatar(
