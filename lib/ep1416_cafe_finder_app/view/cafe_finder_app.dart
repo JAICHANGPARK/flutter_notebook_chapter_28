@@ -69,7 +69,15 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                 labelColor: Colors.black,
                 unselectedLabelColor: Colors.grey,
               ),
-              Expanded(child: Placeholder()),
+              Expanded(child: TabBarView(
+                children: [
+                  Placeholder(),
+                  Placeholder(),
+                  Placeholder(),
+                  Placeholder(),
+                  Placeholder(),
+                ],
+              )),
             ],
           ),
         ),
