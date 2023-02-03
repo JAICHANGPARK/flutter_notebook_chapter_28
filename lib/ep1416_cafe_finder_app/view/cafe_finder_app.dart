@@ -15,36 +15,60 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
     return Scaffold(
       backgroundColor: const Color.fromRGBO(244, 246, 248, 1),
       body: SafeArea(
-        child: Column(
-          children: [
-            Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: Row(
-                children: [
-                  Expanded(
-                    child: Container(
-                      decoration: BoxDecoration(color: Colors.white,
-                      borderRadius: BorderRadius.circular(8)),
-                      padding: EdgeInsets.symmetric(horizontal: 16),
-                      child: TextField(
-                        decoration: InputDecoration(
-                          border: InputBorder.none,
-                          icon: Icon(Icons.search),
-                          hintText: "Search..."
+        child: DefaultTabController(
+          length: 5,
+          child: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Container(
+                        decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
+                        padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                        child: TextField(
+                          decoration: InputDecoration(
+                              border: InputBorder.none, icon: Icon(Icons.search), hintText: "Search..."),
                         ),
                       ),
                     ),
+                    SizedBox(
+                      width: 16,
+                    ),
+                    CircleAvatar(
+                      radius: 28,
+                    )
+                  ],
+                ),
+              ),
+              TabBar(
+                tabs: [
+                  Tab(
+                    icon: Icon(Icons.sell),
+                    text: "Termurah",
                   ),
-                  SizedBox(
-                    width: 16,
+                  Tab(
+                    icon: Icon(Icons.star_border),
+                    text: "Termurah",
                   ),
-                  CircleAvatar(
-                    radius: 30,
-                  )
+                  Tab(
+                    icon: Icon(Icons.favorite_border),
+                    text: "Termurah",
+                  ),
+                  Tab(
+                    icon: Icon(Icons.campaign_outlined),
+                    text: "Termurah",
+                  ),
+                  Tab(
+                    icon: Icon(Icons.meeting_room_outlined),
+                    text: "Termurah",
+                  ),
                 ],
               ),
-            )
-          ],
+              Expanded(child: Placeholder()),
+            ],
+          ),
         ),
       ),
       bottomNavigationBar: BottomAppBar(
