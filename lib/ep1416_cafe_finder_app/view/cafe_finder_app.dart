@@ -24,7 +24,12 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                   Expanded(
                     child: Container(
                       decoration: BoxDecoration(color: Colors.white),
-                      child: TextField(),
+                      padding: EdgeInsets.symmetric(horizontal: 16),
+                      child: TextField(
+                        decoration: InputDecoration(
+                          border: InputBorder.none,
+                        ),
+                      ),
                     ),
                   ),
                   SizedBox(
