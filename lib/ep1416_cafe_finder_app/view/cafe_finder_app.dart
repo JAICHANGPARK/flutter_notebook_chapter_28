@@ -121,6 +121,37 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                                                   fit: BoxFit.cover,
                                                 ),
                                               ),
+                                              child: Stack(
+                                                children: [
+                                                  Positioned(
+                                                      right: 12,
+                                                      top: 12,
+                                                      child: Container(
+                                                        decoration: BoxDecoration(
+                                                          color: Colors.white,
+                                                          borderRadius: BorderRadius.circular(4),
+                                                        ),
+                                                        padding: const EdgeInsets.symmetric(
+                                                          horizontal: 6,
+                                                          vertical: 6,
+                                                        ),
+                                                        child: const Row(
+                                                          children: [
+                                                            Icon(
+                                                              Icons.location_on,
+                                                              size: 16,
+                                                            ),
+                                                            SizedBox(
+                                                              width: 4,
+                                                            ),
+                                                            Text(
+                                                              "1.2km",
+                                                            )
+                                                          ],
+                                                        ),
+                                                      ))
+                                                ],
+                                              ),
                                             ),
                                             Container(
                                               padding: const EdgeInsets.all(12),
