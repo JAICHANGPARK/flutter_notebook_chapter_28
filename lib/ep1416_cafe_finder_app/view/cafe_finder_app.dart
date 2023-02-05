@@ -89,11 +89,19 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                             children: [
                               Container(
                                 height: 360,
-                                decoration: const BoxDecoration(
-                                  color: Colors.grey,
-                                ),
+                                decoration: const BoxDecoration(),
                                 child: Stack(
                                   children: [
+                                    Positioned(
+                                        top: 40,
+                                        left: 0,
+                                        child: Container(
+                                      height: 8,
+                                      width: 8,
+                                      decoration: BoxDecoration(
+                                        color: Colors.black,
+                                      ),
+                                    )),
                                     Positioned(
                                       left: 8,
                                       right: 0,
