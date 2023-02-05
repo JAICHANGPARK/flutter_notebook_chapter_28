@@ -239,6 +239,7 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                                               Icon(
                                                 Icons.percent,
                                                 color: Colors.white,
+                                                size: 18,
                                               ),
                                               Text(
                                                 "30% off",
