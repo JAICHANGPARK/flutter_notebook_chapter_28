@@ -156,7 +156,7 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                                                           horizontal: 6,
                                                           vertical: 6,
                                                         ),
-                                                        child: const Row(
+                                                        child: Row(
                                                           children: [
                                                             Icon(
                                                               Icons.location_on,
@@ -166,7 +166,7 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                                                               width: 4,
                                                             ),
                                                             Text(
-                                                              "1.2km",
+                                                              "${item.distance ?? 1.2}km",
                                                             )
                                                           ],
                                                         ),
@@ -183,59 +183,59 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                                                     children: [
                                                       Text(
                                                         item.title ?? "Title & Title Kitchen",
-                                                        style: TextStyle(
+                                                        style: const TextStyle(
                                                           fontWeight: FontWeight.bold,
                                                           fontSize: 16,
                                                         ),
                                                       ),
-                                                      Spacer(),
-                                                      Icon(
+                                                      const Spacer(),
+                                                      const Icon(
                                                         Icons.star,
                                                         color: Colors.orange,
                                                         size: 16,
                                                       ),
-                                                      SizedBox(width: 6),
+                                                      const SizedBox(width: 6),
                                                       Text(
                                                         item.rate.toString() ?? "4.8",
-                                                        style: TextStyle(
+                                                        style: const TextStyle(
                                                           fontWeight: FontWeight.bold,
                                                         ),
                                                       ),
                                                     ],
                                                   ),
-                                                  SizedBox(
+                                                  const SizedBox(
                                                     height: 4,
                                                   ),
                                                   Text(
                                                     item.subtitle ?? "Coffee, Western, Local",
-                                                    style: TextStyle(
+                                                    style: const TextStyle(
                                                       color: Colors.grey,
                                                     ),
                                                   ),
-                                                  SizedBox(
+                                                  const SizedBox(
                                                     height: 12,
                                                   ),
                                                   Row(
                                                     children: [
                                                       Text(
                                                         item.review ?? "Rp. 15k - 35k",
-                                                        style: TextStyle(
+                                                        style: const TextStyle(
                                                           fontWeight: FontWeight.bold,
                                                         ),
                                                       ),
-                                                      SizedBox(
+                                                      const SizedBox(
                                                         width: 24,
                                                       ),
-                                                      Icon(
+                                                      const Icon(
                                                         Icons.access_time,
                                                         size: 18,
                                                       ),
-                                                      SizedBox(
+                                                      const SizedBox(
                                                         width: 6,
                                                       ),
-                                                      Text("Buka"),
-                                                      Spacer(),
-                                                      Icon(
+                                                      const Text("Buka"),
+                                                      const Spacer(),
+                                                      const Icon(
                                                         Icons.favorite_border,
                                                         color: Colors.grey,
                                                       )
