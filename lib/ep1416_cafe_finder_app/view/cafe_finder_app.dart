@@ -226,7 +226,17 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                                           ],
                                         ),
                                       ),
-                                    )
+                                    ),
+                                    Positioned(
+                                        left: 0,
+                                        top: 16,
+                                        child: Container(
+                                          child: Row(
+                                            children: [
+                                              
+                                            ],
+                                          ),
+                                        ))
                                   ],
                                 ),
                               )
