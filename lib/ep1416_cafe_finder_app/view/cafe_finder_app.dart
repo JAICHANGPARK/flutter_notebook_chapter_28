@@ -231,9 +231,21 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                                         left: 0,
                                         top: 16,
                                         child: Container(
+                                          decoration: BoxDecoration(
+                                            color: Colors.black,
+                                          ),
                                           child: Row(
                                             children: [
-                                              
+                                              Icon(
+                                                Icons.percent,
+                                                color: Colors.white,
+                                              ),
+                                              Text(
+                                                "30% off",
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                ),
+                                              )
                                             ],
                                           ),
                                         ))
