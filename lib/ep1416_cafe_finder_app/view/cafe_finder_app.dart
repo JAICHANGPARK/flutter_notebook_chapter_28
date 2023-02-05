@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 class CafeFinderMainPage extends StatefulWidget {
@@ -95,13 +97,16 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                                     Positioned(
                                         top: 40,
                                         left: 0,
-                                        child: Container(
+                                        child: Transform.rotate(
+                                          angle: 45 * pi/ 180,
+                                          child: Container(
                                       height: 8,
                                       width: 8,
                                       decoration: BoxDecoration(
-                                        color: Colors.black,
+                                          color: Colors.black,
                                       ),
-                                    )),
+                                    ),
+                                        )),
                                     Positioned(
                                       left: 8,
                                       right: 0,
