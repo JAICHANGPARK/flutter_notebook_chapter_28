@@ -95,13 +95,13 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                                 child: Stack(
                                   children: [
                                     Positioned(
-                                        top: 40,
-                                        left: 0,
+                                        top: 32,
+                                        left: 3,
                                         child: Transform.rotate(
                                           angle: 45 * pi/ 180,
                                           child: Container(
-                                      height: 8,
-                                      width: 8,
+                                      height: 14,
+                                      width: 14,
                                       decoration: BoxDecoration(
                                           color: Colors.black,
                                       ),
