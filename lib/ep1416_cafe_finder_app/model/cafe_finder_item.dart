@@ -10,5 +10,7 @@ class CafeFinderItem with _$CafeFinderItem {
     double? rate,
     String? review,
     bool? isSale,
+    double? distance,
+    String? img
   }) = _CafeFinderItem;
 }
