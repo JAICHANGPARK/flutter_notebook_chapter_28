@@ -158,11 +158,11 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                                                         ),
                                                         child: Row(
                                                           children: [
-                                                            Icon(
+                                                            const Icon(
                                                               Icons.location_on,
                                                               size: 16,
                                                             ),
-                                                            SizedBox(
+                                                            const SizedBox(
                                                               width: 4,
                                                             ),
                                                             Text(
@@ -253,7 +253,10 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                                             left: 0,
                                             top: 16,
                                             child: Container(
-                                              padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 4),
+                                              padding: const EdgeInsets.symmetric(
+                                                vertical: 4,
+                                                horizontal: 4,
+                                              ),
                                               decoration: const BoxDecoration(
                                                 color: Colors.black,
                                               ),
