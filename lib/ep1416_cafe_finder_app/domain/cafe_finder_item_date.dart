@@ -5,6 +5,8 @@ List<CafeFinderItem> cafeFinderItems = [
     isSale: false,
     title: "Title & Title Kitchen",
     subtitle: "Coffee, Western, Local",
-    rate: 4.8
+    rate: 4.8,
+    distance: 1.2,
+    img: "https://cdn.pixabay.com/photo/2016/11/29/12/54/cafe-1869656_960_720.jpg",
   )
 ];
