@@ -6,5 +6,9 @@ part 'cafe_finder_item.freezed.dart';
 class CafeFinderItem with _$CafeFinderItem {
   factory CafeFinderItem({
     String? title,
+    String? subtitle,
+    double? rate,
+    String? review,
+    bool? isSale,
   }) = _CafeFinderItem;
 }

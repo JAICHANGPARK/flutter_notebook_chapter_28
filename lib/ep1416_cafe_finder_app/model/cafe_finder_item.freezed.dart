@@ -17,6 +17,10 @@ final _privateConstructorUsedError = UnsupportedError(
 /// @nodoc
 mixin _$CafeFinderItem {
   String? get title => throw _privateConstructorUsedError;
+  String? get subtitle => throw _privateConstructorUsedError;
+  double? get rate => throw _privateConstructorUsedError;
+  String? get review => throw _privateConstructorUsedError;
+  bool? get isSale => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $CafeFinderItemCopyWith<CafeFinderItem> get copyWith =>
@@ -29,7 +33,12 @@ abstract class $CafeFinderItemCopyWith<$Res> {
           CafeFinderItem value, $Res Function(CafeFinderItem) then) =
       _$CafeFinderItemCopyWithImpl<$Res, CafeFinderItem>;
   @useResult
-  $Res call({String? title});
+  $Res call(
+      {String? title,
+      String? subtitle,
+      double? rate,
+      String? review,
+      bool? isSale});
 }
 
 /// @nodoc
@@ -46,12 +55,32 @@ class _$CafeFinderItemCopyWithImpl<$Res, $Val extends CafeFinderItem>
   @override
   $Res call({
     Object? title = freezed,
+    Object? subtitle = freezed,
+    Object? rate = freezed,
+    Object? review = freezed,
+    Object? isSale = freezed,
   }) {
     return _then(_value.copyWith(
       title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String?,
+      subtitle: freezed == subtitle
+          ? _value.subtitle
+          : subtitle // ignore: cast_nullable_to_non_nullable
+              as String?,
+      rate: freezed == rate
+          ? _value.rate
+          : rate // ignore: cast_nullable_to_non_nullable
+              as double?,
+      review: freezed == review
+          ? _value.review
+          : review // ignore: cast_nullable_to_non_nullable
+              as String?,
+      isSale: freezed == isSale
+          ? _value.isSale
+          : isSale // ignore: cast_nullable_to_non_nullable
+              as bool?,
     ) as $Val);
   }
 }
@@ -64,7 +93,12 @@ abstract class _$$_CafeFinderItemCopyWith<$Res>
       __$$_CafeFinderItemCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({String? title});
+  $Res call(
+      {String? title,
+      String? subtitle,
+      double? rate,
+      String? review,
+      bool? isSale});
 }
 
 /// @nodoc
@@ -79,12 +113,32 @@ class __$$_CafeFinderItemCopyWithImpl<$Res>
   @override
   $Res call({
     Object? title = freezed,
+    Object? subtitle = freezed,
+    Object? rate = freezed,
+    Object? review = freezed,
+    Object? isSale = freezed,
   }) {
     return _then(_$_CafeFinderItem(
       title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String?,
+      subtitle: freezed == subtitle
+          ? _value.subtitle
+          : subtitle // ignore: cast_nullable_to_non_nullable
+              as String?,
+      rate: freezed == rate
+          ? _value.rate
+          : rate // ignore: cast_nullable_to_non_nullable
+              as double?,
+      review: freezed == review
+          ? _value.review
+          : review // ignore: cast_nullable_to_non_nullable
+              as String?,
+      isSale: freezed == isSale
+          ? _value.isSale
+          : isSale // ignore: cast_nullable_to_non_nullable
+              as bool?,
     ));
   }
 }
@@ -92,14 +146,23 @@ class __$$_CafeFinderItemCopyWithImpl<$Res>
 /// @nodoc
 
 class _$_CafeFinderItem implements _CafeFinderItem {
-  _$_CafeFinderItem({this.title});
+  _$_CafeFinderItem(
+      {this.title, this.subtitle, this.rate, this.review, this.isSale});
 
   @override
   final String? title;
+  @override
+  final String? subtitle;
+  @override
+  final double? rate;
+  @override
+  final String? review;
+  @override
+  final bool? isSale;
 
   @override
   String toString() {
-    return 'CafeFinderItem(title: $title)';
+    return 'CafeFinderItem(title: $title, subtitle: $subtitle, rate: $rate, review: $review, isSale: $isSale)';
   }
 
   @override
@@ -107,11 +170,17 @@ class _$_CafeFinderItem implements _CafeFinderItem {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_CafeFinderItem &&
-            (identical(other.title, title) || other.title == title));
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.subtitle, subtitle) ||
+                other.subtitle == subtitle) &&
+            (identical(other.rate, rate) || other.rate == rate) &&
+            (identical(other.review, review) || other.review == review) &&
+            (identical(other.isSale, isSale) || other.isSale == isSale));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, title);
+  int get hashCode =>
+      Object.hash(runtimeType, title, subtitle, rate, review, isSale);
 
   @JsonKey(ignore: true)
   @override
@@ -121,10 +190,23 @@ class _$_CafeFinderItem implements _CafeFinderItem {
 }
 
 abstract class _CafeFinderItem implements CafeFinderItem {
-  factory _CafeFinderItem({final String? title}) = _$_CafeFinderItem;
+  factory _CafeFinderItem(
+      {final String? title,
+      final String? subtitle,
+      final double? rate,
+      final String? review,
+      final bool? isSale}) = _$_CafeFinderItem;
 
   @override
   String? get title;
+  @override
+  String? get subtitle;
+  @override
+  double? get rate;
+  @override
+  String? get review;
+  @override
+  bool? get isSale;
   @override
   @JsonKey(ignore: true)
   _$$_CafeFinderItemCopyWith<_$_CafeFinderItem> get copyWith =>
