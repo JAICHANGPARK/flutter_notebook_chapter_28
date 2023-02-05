@@ -182,7 +182,7 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                                                   Row(
                                                     children: [
                                                       Text(
-                                                        "Title & Title Kitchen",
+                                                        item.title ?? "Title & Title Kitchen",
                                                         style: TextStyle(
                                                           fontWeight: FontWeight.bold,
                                                           fontSize: 16,
@@ -196,7 +196,7 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                                                       ),
                                                       SizedBox(width: 6),
                                                       Text(
-                                                        "4.8",
+                                                        item.rate.toString() ?? "4.8",
                                                         style: TextStyle(
                                                           fontWeight: FontWeight.bold,
                                                         ),
@@ -207,7 +207,7 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                                                     height: 4,
                                                   ),
                                                   Text(
-                                                    "Coffee, Western, Local",
+                                                    item.subtitle ?? "Coffee, Western, Local",
                                                     style: TextStyle(
                                                       color: Colors.grey,
                                                     ),
