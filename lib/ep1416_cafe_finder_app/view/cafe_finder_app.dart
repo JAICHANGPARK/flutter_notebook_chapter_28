@@ -91,23 +91,24 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                             children: [
                               Container(
                                 height: 360,
-                                margin: EdgeInsets.only(bottom: 24),
+                                margin: const EdgeInsets.only(bottom: 24),
                                 decoration: const BoxDecoration(),
                                 child: Stack(
                                   children: [
                                     Positioned(
-                                        top: 32,
-                                        left: 3,
-                                        child: Transform.rotate(
-                                          angle: 45 * pi/ 180,
-                                          child: Container(
-                                      height: 14,
-                                      width: 14,
-                                      decoration: BoxDecoration(
-                                          color: Colors.black,
+                                      top: 32,
+                                      left: 3,
+                                      child: Transform.rotate(
+                                        angle: 45 * pi / 180,
+                                        child: Container(
+                                          height: 14,
+                                          width: 14,
+                                          decoration: const BoxDecoration(
+                                            color: Colors.black,
+                                          ),
+                                        ),
                                       ),
                                     ),
-                                        )),
                                     Positioned(
                                       left: 8,
                                       right: 0,
@@ -245,7 +246,7 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                                         left: 0,
                                         top: 16,
                                         child: Container(
-                                          padding: EdgeInsets.symmetric(vertical: 4, horizontal: 4),
+                                          padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 4),
                                           decoration: const BoxDecoration(
                                             color: Colors.black,
                                           ),
@@ -277,19 +278,19 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                                 decoration: const BoxDecoration(),
                                 child: Stack(
                                   children: [
-                                    Positioned(
-                                        top: 32,
-                                        left: 3,
-                                        child: Transform.rotate(
-                                          angle: 45 * pi/ 180,
-                                          child: Container(
-                                            height: 14,
-                                            width: 14,
-                                            decoration: BoxDecoration(
-                                              color: Colors.black,
-                                            ),
-                                          ),
-                                        )),
+                                    // Positioned(
+                                    //     top: 32,
+                                    //     left: 3,
+                                    //     child: Transform.rotate(
+                                    //       angle: 45 * pi / 180,
+                                    //       child: Container(
+                                    //         height: 14,
+                                    //         width: 14,
+                                    //         decoration: const BoxDecoration(
+                                    //           color: Colors.black,
+                                    //         ),
+                                    //       ),
+                                    //     )),
                                     Positioned(
                                       left: 8,
                                       right: 0,
@@ -423,34 +424,34 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                                         ),
                                       ),
                                     ),
-                                    Positioned(
-                                        left: 0,
-                                        top: 16,
-                                        child: Container(
-                                          padding: EdgeInsets.symmetric(vertical: 4, horizontal: 4),
-                                          decoration: const BoxDecoration(
-                                            color: Colors.black,
-                                          ),
-                                          child: const Row(
-                                            children: [
-                                              Icon(
-                                                Icons.percent,
-                                                color: Colors.white,
-                                                size: 16,
-                                              ),
-                                              SizedBox(
-                                                width: 4,
-                                              ),
-                                              Text(
-                                                "30% off",
-                                                style: TextStyle(
-                                                  color: Colors.white,
-                                                  fontSize: 13,
-                                                ),
-                                              )
-                                            ],
-                                          ),
-                                        ))
+                                    // Positioned(
+                                    //     left: 0,
+                                    //     top: 16,
+                                    //     child: Container(
+                                    //       padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 4),
+                                    //       decoration: const BoxDecoration(
+                                    //         color: Colors.black,
+                                    //       ),
+                                    //       child: const Row(
+                                    //         children: [
+                                    //           Icon(
+                                    //             Icons.percent,
+                                    //             color: Colors.white,
+                                    //             size: 16,
+                                    //           ),
+                                    //           SizedBox(
+                                    //             width: 4,
+                                    //           ),
+                                    //           Text(
+                                    //             "30% off",
+                                    //             style: TextStyle(
+                                    //               color: Colors.white,
+                                    //               fontSize: 13,
+                                    //             ),
+                                    //           )
+                                    //         ],
+                                    //       ),
+                                    //     ))
                                   ],
                                 ),
                               )
