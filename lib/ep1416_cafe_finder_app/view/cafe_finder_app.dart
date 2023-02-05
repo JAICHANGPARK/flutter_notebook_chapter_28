@@ -241,10 +241,14 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                                                 color: Colors.white,
                                                 size: 18,
                                               ),
+                                              SizedBox(
+                                                width: 4,
+                                              ),
                                               Text(
                                                 "30% off",
                                                 style: TextStyle(
                                                   color: Colors.white,
+                                                  fontSize: 12,
                                                 ),
                                               )
                                             ],
