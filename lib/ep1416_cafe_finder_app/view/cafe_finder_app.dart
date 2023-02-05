@@ -231,15 +231,16 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                                         left: 0,
                                         top: 16,
                                         child: Container(
-                                          decoration: BoxDecoration(
+                                          padding: EdgeInsets.symmetric(vertical: 4, horizontal: 4),
+                                          decoration: const BoxDecoration(
                                             color: Colors.black,
                                           ),
-                                          child: Row(
+                                          child: const Row(
                                             children: [
                                               Icon(
                                                 Icons.percent,
                                                 color: Colors.white,
-                                                size: 18,
+                                                size: 16,
                                               ),
                                               SizedBox(
                                                 width: 4,
@@ -248,7 +249,7 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                                                 "30% off",
                                                 style: TextStyle(
                                                   color: Colors.white,
-                                                  fontSize: 12,
+                                                  fontSize: 13,
                                                 ),
                                               )
                                             ],
