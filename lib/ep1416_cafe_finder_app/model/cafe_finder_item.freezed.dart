@@ -20,7 +20,7 @@ mixin _$CafeFinderItem {
   String? get subtitle => throw _privateConstructorUsedError;
   double? get rate => throw _privateConstructorUsedError;
   String? get review => throw _privateConstructorUsedError;
-  bool? get isSale => throw _privateConstructorUsedError;
+  bool get isSale => throw _privateConstructorUsedError;
   double? get distance => throw _privateConstructorUsedError;
   String? get img => throw _privateConstructorUsedError;
 
@@ -40,7 +40,7 @@ abstract class $CafeFinderItemCopyWith<$Res> {
       String? subtitle,
       double? rate,
       String? review,
-      bool? isSale,
+      bool isSale,
       double? distance,
       String? img});
 }
@@ -62,7 +62,7 @@ class _$CafeFinderItemCopyWithImpl<$Res, $Val extends CafeFinderItem>
     Object? subtitle = freezed,
     Object? rate = freezed,
     Object? review = freezed,
-    Object? isSale = freezed,
+    Object? isSale = null,
     Object? distance = freezed,
     Object? img = freezed,
   }) {
@@ -83,10 +83,10 @@ class _$CafeFinderItemCopyWithImpl<$Res, $Val extends CafeFinderItem>
           ? _value.review
           : review // ignore: cast_nullable_to_non_nullable
               as String?,
-      isSale: freezed == isSale
+      isSale: null == isSale
           ? _value.isSale
           : isSale // ignore: cast_nullable_to_non_nullable
-              as bool?,
+              as bool,
       distance: freezed == distance
           ? _value.distance
           : distance // ignore: cast_nullable_to_non_nullable
@@ -112,7 +112,7 @@ abstract class _$$_CafeFinderItemCopyWith<$Res>
       String? subtitle,
       double? rate,
       String? review,
-      bool? isSale,
+      bool isSale,
       double? distance,
       String? img});
 }
@@ -132,7 +132,7 @@ class __$$_CafeFinderItemCopyWithImpl<$Res>
     Object? subtitle = freezed,
     Object? rate = freezed,
     Object? review = freezed,
-    Object? isSale = freezed,
+    Object? isSale = null,
     Object? distance = freezed,
     Object? img = freezed,
   }) {
@@ -153,10 +153,10 @@ class __$$_CafeFinderItemCopyWithImpl<$Res>
           ? _value.review
           : review // ignore: cast_nullable_to_non_nullable
               as String?,
-      isSale: freezed == isSale
+      isSale: null == isSale
           ? _value.isSale
           : isSale // ignore: cast_nullable_to_non_nullable
-              as bool?,
+              as bool,
       distance: freezed == distance
           ? _value.distance
           : distance // ignore: cast_nullable_to_non_nullable
@@ -177,7 +177,7 @@ class _$_CafeFinderItem implements _CafeFinderItem {
       this.subtitle,
       this.rate,
       this.review,
-      this.isSale,
+      this.isSale = false,
       this.distance,
       this.img});
 
@@ -190,7 +190,8 @@ class _$_CafeFinderItem implements _CafeFinderItem {
   @override
   final String? review;
   @override
-  final bool? isSale;
+  @JsonKey()
+  final bool isSale;
   @override
   final double? distance;
   @override
@@ -234,7 +235,7 @@ abstract class _CafeFinderItem implements CafeFinderItem {
       final String? subtitle,
       final double? rate,
       final String? review,
-      final bool? isSale,
+      final bool isSale,
       final double? distance,
       final String? img}) = _$_CafeFinderItem;
 
@@ -247,7 +248,7 @@ abstract class _CafeFinderItem implements CafeFinderItem {
   @override
   String? get review;
   @override
-  bool? get isSale;
+  bool get isSale;
   @override
   double? get distance;
   @override

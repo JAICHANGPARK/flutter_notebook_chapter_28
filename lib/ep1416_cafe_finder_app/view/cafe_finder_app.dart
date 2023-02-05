@@ -91,26 +91,29 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                           child: ListView.builder(
                             itemCount: cafeFinderItems.length,
                             itemBuilder: (context, index) {
+                              final item = cafeFinderItems[index];
                               return Container(
                                 height: 360,
                                 margin: const EdgeInsets.only(bottom: 24),
                                 decoration: const BoxDecoration(),
                                 child: Stack(
                                   children: [
-                                    Positioned(
-                                      top: 32,
-                                      left: 3,
-                                      child: Transform.rotate(
-                                        angle: 45 * pi / 180,
-                                        child: Container(
-                                          height: 14,
-                                          width: 14,
-                                          decoration: const BoxDecoration(
-                                            color: Colors.black,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
+                                    item.isSale
+                                        ? Positioned(
+                                            top: 32,
+                                            left: 3,
+                                            child: Transform.rotate(
+                                              angle: 45 * pi / 180,
+                                              child: Container(
+                                                height: 14,
+                                                width: 14,
+                                                decoration: const BoxDecoration(
+                                                  color: Colors.black,
+                                                ),
+                                              ),
+                                            ),
+                                          )
+                                        : Container(),
                                     Positioned(
                                       left: 8,
                                       right: 0,
@@ -125,15 +128,16 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                                           children: [
                                             Container(
                                               height: 260,
-                                              decoration: const BoxDecoration(
+                                              decoration: BoxDecoration(
                                                 color: Colors.pink,
-                                                borderRadius: BorderRadius.only(
+                                                borderRadius: const BorderRadius.only(
                                                   topLeft: Radius.circular(12),
                                                   topRight: Radius.circular(12),
                                                 ),
                                                 image: DecorationImage(
                                                   image: NetworkImage(
-                                                    "https://cdn.pixabay.com/photo/2016/11/29/12/54/cafe-1869656_960_720.jpg",
+                                                    item.img ??
+                                                        "https://cdn.pixabay.com/photo/2016/11/29/12/54/cafe-1869656_960_720.jpg",
                                                   ),
                                                   fit: BoxFit.cover,
                                                 ),
@@ -172,7 +176,7 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                                             ),
                                             Container(
                                               padding: const EdgeInsets.all(12),
-                                              child: const Column(
+                                              child: Column(
                                                 crossAxisAlignment: CrossAxisAlignment.start,
                                                 children: [
                                                   Row(
@@ -214,7 +218,7 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                                                   Row(
                                                     children: [
                                                       Text(
-                                                        "Rp. 15k - 35k",
+                                                        item.review ?? "Rp. 15k - 35k",
                                                         style: TextStyle(
                                                           fontWeight: FontWeight.bold,
                                                         ),
@@ -244,34 +248,36 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                                         ),
                                       ),
                                     ),
-                                    Positioned(
-                                        left: 0,
-                                        top: 16,
-                                        child: Container(
-                                          padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 4),
-                                          decoration: const BoxDecoration(
-                                            color: Colors.black,
-                                          ),
-                                          child: const Row(
-                                            children: [
-                                              Icon(
-                                                Icons.percent,
-                                                color: Colors.white,
-                                                size: 16,
+                                    item.isSale
+                                        ? Positioned(
+                                            left: 0,
+                                            top: 16,
+                                            child: Container(
+                                              padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 4),
+                                              decoration: const BoxDecoration(
+                                                color: Colors.black,
                                               ),
-                                              SizedBox(
-                                                width: 4,
+                                              child: const Row(
+                                                children: [
+                                                  Icon(
+                                                    Icons.percent,
+                                                    color: Colors.white,
+                                                    size: 16,
+                                                  ),
+                                                  SizedBox(
+                                                    width: 4,
+                                                  ),
+                                                  Text(
+                                                    "30% off",
+                                                    style: TextStyle(
+                                                      color: Colors.white,
+                                                      fontSize: 13,
+                                                    ),
+                                                  )
+                                                ],
                                               ),
-                                              Text(
-                                                "30% off",
-                                                style: TextStyle(
-                                                  color: Colors.white,
-                                                  fontSize: 13,
-                                                ),
-                                              )
-                                            ],
-                                          ),
-                                        ))
+                                            ))
+                                        : Container(),
                                   ],
                                 ),
                               );
