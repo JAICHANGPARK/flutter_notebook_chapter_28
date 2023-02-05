@@ -91,6 +91,7 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                             children: [
                               Container(
                                 height: 360,
+                                margin: EdgeInsets.only(bottom: 24),
                                 decoration: const BoxDecoration(),
                                 child: Stack(
                                   children: [
@@ -106,6 +107,188 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                                           color: Colors.black,
                                       ),
                                     ),
+                                        )),
+                                    Positioned(
+                                      left: 8,
+                                      right: 0,
+                                      bottom: 0,
+                                      top: 0,
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.white,
+                                          borderRadius: BorderRadius.circular(12),
+                                        ),
+                                        child: Column(
+                                          children: [
+                                            Container(
+                                              height: 260,
+                                              decoration: const BoxDecoration(
+                                                color: Colors.pink,
+                                                borderRadius: BorderRadius.only(
+                                                  topLeft: Radius.circular(12),
+                                                  topRight: Radius.circular(12),
+                                                ),
+                                                image: DecorationImage(
+                                                  image: NetworkImage(
+                                                    "https://cdn.pixabay.com/photo/2016/11/29/12/54/cafe-1869656_960_720.jpg",
+                                                  ),
+                                                  fit: BoxFit.cover,
+                                                ),
+                                              ),
+                                              child: Stack(
+                                                children: [
+                                                  Positioned(
+                                                      right: 12,
+                                                      top: 12,
+                                                      child: Container(
+                                                        decoration: BoxDecoration(
+                                                          color: Colors.white,
+                                                          borderRadius: BorderRadius.circular(4),
+                                                        ),
+                                                        padding: const EdgeInsets.symmetric(
+                                                          horizontal: 6,
+                                                          vertical: 6,
+                                                        ),
+                                                        child: const Row(
+                                                          children: [
+                                                            Icon(
+                                                              Icons.location_on,
+                                                              size: 16,
+                                                            ),
+                                                            SizedBox(
+                                                              width: 4,
+                                                            ),
+                                                            Text(
+                                                              "1.2km",
+                                                            )
+                                                          ],
+                                                        ),
+                                                      ))
+                                                ],
+                                              ),
+                                            ),
+                                            Container(
+                                              padding: const EdgeInsets.all(12),
+                                              child: const Column(
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                children: [
+                                                  Row(
+                                                    children: [
+                                                      Text(
+                                                        "Title & Title Kitchen",
+                                                        style: TextStyle(
+                                                          fontWeight: FontWeight.bold,
+                                                          fontSize: 16,
+                                                        ),
+                                                      ),
+                                                      Spacer(),
+                                                      Icon(
+                                                        Icons.star,
+                                                        color: Colors.orange,
+                                                        size: 16,
+                                                      ),
+                                                      SizedBox(width: 6),
+                                                      Text(
+                                                        "4.8",
+                                                        style: TextStyle(
+                                                          fontWeight: FontWeight.bold,
+                                                        ),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                  SizedBox(
+                                                    height: 4,
+                                                  ),
+                                                  Text(
+                                                    "Coffee, Western, Local",
+                                                    style: TextStyle(
+                                                      color: Colors.grey,
+                                                    ),
+                                                  ),
+                                                  SizedBox(
+                                                    height: 12,
+                                                  ),
+                                                  Row(
+                                                    children: [
+                                                      Text(
+                                                        "Rp. 15k - 35k",
+                                                        style: TextStyle(
+                                                          fontWeight: FontWeight.bold,
+                                                        ),
+                                                      ),
+                                                      SizedBox(
+                                                        width: 24,
+                                                      ),
+                                                      Icon(
+                                                        Icons.access_time,
+                                                        size: 18,
+                                                      ),
+                                                      SizedBox(
+                                                        width: 6,
+                                                      ),
+                                                      Text("Buka"),
+                                                      Spacer(),
+                                                      Icon(
+                                                        Icons.favorite_border,
+                                                        color: Colors.grey,
+                                                      )
+                                                    ],
+                                                  )
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    Positioned(
+                                        left: 0,
+                                        top: 16,
+                                        child: Container(
+                                          padding: EdgeInsets.symmetric(vertical: 4, horizontal: 4),
+                                          decoration: const BoxDecoration(
+                                            color: Colors.black,
+                                          ),
+                                          child: const Row(
+                                            children: [
+                                              Icon(
+                                                Icons.percent,
+                                                color: Colors.white,
+                                                size: 16,
+                                              ),
+                                              SizedBox(
+                                                width: 4,
+                                              ),
+                                              Text(
+                                                "30% off",
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                  fontSize: 13,
+                                                ),
+                                              )
+                                            ],
+                                          ),
+                                        ))
+                                  ],
+                                ),
+                              ),
+                              Container(
+                                height: 360,
+                                decoration: const BoxDecoration(),
+                                child: Stack(
+                                  children: [
+                                    Positioned(
+                                        top: 32,
+                                        left: 3,
+                                        child: Transform.rotate(
+                                          angle: 45 * pi/ 180,
+                                          child: Container(
+                                            height: 14,
+                                            width: 14,
+                                            decoration: BoxDecoration(
+                                              color: Colors.black,
+                                            ),
+                                          ),
                                         )),
                                     Positioned(
                                       left: 8,
