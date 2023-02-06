@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class HealthCheckHomeScreen extends StatefulWidget {
   const HealthCheckHomeScreen({Key? key}) : super(key: key);
 
@@ -11,6 +10,8 @@ class HealthCheckHomeScreen extends StatefulWidget {
 class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return Column();
+    return const Column(
+      children: [],
+    );
   }
 }
