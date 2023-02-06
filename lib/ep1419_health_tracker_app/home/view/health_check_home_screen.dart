@@ -48,12 +48,31 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                   )
                 ],
               ),
+              SizedBox(
+                height: 20,
+              ),
               Row(
                 children: [
                   Column(
-                    children: [Text("1,032"), Text("Daily Avg Carbs")],
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "1,032",
+                        style: TextStyle(fontSize: 48),
+                      ),
+                      SizedBox(
+                        height: 12,
+                      ),
+                      Text("Daily Avg Carbs"),
+                    ],
                   ),
-                  Text("Goal : 312 gr"),
+                  Spacer(),
+                  Text(
+                    "Goal : 312 gr",
+                    style: TextStyle(
+                      fontSize: 20,
+                    ),
+                  ),
                 ],
               ),
               Container(
