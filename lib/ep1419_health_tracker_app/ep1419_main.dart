@@ -1,8 +1,7 @@
-
 import 'package:flutter/material.dart';
 
 void main() {
-
+  runApp(const HealthTrackerApp());
 }
 
 class HealthTrackerApp extends StatelessWidget {
@@ -10,6 +9,6 @@ class HealthTrackerApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const MaterialApp();
   }
 }
