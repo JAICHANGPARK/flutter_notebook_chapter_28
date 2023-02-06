@@ -16,6 +16,7 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
           padding: EdgeInsets.all(16),
           color: Colors.white,
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
                 children: [
@@ -26,9 +27,16 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                       color: Colors.orange,
                     ),
                   ),
+                  SizedBox(
+                    width: 12,
+                  ),
                   Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text("Hello👋,"),
+                      SizedBox(
+                        height: 8,
+                      ),
                       Text("Dreamwalker"),
                     ],
                   ),
