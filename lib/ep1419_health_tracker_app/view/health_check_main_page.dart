@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class HealthCheckMainPage extends StatefulWidget {
   const HealthCheckMainPage({Key? key}) : super(key: key);
 
@@ -11,6 +10,18 @@ class HealthCheckMainPage extends StatefulWidget {
 class _HealthCheckMainPageState extends State<HealthCheckMainPage> {
   @override
   Widget build(BuildContext context) {
-    return  Scaffold();
+    return Scaffold(
+      body: const Column(
+        children: [],
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const [
+          BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.search), label: "Search"),
+          BottomNavigationBarItem(icon: Icon(Icons.bar_chart), label: "Progress"),
+          BottomNavigationBarItem(icon: Icon(Icons.person_outlined), label: "Profile"),
+        ],
+      ),
+    );
   }
 }
