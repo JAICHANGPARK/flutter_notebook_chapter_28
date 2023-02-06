@@ -55,7 +55,7 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                 ],
               ),
               SizedBox(
-                height: 20,
+                height: 24,
               ),
               Row(
                 children: [
@@ -90,7 +90,7 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                 height: 24,
               ),
               Container(
-                height: 300,
+                height: 260,
                 color: Colors.blue,
               )
             ],
