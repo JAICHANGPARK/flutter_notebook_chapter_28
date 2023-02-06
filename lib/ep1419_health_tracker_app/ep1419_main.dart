@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_28/ep1419_health_tracker_app/view/health_check_main_page.dart';
 
 void main() {
   runApp(const HealthTrackerApp());
@@ -9,6 +10,8 @@ class HealthTrackerApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp();
+    return const MaterialApp(
+      home: HealthCheckMainPage(),
+    );
   }
 }
