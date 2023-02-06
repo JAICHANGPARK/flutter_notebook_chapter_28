@@ -10,8 +10,32 @@ class HealthCheckHomeScreen extends StatefulWidget {
 class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      children: [],
+    return Column(
+      children: [
+        Row(
+          children: [
+            Container(
+              height: 40,
+              width: 40,
+              decoration: BoxDecoration(
+                color: Colors.orange,
+              ),
+            ),
+            Column(
+              children: [
+                Text("Hello👋,"),
+                Text("Dreamwalker"),
+              ],
+            ),
+            IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.notifications_none,
+              ),
+            )
+          ],
+        )
+      ],
     );
   }
 }
