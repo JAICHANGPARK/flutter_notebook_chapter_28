@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_28/ep1419_health_tracker_app/home/view/health_check_home_screen.dart';
 
 class HealthCheckMainPage extends StatefulWidget {
   const HealthCheckMainPage({Key? key}) : super(key: key);
@@ -15,8 +16,8 @@ class _HealthCheckMainPageState extends State<HealthCheckMainPage> {
     return Scaffold(
       body: IndexedStack(
         index: selectedIndex,
-        children: [
-
+        children: const [
+          HealthCheckHomeScreen(),
         ],
       ),
       bottomNavigationBar: SizedBox(
@@ -33,7 +34,6 @@ class _HealthCheckMainPageState extends State<HealthCheckMainPage> {
           selectedItemColor: Colors.blueAccent,
           type: BottomNavigationBarType.fixed,
           iconSize: 32,
-
           items: const [
             BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
             BottomNavigationBarItem(icon: Icon(Icons.search), label: "Search"),
