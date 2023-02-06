@@ -37,7 +37,9 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                       SizedBox(
                         height: 8,
                       ),
-                      Text("Dreamwalker"),
+                      Text("Dreamwalker", style: TextStyle(
+                        fontSize: 18,
+                      ),),
                     ],
                   ),
                   IconButton(
@@ -63,7 +65,9 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                       SizedBox(
                         height: 12,
                       ),
-                      Text("Daily Avg Carbs"),
+                      Text("Daily Avg Carbs", style: TextStyle(
+                        fontSize: 18,
+                      ),),
                     ],
                   ),
                   Spacer(),
@@ -74,6 +78,9 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                     ),
                   ),
                 ],
+              ),
+              SizedBox(
+                height: 24,
               ),
               Container(
                 height: 300,
