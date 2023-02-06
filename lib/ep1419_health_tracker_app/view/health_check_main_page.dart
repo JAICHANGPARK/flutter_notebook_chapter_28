@@ -16,22 +16,27 @@ class _HealthCheckMainPageState extends State<HealthCheckMainPage> {
       body: const Column(
         children: [],
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: selectedIndex,
-        onTap: (idx) {
-          setState(() {
-            selectedIndex = idx;
-          });
-        },
-        unselectedItemColor: Colors.grey,
-        selectedItemColor: Colors.blueAccent,
-        type: BottomNavigationBarType.fixed,
-        items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.search), label: "Search"),
-          BottomNavigationBarItem(icon: Icon(Icons.bar_chart), label: "Progress"),
-          BottomNavigationBarItem(icon: Icon(Icons.person_outlined), label: "Profile"),
-        ],
+      bottomNavigationBar: SizedBox(
+        height: 80,
+        child: BottomNavigationBar(
+          currentIndex: selectedIndex,
+          elevation: 8,
+          onTap: (idx) {
+            setState(() {
+              selectedIndex = idx;
+            });
+          },
+          unselectedItemColor: Colors.grey,
+          selectedItemColor: Colors.blueAccent,
+          type: BottomNavigationBarType.fixed,
+          iconSize: 32,
+          items: const [
+            BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
+            BottomNavigationBarItem(icon: Icon(Icons.search), label: "Search"),
+            BottomNavigationBarItem(icon: Icon(Icons.bar_chart), label: "Progress"),
+            BottomNavigationBarItem(icon: Icon(Icons.person_outlined), label: "Profile"),
+          ],
+        ),
       ),
     );
   }
