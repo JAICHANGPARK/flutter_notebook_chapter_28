@@ -13,7 +13,7 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
     return Column(
       children: [
         Container(
-          padding: EdgeInsets.all(16),
+          padding: const EdgeInsets.all(16),
           color: Colors.white,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -23,14 +23,14 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                   Container(
                     height: 52,
                     width: 52,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Colors.orange,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 12,
                   ),
-                  Column(
+                  const Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text("Hello👋,"),
@@ -45,19 +45,19 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                       ),
                     ],
                   ),
-                  Spacer(),
+                  const Spacer(),
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.notifications_none,
                     ),
                   )
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 24,
               ),
-              Row(
+              const Row(
                 children: [
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -86,7 +86,7 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 24,
               ),
               Container(
@@ -96,10 +96,23 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
             ],
           ),
         ),
-        Container(
-          child: SingleChildScrollView(
-            child: Column(
-              children: [],
+        Expanded(
+          child: Container(
+            color: Colors.blueGrey[50],
+            child:  SingleChildScrollView(
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Text("Widget"),
+                      TextButton(
+                        onPressed: () {},
+                        child: Text("Edit"),
+                      ),
+                    ],
+                  )
+                ],
+              ),
             ),
           ),
         )
