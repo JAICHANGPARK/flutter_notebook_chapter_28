@@ -11,6 +11,6 @@ class HealthCheckMainPage extends StatefulWidget {
 class _HealthCheckMainPageState extends State<HealthCheckMainPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return  Scaffold();
   }
 }
