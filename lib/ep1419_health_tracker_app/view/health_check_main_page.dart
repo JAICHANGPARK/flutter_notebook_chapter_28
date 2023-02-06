@@ -8,6 +8,8 @@ class HealthCheckMainPage extends StatefulWidget {
 }
 
 class _HealthCheckMainPageState extends State<HealthCheckMainPage> {
+  int selectedIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,6 +17,15 @@ class _HealthCheckMainPageState extends State<HealthCheckMainPage> {
         children: [],
       ),
       bottomNavigationBar: BottomNavigationBar(
+        currentIndex: selectedIndex,
+        onTap: (idx) {
+          setState(() {
+            selectedIndex = idx;
+          });
+        },
+        unselectedItemColor: Colors.grey,
+        selectedItemColor: Colors.blueAccent,
+        type: BottomNavigationBarType.fixed,
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
           BottomNavigationBarItem(icon: Icon(Icons.search), label: "Search"),
