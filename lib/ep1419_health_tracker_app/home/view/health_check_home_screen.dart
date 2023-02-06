@@ -99,7 +99,8 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
         Expanded(
           child: Container(
             color: Colors.blueGrey[50],
-            child:  SingleChildScrollView(
+            padding: EdgeInsets.only(top: 16, left: 16),
+            child: SingleChildScrollView(
               child: Column(
                 children: [
                   Row(
@@ -110,9 +111,19 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                         child: Text("Edit"),
                       ),
                     ],
+                  ),
+                  Container(
+                    height: 160,
+                    margin: EdgeInsets.symmetric(vertical: 16),
+                    color: Colors.blue,
+                  ),
+                  Container(
+                    height: 160,
+                    color: Colors.blue,
                   )
                 ],
               ),
+
             ),
           ),
         )
