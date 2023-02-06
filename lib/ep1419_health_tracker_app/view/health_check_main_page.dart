@@ -13,8 +13,11 @@ class _HealthCheckMainPageState extends State<HealthCheckMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: const Column(
-        children: [],
+      body: IndexedStack(
+        index: selectedIndex,
+        children: [
+
+        ],
       ),
       bottomNavigationBar: SizedBox(
         height: 80,
@@ -30,6 +33,7 @@ class _HealthCheckMainPageState extends State<HealthCheckMainPage> {
           selectedItemColor: Colors.blueAccent,
           type: BottomNavigationBarType.fixed,
           iconSize: 32,
+
           items: const [
             BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
             BottomNavigationBarItem(icon: Icon(Icons.search), label: "Search"),
