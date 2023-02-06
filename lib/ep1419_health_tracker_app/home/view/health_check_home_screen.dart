@@ -21,8 +21,8 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
               Row(
                 children: [
                   Container(
-                    height: 40,
-                    width: 40,
+                    height: 52,
+                    width: 52,
                     decoration: BoxDecoration(
                       color: Colors.orange,
                     ),
@@ -37,11 +37,15 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                       SizedBox(
                         height: 8,
                       ),
-                      Text("Dreamwalker", style: TextStyle(
-                        fontSize: 18,
-                      ),),
+                      Text(
+                        "Dreamwalker",
+                        style: TextStyle(
+                          fontSize: 18,
+                        ),
+                      ),
                     ],
                   ),
+                  Spacer(),
                   IconButton(
                     onPressed: () {},
                     icon: Icon(
@@ -65,9 +69,12 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                       SizedBox(
                         height: 12,
                       ),
-                      Text("Daily Avg Carbs", style: TextStyle(
-                        fontSize: 18,
-                      ),),
+                      Text(
+                        "Daily Avg Carbs",
+                        style: TextStyle(
+                          fontSize: 18,
+                        ),
+                      ),
                     ],
                   ),
                   Spacer(),
