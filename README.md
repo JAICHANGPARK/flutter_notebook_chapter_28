@@ -6,7 +6,7 @@
 - by Deni Ardiansyah for ever
 - https://dribbble.com/shots/20572661-Health-Tracker-Mobile-App
 
-<img src="https://cdn.dribbble.com/userupload/4458340/file/original-625c8d4dee4df9f6edc5063ec4a91ab3.png?compress=1&resize=1600x1200" width="500px"/>
+<img src="https://cdn.dribbble.com/userupload/4486283/file/original-b5e861960000b4bb1c34ed9cd02c0f4b.jpg?compress=1&resize=1600x1200" width="500px"/>
 
 ### EP1416-1418
 
