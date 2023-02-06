@@ -14,11 +14,13 @@ class _HealthCheckMainPageState extends State<HealthCheckMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: IndexedStack(
-        index: selectedIndex,
-        children: const [
-          HealthCheckHomeScreen(),
-        ],
+      body: SafeArea(
+        child: IndexedStack(
+          index: selectedIndex,
+          children: const [
+            HealthCheckHomeScreen(),
+          ],
+        ),
       ),
       bottomNavigationBar: SizedBox(
         height: 80,
