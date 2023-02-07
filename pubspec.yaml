@@ -20,6 +20,7 @@ dependencies:
   freezed_annotation: any
   json_annotation: any
   flutter_speed_dial: ^6.2.0
+  fl_chart: ^0.60.0
 
 dev_dependencies:
   flutter_test:
