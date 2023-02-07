@@ -23,8 +23,9 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                   Container(
                     height: 52,
                     width: 52,
-                    decoration: const BoxDecoration(
+                    decoration: BoxDecoration(
                       color: Colors.orange,
+                      borderRadius: BorderRadius.circular(8),
                     ),
                   ),
                   const SizedBox(
