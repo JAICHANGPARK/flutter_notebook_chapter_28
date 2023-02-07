@@ -167,7 +167,7 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                           width: 140,
                           child: Card(
                             child: Padding(
-                              padding: const EdgeInsets.all(16.0),
+                              padding: const EdgeInsets.all(12.0),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
@@ -175,7 +175,7 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                                     height: 54,
                                     width: 54,
                                     decoration: BoxDecoration(
-                                      color: Colors.blueGrey[50],
+                                      color: Colors.grey[100],
                                       borderRadius: BorderRadius.circular(8),
                                     ),
                                     child: Center(
@@ -195,6 +195,7 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                                     "4,013",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
+                                      fontSize: 16,
                                     ),
                                   ),
                                 ],
