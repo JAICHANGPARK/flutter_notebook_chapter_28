@@ -10,11 +10,14 @@ class HealthTrackerProgressScreen extends StatefulWidget {
 class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScreen> {
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       children: [
         Text(
           "Progress",
-          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 34),
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 34,
+          ),
         )
       ],
     );
