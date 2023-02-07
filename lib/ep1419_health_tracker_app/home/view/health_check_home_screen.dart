@@ -250,7 +250,7 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                           ),
                         ),
                         SizedBox(
-                          // width: 140,
+                          width: 150,
                           child: Card(
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(12),
@@ -269,7 +269,7 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                                     ),
                                     child: const Center(
                                       child: Text("🔥",style: TextStyle(
-                                        fontSize: 16
+                                        fontSize: 20
                                       ),),
                                     ),
                                   ),
@@ -277,13 +277,13 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                                     height: 12,
                                   ),
                                   const Text(
-                                    "Distance Covered",
+                                    "Calories",
                                     style: TextStyle(
                                       color: Colors.grey,
                                     ),
                                   ),
                                   const Text(
-                                    "5,3km",
+                                    "1,311",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 16,
