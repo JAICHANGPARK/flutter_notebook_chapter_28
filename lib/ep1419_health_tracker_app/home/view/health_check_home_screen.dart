@@ -158,7 +158,7 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                   ),
                   Container(
                     height: 140,
-                    margin: const EdgeInsets.symmetric(vertical: 16),
+                    margin: const EdgeInsets.fromLTRB(0, 8, 0, 20),
                     color: Colors.blue,
                     child: ListView(
                       scrollDirection: Axis.horizontal,
@@ -166,6 +166,9 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                         SizedBox(
                           width: 140,
                           child: Card(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(12),
+                            ),
                             child: Padding(
                               padding: const EdgeInsets.all(12.0),
                               child: Column(
