@@ -99,22 +99,22 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
         Expanded(
           child: Container(
             color: Colors.blueGrey[50],
-            padding: EdgeInsets.only(top: 16, left: 16),
+            padding: const EdgeInsets.only(top: 16, left: 16),
             child: SingleChildScrollView(
               child: Column(
                 children: [
                   Row(
                     children: [
-                      Text("Widget"),
+                      const Text("Widget"),
                       TextButton(
                         onPressed: () {},
-                        child: Text("Edit"),
+                        child: const Text("Edit"),
                       ),
                     ],
                   ),
                   Container(
                     height: 160,
-                    margin: EdgeInsets.symmetric(vertical: 16),
+                    margin: const EdgeInsets.symmetric(vertical: 16),
                     color: Colors.blue,
                   ),
                   Container(
