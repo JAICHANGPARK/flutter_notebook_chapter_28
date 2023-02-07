@@ -62,22 +62,26 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text.rich(TextSpan(children: [
+                      Text.rich(
                         TextSpan(
-                          text: "1,032",
-                          style: TextStyle(
-                            fontSize: 42,
-                            color: Colors.blueAccent,
-                            fontWeight: FontWeight.bold,
-                          ),
+                          children: [
+                            TextSpan(
+                              text: "1,032",
+                              style: TextStyle(
+                                fontSize: 42,
+                                color: Colors.blueAccent,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            TextSpan(
+                              text: " gr",
+                              style: TextStyle(
+                                fontSize: 24,
+                              ),
+                            )
+                          ],
                         ),
-                        TextSpan(
-                          text: " gr",
-                          style: TextStyle(
-                            fontSize: 24,
-                          ),
-                        )
-                      ])),
+                      ),
                       SizedBox(
                         height: 12,
                       ),
