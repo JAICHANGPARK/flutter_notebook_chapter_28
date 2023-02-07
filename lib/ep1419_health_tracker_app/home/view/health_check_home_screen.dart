@@ -165,7 +165,13 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                         Card(
                           child: Column(
                             children: [
-                              
+                              Container(
+                                height: 54,
+                                width: 54,
+                                decoration: BoxDecoration(
+                                  color: Colors.blueGrey[50],
+                                ),
+                              )
                             ],
                           ),
                         )
