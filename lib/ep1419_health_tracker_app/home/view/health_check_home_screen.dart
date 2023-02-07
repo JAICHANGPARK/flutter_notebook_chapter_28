@@ -157,22 +157,49 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                     ],
                   ),
                   Container(
-                    height: 160,
+                    height: 140,
                     margin: const EdgeInsets.symmetric(vertical: 16),
                     color: Colors.blue,
                     child: ListView(
+                      scrollDirection: Axis.horizontal,
                       children: [
-                        Card(
-                          child: Column(
-                            children: [
-                              Container(
-                                height: 54,
-                                width: 54,
-                                decoration: BoxDecoration(
-                                  color: Colors.blueGrey[50],
-                                ),
-                              )
-                            ],
+                        SizedBox(
+                          width: 140,
+                          child: Card(
+                            child: Padding(
+                              padding: const EdgeInsets.all(16.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Container(
+                                    height: 54,
+                                    width: 54,
+                                    decoration: BoxDecoration(
+                                      color: Colors.blueGrey[50],
+                                      borderRadius: BorderRadius.circular(8),
+                                    ),
+                                    child: Center(
+                                      child: Text("🦶"),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 12,
+                                  ),
+                                  Text(
+                                    "Step",
+                                    style: TextStyle(
+                                      color: Colors.grey,
+                                    ),
+                                  ),
+                                  Text(
+                                    "4,013",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
                           ),
                         )
                       ],
