@@ -322,7 +322,10 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                             borderRadius: BorderRadius.circular(8),
                           ),
                         ),
-                        Column(
+                        const SizedBox(
+                          width: 16,
+                        ),
+                        const Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
@@ -332,7 +335,16 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                                 fontSize: 18,
                               ),
                             ),
-                            Text("1500 ml of 3000 ml"),
+                            SizedBox(
+                              height: 8,
+                            ),
+                            Text(
+                              "1500 ml of 3000 ml",
+                              style: TextStyle(
+                                color: Colors.grey,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
                           ],
                         )
                       ],
