@@ -181,20 +181,20 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                                       color: Colors.grey[100],
                                       borderRadius: BorderRadius.circular(8),
                                     ),
-                                    child: Center(
+                                    child: const Center(
                                       child: Text("🦶"),
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 12,
                                   ),
-                                  Text(
+                                  const Text(
                                     "Step",
                                     style: TextStyle(
                                       color: Colors.grey,
                                     ),
                                   ),
-                                  Text(
+                                  const Text(
                                     "4,013",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
@@ -224,20 +224,65 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                                       color: Colors.grey[100],
                                       borderRadius: BorderRadius.circular(8),
                                     ),
-                                    child: Center(
+                                    child: const Center(
                                       child: Text("🏃‍♂"),
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 12,
                                   ),
-                                  Text(
+                                  const Text(
                                     "Distance Covered",
                                     style: TextStyle(
                                       color: Colors.grey,
                                     ),
                                   ),
-                                  Text(
+                                  const Text(
+                                    "5,3km",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 16,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          // width: 140,
+                          child: Card(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                            child: Padding(
+                              padding: const EdgeInsets.all(12.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Container(
+                                    height: 54,
+                                    width: 54,
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey[100],
+                                      borderRadius: BorderRadius.circular(8),
+                                    ),
+                                    child: const Center(
+                                      child: Text("🔥",style: TextStyle(
+                                        fontSize: 16
+                                      ),),
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    height: 12,
+                                  ),
+                                  const Text(
+                                    "Distance Covered",
+                                    style: TextStyle(
+                                      color: Colors.grey,
+                                    ),
+                                  ),
+                                  const Text(
                                     "5,3km",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
