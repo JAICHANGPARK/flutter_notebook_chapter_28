@@ -144,6 +144,7 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                           fontSize: 24,
                         ),
                       ),
+                      const Spacer(),
                       TextButton(
                         onPressed: () {},
                         child: const Text(
@@ -159,6 +160,17 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                     height: 160,
                     margin: const EdgeInsets.symmetric(vertical: 16),
                     color: Colors.blue,
+                    child: ListView(
+                      children: [
+                        Card(
+                          child: Column(
+                            children: [
+                              
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
                   ),
                   Container(
                     height: 160,
