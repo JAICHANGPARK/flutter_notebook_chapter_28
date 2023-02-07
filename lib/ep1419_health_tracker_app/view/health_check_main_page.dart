@@ -25,6 +25,7 @@ class _HealthCheckMainPageState extends State<HealthCheckMainPage> {
       bottomNavigationBar: SizedBox(
         height: 80,
         child: BottomNavigationBar(
+          backgroundColor: Colors.white,
           currentIndex: selectedIndex,
           elevation: 8,
           onTap: (idx) {
