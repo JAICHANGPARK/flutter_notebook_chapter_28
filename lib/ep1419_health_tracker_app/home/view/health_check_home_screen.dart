@@ -163,7 +163,7 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                       scrollDirection: Axis.horizontal,
                       children: [
                         Container(
-                            margin: EdgeInsets.only(right: 16),
+                            margin: EdgeInsets.only(right: 12),
                           width: 150,
                           child: Card(
                             shape: RoundedRectangleBorder(
@@ -210,7 +210,7 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.only(right: 16),
+                          margin: EdgeInsets.only(right: 12),
                           width: 150,
                           child: Card(
                             shape: RoundedRectangleBorder(
@@ -257,7 +257,7 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.only(right: 16),
+                          margin: EdgeInsets.only(right: 12),
                           width: 150,
                           child: Card(
                             shape: RoundedRectangleBorder(
