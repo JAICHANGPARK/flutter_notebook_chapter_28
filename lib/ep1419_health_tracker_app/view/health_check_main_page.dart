@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_28/ep1419_health_tracker_app/home/view/health_check_home_screen.dart';
+import 'package:flutter_notebook_chapter_28/ep1419_health_tracker_app/progress/view/health_tracker_progress_screen.dart';
 
 class HealthCheckMainPage extends StatefulWidget {
   const HealthCheckMainPage({Key? key}) : super(key: key);
@@ -17,8 +18,10 @@ class _HealthCheckMainPageState extends State<HealthCheckMainPage> {
       body: SafeArea(
         child: IndexedStack(
           index: selectedIndex,
-          children: const [
-            HealthCheckHomeScreen(),
+          children: [
+            const HealthCheckHomeScreen(),
+            Container(),
+            const HealthTrackerProgressScreen(),
           ],
         ),
       ),
