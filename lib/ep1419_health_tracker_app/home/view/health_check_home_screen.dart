@@ -157,14 +157,13 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                     ],
                   ),
                   Container(
-                    height: 140,
+                    height: 150,
                     margin: const EdgeInsets.fromLTRB(0, 8, 0, 20),
-                    color: Colors.blue,
                     child: ListView(
                       scrollDirection: Axis.horizontal,
                       children: [
                         SizedBox(
-                          width: 140,
+                          width: 150,
                           child: Card(
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(12),
@@ -207,7 +206,7 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                           ),
                         ),
                         SizedBox(
-                          // width: 140,
+                          width: 150,
                           child: Card(
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(12),
@@ -268,9 +267,10 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                                       borderRadius: BorderRadius.circular(8),
                                     ),
                                     child: const Center(
-                                      child: Text("🔥",style: TextStyle(
-                                        fontSize: 20
-                                      ),),
+                                      child: Text(
+                                        "🔥",
+                                        style: TextStyle(fontSize: 20),
+                                      ),
                                     ),
                                   ),
                                   const SizedBox(
