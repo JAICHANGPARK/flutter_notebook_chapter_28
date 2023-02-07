@@ -181,7 +181,10 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                                       borderRadius: BorderRadius.circular(8),
                                     ),
                                     child: const Center(
-                                      child: Text("🦶"),
+                                      child: Text(
+                                        "🦶",
+                                        style: TextStyle(fontSize: 20),
+                                      ),
                                     ),
                                   ),
                                   const SizedBox(
@@ -224,7 +227,10 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                                       borderRadius: BorderRadius.circular(8),
                                     ),
                                     child: const Center(
-                                      child: Text("🏃‍♂"),
+                                      child: Text(
+                                        "🏃‍♂",
+                                        style: TextStyle(fontSize: 20),
+                                      ),
                                     ),
                                   ),
                                   const SizedBox(
@@ -298,8 +304,22 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                     ),
                   ),
                   Container(
-                    height: 160,
-                    color: Colors.blue,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                    ),
+                    padding: EdgeInsets.all(16),
+                    child: Row(
+                      children: [
+                        Container(
+                          height: 54,
+                          width: 54,
+                          decoration: BoxDecoration(
+                            color: Colors.grey[100],
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                        )
+                      ],
+                    ),
                   )
                 ],
               ),
