@@ -147,11 +147,11 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                       const Spacer(),
                       TextButton(
                         onPressed: () {},
-                        child: const Text(
-                          "Edit",
-                        ),
                         style: TextButton.styleFrom(
                           foregroundColor: Colors.black,
+                        ),
+                        child: const Text(
+                          "Edit",
                         ),
                       ),
                     ],
