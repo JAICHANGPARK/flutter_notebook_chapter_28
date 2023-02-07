@@ -90,10 +90,20 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                     ],
                   ),
                   Spacer(),
-                  Text(
-                    "Goal : 312 gr",
-                    style: TextStyle(
-                      fontSize: 20,
+                  Text.rich(
+                    TextSpan(
+                      children: [
+                        TextSpan(
+                          text: "Goal : 312",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20,
+                          ),
+                        ),
+                        TextSpan(
+                          text: "  gr",
+                        )
+                      ],
                     ),
                   ),
                 ],
