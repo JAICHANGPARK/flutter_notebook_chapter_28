@@ -321,6 +321,19 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                             color: Colors.grey[100],
                             borderRadius: BorderRadius.circular(8),
                           ),
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "Water",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18,
+                              ),
+                            ),
+                            Text("1500 ml of 3000 ml"),
+                          ],
                         )
                       ],
                     ),
