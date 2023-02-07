@@ -84,7 +84,8 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                       Text(
                         "Daily Avg Carbs",
                         style: TextStyle(
-                          fontSize: 18,
+                          fontSize: 16,
+                          color: Colors.grey,
                         ),
                       ),
                     ],
