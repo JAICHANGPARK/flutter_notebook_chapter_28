@@ -1,3 +1,4 @@
+import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
 class HealthCheckHomeScreen extends StatefulWidget {
@@ -120,6 +121,9 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
               Container(
                 height: 260,
                 color: Colors.blue,
+                child: BarChart(
+                  BarChartData(),
+                ),
               )
             ],
           ),
@@ -133,10 +137,21 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                 children: [
                   Row(
                     children: [
-                      const Text("Widget"),
+                      const Text(
+                        "Widget",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 24,
+                        ),
+                      ),
                       TextButton(
                         onPressed: () {},
-                        child: const Text("Edit"),
+                        child: const Text(
+                          "Edit",
+                        ),
+                        style: TextButton.styleFrom(
+                          foregroundColor: Colors.black,
+                        ),
                       ),
                     ],
                   ),
