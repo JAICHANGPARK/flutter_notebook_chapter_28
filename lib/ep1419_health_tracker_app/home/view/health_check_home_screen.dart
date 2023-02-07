@@ -321,6 +321,11 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                             color: Colors.grey[100],
                             borderRadius: BorderRadius.circular(8),
                           ),
+                          child: Center(
+                            child: Text("💧", style: TextStyle(
+                              fontSize: 20
+                            ),),
+                          ),
                         ),
                         const SizedBox(
                           width: 16,
