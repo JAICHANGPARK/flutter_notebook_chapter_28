@@ -157,22 +157,22 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                           getTitlesWidget: (value, meta) {
                             switch (value.toInt()) {
                               case 0:
-                                return Text("Sun");
+                                return const Text("Sun");
                               case 1:
-                                return Text("Mon");
+                                return const Text("Mon");
                               case 2:
-                                return Text("Tue");
+                                return const Text("Tue");
                               case 3:
-                                return Text("Wed");
+                                return const Text("Wed");
                               case 4:
-                                return Text("Thu");
+                                return const Text("Thu");
                               case 5:
-                                return Text("Fri");
+                                return const Text("Fri");
                               case 6:
-                                return Text("Sat");
+                                return const Text("Sat");
 
                               default:
-                                return Text("???");
+                                return const Text("???");
                             }
                           },
                         ),
@@ -202,10 +202,10 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                             width: 24,
                             borderRadius: BorderRadius.zero,
                             rodStackItems: [
-                              BarChartRodStackItem(0, 50, Colors.red),
-                              BarChartRodStackItem(50, 100, Colors.orange),
-                              BarChartRodStackItem(100, 150, Colors.yellow),
-                              BarChartRodStackItem(150, 250, Colors.grey[300]!),
+                              BarChartRodStackItem(0, 100, Colors.red),
+                              BarChartRodStackItem(100, 125, Colors.orange),
+                              BarChartRodStackItem(125, 200, Colors.yellow),
+                              BarChartRodStackItem(200, 250, Colors.grey[300]!),
                             ],
                             toY: 250,
                           ),
@@ -235,9 +235,9 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                             borderRadius: BorderRadius.zero,
                             rodStackItems: [
                               BarChartRodStackItem(0, 50, Colors.red),
-                              BarChartRodStackItem(50, 100, Colors.orange),
-                              BarChartRodStackItem(100, 150, Colors.yellow),
-                              BarChartRodStackItem(150, 250, Colors.grey[300]!),
+                              BarChartRodStackItem(50, 75, Colors.orange),
+                              BarChartRodStackItem(75, 180, Colors.yellow),
+                              BarChartRodStackItem(180, 250, Colors.grey[300]!),
                             ],
                             toY: 250,
                           ),
@@ -267,9 +267,9 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                             borderRadius: BorderRadius.zero,
                             rodStackItems: [
                               BarChartRodStackItem(0, 50, Colors.red),
-                              BarChartRodStackItem(50, 100, Colors.orange),
-                              BarChartRodStackItem(100, 150, Colors.yellow),
-                              BarChartRodStackItem(150, 250, Colors.grey[300]!),
+                              BarChartRodStackItem(50, 75, Colors.orange),
+                              BarChartRodStackItem(75, 180, Colors.yellow),
+                              BarChartRodStackItem(180, 250, Colors.grey[300]!),
                             ],
                             toY: 250,
                           ),
