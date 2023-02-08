@@ -120,17 +120,44 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
               ),
               Container(
                 height: 260,
-
                 child: BarChart(
                   BarChartData(
                     borderData: FlBorderData(
                       show: false,
                     ),
-                    gridData: FlGridData(
-                      show: false
-                    )
-                  ),
+                    gridData: FlGridData(show: false),
+                    barGroups: [
+                      BarChartGroupData(
+                        x: 0,
+                        barRods: [
+                          BarChartRodData(
+                              width: 24,
+                              borderRadius: BorderRadius.zero,
+                              toY: 50,
+                              fromY: 0,
+                              color: Colors.red,
+                              rodStackItems: [
+                                BarChartRodStackItem(
 
+                                ),
+                              ]),
+                          BarChartRodData(
+                            width: 24,
+                            borderRadius: BorderRadius.zero,
+                            toY: 100,
+                            fromY: 0,
+                            color: Colors.yellow,
+                          ),
+                        ],
+                      ),
+                      BarChartGroupData(x: 1),
+                      BarChartGroupData(x: 2),
+                      BarChartGroupData(x: 3),
+                      BarChartGroupData(x: 4),
+                      BarChartGroupData(x: 5),
+                      BarChartGroupData(x: 6),
+                    ],
+                  ),
                 ),
               )
             ],
