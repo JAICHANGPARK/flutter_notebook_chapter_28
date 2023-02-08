@@ -138,10 +138,17 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                         ),
                       ),
                       leftTitles: AxisTitles(
-                        sideTitles: SideTitles(
-                          showTitles: false,
-                        ),
-                      ),
+                          sideTitles: SideTitles(
+                              showTitles: true,
+                              interval: 50,
+                              reservedSize: 32,
+                              getTitlesWidget: (double value, TitleMeta meta) {
+                                return Text(
+                                  "${value.toStringAsFixed(0)} gr",
+                                  style: TextStyle(fontSize: 11),
+                                );
+                              }),
+                          axisNameSize: 16),
                     ),
                     barGroups: [
                       BarChartGroupData(
