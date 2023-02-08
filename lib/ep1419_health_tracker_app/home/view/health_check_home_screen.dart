@@ -127,41 +127,57 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                     ),
                     gridData: FlGridData(show: false),
                     titlesData: FlTitlesData(
-                        rightTitles: AxisTitles(
-                          sideTitles: SideTitles(
-                            showTitles: false,
-                          ),
+                      rightTitles: AxisTitles(
+                        sideTitles: SideTitles(
+                          showTitles: false,
                         ),
-                        topTitles: AxisTitles(
-                          sideTitles: SideTitles(
-                            showTitles: false,
-                          ),
+                      ),
+                      topTitles: AxisTitles(
+                        sideTitles: SideTitles(
+                          showTitles: false,
                         ),
-                        leftTitles: AxisTitles(
-                            sideTitles: SideTitles(
-                              showTitles: true,
-                              interval: 50,
-                              reservedSize: 32,
-                              getTitlesWidget: (double value, TitleMeta meta) {
-                                return Text(
-                                  "${value.toStringAsFixed(0)} gr",
-                                  style: const TextStyle(fontSize: 11),
-                                );
-                              },
-                            ),
-                            axisNameSize: 16),
-                        bottomTitles: AxisTitles(
-                            sideTitles: SideTitles(
-                                showTitles: true,
-                                getTitlesWidget: (value, meta) {
-                                  switch (value.toInt()) {
-                                    case 0:
-                                      return Text("Sun");
+                      ),
+                      leftTitles: AxisTitles(
+                          sideTitles: SideTitles(
+                            showTitles: true,
+                            interval: 50,
+                            reservedSize: 32,
+                            getTitlesWidget: (double value, TitleMeta meta) {
+                              return Text(
+                                "${value.toStringAsFixed(0)} gr",
+                                style: const TextStyle(fontSize: 11),
+                              );
+                            },
+                          ),
+                          axisNameSize: 16),
+                      bottomTitles: AxisTitles(
+                        sideTitles: SideTitles(
+                          showTitles: true,
+                          reservedSize: 24,
+                          getTitlesWidget: (value, meta) {
+                            switch (value.toInt()) {
+                              case 0:
+                                return Text("Sun");
+                              case 1:
+                                return Text("Mon");
+                              case 2:
+                                return Text("Tue");
+                              case 3:
+                                return Text("Wed");
+                              case 4:
+                                return Text("Thu");
+                              case 5:
+                                return Text("Fri");
+                              case 6:
+                                return Text("Sat");
 
-                                    default:
-                                      return Text("???");
-                                  }
-                                }))),
+                              default:
+                                return Text("???");
+                            }
+                          },
+                        ),
+                      ),
+                    ),
                     barGroups: [
                       BarChartGroupData(
                         x: 0,
