@@ -131,22 +131,16 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                         x: 0,
                         barRods: [
                           BarChartRodData(
-                              width: 24,
-                              borderRadius: BorderRadius.zero,
-                              toY: 50,
-                              fromY: 0,
-                              color: Colors.red,
-                              rodStackItems: [
-                                BarChartRodStackItem(
-
-                                ),
-                              ]),
-                          BarChartRodData(
                             width: 24,
                             borderRadius: BorderRadius.zero,
-                            toY: 100,
+                            toY: 50,
                             fromY: 0,
-                            color: Colors.yellow,
+                            color: Colors.red,
+                            rodStackItems: [
+                              BarChartRodStackItem(50, 100, Colors.orange),
+                              BarChartRodStackItem(100, 150, Colors.yellow),
+                              BarChartRodStackItem(0, 250, Colors.grey),
+                            ],
                           ),
                         ],
                       ),
