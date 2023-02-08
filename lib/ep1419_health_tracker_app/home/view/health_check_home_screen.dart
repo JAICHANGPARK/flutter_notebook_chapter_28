@@ -137,8 +137,9 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                             // fromY: 0,
                             color: Colors.red,
                             rodStackItems: [
-                              BarChartRodStackItem(0, 50, Colors.orange),
-                              BarChartRodStackItem(50, 150, Colors.yellow),
+                              BarChartRodStackItem(0, 50, Colors.red),
+                              BarChartRodStackItem(50, 100, Colors.orange),
+                              BarChartRodStackItem(100, 150, Colors.orange),
                               BarChartRodStackItem(150, 250, Colors.grey),
                             ],
                             toY: 250,
