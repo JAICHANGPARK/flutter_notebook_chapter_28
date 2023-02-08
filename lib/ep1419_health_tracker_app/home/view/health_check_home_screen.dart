@@ -137,6 +137,11 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                           showTitles: false,
                         ),
                       ),
+                      leftTitles: AxisTitles(
+                        sideTitles: SideTitles(
+                          showTitles: false,
+                        ),
+                      ),
                     ),
                     barGroups: [
                       BarChartGroupData(
