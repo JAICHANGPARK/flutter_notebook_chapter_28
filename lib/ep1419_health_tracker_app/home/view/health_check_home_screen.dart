@@ -126,6 +126,18 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                       show: false,
                     ),
                     gridData: FlGridData(show: false),
+                    titlesData: FlTitlesData(
+                      rightTitles: AxisTitles(
+                        sideTitles: SideTitles(
+                          showTitles: false,
+                        ),
+                      ),
+                      topTitles: AxisTitles(
+                        sideTitles: SideTitles(
+                          showTitles: false,
+                        ),
+                      ),
+                    ),
                     barGroups: [
                       BarChartGroupData(
                         x: 0,
@@ -133,14 +145,11 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                           BarChartRodData(
                             width: 24,
                             borderRadius: BorderRadius.zero,
-                            // toY: 50,
-                            // fromY: 0,
-                            color: Colors.red,
                             rodStackItems: [
                               BarChartRodStackItem(0, 50, Colors.red),
                               BarChartRodStackItem(50, 100, Colors.orange),
-                              BarChartRodStackItem(100, 150, Colors.orange),
-                              BarChartRodStackItem(150, 250, Colors.grey),
+                              BarChartRodStackItem(100, 150, Colors.yellow),
+                              BarChartRodStackItem(150, 250, Colors.grey[300]!),
                             ],
                             toY: 250,
                           ),
