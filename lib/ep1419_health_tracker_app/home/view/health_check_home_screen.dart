@@ -120,9 +120,17 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
               ),
               Container(
                 height: 260,
-                color: Colors.blue,
+
                 child: BarChart(
-                  BarChartData(),
+                  BarChartData(
+                    borderData: FlBorderData(
+                      show: false,
+                    ),
+                    gridData: FlGridData(
+                      show: false
+                    )
+                  ),
+
                 ),
               )
             ],
