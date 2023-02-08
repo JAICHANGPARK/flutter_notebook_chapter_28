@@ -167,12 +167,102 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                           ),
                         ],
                       ),
-                      BarChartGroupData(x: 1),
-                      BarChartGroupData(x: 2),
-                      BarChartGroupData(x: 3),
-                      BarChartGroupData(x: 4),
-                      BarChartGroupData(x: 5),
-                      BarChartGroupData(x: 6),
+                      BarChartGroupData(
+                        x: 1,
+                        barRods: [
+                          BarChartRodData(
+                            width: 24,
+                            borderRadius: BorderRadius.zero,
+                            rodStackItems: [
+                              BarChartRodStackItem(0, 50, Colors.red),
+                              BarChartRodStackItem(50, 100, Colors.orange),
+                              BarChartRodStackItem(100, 150, Colors.yellow),
+                              BarChartRodStackItem(150, 250, Colors.grey[300]!),
+                            ],
+                            toY: 250,
+                          ),
+                        ],
+                      ),
+                      BarChartGroupData(
+                        x: 2,
+                        barRods: [
+                          BarChartRodData(
+                            width: 24,
+                            borderRadius: BorderRadius.zero,
+                            rodStackItems: [
+                              BarChartRodStackItem(0, 50, Colors.red),
+                              BarChartRodStackItem(50, 100, Colors.orange),
+                              BarChartRodStackItem(100, 150, Colors.yellow),
+                              BarChartRodStackItem(150, 250, Colors.grey[300]!),
+                            ],
+                            toY: 250,
+                          ),
+                        ],
+                      ),
+                      BarChartGroupData(
+                        x: 3,
+                        barRods: [
+                          BarChartRodData(
+                            width: 24,
+                            borderRadius: BorderRadius.zero,
+                            rodStackItems: [
+                              BarChartRodStackItem(0, 50, Colors.red),
+                              BarChartRodStackItem(50, 100, Colors.orange),
+                              BarChartRodStackItem(100, 150, Colors.yellow),
+                              BarChartRodStackItem(150, 250, Colors.grey[300]!),
+                            ],
+                            toY: 250,
+                          ),
+                        ],
+                      ),
+                      BarChartGroupData(
+                        x: 0,
+                        barRods: [
+                          BarChartRodData(
+                            width: 24,
+                            borderRadius: BorderRadius.zero,
+                            rodStackItems: [
+                              BarChartRodStackItem(0, 50, Colors.red),
+                              BarChartRodStackItem(50, 100, Colors.orange),
+                              BarChartRodStackItem(100, 150, Colors.yellow),
+                              BarChartRodStackItem(150, 250, Colors.grey[300]!),
+                            ],
+                            toY: 250,
+                          ),
+                        ],
+                      ),
+                      BarChartGroupData(
+                        x: 0,
+                        barRods: [
+                          BarChartRodData(
+                            width: 24,
+                            borderRadius: BorderRadius.zero,
+                            rodStackItems: [
+                              BarChartRodStackItem(0, 50, Colors.red),
+                              BarChartRodStackItem(50, 100, Colors.orange),
+                              BarChartRodStackItem(100, 150, Colors.yellow),
+                              BarChartRodStackItem(150, 250, Colors.grey[300]!),
+                            ],
+                            toY: 250,
+                          ),
+                        ],
+                      ),
+                      BarChartGroupData(
+                        x: 0,
+                        barRods: [
+                          BarChartRodData(
+                            width: 24,
+                            borderRadius: BorderRadius.zero,
+                            rodStackItems: [
+                              BarChartRodStackItem(0, 50, Colors.red),
+                              BarChartRodStackItem(50, 100, Colors.orange),
+                              BarChartRodStackItem(100, 150, Colors.yellow),
+                              BarChartRodStackItem(150, 250, Colors.grey[300]!),
+                            ],
+                            toY: 250,
+                          ),
+                        ],
+                      ),
                     ],
                   ),
                 ),
