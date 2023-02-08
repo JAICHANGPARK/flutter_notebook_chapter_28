@@ -116,10 +116,10 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                 ],
               ),
               const SizedBox(
-                height: 24,
+                height: 32,
               ),
-              Container(
-                height: 260,
+              SizedBox(
+                height: 240,
                 child: BarChart(
                   BarChartData(
                     borderData: FlBorderData(
@@ -127,29 +127,41 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                     ),
                     gridData: FlGridData(show: false),
                     titlesData: FlTitlesData(
-                      rightTitles: AxisTitles(
-                        sideTitles: SideTitles(
-                          showTitles: false,
-                        ),
-                      ),
-                      topTitles: AxisTitles(
-                        sideTitles: SideTitles(
-                          showTitles: false,
-                        ),
-                      ),
-                      leftTitles: AxisTitles(
+                        rightTitles: AxisTitles(
                           sideTitles: SideTitles(
+                            showTitles: false,
+                          ),
+                        ),
+                        topTitles: AxisTitles(
+                          sideTitles: SideTitles(
+                            showTitles: false,
+                          ),
+                        ),
+                        leftTitles: AxisTitles(
+                            sideTitles: SideTitles(
                               showTitles: true,
                               interval: 50,
                               reservedSize: 32,
                               getTitlesWidget: (double value, TitleMeta meta) {
                                 return Text(
                                   "${value.toStringAsFixed(0)} gr",
-                                  style: TextStyle(fontSize: 11),
+                                  style: const TextStyle(fontSize: 11),
                                 );
-                              }),
-                          axisNameSize: 16),
-                    ),
+                              },
+                            ),
+                            axisNameSize: 16),
+                        bottomTitles: AxisTitles(
+                            sideTitles: SideTitles(
+                                showTitles: true,
+                                getTitlesWidget: (value, meta) {
+                                  switch (value.toInt()) {
+                                    case 0:
+                                      return Text("Sun");
+
+                                    default:
+                                      return Text("???");
+                                  }
+                                }))),
                     barGroups: [
                       BarChartGroupData(
                         x: 0,
@@ -216,7 +228,7 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                         ],
                       ),
                       BarChartGroupData(
-                        x: 0,
+                        x: 4,
                         barRods: [
                           BarChartRodData(
                             width: 24,
@@ -232,7 +244,7 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                         ],
                       ),
                       BarChartGroupData(
-                        x: 0,
+                        x: 5,
                         barRods: [
                           BarChartRodData(
                             width: 24,
@@ -248,7 +260,7 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                         ],
                       ),
                       BarChartGroupData(
-                        x: 0,
+                        x: 6,
                         barRods: [
                           BarChartRodData(
                             width: 24,
