@@ -15,6 +15,16 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
     ),
   );
 
+  Widget buildDayTextWidget(int week){
+    switch(week) {
+      case 0:
+
+        break;
+      default:
+    }
+
+    return Text("??");
+  }
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -33,9 +43,17 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
         Container(
           height: 64,
           color: Colors.pink,
-          child: ListView.builder(itemBuilder: (context, index) {
-            return Container();
-          }),
+          child: ListView.builder(
+            itemBuilder: (context, index) {
+              return Container(
+                child: Column(
+                  children: [
+
+                  ],
+                ),
+              );
+            },
+          ),
         )
       ],
     );
