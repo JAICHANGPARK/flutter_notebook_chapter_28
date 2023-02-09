@@ -117,6 +117,28 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
                     );
                   },
                 ),
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 16),
+                child: const Text(
+                  "Calories left",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.grey,
+                  ),
+                ),
+              ),
+              const Text.rich(
+                TextSpan(
+                  children: [
+                    TextSpan(
+                      text: "1,032",
+                    ),
+                    TextSpan(
+                      text: "Cal",
+                    )
+                  ],
+                ),
               )
             ],
           ),
