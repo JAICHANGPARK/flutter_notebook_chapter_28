@@ -8,10 +8,11 @@ class HealthTrackerProgressScreen extends StatefulWidget {
 }
 
 class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScreen> {
+  int calCount = 10;
   List<DateTime> calendarItems = List.generate(
-    7,
+    10,
     (index) => DateTime.now().subtract(
-      Duration(days: 6 - index),
+      Duration(days: (10 - 1) - index),
     ),
   );
   TextStyle calTextWeekdayStyle = const TextStyle(
@@ -149,7 +150,45 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
               ),
               Container(
                 height: 54,
-              )
+                color: Colors.grey,
+              ),
+              Row(
+                children: [
+                  Container(
+                    height: 32,
+                    width: 32,
+                    color: Colors.red,
+                  ),
+                  Text("Carbohydrates"),
+                  Spacer(),
+                  Text("100 gr"),
+                ],
+              ),
+              Row(
+                children: [
+                  Container(
+                    height: 32,
+                    width: 32,
+                    color: Colors.red,
+                  ),
+                  Text("Carbohydrates"),
+                  Spacer(),
+                  Text("100 gr"),
+                ],
+              ),
+              Row(
+                children: [
+                  Container(
+                    height: 32,
+                    width: 32,
+                    color: Colors.red,
+                  ),
+                  Text("Carbohydrates"),
+                  Spacer(),
+                  Text("100 gr"),
+                ],
+              ),
+
             ],
           ),
         ),
