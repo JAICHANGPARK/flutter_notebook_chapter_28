@@ -133,13 +133,20 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
                   children: [
                     TextSpan(
                       text: "1,032",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 32,
+                      ),
                     ),
                     TextSpan(
-                      text: "Cal",
+                      text: " Cal",
                     )
                   ],
                 ),
-              )
+              ),
+              SizedBox(
+                height: 16,
+              ),
             ],
           ),
         ),
