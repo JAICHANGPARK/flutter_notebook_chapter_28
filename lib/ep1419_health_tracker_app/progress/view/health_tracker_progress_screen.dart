@@ -84,7 +84,7 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
               ),
               Container(
                 height: 54,
-                margin: EdgeInsets.only(top: 32, bottom: 16),
+                margin: const EdgeInsets.only(top: 32, bottom: 16),
                 color: Colors.pink,
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
@@ -92,10 +92,10 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
                   itemBuilder: (context, index) {
                     final item = calendarItems[index];
                     return Container(
-                      padding: EdgeInsets.symmetric(
+                      padding: const EdgeInsets.symmetric(
                         horizontal: 12,
                       ),
-                      margin: EdgeInsets.only(right: 4),
+                      margin: const EdgeInsets.only(right: 4),
                       decoration: BoxDecoration(
                         color: Colors.blueGrey[50],
                         borderRadius: BorderRadius.circular(4),
@@ -105,7 +105,7 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           buildDayTextWidget(item.weekday),
-                          SizedBox(
+                          const SizedBox(
                             height: 4,
                           ),
                           Text(
