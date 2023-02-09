@@ -83,7 +83,8 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
                 ),
               ),
               Container(
-                height: 64,
+                height: 54,
+                margin: EdgeInsets.only(top: 32, bottom: 16),
                 color: Colors.pink,
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
@@ -91,16 +92,26 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
                   itemBuilder: (context, index) {
                     final item = calendarItems[index];
                     return Container(
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 12,
+                      ),
+                      margin: EdgeInsets.only(right: 4),
                       decoration: BoxDecoration(
                         color: Colors.blueGrey[50],
-                        borderRadius: BorderRadius.circular(8),
+                        borderRadius: BorderRadius.circular(4),
                       ),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           buildDayTextWidget(item.weekday),
-                          Text("${item.day}"),
+                          SizedBox(
+                            height: 4,
+                          ),
+                          Text(
+                            "${item.day}",
+                            style: calTextDayStyle,
+                          ),
                         ],
                       ),
                     );
