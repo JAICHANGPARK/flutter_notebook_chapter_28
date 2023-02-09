@@ -83,9 +83,9 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
                 ),
               ),
               Container(
-                height: 54,
+                height: 50,
                 margin: const EdgeInsets.only(top: 32, bottom: 16),
-                color: Colors.pink,
+                // color: Colors.pink,
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemCount: calendarItems.length,
@@ -147,6 +147,9 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
               SizedBox(
                 height: 16,
               ),
+              Container(
+                height: 54,
+              )
             ],
           ),
         ),
