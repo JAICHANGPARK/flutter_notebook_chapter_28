@@ -14,23 +14,50 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
       Duration(days: 7 - index),
     ),
   );
+  TextStyle calTextWeekdayStyle = const TextStyle(
+    color: Colors.grey,
+  );
+  TextStyle calTextDayStyle = const TextStyle(
+    fontWeight: FontWeight.bold,
+  );
 
   Widget buildDayTextWidget(int week) {
     switch (week) {
       case 1:
-        return const Text("Mon");
+        return Text(
+          "Mon",
+          style: calTextWeekdayStyle,
+        );
       case 2:
-        return const Text("Tue");
+        return Text(
+          "Tue",
+          style: calTextWeekdayStyle,
+        );
       case 3:
-        return const Text("Wed");
+        return Text(
+          "Wed",
+          style: calTextWeekdayStyle,
+        );
       case 4:
-        return const Text("Thu");
+        return Text(
+          "Thu",
+          style: calTextWeekdayStyle,
+        );
       case 5:
-        return const Text("Fri");
+        return Text(
+          "Fri",
+          style: calTextWeekdayStyle,
+        );
       case 6:
-        return const Text("Sat");
+        return Text(
+          "Sat",
+          style: calTextWeekdayStyle,
+        );
       case 7:
-        return const Text("Sun");
+        return Text(
+          "Sun",
+          style: calTextWeekdayStyle,
+        );
 
       default:
         return const Text("??");
@@ -59,7 +86,7 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
             itemBuilder: (context, index) {
               final item = calendarItems[index];
               return Container(
-                decoration: BoxDecoration(),
+                decoration: BoxDecoration(borderRadius: BorderRadius.circular(8)),
                 child: Column(
                   children: [
                     buildDayTextWidget(item.weekday),
