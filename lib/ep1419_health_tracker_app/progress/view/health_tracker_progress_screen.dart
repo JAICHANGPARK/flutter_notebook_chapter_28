@@ -240,6 +240,35 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
             ],
           ),
         ),
+        Expanded(
+          child: SingleChildScrollView(
+            child: Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Text(
+                        "Goals",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20,
+                        ),
+                      ),
+                      TextButton(
+                        onPressed: () {},
+                        child: Text("Edit"),
+                        style: TextButton.styleFrom(
+                          foregroundColor: Colors.black,
+                        ),
+                      )
+                    ],
+                  )
+                ],
+              ),
+            ),
+          ),
+        )
       ],
     );
   }
