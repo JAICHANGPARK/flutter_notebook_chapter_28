@@ -9,6 +9,7 @@ class HealthTrackerProgressScreen extends StatefulWidget {
 
 class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScreen> {
   int calCount = 10;
+
   List<DateTime> calendarItems = List.generate(
     10,
     (index) => DateTime.now().subtract(
@@ -149,8 +150,11 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
                 height: 16,
               ),
               Container(
-                height: 46,
-                color: Colors.grey,
+                height: 42,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(3),
+                  color: Colors.grey,
+                ),
                 child: Row(
                   children: [
                     Expanded(
