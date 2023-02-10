@@ -249,7 +249,7 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(
+                      const Text(
                         "Goals",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
@@ -258,7 +258,7 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
                       ),
                       TextButton(
                         onPressed: () {},
-                        child: Text("Edit"),
+                        child: const Text("Edit"),
                         style: TextButton.styleFrom(
                           foregroundColor: Colors.black,
                         ),
@@ -266,13 +266,15 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
                     ],
                   ),
                   Container(
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Colors.white,
                     ),
-                    padding: EdgeInsets.all(12),
-                    child: Row(
+                    padding: const EdgeInsets.all(12),
+                    child: const Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
                               "172,30 lbs",
@@ -295,17 +297,51 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
                           ],
                         ),
                         Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text("172,30 lbs"),
-                            Text("Start"),
+                            Text(
+                              "200 lbs",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 6,
+                            ),
+                            Text(
+                              "Target",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.grey,
+                                fontSize: 12,
+                              ),
+                            ),
                           ],
                         ),
                         Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text("172,30 lbs"),
-                            Text("Start"),
+                            Text(
+                              "2,336 cal",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 6,
+                            ),
+                            Text(
+                              "Daily Calories",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.grey,
+                                fontSize: 12,
+                              ),
+                            ),
                           ],
-                        )
+                        ),
                       ],
                     ),
                   )
