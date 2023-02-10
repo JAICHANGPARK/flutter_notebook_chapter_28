@@ -247,6 +247,7 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
               child: Column(
                 children: [
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
                         "Goals",
@@ -263,6 +264,50 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
                         ),
                       )
                     ],
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                    ),
+                    padding: EdgeInsets.all(12),
+                    child: Row(
+                      children: [
+                        Column(
+                          children: [
+                            Text(
+                              "172,30 lbs",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 6,
+                            ),
+                            Text(
+                              "Start",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.grey,
+                                fontSize: 12,
+                              ),
+                            ),
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            Text("172,30 lbs"),
+                            Text("Start"),
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            Text("172,30 lbs"),
+                            Text("Start"),
+                          ],
+                        )
+                      ],
+                    ),
                   )
                 ],
               ),
