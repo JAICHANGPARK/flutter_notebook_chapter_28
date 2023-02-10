@@ -180,45 +180,58 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
                   ],
                 ),
               ),
-              SizedBox(height: 16,),
-              Row(
-                children: [
-                  Container(
-                    height: 32,
-                    width: 32,
-                    color: Colors.red,
-                    margin: EdgeInsets.only(right: 8),
-                  ),
-
-                  const Text("Carbohydrates"),
-                  const Spacer(),
-                  const Text("100 gr"),
-                ],
+              SizedBox(
+                height: 16,
               ),
-              SizedBox(height: 8,),
               Row(
                 children: [
                   Container(
                     height: 32,
                     width: 32,
-                    color: Colors.red,
                     margin: EdgeInsets.only(right: 8),
+                    decoration: BoxDecoration(
+                      color: Colors.red,
+                      borderRadius: BorderRadius.circular(4),
+                    ),
                   ),
                   const Text("Carbohydrates"),
                   const Spacer(),
                   const Text("100 gr"),
                 ],
               ),
-              SizedBox(height: 8,),
+              SizedBox(
+                height: 8,
+              ),
               Row(
                 children: [
                   Container(
                     height: 32,
                     width: 32,
-                    color: Colors.red,
+                    margin: EdgeInsets.only(right: 8),
+                    decoration: BoxDecoration(
+                      color: Colors.orange,
+                      borderRadius: BorderRadius.circular(4),
+                    ),
+                  ),
+                  const Text("Protein"),
+                  const Spacer(),
+                  const Text("98 gr"),
+                ],
+              ),
+              SizedBox(
+                height: 8,
+              ),
+              Row(
+                children: [
+                  Container(
+                    height: 32,
+                    width: 32,
+                    decoration: BoxDecoration(
+                      color: Colors.yellow,
+                      borderRadius: BorderRadius.circular(4),
+                    ),
                     margin: EdgeInsets.only(right: 8),
                   ),
-
                   const Text("Carbohydrates"),
                   const Spacer(),
                   const Text("100 gr"),
