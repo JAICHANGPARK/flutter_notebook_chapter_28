@@ -119,9 +119,9 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
                   },
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.symmetric(vertical: 16),
-                child: const Text(
+              const Padding(
+                padding: EdgeInsets.symmetric(vertical: 16),
+                child: Text(
                   "Calories left",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
@@ -145,7 +145,7 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 16,
               ),
               Container(
@@ -159,9 +159,9 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
                     width: 32,
                     color: Colors.red,
                   ),
-                  Text("Carbohydrates"),
-                  Spacer(),
-                  Text("100 gr"),
+                  const Text("Carbohydrates"),
+                  const Spacer(),
+                  const Text("100 gr"),
                 ],
               ),
               Row(
@@ -171,9 +171,9 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
                     width: 32,
                     color: Colors.red,
                   ),
-                  Text("Carbohydrates"),
-                  Spacer(),
-                  Text("100 gr"),
+                  const Text("Carbohydrates"),
+                  const Spacer(),
+                  const Text("100 gr"),
                 ],
               ),
               Row(
@@ -183,12 +183,11 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
                     width: 32,
                     color: Colors.red,
                   ),
-                  Text("Carbohydrates"),
-                  Spacer(),
-                  Text("100 gr"),
+                  const Text("Carbohydrates"),
+                  const Spacer(),
+                  const Text("100 gr"),
                 ],
               ),
-
             ],
           ),
         ),
