@@ -269,7 +269,7 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
                     decoration: const BoxDecoration(
                       color: Colors.white,
                     ),
-                    padding: const EdgeInsets.all(12),
+                    padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 16),
                     child: const Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
