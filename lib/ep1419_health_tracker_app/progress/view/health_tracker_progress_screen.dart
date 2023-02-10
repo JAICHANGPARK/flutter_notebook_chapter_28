@@ -149,8 +149,36 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
                 height: 16,
               ),
               Container(
-                height: 54,
+                height: 50,
                 color: Colors.grey,
+                child: Row(
+                  children: [
+                    Expanded(
+                      flex: 5,
+                      child: Container(
+                        color: Colors.red,
+                      ),
+                    ),
+                    Expanded(
+                      flex: 5,
+                      child: Container(
+                        color: Colors.orange,
+                      ),
+                    ),
+                    Expanded(
+                      flex: 3,
+                      child: Container(
+                        color: Colors.yellow,
+                      ),
+                    ),
+                    Expanded(
+                      flex: 20,
+                      child: Container(
+                        color: Colors.grey[200],
+                      ),
+                    )
+                  ],
+                ),
               ),
               Row(
                 children: [
