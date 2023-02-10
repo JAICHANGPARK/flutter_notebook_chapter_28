@@ -9,7 +9,7 @@ class HealthTrackerProgressScreen extends StatefulWidget {
 
 class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScreen> {
   int calCount = 10;
-
+  int selectedCalendar = 0;
   List<DateTime> calendarItems = List.generate(
     10,
     (index) => DateTime.now().subtract(
@@ -24,12 +24,16 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
     fontSize: 16,
   );
 
-  Widget buildDayTextWidget(int week) {
+  Widget buildDayTextWidget(int week, int index) {
     switch (week) {
       case 1:
         return Text(
           "Mon",
-          style: calTextWeekdayStyle,
+          style: selectedCalendar == index
+              ? TextStyle(
+                  color: Colors.white,
+                )
+              : calTextWeekdayStyle,
         );
       case 2:
         return Text(
@@ -93,28 +97,35 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
                   itemCount: calendarItems.length,
                   itemBuilder: (context, index) {
                     final item = calendarItems[index];
-                    return Container(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 12,
-                      ),
-                      margin: const EdgeInsets.only(right: 4),
-                      decoration: BoxDecoration(
-                        color: Colors.blueGrey[50],
-                        borderRadius: BorderRadius.circular(4),
-                      ),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          buildDayTextWidget(item.weekday),
-                          const SizedBox(
-                            height: 4,
-                          ),
-                          Text(
-                            "${item.day}",
-                            style: calTextDayStyle,
-                          ),
-                        ],
+                    return GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          selectedCalendar = index;
+                        });
+                      },
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 12,
+                        ),
+                        margin: const EdgeInsets.only(right: 4),
+                        decoration: BoxDecoration(
+                          color: selectedCalendar == index ? Colors.blue : Colors.blueGrey[50],
+                          borderRadius: BorderRadius.circular(4),
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            buildDayTextWidget(item.weekday, index),
+                            const SizedBox(
+                              height: 4,
+                            ),
+                            Text(
+                              "${item.day}",
+                              style: calTextDayStyle,
+                            ),
+                          ],
+                        ),
                       ),
                     );
                   },
