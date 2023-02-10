@@ -30,7 +30,7 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
         return Text(
           "Mon",
           style: selectedCalendar == index
-              ? TextStyle(
+              ? const TextStyle(
                   color: Colors.white,
                 )
               : calTextWeekdayStyle,
@@ -38,32 +38,56 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
       case 2:
         return Text(
           "Tue",
-          style: calTextWeekdayStyle,
+          style: selectedCalendar == index
+              ? const TextStyle(
+                  color: Colors.white,
+                )
+              : calTextWeekdayStyle,
         );
       case 3:
         return Text(
           "Wed",
-          style: calTextWeekdayStyle,
+          style: selectedCalendar == index
+              ? const TextStyle(
+                  color: Colors.white,
+                )
+              : calTextWeekdayStyle,
         );
       case 4:
         return Text(
           "Thu",
-          style: calTextWeekdayStyle,
+          style: selectedCalendar == index
+              ? const TextStyle(
+                  color: Colors.white,
+                )
+              : calTextWeekdayStyle,
         );
       case 5:
         return Text(
           "Fri",
-          style: calTextWeekdayStyle,
+          style: selectedCalendar == index
+              ? const TextStyle(
+                  color: Colors.white,
+                )
+              : calTextWeekdayStyle,
         );
       case 6:
         return Text(
           "Sat",
-          style: calTextWeekdayStyle,
+          style: selectedCalendar == index
+              ? const TextStyle(
+                  color: Colors.white,
+                )
+              : calTextWeekdayStyle,
         );
       case 7:
         return Text(
           "Sun",
-          style: calTextWeekdayStyle,
+          style: selectedCalendar == index
+              ? const TextStyle(
+                  color: Colors.white,
+                )
+              : calTextWeekdayStyle,
         );
 
       default:
@@ -122,7 +146,13 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
                             ),
                             Text(
                               "${item.day}",
-                              style: calTextDayStyle,
+                              style: selectedCalendar == index
+                                  ? const TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 20,
+                                    )
+                                  : calTextDayStyle,
                             ),
                           ],
                         ),
@@ -360,7 +390,7 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 16,
                   ),
                   Row(
