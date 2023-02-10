@@ -180,7 +180,7 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 16,
               ),
               Row(
@@ -188,7 +188,7 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
                   Container(
                     height: 32,
                     width: 32,
-                    margin: EdgeInsets.only(right: 8),
+                    margin: const EdgeInsets.only(right: 8),
                     decoration: BoxDecoration(
                       color: Colors.red,
                       borderRadius: BorderRadius.circular(4),
@@ -199,7 +199,7 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
                   const Text("100 gr"),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 8,
               ),
               Row(
@@ -207,7 +207,7 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
                   Container(
                     height: 32,
                     width: 32,
-                    margin: EdgeInsets.only(right: 8),
+                    margin: const EdgeInsets.only(right: 8),
                     decoration: BoxDecoration(
                       color: Colors.orange,
                       borderRadius: BorderRadius.circular(4),
@@ -218,7 +218,7 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
                   const Text("98 gr"),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 8,
               ),
               Row(
@@ -230,7 +230,7 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
                       color: Colors.yellow,
                       borderRadius: BorderRadius.circular(4),
                     ),
-                    margin: EdgeInsets.only(right: 8),
+                    margin: const EdgeInsets.only(right: 8),
                   ),
                   const Text("Carbohydrates"),
                   const Spacer(),
