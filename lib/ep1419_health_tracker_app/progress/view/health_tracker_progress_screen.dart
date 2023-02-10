@@ -172,7 +172,7 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
                       ),
                     ),
                     Expanded(
-                      flex: 20,
+                      flex: 15,
                       child: Container(
                         color: Colors.grey[200],
                       ),
@@ -180,37 +180,45 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
                   ],
                 ),
               ),
+              SizedBox(height: 16,),
               Row(
                 children: [
                   Container(
                     height: 32,
                     width: 32,
                     color: Colors.red,
+                    margin: EdgeInsets.only(right: 8),
+                  ),
+
+                  const Text("Carbohydrates"),
+                  const Spacer(),
+                  const Text("100 gr"),
+                ],
+              ),
+              SizedBox(height: 8,),
+              Row(
+                children: [
+                  Container(
+                    height: 32,
+                    width: 32,
+                    color: Colors.red,
+                    margin: EdgeInsets.only(right: 8),
                   ),
                   const Text("Carbohydrates"),
                   const Spacer(),
                   const Text("100 gr"),
                 ],
               ),
+              SizedBox(height: 8,),
               Row(
                 children: [
                   Container(
                     height: 32,
                     width: 32,
                     color: Colors.red,
+                    margin: EdgeInsets.only(right: 8),
                   ),
-                  const Text("Carbohydrates"),
-                  const Spacer(),
-                  const Text("100 gr"),
-                ],
-              ),
-              Row(
-                children: [
-                  Container(
-                    height: 32,
-                    width: 32,
-                    color: Colors.red,
-                  ),
+
                   const Text("Carbohydrates"),
                   const Spacer(),
                   const Text("100 gr"),
