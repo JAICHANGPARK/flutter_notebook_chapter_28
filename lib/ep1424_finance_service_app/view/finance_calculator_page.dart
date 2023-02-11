@@ -61,7 +61,12 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
               color: Colors.blue,
               child: Stack(
                 children: [
-                  
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.blueAccent,
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                  )
                 ],
               ),
             )
