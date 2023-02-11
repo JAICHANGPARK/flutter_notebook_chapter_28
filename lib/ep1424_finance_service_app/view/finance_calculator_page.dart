@@ -12,18 +12,32 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.brown[100],
-      body: Column(
-        children: [
-          Row(
-            children: [
-              CircleAvatar(),
-              CircleAvatar(
-                backgroundColor: Colors.brown[300],
-                child: Icon(Icons.add),
-              )
-            ],
-          )
-        ],
+      body: SafeArea(
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 24, 16, 24),
+              child: Row(
+                children: [
+                  CircleAvatar(
+                    radius: 24,
+                  ),
+                  CircleAvatar(
+                    radius: 24,
+                    backgroundColor: Colors.brown[300],
+                    foregroundColor: Colors.white,
+                    child: Icon(Icons.add),
+                  ),
+                  Container(
+                    child: Row(
+                      children: [],
+                    ),
+                  )
+                ],
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
