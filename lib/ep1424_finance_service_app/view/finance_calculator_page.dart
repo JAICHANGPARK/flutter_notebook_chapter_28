@@ -30,7 +30,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                       foregroundColor: Colors.white,
                       child: const Icon(Icons.add),
                     ),
-                    Spacer(),
+                    const Spacer(),
                     Container(
                       decoration: BoxDecoration(
                         color: Colors.white,
@@ -58,7 +58,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(top: 24),
+                margin: const EdgeInsets.only(top: 24),
                 height: 72,
                 width: 64,
                 color: Colors.orange,
@@ -86,7 +86,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                           color: Colors.black,
                           borderRadius: BorderRadius.circular(16),
                         ),
-                        child: Center(
+                        child: const Center(
                           child: Text(
                             "... 4433",
                             style: TextStyle(
@@ -99,8 +99,8 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                   ],
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.only(top: 16, bottom: 32),
+              const Padding(
+                padding: EdgeInsets.only(top: 16, bottom: 32),
                 child: Text(
                   "Dream Walker",
                   style: TextStyle(
@@ -111,9 +111,9 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
               ),
               Container(
                 height: 64,
-
-                decoration: BoxDecoration(
+                decoration:  BoxDecoration(
                   color: Colors.white,
+                  borderRadius: BorderRadius.circular(32),
                 ),
               )
             ],
