@@ -56,15 +56,23 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
               ),
             ),
             Container(
-              height: 64,
+              margin: EdgeInsets.only(top: 24),
+              height: 72,
               width: 64,
               color: Colors.blue,
               child: Stack(
                 children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Colors.blueAccent,
-                      borderRadius: BorderRadius.circular(8),
+                  Positioned(
+                    left: 0,
+                    right: 0,
+                    top: 0,
+                    bottom: 16,
+                    child: Container(
+
+                      decoration: BoxDecoration(
+                        color: Colors.blueAccent,
+                        borderRadius: BorderRadius.circular(8),
+                      ),
                     ),
                   )
                 ],
