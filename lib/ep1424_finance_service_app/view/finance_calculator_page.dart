@@ -63,14 +63,14 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
               child: Stack(
                 children: [
                   Positioned(
-                    left: 0,
-                    right: 0,
+                    left: 4,
+                    right: 4,
                     top: 0,
                     bottom: 16,
                     child: Container(
                       decoration: BoxDecoration(
                         color: Colors.blueAccent,
-                        borderRadius: BorderRadius.circular(8),
+                        borderRadius: BorderRadius.circular(16),
                       ),
                     ),
                   ),
@@ -95,6 +95,16 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                     ),
                   )
                 ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top: 16, bottom: 32),
+              child: Text(
+                "Dream Walker",
+                style: TextStyle(
+                  fontSize: 22,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             )
           ],
