@@ -111,11 +111,25 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
               ),
               Container(
                 height: 64,
-                decoration:  BoxDecoration(
+                decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(32),
                 ),
-              )
+              ),
+              Container(
+                height: 64,
+                color: Colors.blueAccent,
+              ),
+              Container(
+                height: 72,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(32),
+                ),
+              ),
+              Expanded(
+                child: Placeholder(),
+              ),
             ],
           ),
         ),
