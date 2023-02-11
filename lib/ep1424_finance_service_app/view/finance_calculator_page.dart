@@ -28,6 +28,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                     foregroundColor: Colors.white,
                     child: const Icon(Icons.add),
                   ),
+                  Spacer(),
                   Container(
                     decoration: BoxDecoration(
                       color: Colors.white,
@@ -51,6 +52,16 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                       ],
                     ),
                   )
+                ],
+              ),
+            ),
+            Container(
+              height: 64,
+              width: 64,
+              color: Colors.blue,
+              child: Stack(
+                children: [
+                  
                 ],
               ),
             )
