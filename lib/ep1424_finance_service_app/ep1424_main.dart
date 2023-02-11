@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(FinanceServiceApp());
+  runApp(const FinanceServiceApp());
 }
 
 class FinanceServiceApp extends StatelessWidget {
@@ -9,6 +9,6 @@ class FinanceServiceApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return const MaterialApp();
   }
 }
