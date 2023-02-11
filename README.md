@@ -1,6 +1,14 @@
 # flutter_notebook_chapter_28
 
-### EP1419
+### EP1424
+
+- Finance service - Mobile app
+- by Anastasia Golovko
+- https://dribbble.com/shots/20621577-Finance-service-Mobile-app
+
+<img src="https://cdn.dribbble.com/userupload/4575918/file/original-748af1af2e33f2551dd9e113359de3d7.jpg?compress=1&resize=1600x1200" width="500px"/>
+
+### EP1419-1423
 
 - Health Tracker - Mobile App
 - by Deni Ardiansyah for ever
