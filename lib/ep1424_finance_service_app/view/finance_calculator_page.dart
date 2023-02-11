@@ -10,6 +10,21 @@ class FinanceCalculatorPage extends StatefulWidget {
 class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Colors.brown[100],
+      body: Column(
+        children: [
+          Row(
+            children: [
+              CircleAvatar(),
+              CircleAvatar(
+                backgroundColor: Colors.brown[300],
+                child: Icon(Icons.add),
+              )
+            ],
+          )
+        ],
+      ),
+    );
   }
 }
