@@ -68,11 +68,18 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                     top: 0,
                     bottom: 16,
                     child: Container(
-
                       decoration: BoxDecoration(
                         color: Colors.blueAccent,
                         borderRadius: BorderRadius.circular(8),
                       ),
+                    ),
+                  ),
+                  Positioned(
+                    left: 0,
+                    bottom: 0,
+                    right: 0,
+                    child: Container(
+                      child: Text("... 4433"),
                     ),
                   )
                 ],
