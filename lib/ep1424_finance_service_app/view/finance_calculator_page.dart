@@ -33,12 +33,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(24),
                     ),
-                    padding: const EdgeInsets.only(
-                      left: 2,
-                      bottom: 2,
-                      top: 2,
-                      right: 8,
-                    ),
+                    padding: const EdgeInsets.only(left: 2, bottom: 2, top: 2, right: 8),
                     child: const Row(
                       children: [
                         CircleAvatar(
