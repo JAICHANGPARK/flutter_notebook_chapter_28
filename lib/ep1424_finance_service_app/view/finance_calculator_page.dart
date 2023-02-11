@@ -59,7 +59,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
               margin: EdgeInsets.only(top: 24),
               height: 72,
               width: 64,
-              color: Colors.blue,
+              color: Colors.orange,
               child: Stack(
                 children: [
                   Positioned(
@@ -79,7 +79,19 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                     bottom: 0,
                     right: 0,
                     child: Container(
-                      child: Text("... 4433"),
+                      height: 24,
+                      decoration: BoxDecoration(
+                        color: Colors.black,
+                        borderRadius: BorderRadius.circular(16),
+                      ),
+                      child: Center(
+                        child: Text(
+                          "... 4433",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
                     ),
                   )
                 ],
