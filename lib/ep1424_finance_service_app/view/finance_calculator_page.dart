@@ -30,7 +30,16 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                   ),
                   Container(
                     child: Row(
-                      children: [],
+                      children: [
+                        CircleAvatar(
+                          radius: 24,
+                          backgroundColor: Colors.black,
+                          foregroundColor: Colors.white,
+                          child: Icon(
+                            Icons.import_export,
+                          ),
+                        )
+                      ],
                     ),
                   )
                 ],
