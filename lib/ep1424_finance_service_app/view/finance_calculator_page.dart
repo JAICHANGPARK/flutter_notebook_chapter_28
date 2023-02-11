@@ -19,25 +19,30 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
               padding: const EdgeInsets.fromLTRB(16, 24, 16, 24),
               child: Row(
                 children: [
-                  CircleAvatar(
+                  const CircleAvatar(
                     radius: 24,
                   ),
                   CircleAvatar(
                     radius: 24,
                     backgroundColor: Colors.brown[300],
                     foregroundColor: Colors.white,
-                    child: Icon(Icons.add),
+                    child: const Icon(Icons.add),
                   ),
                   Container(
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(24),
                     ),
-                    padding: EdgeInsets.all(4),
-                    child: Row(
+                    padding: const EdgeInsets.only(
+                      left: 2,
+                      bottom: 2,
+                      top: 2,
+                      right: 8,
+                    ),
+                    child: const Row(
                       children: [
                         CircleAvatar(
-                          radius: 24,
+                          radius: 22,
                           backgroundColor: Colors.black,
                           foregroundColor: Colors.white,
                           child: Icon(
