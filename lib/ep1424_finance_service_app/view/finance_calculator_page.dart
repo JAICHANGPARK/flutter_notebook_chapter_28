@@ -29,6 +29,11 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                     child: Icon(Icons.add),
                   ),
                   Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(24),
+                    ),
+                    padding: EdgeInsets.all(4),
                     child: Row(
                       children: [
                         CircleAvatar(
@@ -38,7 +43,11 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                           child: Icon(
                             Icons.import_export,
                           ),
-                        )
+                        ),
+                        SizedBox(
+                          width: 8,
+                        ),
+                        Text("Transfer"),
                       ],
                     ),
                   )
