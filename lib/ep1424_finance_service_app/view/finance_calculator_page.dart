@@ -115,6 +115,13 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(32),
                 ),
+                child: Center(
+                  child: TextField(
+                    decoration: InputDecoration(
+                      border: InputBorder.none,
+                    ),
+                  ),
+                ),
               ),
               Container(
                 height: 64,
