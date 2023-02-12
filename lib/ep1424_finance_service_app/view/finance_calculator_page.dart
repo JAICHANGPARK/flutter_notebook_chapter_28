@@ -121,7 +121,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
               ),
               Container(
                 height: 64,
-                margin: EdgeInsets.symmetric(vertical: 16),
+                margin: const EdgeInsets.symmetric(vertical: 16),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -184,6 +184,15 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                 decoration: BoxDecoration(
                   color: Colors.brown[300],
                   borderRadius: BorderRadius.circular(32),
+                ),
+                child: const Center(
+                  child: Text(
+                    "Send",
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                 ),
               ),
             ],
