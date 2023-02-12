@@ -411,6 +411,15 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                               color: Colors.grey,
                             ),
                           ),
+                          child: Center(
+                            child: Text(
+                              '<',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 32,
+                              ),
+                            ),
+                          ),
                         )),
                         SizedBox(
                           width: 16,
