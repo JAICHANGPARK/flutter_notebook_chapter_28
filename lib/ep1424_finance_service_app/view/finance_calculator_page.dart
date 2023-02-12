@@ -121,7 +121,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
               ),
               Container(
                 height: 64,
-                color: Colors.blueAccent,
+                margin: EdgeInsets.symmetric(vertical: 16),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -133,7 +133,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                           color: Colors.black,
                           borderRadius: BorderRadius.circular(8),
                         ),
-                        child: Center(
+                        child: const Center(
                           child: Text(
                             "VISA",
                             style: TextStyle(
@@ -143,9 +143,9 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                         ),
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: const Column(
+                    const Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
@@ -162,14 +162,14 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                         ],
                       ),
                     ),
-                    Spacer(),
+                    const Spacer(),
                     Container(
                       decoration: BoxDecoration(
                         color: Colors.black,
                         borderRadius: BorderRadius.circular(16),
                       ),
-                      padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
-                      child: Text(
+                      padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                      child: const Text(
                         "... 4664",
                         style: TextStyle(
                           color: Colors.white,
@@ -182,7 +182,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
               Container(
                 height: 72,
                 decoration: BoxDecoration(
-                  color: Colors.white,
+                  color: Colors.brown[300],
                   borderRadius: BorderRadius.circular(32),
                 ),
               ),
