@@ -151,11 +151,19 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                         ],
                       ),
                     ),
+                    Spacer(),
                     Container(
                       decoration: BoxDecoration(
                         color: Colors.black,
+                        borderRadius: BorderRadius.circular(16),
                       ),
-                      child: Text("... 4664"),
+                      padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                      child: Text(
+                        "... 4664",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
                     )
                   ],
                 ),
