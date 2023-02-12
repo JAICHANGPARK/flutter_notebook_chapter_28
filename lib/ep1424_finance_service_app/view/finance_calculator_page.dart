@@ -195,8 +195,15 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                   ),
                 ),
               ),
-              const Expanded(
-                child: Placeholder(),
+               Expanded(
+                child: Column(
+                  children: [
+                    Expanded(child: Placeholder()),
+                    Expanded(child: Placeholder()),
+                    Expanded(child: Placeholder()),
+                    Expanded(child: Placeholder()),
+                  ],
+                ),
               )
             ],
           ),
