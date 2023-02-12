@@ -180,7 +180,8 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                 ),
               ),
               Container(
-                height: 72,
+                height: 64,
+                margin: EdgeInsets.symmetric(vertical: 16),
                 decoration: BoxDecoration(
                   color: Colors.brown[300],
                   borderRadius: BorderRadius.circular(32),
