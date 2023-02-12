@@ -116,16 +116,27 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                   borderRadius: BorderRadius.circular(32),
                 ),
                 child: Center(
-                  child: TextField(
-                    decoration: InputDecoration(
-                      border: InputBorder.none,
-                    ),
-                  ),
+                  child: Text(""),
                 ),
               ),
               Container(
                 height: 64,
                 color: Colors.blueAccent,
+                child: Row(
+                  children: [
+                    Container(
+                      height: 56,
+                      width: 56,
+                      decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(8)),
+                    ),
+                    Column(
+                      children: [
+                        Text("Visa"),
+                        Text("\$ 5,200.15"),
+                      ],
+                    )
+                  ],
+                ),
               ),
               Container(
                 height: 72,
@@ -133,9 +144,6 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(32),
                 ),
-              ),
-              Expanded(
-                child: Placeholder(),
               ),
             ],
           ),
