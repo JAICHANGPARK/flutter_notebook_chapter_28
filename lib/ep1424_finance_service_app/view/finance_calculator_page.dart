@@ -61,7 +61,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                 margin: const EdgeInsets.only(top: 24),
                 height: 72,
                 width: 64,
-                color: Colors.orange,
+                // color: Colors.orange,
                 child: Stack(
                   children: [
                     Positioned(
