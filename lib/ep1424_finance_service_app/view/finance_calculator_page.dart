@@ -58,7 +58,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                 ),
               ),
               Container(
-                margin: const EdgeInsets.only(top: 24),
+                margin: const EdgeInsets.only(top: 8),
                 height: 72,
                 width: 64,
                 // color: Colors.orange,
@@ -195,6 +195,9 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                   ),
                 ),
               ),
+              const Expanded(
+                child: Placeholder(),
+              )
             ],
           ),
         ),
