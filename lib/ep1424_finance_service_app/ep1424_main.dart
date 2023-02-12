@@ -13,7 +13,7 @@ class FinanceServiceApp extends StatelessWidget {
     return MaterialApp(
       initialRoute: "/calculator",
       routes: {
-        "/calculator": (context) => FinanceCalculatorPage(),
+        "/calculator": (context) => const FinanceCalculatorPage(),
       },
     );
   }
