@@ -115,7 +115,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(32),
                 ),
-                child: Center(
+                child: const Center(
                   child: Text(""),
                 ),
               ),
@@ -127,9 +127,13 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                     Container(
                       height: 56,
                       width: 56,
-                      decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(8)),
+                      decoration: BoxDecoration(
+                        color: Colors.black,
+                        borderRadius: BorderRadius.circular(8),
+                      ),
                     ),
-                    Column(
+                    const Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text("Visa"),
                         Text("\$ 5,200.15"),
