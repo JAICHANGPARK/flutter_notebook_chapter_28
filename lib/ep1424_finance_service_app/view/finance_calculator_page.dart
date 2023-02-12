@@ -150,6 +150,12 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                           Text("\$ 5,200.15"),
                         ],
                       ),
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.black,
+                      ),
+                      child: Text("... 4664"),
                     )
                   ],
                 ),
