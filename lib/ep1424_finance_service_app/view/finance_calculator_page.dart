@@ -215,7 +215,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                               '1',
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
-                                fontSize: 32
+                                fontSize: 32,
                               ),
                             ),
                           ),
@@ -231,6 +231,15 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                               color: Colors.grey,
                             ),
                           ),
+                          child: Center(
+                            child: Text(
+                              '2',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 32,
+                              ),
+                            ),
+                          ),
                         )),
                         SizedBox(
                           width: 16,
@@ -241,6 +250,12 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                             borderRadius: BorderRadius.circular(16),
                             border: Border.all(
                               color: Colors.grey,
+                            ),
+                          ),
+                          child: Center(
+                            child: Text(
+                              '3',
+                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 32),
                             ),
                           ),
                         )),
