@@ -210,134 +210,165 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                               color: Colors.grey,
                             ),
                           ),
+                          child: Center(
+                            child: Text(
+                              '1',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 32
+                              ),
+                            ),
+                          ),
                         )),
-                        SizedBox(width: 16,),
+                        SizedBox(
+                          width: 16,
+                        ),
                         Expanded(
                             child: Container(
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(16),
-                                border: Border.all(
-                                  color: Colors.grey,
-                                ),
-                              ),
-                            )),
-                        SizedBox(width: 16,),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(16),
+                            border: Border.all(
+                              color: Colors.grey,
+                            ),
+                          ),
+                        )),
+                        SizedBox(
+                          width: 16,
+                        ),
                         Expanded(
                             child: Container(
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(16),
-                                border: Border.all(
-                                  color: Colors.grey,
-                                ),
-                              ),
-                            )),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(16),
+                            border: Border.all(
+                              color: Colors.grey,
+                            ),
+                          ),
+                        )),
                       ],
                     )),
-                    SizedBox(height: 8,),
+                    SizedBox(
+                      height: 8,
+                    ),
                     Expanded(
                         child: Row(
-                          children: [
-                            Expanded(
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(16),
-                                    border: Border.all(
-                                      color: Colors.grey,
-                                    ),
-                                  ),
-                                )),
-                            SizedBox(width: 16,),
-                            Expanded(
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(16),
-                                    border: Border.all(
-                                      color: Colors.grey,
-                                    ),
-                                  ),
-                                )),
-                            SizedBox(width: 16,),
-                            Expanded(
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(16),
-                                    border: Border.all(
-                                      color: Colors.grey,
-                                    ),
-                                  ),
-                                )),
-                          ],
+                      children: [
+                        Expanded(
+                            child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(16),
+                            border: Border.all(
+                              color: Colors.grey,
+                            ),
+                          ),
                         )),
-                    SizedBox(height: 8,),
+                        SizedBox(
+                          width: 16,
+                        ),
+                        Expanded(
+                            child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(16),
+                            border: Border.all(
+                              color: Colors.grey,
+                            ),
+                          ),
+                        )),
+                        SizedBox(
+                          width: 16,
+                        ),
+                        Expanded(
+                            child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(16),
+                            border: Border.all(
+                              color: Colors.grey,
+                            ),
+                          ),
+                        )),
+                      ],
+                    )),
+                    SizedBox(
+                      height: 8,
+                    ),
                     Expanded(
                         child: Row(
-                          children: [
-                            Expanded(
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(16),
-                                    border: Border.all(
-                                      color: Colors.grey,
-                                    ),
-                                  ),
-                                )),
-                            SizedBox(width: 16,),
-                            Expanded(
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(16),
-                                    border: Border.all(
-                                      color: Colors.grey,
-                                    ),
-                                  ),
-                                )),
-                            SizedBox(width: 16,),
-                            Expanded(
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(16),
-                                    border: Border.all(
-                                      color: Colors.grey,
-                                    ),
-                                  ),
-                                )),
-                          ],
+                      children: [
+                        Expanded(
+                            child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(16),
+                            border: Border.all(
+                              color: Colors.grey,
+                            ),
+                          ),
                         )),
-                    SizedBox(height: 8,),
+                        SizedBox(
+                          width: 16,
+                        ),
+                        Expanded(
+                            child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(16),
+                            border: Border.all(
+                              color: Colors.grey,
+                            ),
+                          ),
+                        )),
+                        SizedBox(
+                          width: 16,
+                        ),
+                        Expanded(
+                            child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(16),
+                            border: Border.all(
+                              color: Colors.grey,
+                            ),
+                          ),
+                        )),
+                      ],
+                    )),
+                    SizedBox(
+                      height: 8,
+                    ),
                     Expanded(
                         child: Row(
-                          children: [
-                            Expanded(
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(16),
-                                    border: Border.all(
-                                      color: Colors.grey,
-                                    ),
-                                  ),
-                                )),
-                            SizedBox(width: 16,),
-                            Expanded(
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(16),
-                                    border: Border.all(
-                                      color: Colors.grey,
-                                    ),
-                                  ),
-                                )),
-                            SizedBox(width: 16,),
-                            Expanded(
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(16),
-                                    border: Border.all(
-                                      color: Colors.grey,
-                                    ),
-                                  ),
-                                )),
-                          ],
+                      children: [
+                        Expanded(
+                            child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(16),
+                            border: Border.all(
+                              color: Colors.grey,
+                            ),
+                          ),
                         )),
+                        SizedBox(
+                          width: 16,
+                        ),
+                        Expanded(
+                            child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(16),
+                            border: Border.all(
+                              color: Colors.grey,
+                            ),
+                          ),
+                        )),
+                        SizedBox(
+                          width: 16,
+                        ),
+                        Expanded(
+                            child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(16),
+                            border: Border.all(
+                              color: Colors.grey,
+                            ),
+                          ),
+                        )),
+                      ],
+                    )),
                   ],
                 ),
               )
