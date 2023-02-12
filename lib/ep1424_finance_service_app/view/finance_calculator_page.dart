@@ -14,11 +14,11 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
       backgroundColor: Colors.brown[100],
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16),
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
           child: Column(
             children: [
               Padding(
-                padding: const EdgeInsets.fromLTRB(0, 24, 0, 24),
+                padding: const EdgeInsets.fromLTRB(0, 8, 0, 24),
                 child: Row(
                   children: [
                     const CircleAvatar(
