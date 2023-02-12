@@ -141,6 +141,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
           ),
         ),
       ),
+      resizeToAvoidBottomInset: false,
     );
   }
 }
