@@ -343,16 +343,10 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                               color: Colors.grey,
                             ),
                           ),
-                        )),
-                        SizedBox(
-                          width: 16,
-                        ),
-                        Expanded(
-                            child: Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(16),
-                            border: Border.all(
-                              color: Colors.grey,
+                          child: Center(
+                            child: Text(
+                              '7',
+                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 32),
                             ),
                           ),
                         )),
@@ -365,6 +359,30 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                             borderRadius: BorderRadius.circular(16),
                             border: Border.all(
                               color: Colors.grey,
+                            ),
+                          ),
+                          child: Center(
+                            child: Text(
+                              '8',
+                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 32),
+                            ),
+                          ),
+                        )),
+                        SizedBox(
+                          width: 16,
+                        ),
+                        Expanded(
+                            child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(16),
+                            border: Border.all(
+                              color: Colors.grey,
+                            ),
+                          ),
+                          child: Center(
+                            child: Text(
+                              '9',
+                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 32),
                             ),
                           ),
                         )),
