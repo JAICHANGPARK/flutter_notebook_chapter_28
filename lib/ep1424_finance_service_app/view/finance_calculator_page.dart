@@ -100,7 +100,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                 ),
               ),
               const Padding(
-                padding: EdgeInsets.only(top: 16, bottom: 32),
+                padding: EdgeInsets.only(top: 16, bottom: 24),
                 child: Text(
                   "Dream Walker",
                   style: TextStyle(
@@ -121,7 +121,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
               ),
               Container(
                 height: 64,
-                margin: const EdgeInsets.only(top: 16),
+                margin: const EdgeInsets.only(top: 24),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -181,7 +181,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
               ),
               Container(
                 height: 64,
-                margin: const EdgeInsets.symmetric(vertical: 16),
+                margin: const EdgeInsets.symmetric(vertical: 24),
                 decoration: BoxDecoration(
                   color: Colors.brown[300],
                   borderRadius: BorderRadius.circular(32),
