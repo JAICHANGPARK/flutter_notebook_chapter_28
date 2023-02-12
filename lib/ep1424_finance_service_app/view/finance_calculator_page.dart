@@ -346,7 +346,10 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                           child: Center(
                             child: Text(
                               '7',
-                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 32),
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 32,
+                              ),
                             ),
                           ),
                         )),
@@ -364,7 +367,10 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                           child: Center(
                             child: Text(
                               '8',
-                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 32),
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 32,
+                              ),
                             ),
                           ),
                         )),
@@ -382,7 +388,10 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                           child: Center(
                             child: Text(
                               '9',
-                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 32),
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 32,
+                              ),
                             ),
                           ),
                         )),
