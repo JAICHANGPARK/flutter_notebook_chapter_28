@@ -121,7 +121,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
               ),
               Container(
                 height: 64,
-                margin: const EdgeInsets.symmetric(vertical: 16),
+                margin: const EdgeInsets.only(top: 16),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
