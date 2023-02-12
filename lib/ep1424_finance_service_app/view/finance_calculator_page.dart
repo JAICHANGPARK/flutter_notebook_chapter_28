@@ -432,6 +432,15 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                               color: Colors.grey,
                             ),
                           ),
+                              child: Center(
+                                child: Text(
+                                  '0',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 32,
+                                  ),
+                                ),
+                              ),
                         )),
                         SizedBox(
                           width: 16,
@@ -444,6 +453,15 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                               color: Colors.grey,
                             ),
                           ),
+                              child: Center(
+                                child: Text(
+                                  'X',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 32,
+                                  ),
+                                ),
+                              ),
                         )),
                       ],
                     )),
