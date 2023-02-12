@@ -181,7 +181,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
               ),
               Container(
                 height: 64,
-                margin: EdgeInsets.symmetric(vertical: 16),
+                margin: const EdgeInsets.symmetric(vertical: 16),
                 decoration: BoxDecoration(
                   color: Colors.brown[300],
                   borderRadius: BorderRadius.circular(32),
@@ -210,7 +210,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                               color: Colors.grey,
                             ),
                           ),
-                          child: Center(
+                          child: const Center(
                             child: Text(
                               '1',
                               style: TextStyle(
@@ -220,7 +220,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                             ),
                           ),
                         )),
-                        SizedBox(
+                        const SizedBox(
                           width: 16,
                         ),
                         Expanded(
@@ -231,7 +231,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                               color: Colors.grey,
                             ),
                           ),
-                          child: Center(
+                          child: const Center(
                             child: Text(
                               '2',
                               style: TextStyle(
@@ -241,7 +241,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                             ),
                           ),
                         )),
-                        SizedBox(
+                        const SizedBox(
                           width: 16,
                         ),
                         Expanded(
@@ -252,7 +252,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                               color: Colors.grey,
                             ),
                           ),
-                          child: Center(
+                          child: const Center(
                             child: Text(
                               '3',
                               style: TextStyle(
@@ -264,7 +264,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                         )),
                       ],
                     )),
-                    SizedBox(
+                    const SizedBox(
                       height: 8,
                     ),
                     Expanded(
@@ -278,14 +278,14 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                               color: Colors.grey,
                             ),
                           ),
-                          child: Center(
+                          child: const Center(
                             child: Text(
                               '4',
                               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 32),
                             ),
                           ),
                         )),
-                        SizedBox(
+                        const SizedBox(
                           width: 16,
                         ),
                         Expanded(
@@ -296,7 +296,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                               color: Colors.grey,
                             ),
                           ),
-                          child: Center(
+                          child: const Center(
                             child: Text(
                               '5',
                               style: TextStyle(
@@ -306,7 +306,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                             ),
                           ),
                         )),
-                        SizedBox(
+                        const SizedBox(
                           width: 16,
                         ),
                         Expanded(
@@ -317,7 +317,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                               color: Colors.grey,
                             ),
                           ),
-                          child: Center(
+                          child: const Center(
                             child: Text(
                               '6',
                               style: TextStyle(
@@ -329,7 +329,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                         )),
                       ],
                     )),
-                    SizedBox(
+                    const SizedBox(
                       height: 8,
                     ),
                     Expanded(
@@ -343,7 +343,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                               color: Colors.grey,
                             ),
                           ),
-                          child: Center(
+                          child: const Center(
                             child: Text(
                               '7',
                               style: TextStyle(
@@ -353,7 +353,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                             ),
                           ),
                         )),
-                        SizedBox(
+                        const SizedBox(
                           width: 16,
                         ),
                         Expanded(
@@ -364,7 +364,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                               color: Colors.grey,
                             ),
                           ),
-                          child: Center(
+                          child: const Center(
                             child: Text(
                               '8',
                               style: TextStyle(
@@ -374,7 +374,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                             ),
                           ),
                         )),
-                        SizedBox(
+                        const SizedBox(
                           width: 16,
                         ),
                         Expanded(
@@ -385,7 +385,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                               color: Colors.grey,
                             ),
                           ),
-                          child: Center(
+                          child: const Center(
                             child: Text(
                               '9',
                               style: TextStyle(
@@ -397,7 +397,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                         )),
                       ],
                     )),
-                    SizedBox(
+                    const SizedBox(
                       height: 8,
                     ),
                     Expanded(
@@ -411,7 +411,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                               color: Colors.grey,
                             ),
                           ),
-                          child: Center(
+                          child: const Center(
                             child: Text(
                               '<',
                               style: TextStyle(
@@ -421,7 +421,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                             ),
                           ),
                         )),
-                        SizedBox(
+                        const SizedBox(
                           width: 16,
                         ),
                         Expanded(
@@ -432,7 +432,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                               color: Colors.grey,
                             ),
                           ),
-                              child: Center(
+                              child: const Center(
                                 child: Text(
                                   '0',
                                   style: TextStyle(
@@ -442,7 +442,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                                 ),
                               ),
                         )),
-                        SizedBox(
+                        const SizedBox(
                           width: 16,
                         ),
                         Expanded(
@@ -453,7 +453,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                               color: Colors.grey,
                             ),
                           ),
-                              child: Center(
+                              child: const Center(
                                 child: Text(
                                   'X',
                                   style: TextStyle(
