@@ -211,8 +211,26 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                             ),
                           ),
                         )),
-                        Expanded(child: Placeholder()),
-                        Expanded(child: Placeholder()),
+                        SizedBox(width: 16,),
+                        Expanded(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(16),
+                                border: Border.all(
+                                  color: Colors.grey,
+                                ),
+                              ),
+                            )),
+                        SizedBox(width: 16,),
+                        Expanded(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(16),
+                                border: Border.all(
+                                  color: Colors.grey,
+                                ),
+                              ),
+                            )),
                       ],
                     )),
                     Expanded(child: Placeholder()),
