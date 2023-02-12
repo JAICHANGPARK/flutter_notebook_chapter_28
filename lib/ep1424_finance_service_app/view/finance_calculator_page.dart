@@ -132,12 +132,24 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                         borderRadius: BorderRadius.circular(8),
                       ),
                     ),
-                    const Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text("Visa"),
-                        Text("\$ 5,200.15"),
-                      ],
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: const Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Visa",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 24,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 4,
+                          ),
+                          Text("\$ 5,200.15"),
+                        ],
+                      ),
                     )
                   ],
                 ),
