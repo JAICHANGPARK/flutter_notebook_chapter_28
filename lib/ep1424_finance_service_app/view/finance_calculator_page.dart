@@ -510,23 +510,30 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                           width: 16,
                         ),
                         Expanded(
-                            child: Container(
+                            child: GestureDetector(
+                              onTap: () {
+                                setState(() {
+                                  inputTextDate += "0";
+                                });
+                              },
+                              child: Container(
                           decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(16),
-                            border: Border.all(
-                              color: Colors.grey,
-                            ),
+                              borderRadius: BorderRadius.circular(16),
+                              border: Border.all(
+                                color: Colors.grey,
+                              ),
                           ),
                           child: const Center(
-                            child: Text(
-                              '0',
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 32,
+                              child: Text(
+                                '0',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 32,
+                                ),
                               ),
-                            ),
                           ),
-                        )),
+                        ),
+                            )),
                         const SizedBox(
                           width: 16,
                         ),
