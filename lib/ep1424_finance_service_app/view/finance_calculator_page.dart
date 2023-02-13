@@ -120,7 +120,10 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                 child: Center(
                   child: Text(
                     "\$ ${inputTextDate}",
-                    style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                    style: const TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 24,
+                    ),
                   ),
                 ),
               ),
@@ -479,19 +482,26 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                         child: Row(
                       children: [
                         Expanded(
-                            child: Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(16),
-                            border: Border.all(
-                              color: Colors.grey,
+                            child: GestureDetector(
+                          onTap: () {
+                            setState(() {
+                              inputTextDate = inputTextDate.substring(0, inputTextDate.length - 1);
+                            });
+                          },
+                          child: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(16),
+                              border: Border.all(
+                                color: Colors.grey,
+                              ),
                             ),
-                          ),
-                          child: const Center(
-                            child: Text(
-                              '<',
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 32,
+                            child: const Center(
+                              child: Text(
+                                '<',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 32,
+                                ),
                               ),
                             ),
                           ),
