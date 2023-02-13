@@ -120,7 +120,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                 child: Center(
                   child: Text(
                     "\$ ${inputTextDate}",
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 20
                     ),
