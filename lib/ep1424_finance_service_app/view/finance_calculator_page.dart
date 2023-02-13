@@ -9,8 +9,8 @@ class FinanceCalculatorPage extends StatefulWidget {
 
 class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
   String inputTextDate = "";
-  Color bgColor = Color.fromRGBO(245, 228, 204, 1);
-  Color btnColor = Color.fromRGBO(195, 175, 146, 1);
+  Color bgColor = const Color.fromRGBO(245, 228, 204, 1);
+  Color btnColor = const Color.fromRGBO(195, 175, 146, 1);
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +25,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                 padding: const EdgeInsets.fromLTRB(0, 8, 0, 24),
                 child: Row(
                   children: [
-                    CircleAvatar(
+                    const CircleAvatar(
                       radius: 24,
                       backgroundColor: Colors.white,
                     ),
