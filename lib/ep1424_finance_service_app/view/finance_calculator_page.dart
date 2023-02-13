@@ -9,6 +9,7 @@ class FinanceCalculatorPage extends StatefulWidget {
 
 class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
   String inputTextDate = "";
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -116,8 +117,14 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(32),
                 ),
-                child:  Center(
-                  child: Text("\$${inputTextDate}"),
+                child: Center(
+                  child: Text(
+                    "\$ ${inputTextDate}",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20
+                    ),
+                  ),
                 ),
               ),
               Container(
@@ -433,15 +440,15 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                               color: Colors.grey,
                             ),
                           ),
-                              child: const Center(
-                                child: Text(
-                                  '0',
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 32,
-                                  ),
-                                ),
+                          child: const Center(
+                            child: Text(
+                              '0',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 32,
                               ),
+                            ),
+                          ),
                         )),
                         const SizedBox(
                           width: 16,
@@ -454,15 +461,15 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                               color: Colors.grey,
                             ),
                           ),
-                              child: const Center(
-                                child: Text(
-                                  'X',
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 32,
-                                  ),
-                                ),
+                          child: const Center(
+                            child: Text(
+                              'X',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 32,
                               ),
+                            ),
+                          ),
                         )),
                       ],
                     )),
