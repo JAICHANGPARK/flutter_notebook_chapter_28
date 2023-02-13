@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 class FinanceCalculatorPage extends StatefulWidget {
   const FinanceCalculatorPage({Key? key}) : super(key: key);
@@ -8,7 +9,7 @@ class FinanceCalculatorPage extends StatefulWidget {
 }
 
 class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
-  String inputTextDate = "";
+  String inputTextDate = "0";
   Color bgColor = const Color.fromRGBO(245, 228, 204, 1);
   Color btnColor = const Color.fromRGBO(195, 175, 146, 1);
 
@@ -120,9 +121,12 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(32),
                 ),
+                padding: EdgeInsets.symmetric(horizontal: 24),
                 child: Center(
                   child: Text(
-                    "\$ ${inputTextDate}",
+                    NumberFormat.currency(locale: "en_US", symbol: "\$ ").format(
+                      int.parse(inputTextDate),
+                    ),
                     style: const TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 24,
