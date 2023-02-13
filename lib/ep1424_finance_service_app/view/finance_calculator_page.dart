@@ -9,11 +9,13 @@ class FinanceCalculatorPage extends StatefulWidget {
 
 class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
   String inputTextDate = "";
+  Color bgColor = Color.fromRGBO(245, 228, 204, 1);
+  Color btnColor = Color.fromRGBO(195, 175, 146, 1);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.brown[100],
+      backgroundColor: bgColor,
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
@@ -23,12 +25,13 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                 padding: const EdgeInsets.fromLTRB(0, 8, 0, 24),
                 child: Row(
                   children: [
-                    const CircleAvatar(
+                    CircleAvatar(
                       radius: 24,
+                      backgroundColor: Colors.white,
                     ),
                     CircleAvatar(
                       radius: 24,
-                      backgroundColor: Colors.brown[300],
+                      backgroundColor: btnColor,
                       foregroundColor: Colors.white,
                       child: const Icon(Icons.add),
                     ),
@@ -191,7 +194,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                 height: 64,
                 margin: const EdgeInsets.symmetric(vertical: 24),
                 decoration: BoxDecoration(
-                  color: Colors.brown[300],
+                  color: btnColor,
                   borderRadius: BorderRadius.circular(32),
                 ),
                 child: const Center(
@@ -511,19 +514,19 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                         ),
                         Expanded(
                             child: GestureDetector(
-                              onTap: () {
-                                setState(() {
-                                  inputTextDate += "0";
-                                });
-                              },
-                              child: Container(
-                          decoration: BoxDecoration(
+                          onTap: () {
+                            setState(() {
+                              inputTextDate += "0";
+                            });
+                          },
+                          child: Container(
+                            decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(16),
                               border: Border.all(
                                 color: Colors.grey,
                               ),
-                          ),
-                          child: const Center(
+                            ),
+                            child: const Center(
                               child: Text(
                                 '0',
                                 style: TextStyle(
@@ -531,26 +534,33 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                                   fontSize: 32,
                                 ),
                               ),
+                            ),
                           ),
-                        ),
-                            )),
+                        )),
                         const SizedBox(
                           width: 16,
                         ),
                         Expanded(
-                            child: Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(16),
-                            border: Border.all(
-                              color: Colors.grey,
+                            child: GestureDetector(
+                          onTap: () {
+                            setState(() {
+                              inputTextDate = "";
+                            });
+                          },
+                          child: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(16),
+                              border: Border.all(
+                                color: Colors.grey,
+                              ),
                             ),
-                          ),
-                          child: const Center(
-                            child: Text(
-                              'X',
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 32,
+                            child: const Center(
+                              child: Text(
+                                'X',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 32,
+                                ),
                               ),
                             ),
                           ),
