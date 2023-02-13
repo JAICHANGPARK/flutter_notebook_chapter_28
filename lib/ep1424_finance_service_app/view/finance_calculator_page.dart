@@ -8,6 +8,7 @@ class FinanceCalculatorPage extends StatefulWidget {
 }
 
 class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
+  String inputTextDate = "";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
