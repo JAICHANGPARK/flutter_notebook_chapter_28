@@ -116,8 +116,8 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(32),
                 ),
-                child: const Center(
-                  child: Text(""),
+                child:  Center(
+                  child: Text("\$${inputTextDate}"),
                 ),
               ),
               Container(
