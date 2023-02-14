@@ -1,6 +1,14 @@
 # flutter_notebook_chapter_28
 
-### EP1424
+### EP1427
+
+- Redesign Apps Dapur Cokelat
+- by Makkun for Pelorous
+- https://dribbble.com/shots/20641532-Redesign-Apps-Dapur-Cokelat
+
+<img src="https://cdn.dribbble.com/userupload/4629934/file/original-ed786f50953e53c03c46be7489699e0d.png?compress=1&resize=3200x2400" width="500px"/>
+
+### EP1424-1426
 
 - Finance service - Mobile app
 - by Anastasia Golovko
