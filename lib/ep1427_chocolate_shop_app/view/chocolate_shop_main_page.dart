@@ -26,7 +26,37 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                   Icon(Icons.cake_outlined),
                   Text("Home"),
                 ],
-              )
+              ),
+              Column(
+                children: [
+                  Icon(Icons.search),
+                  Text("Browse"),
+                ],
+              ),
+              Column(
+                children: [
+                  Badge(
+                    child: Icon(Icons.confirmation_number),
+                    // largeSize: 9,
+                    label: Text("12"),
+                  ),
+                  Text("Browse"),
+                ],
+              ),
+              Column(
+                children: [
+                  Icon(Icons.shopping_cart_outlined),
+                  Text("Cart"),
+                ],
+              ),
+              Column(
+                children: [
+                  Icon(Icons.receipt_long),
+                  Text("Transaction"),
+                ],
+              ),
+
+
             ],
           ),
         ),
