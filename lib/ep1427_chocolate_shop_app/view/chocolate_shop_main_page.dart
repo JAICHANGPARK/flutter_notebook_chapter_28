@@ -19,7 +19,9 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
       bottomNavigationBar: BottomAppBar(
         child: Container(
           height: 80,
+          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Column(
                 children: [
