@@ -15,8 +15,8 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
         child: Column(
           children: [
             Container(
-              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
-              child: Row(
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+              child: const Row(
                 children: [
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -33,11 +33,11 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                   ),
                   Spacer(),
                   Badge(
+                    label: Text("5"),
                     child: Icon(
                       Icons.notifications_none,
                       size: 32,
                     ),
-                    label: Text("5"),
                   ),
                   SizedBox(
                     width: 16,
@@ -52,8 +52,8 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
       bottomNavigationBar: BottomAppBar(
         child: Container(
           height: 80,
-          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
-          child: Row(
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+          child: const Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Column(
