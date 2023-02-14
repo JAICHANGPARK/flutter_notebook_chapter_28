@@ -23,9 +23,7 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                     children: [
                       Text(
                         "Good Morning, Dream 👋",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                        ),
+                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                       ),
                       SizedBox(
                         height: 8,
@@ -35,8 +33,14 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                   ),
                   Spacer(),
                   Badge(
-                    child: Icon(Icons.notifications_none),
+                    child: Icon(
+                      Icons.notifications_none,
+                      size: 32,
+                    ),
                     label: Text("5"),
+                  ),
+                  SizedBox(
+                    width: 16,
                   ),
                   CircleAvatar(),
                 ],
