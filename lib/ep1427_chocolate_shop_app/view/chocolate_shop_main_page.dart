@@ -26,12 +26,14 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
               Column(
                 children: [
                   Icon(Icons.cake_outlined),
+                  SizedBox(height: 8,),
                   Text("Home"),
                 ],
               ),
               Column(
                 children: [
                   Icon(Icons.search),
+                  SizedBox(height: 8,),
                   Text("Browse"),
                 ],
               ),
@@ -40,20 +42,24 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                   Badge(
                     child: Icon(Icons.confirmation_number),
                     // largeSize: 9,
+
                     label: Text("12"),
                   ),
+                  SizedBox(height: 8,),
                   Text("Browse"),
                 ],
               ),
               Column(
                 children: [
                   Icon(Icons.shopping_cart_outlined),
+                  SizedBox(height: 8,),
                   Text("Cart"),
                 ],
               ),
               Column(
                 children: [
                   Icon(Icons.receipt_long),
+                  SizedBox(height: 8,),
                   Text("Transaction"),
                 ],
               ),
