@@ -14,22 +14,33 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              children: [
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text("Good Morning, Dream 👋"),
-                    Text("what would you like to order today?"),
-                  ],
-                ),
-                Spacer(),
-                Badge(
-                  child: Icon(Icons.notifications_none),
-                  label: Text("5"),
-                ),
-                CircleAvatar(),
-              ],
+            Container(
+              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+              child: Row(
+                children: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Good Morning, Dream 👋",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 8,
+                      ),
+                      Text("what would you like to order today?"),
+                    ],
+                  ),
+                  Spacer(),
+                  Badge(
+                    child: Icon(Icons.notifications_none),
+                    label: Text("5"),
+                  ),
+                  CircleAvatar(),
+                ],
+              ),
             ),
           ],
         ),
