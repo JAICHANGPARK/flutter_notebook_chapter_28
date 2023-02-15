@@ -54,6 +54,17 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                     ],
                   ),
                 ),
+                Container(
+                  margin: EdgeInsets.symmetric(vertical: 16),
+                  height: 160,
+                  color: Colors.blue,
+                ),
+
+                Container(
+                  height: 300,
+                  decoration: ,
+                )
+
               ],
             ),
             ...List.generate(
