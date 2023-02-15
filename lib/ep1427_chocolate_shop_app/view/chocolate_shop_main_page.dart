@@ -55,7 +55,7 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
         child: Container(
           height: 80,
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
-          child:  Row(
+          child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               GestureDetector(
@@ -64,13 +64,22 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                     selectedIndex = 0;
                   });
                 },
-                child: const Column(
+                child: Column(
                   children: [
-                    Icon(Icons.cake_outlined),
+                    Icon(
+                      Icons.cake_outlined,
+                      color: selectedIndex == 0 ? Colors.brown : Colors.grey,
+                    ),
                     SizedBox(
                       height: 8,
                     ),
-                    Text("Home"),
+                    Text(
+                      "Home",
+                      style: TextStyle(
+                        color: selectedIndex == 0 ? Colors.brown : Colors.grey,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                   ],
                 ),
               ),
