@@ -101,7 +101,7 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                     Text(
                       "Browse",
                       style: TextStyle(
-                        color: selectedIndex == 0 ? Colors.brown : Colors.grey,
+                        color: selectedIndex == 1 ? Colors.brown : Colors.grey,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -114,16 +114,25 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                     selectedIndex = 2;
                   });
                 },
-                child: const Column(
+                child: Column(
                   children: [
                     Badge(
-                      label: Text("12"),
-                      child: Icon(Icons.confirmation_number),
+                      label: const Text("12"),
+                      child: Icon(
+                        Icons.confirmation_number,
+                        color: selectedIndex == 2 ? Colors.brown : Colors.grey,
+                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 8,
                     ),
-                    Text("Browse"),
+                    Text(
+                      "Voucher",
+                      style: TextStyle(
+                        color: selectedIndex == 2 ? Colors.brown : Colors.grey,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                   ],
                 ),
               ),
@@ -133,13 +142,22 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                     selectedIndex = 3;
                   });
                 },
-                child: const Column(
+                child: Column(
                   children: [
-                    Icon(Icons.shopping_cart_outlined),
+                    Icon(
+                      Icons.shopping_cart_outlined,
+                      color: selectedIndex == 3 ? Colors.brown : Colors.grey,
+                    ),
                     SizedBox(
                       height: 8,
                     ),
-                    Text("Cart"),
+                    Text(
+                      "Cart",
+                      style: TextStyle(
+                        color: selectedIndex == 3 ? Colors.brown : Colors.grey,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                   ],
                 ),
               ),
@@ -149,13 +167,22 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                     selectedIndex = 4;
                   });
                 },
-                child: const Column(
+                child: Column(
                   children: [
-                    Icon(Icons.receipt_long),
+                    Icon(
+                      Icons.receipt_long,
+                      color: selectedIndex == 4 ? Colors.brown : Colors.grey,
+                    ),
                     SizedBox(
                       height: 8,
                     ),
-                    Text("Transaction"),
+                    Text(
+                      "Transaction",
+                      style: TextStyle(
+                        color: selectedIndex == 4 ? Colors.brown : Colors.grey,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                   ],
                 ),
               ),
