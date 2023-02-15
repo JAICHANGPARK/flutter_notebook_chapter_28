@@ -69,28 +69,41 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                           child: Row(
                         children: [
                           Expanded(child: Placeholder()),
-                          SizedBox(width: 8,),
+                          SizedBox(
+                            width: 8,
+                          ),
                           Expanded(child: Placeholder()),
                         ],
                       )),
                       SizedBox(
                         height: 16,
                       ),
-                      Expanded(child: Row(
-                        children: [
-                          Expanded(child: Placeholder()),
-                          SizedBox(width: 8,),
-                          Expanded(child: Placeholder()),
-                          SizedBox(width: 8,),
-                          Expanded(child: Placeholder()),
-                          SizedBox(width: 8,),
-                          Expanded(child: Placeholder()),
-                        ],
-                      )),
-
+                      Expanded(
+                        child: Row(
+                          children: [
+                            Expanded(child: Placeholder()),
+                            SizedBox(
+                              width: 8,
+                            ),
+                            Expanded(child: Placeholder()),
+                            SizedBox(
+                              width: 8,
+                            ),
+                            Expanded(child: Placeholder()),
+                            SizedBox(
+                              width: 8,
+                            ),
+                            Expanded(child: Placeholder()),
+                          ],
+                        ),
+                      ),
                     ],
                   ),
-                )
+                ),
+                Container(
+                  height: 54,
+                  color: Colors.brown,
+                ),
               ],
             ),
             ...List.generate(
