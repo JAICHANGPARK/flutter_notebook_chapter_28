@@ -56,15 +56,15 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.symmetric(vertical: 16),
+                    margin: const EdgeInsets.symmetric(vertical: 16),
                     height: 160,
                     color: Colors.blue,
                   ),
                   Container(
                     height: 240,
                     color: Colors.pink,
-                    padding: EdgeInsets.all(16),
-                    child: Column(
+                    padding: const EdgeInsets.all(16),
+                    child: const Column(
                       children: [
                         Expanded(
                             child: Row(
@@ -103,7 +103,7 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                   ),
                   Container(
                     height: 54,
-                    margin: EdgeInsets.all(16),
+                    margin: const EdgeInsets.all(16),
                     color: Colors.brown,
                   ),
                   Padding(
@@ -111,7 +111,7 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(
+                        const Text(
                           "Best Seller of the month 🎂",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
@@ -120,7 +120,7 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                         ),
                         TextButton(
                           onPressed: () {},
-                          child: Text(
+                          child: const Text(
                             "See All",
                           ),
                         ),
@@ -129,6 +129,7 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                   ),
                   Container(
                     height: 300,
+                    margin: EdgeInsets.fromLTRB(16, 0, 16, 0),
                     decoration: BoxDecoration(
                       color: Colors.blue,
                       borderRadius: BorderRadius.circular(8),
@@ -243,7 +244,7 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                       Icons.shopping_cart_outlined,
                       color: selectedIndex == 3 ? Colors.brown : Colors.grey,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 8,
                     ),
                     Text(
@@ -268,7 +269,7 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                       Icons.receipt_long,
                       color: selectedIndex == 4 ? Colors.brown : Colors.grey,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 8,
                     ),
                     Text(
