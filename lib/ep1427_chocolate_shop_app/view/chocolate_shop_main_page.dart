@@ -17,105 +17,125 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
         child: IndexedStack(
           index: selectedIndex,
           children: [
-            Column(
-              children: [
-                Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
-                  child: const Row(
-                    children: [
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            "Good Morning, Dream 👋",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 18,
+            SingleChildScrollView(
+              child: Column(
+                children: [
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                    child: const Row(
+                      children: [
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "Good Morning, Dream 👋",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18,
+                              ),
                             ),
-                          ),
-                          SizedBox(
-                            height: 8,
-                          ),
-                          Text("what would you like to order today?"),
-                        ],
-                      ),
-                      Spacer(),
-                      Badge(
-                        label: Text("5"),
-                        child: Icon(
-                          Icons.notifications_none,
-                          size: 32,
+                            SizedBox(
+                              height: 8,
+                            ),
+                            Text("what would you like to order today?"),
+                          ],
                         ),
-                      ),
-                      SizedBox(
-                        width: 16,
-                      ),
-                      CircleAvatar(),
-                    ],
-                  ),
-                ),
-                Container(
-                  margin: EdgeInsets.symmetric(vertical: 16),
-                  height: 160,
-                  color: Colors.blue,
-                ),
-                Container(
-                  height: 240,
-                  color: Colors.pink,
-                  padding: EdgeInsets.all(16),
-                  child: Column(
-                    children: [
-                      Expanded(
-                          child: Row(
-                        children: [
-                          Expanded(child: Placeholder()),
-                          SizedBox(
-                            width: 8,
+                        Spacer(),
+                        Badge(
+                          label: Text("5"),
+                          child: Icon(
+                            Icons.notifications_none,
+                            size: 32,
                           ),
-                          Expanded(child: Placeholder()),
-                        ],
-                      )),
-                      SizedBox(
-                        height: 16,
-                      ),
-                      Expanded(
-                        child: Row(
+                        ),
+                        SizedBox(
+                          width: 16,
+                        ),
+                        CircleAvatar(),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.symmetric(vertical: 16),
+                    height: 160,
+                    color: Colors.blue,
+                  ),
+                  Container(
+                    height: 240,
+                    color: Colors.pink,
+                    padding: EdgeInsets.all(16),
+                    child: Column(
+                      children: [
+                        Expanded(
+                            child: Row(
                           children: [
                             Expanded(child: Placeholder()),
                             SizedBox(
                               width: 8,
                             ),
                             Expanded(child: Placeholder()),
-                            SizedBox(
-                              width: 8,
-                            ),
-                            Expanded(child: Placeholder()),
-                            SizedBox(
-                              width: 8,
-                            ),
-                            Expanded(child: Placeholder()),
                           ],
+                        )),
+                        SizedBox(
+                          height: 16,
                         ),
-                      ),
-                    ],
+                        Expanded(
+                          child: Row(
+                            children: [
+                              Expanded(child: Placeholder()),
+                              SizedBox(
+                                width: 8,
+                              ),
+                              Expanded(child: Placeholder()),
+                              SizedBox(
+                                width: 8,
+                              ),
+                              Expanded(child: Placeholder()),
+                              SizedBox(
+                                width: 8,
+                              ),
+                              Expanded(child: Placeholder()),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-                Container(
-                  height: 54,
-                  margin: EdgeInsets.all(16),
-                  color: Colors.brown,
-                ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text("Best Seller of the month 🎂"),
-                      TextButton(onPressed: (){}, child: Text("See All"))
-                    ],
+                  Container(
+                    height: 54,
+                    margin: EdgeInsets.all(16),
+                    color: Colors.brown,
                   ),
-                )
-              ],
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "Best Seller of the month 🎂",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
+                        ),
+                        TextButton(
+                          onPressed: () {},
+                          child: Text(
+                            "See All",
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    height: 300,
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                  )
+                ],
+              ),
             ),
             ...List.generate(
               4,
