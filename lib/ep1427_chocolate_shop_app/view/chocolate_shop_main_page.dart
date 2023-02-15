@@ -64,7 +64,7 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                     selectedIndex = 0;
                   });
                 },
-                child: Column(
+                child: const Column(
                   children: [
                     Icon(Icons.cake_outlined),
                     SizedBox(
@@ -80,7 +80,7 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                     selectedIndex = 1;
                   });
                 },
-                child: Column(
+                child: const Column(
                   children: [
                     Icon(Icons.search),
                     SizedBox(
@@ -96,12 +96,11 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                     selectedIndex = 2;
                   });
                 },
-                child: Column(
+                child: const Column(
                   children: [
                     Badge(
-                      child: Icon(Icons.confirmation_number),
-                      // largeSize: 9,
                       label: Text("12"),
+                      child: Icon(Icons.confirmation_number),
                     ),
                     SizedBox(
                       height: 8,
@@ -116,7 +115,7 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                     selectedIndex = 3;
                   });
                 },
-                child: Column(
+                child: const Column(
                   children: [
                     Icon(Icons.shopping_cart_outlined),
                     SizedBox(
@@ -132,7 +131,7 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                     selectedIndex = 4;
                   });
                 },
-                child: Column(
+                child: const Column(
                   children: [
                     Icon(Icons.receipt_long),
                     SizedBox(
