@@ -14,39 +14,44 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
+        child: IndexedStack(
+          index: selectedIndex,
           children: [
-            Container(
-              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
-              child: const Row(
-                children: [
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+            Column(
+              children: [
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                  child: const Row(
                     children: [
-                      Text(
-                        "Good Morning, Dream 👋",
-                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Good Morning, Dream 👋",
+                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18,),
+                          ),
+                          SizedBox(
+                            height: 8,
+                          ),
+                          Text("what would you like to order today?"),
+                        ],
+                      ),
+                      Spacer(),
+                      Badge(
+                        label: Text("5"),
+                        child: Icon(
+                          Icons.notifications_none,
+                          size: 32,
+                        ),
                       ),
                       SizedBox(
-                        height: 8,
+                        width: 16,
                       ),
-                      Text("what would you like to order today?"),
+                      CircleAvatar(),
                     ],
                   ),
-                  Spacer(),
-                  Badge(
-                    label: Text("5"),
-                    child: Icon(
-                      Icons.notifications_none,
-                      size: 32,
-                    ),
-                  ),
-                  SizedBox(
-                    width: 16,
-                  ),
-                  CircleAvatar(),
-                ],
-              ),
+                ),
+              ],
             ),
           ],
         ),
