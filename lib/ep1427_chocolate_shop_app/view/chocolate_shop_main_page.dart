@@ -28,7 +28,10 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                         children: [
                           Text(
                             "Good Morning, Dream 👋",
-                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18,),
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                            ),
                           ),
                           SizedBox(
                             height: 8,
@@ -53,6 +56,12 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                 ),
               ],
             ),
+            ...List.generate(
+              4,
+              (index) => Center(
+                child: Text("${index + 1}"),
+              ),
+            )
           ],
         ),
       ),
