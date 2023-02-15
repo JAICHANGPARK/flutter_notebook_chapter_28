@@ -17,126 +17,129 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
         child: IndexedStack(
           index: selectedIndex,
           children: [
-            SingleChildScrollView(
-              child: Column(
-                children: [
-                  Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
-                    child: const Row(
-                      children: [
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              "Good Morning, Dream 👋",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 18,
-                              ),
+            Column(
+              children: [
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                  child: const Row(
+                    children: [
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Good Morning, Dream 👋",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
                             ),
-                            SizedBox(
-                              height: 8,
-                            ),
-                            Text("what would you like to order today?"),
-                          ],
-                        ),
-                        Spacer(),
-                        Badge(
-                          label: Text("5"),
-                          child: Icon(
-                            Icons.notifications_none,
-                            size: 32,
                           ),
-                        ),
-                        SizedBox(
-                          width: 16,
-                        ),
-                        CircleAvatar(),
-                      ],
-                    ),
-                  ),
-                  Container(
-                    margin: const EdgeInsets.symmetric(vertical: 16),
-                    height: 160,
-                    color: Colors.blue,
-                  ),
-                  Container(
-                    height: 240,
-                    color: Colors.pink,
-                    padding: const EdgeInsets.all(16),
-                    child: const Column(
-                      children: [
-                        Expanded(
-                            child: Row(
-                          children: [
-                            Expanded(child: Placeholder()),
-                            SizedBox(
-                              width: 8,
-                            ),
-                            Expanded(child: Placeholder()),
-                          ],
-                        )),
-                        SizedBox(
-                          height: 16,
-                        ),
-                        Expanded(
-                          child: Row(
-                            children: [
-                              Expanded(child: Placeholder()),
-                              SizedBox(
-                                width: 8,
-                              ),
-                              Expanded(child: Placeholder()),
-                              SizedBox(
-                                width: 8,
-                              ),
-                              Expanded(child: Placeholder()),
-                              SizedBox(
-                                width: 8,
-                              ),
-                              Expanded(child: Placeholder()),
-                            ],
+                          SizedBox(
+                            height: 8,
                           ),
+                          Text("what would you like to order today?"),
+                        ],
+                      ),
+                      Spacer(),
+                      Badge(
+                        label: Text("5"),
+                        child: Icon(
+                          Icons.notifications_none,
+                          size: 32,
                         ),
-                      ],
-                    ),
+                      ),
+                      SizedBox(
+                        width: 16,
+                      ),
+                      CircleAvatar(),
+                    ],
                   ),
-                  Container(
-                    height: 54,
-                    margin: const EdgeInsets.all(16),
-                    color: Colors.brown,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 16),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        const Text(
-                          "Best Seller of the month 🎂",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 16,
-                          ),
-                        ),
-                        TextButton(
-                          onPressed: () {},
-                          child: const Text(
-                            "See All",
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Container(
-                    height: 300,
-                    margin: EdgeInsets.fromLTRB(16, 0, 16, 0),
-                    decoration: BoxDecoration(
+                ),
+                Expanded(child: SingleChildScrollView(child: Column(
+                  children: [
+                    Container(
+                      margin: const EdgeInsets.symmetric(vertical: 16),
+                      height: 160,
                       color: Colors.blue,
-                      borderRadius: BorderRadius.circular(8),
                     ),
-                  )
-                ],
-              ),
+                    Container(
+                      height: 240,
+                      color: Colors.pink,
+                      padding: const EdgeInsets.all(16),
+                      child: const Column(
+                        children: [
+                          Expanded(
+                              child: Row(
+                                children: [
+                                  Expanded(child: Placeholder()),
+                                  SizedBox(
+                                    width: 8,
+                                  ),
+                                  Expanded(child: Placeholder()),
+                                ],
+                              )),
+                          SizedBox(
+                            height: 16,
+                          ),
+                          Expanded(
+                            child: Row(
+                              children: [
+                                Expanded(child: Placeholder()),
+                                SizedBox(
+                                  width: 8,
+                                ),
+                                Expanded(child: Placeholder()),
+                                SizedBox(
+                                  width: 8,
+                                ),
+                                Expanded(child: Placeholder()),
+                                SizedBox(
+                                  width: 8,
+                                ),
+                                Expanded(child: Placeholder()),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      height: 54,
+                      margin: const EdgeInsets.all(16),
+                      color: Colors.brown,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          const Text(
+                            "Best Seller of the month 🎂",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                            ),
+                          ),
+                          TextButton(
+                            onPressed: () {},
+                            child: const Text(
+                              "See All",
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      height: 300,
+                      margin: EdgeInsets.fromLTRB(16, 0, 16, 0),
+                      decoration: BoxDecoration(
+                        color: Colors.blue,
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                    )
+                  ],
+                ),))
+
+              ],
             ),
             ...List.generate(
               4,
