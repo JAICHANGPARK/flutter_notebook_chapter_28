@@ -59,12 +59,38 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                   height: 160,
                   color: Colors.blue,
                 ),
-
                 Container(
-                  height: 300,
-                  decoration: ,
-                )
+                  height: 240,
+                  color: Colors.pink,
+                  padding: EdgeInsets.all(16),
+                  child: Column(
+                    children: [
+                      Expanded(
+                          child: Row(
+                        children: [
+                          Expanded(child: Placeholder()),
+                          SizedBox(width: 8,),
+                          Expanded(child: Placeholder()),
+                        ],
+                      )),
+                      SizedBox(
+                        height: 16,
+                      ),
+                      Expanded(child: Row(
+                        children: [
+                          Expanded(child: Placeholder()),
+                          SizedBox(width: 8,),
+                          Expanded(child: Placeholder()),
+                          SizedBox(width: 8,),
+                          Expanded(child: Placeholder()),
+                          SizedBox(width: 8,),
+                          Expanded(child: Placeholder()),
+                        ],
+                      )),
 
+                    ],
+                  ),
+                )
               ],
             ),
             ...List.generate(
