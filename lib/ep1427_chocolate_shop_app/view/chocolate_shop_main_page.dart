@@ -102,8 +102,19 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                 ),
                 Container(
                   height: 54,
+                  margin: EdgeInsets.all(16),
                   color: Colors.brown,
                 ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text("Best Seller of the month 🎂"),
+                      TextButton(onPressed: (){}, child: Text("See All"))
+                    ],
+                  ),
+                )
               ],
             ),
             ...List.generate(
