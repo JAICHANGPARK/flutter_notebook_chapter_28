@@ -101,7 +101,6 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                     Badge(
                       child: Icon(Icons.confirmation_number),
                       // largeSize: 9,
-
                       label: Text("12"),
                     ),
                     SizedBox(
@@ -111,23 +110,37 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                   ],
                 ),
               ),
-              Column(
-                children: [
-                  Icon(Icons.shopping_cart_outlined),
-                  SizedBox(
-                    height: 8,
-                  ),
-                  Text("Cart"),
-                ],
+              GestureDetector(
+                onTap: () {
+                  setState(() {
+                    selectedIndex = 3;
+                  });
+                },
+                child: Column(
+                  children: [
+                    Icon(Icons.shopping_cart_outlined),
+                    SizedBox(
+                      height: 8,
+                    ),
+                    Text("Cart"),
+                  ],
+                ),
               ),
-              Column(
-                children: [
-                  Icon(Icons.receipt_long),
-                  SizedBox(
-                    height: 8,
-                  ),
-                  Text("Transaction"),
-                ],
+              GestureDetector(
+                onTap: () {
+                  setState(() {
+                    selectedIndex = 4;
+                  });
+                },
+                child: Column(
+                  children: [
+                    Icon(Icons.receipt_long),
+                    SizedBox(
+                      height: 8,
+                    ),
+                    Text("Transaction"),
+                  ],
+                ),
               ),
             ],
           ),
