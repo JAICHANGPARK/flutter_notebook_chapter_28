@@ -70,7 +70,7 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                       Icons.cake_outlined,
                       color: selectedIndex == 0 ? Colors.brown : Colors.grey,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 8,
                     ),
                     Text(
@@ -89,13 +89,22 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                     selectedIndex = 1;
                   });
                 },
-                child: const Column(
+                child: Column(
                   children: [
-                    Icon(Icons.search),
-                    SizedBox(
+                    Icon(
+                      Icons.search,
+                      color: selectedIndex == 1 ? Colors.brown : Colors.grey,
+                    ),
+                    const SizedBox(
                       height: 8,
                     ),
-                    Text("Browse"),
+                    Text(
+                      "Browse",
+                      style: TextStyle(
+                        color: selectedIndex == 0 ? Colors.brown : Colors.grey,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                   ],
                 ),
               ),
