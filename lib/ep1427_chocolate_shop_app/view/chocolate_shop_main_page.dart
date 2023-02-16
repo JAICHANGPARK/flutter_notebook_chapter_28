@@ -1,3 +1,4 @@
+import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 
 class ChocolateShopMainPage extends StatefulWidget {
@@ -81,6 +82,9 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                             )
                           ],
                         ),
+                      ),
+                      DotsIndicator(
+                        dotsCount: 5,
                       ),
                       Container(
                         height: 240,
