@@ -10,6 +10,8 @@ class ChocolateShopMainPage extends StatefulWidget {
 class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
   int selectedIndex = 0;
 
+  PageController pageController = PageController(viewportFraction: 0.6);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -54,25 +56,52 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                     ],
                   ),
                 ),
-                Expanded(child: SingleChildScrollView(child: Column(
-                  children: [
-                    Container(
-                      margin: const EdgeInsets.fromLTRB(16, 16, 0 , 8),
-                      height: 160,
-                      color: Colors.blue,
-                      child: PageView(
-                        children: [
-
-                        ],
+                Expanded(
+                    child: SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      Container(
+                        margin: const EdgeInsets.fromLTRB(16, 16, 0, 8),
+                        height: 160,
+                        color: Colors.blue,
+                        child: PageView(
+                          controller: pageController,
+                          children: [
+                            Container(
+                              width: 300,
+                              decoration: BoxDecoration(
+                                color: Colors.red,
+                              ),
+                            ),
+                            Container(
+                              width: 300,
+                              decoration: BoxDecoration(
+                                color: Colors.orange,
+                              ),
+                            )
+                          ],
+                        ),
                       ),
-                    ),
-                    Container(
-                      height: 240,
-                      color: Colors.pink,
-                      padding: const EdgeInsets.all(16),
-                      child: const Column(
-                        children: [
-                          Expanded(
+                      Container(
+                        height: 240,
+                        color: Colors.pink,
+                        padding: const EdgeInsets.all(16),
+                        child: const Column(
+                          children: [
+                            Expanded(
+                                child: Row(
+                              children: [
+                                Expanded(child: Placeholder()),
+                                SizedBox(
+                                  width: 8,
+                                ),
+                                Expanded(child: Placeholder()),
+                              ],
+                            )),
+                            SizedBox(
+                              height: 16,
+                            ),
+                            Expanded(
                               child: Row(
                                 children: [
                                   Expanded(child: Placeholder()),
@@ -80,70 +109,57 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                                     width: 8,
                                   ),
                                   Expanded(child: Placeholder()),
+                                  SizedBox(
+                                    width: 8,
+                                  ),
+                                  Expanded(child: Placeholder()),
+                                  SizedBox(
+                                    width: 8,
+                                  ),
+                                  Expanded(child: Placeholder()),
                                 ],
-                              )),
-                          SizedBox(
-                            height: 16,
-                          ),
-                          Expanded(
-                            child: Row(
-                              children: [
-                                Expanded(child: Placeholder()),
-                                SizedBox(
-                                  width: 8,
-                                ),
-                                Expanded(child: Placeholder()),
-                                SizedBox(
-                                  width: 8,
-                                ),
-                                Expanded(child: Placeholder()),
-                                SizedBox(
-                                  width: 8,
-                                ),
-                                Expanded(child: Placeholder()),
-                              ],
+                              ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
-                    ),
-                    Container(
-                      height: 54,
-                      margin: const EdgeInsets.all(16),
-                      color: Colors.brown,
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 16),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          const Text(
-                            "Best Seller of the month 🎂",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 16,
+                      Container(
+                        height: 54,
+                        margin: const EdgeInsets.all(16),
+                        color: Colors.brown,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 16),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            const Text(
+                              "Best Seller of the month 🎂",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16,
+                              ),
                             ),
-                          ),
-                          TextButton(
-                            onPressed: () {},
-                            child: const Text(
-                              "See All",
+                            TextButton(
+                              onPressed: () {},
+                              child: const Text(
+                                "See All",
+                              ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
-                    ),
-                    Container(
-                      height: 300,
-                      margin: EdgeInsets.fromLTRB(16, 0, 16, 0),
-                      decoration: BoxDecoration(
-                        color: Colors.blue,
-                        borderRadius: BorderRadius.circular(8),
-                      ),
-                    )
-                  ],
-                ),))
-
+                      Container(
+                        height: 300,
+                        margin: EdgeInsets.fromLTRB(16, 0, 16, 0),
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                      )
+                    ],
+                  ),
+                ))
               ],
             ),
             ...List.generate(
