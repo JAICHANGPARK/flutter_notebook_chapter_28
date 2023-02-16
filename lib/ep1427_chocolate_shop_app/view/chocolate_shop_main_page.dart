@@ -12,6 +12,7 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
   int selectedIndex = 0;
 
   PageController pageController = PageController(viewportFraction: 0.8);
+  int topPagingIndex = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -66,6 +67,11 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                         height: 160,
                         child: PageView(
                           controller: pageController,
+                          onPageChanged: (idx) {
+                            setState(() {
+                              topPagingIndex = idx;
+                            });
+                          },
                           padEnds: false,
                           children: [
                             Container(
@@ -126,7 +132,7 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                           alignment: Alignment.centerLeft,
                           child: DotsIndicator(
                             dotsCount: 5,
-                            position: pageController.page ?? 0,
+                            position: topPagingIndex.toDouble(),
                             decorator: DotsDecorator(
                               activeColor: Colors.brown,
                               activeSize: const Size(32, 8),
