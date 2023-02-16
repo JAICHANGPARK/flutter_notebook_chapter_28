@@ -11,7 +11,7 @@ class ChocolateShopMainPage extends StatefulWidget {
 class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
   int selectedIndex = 0;
 
-  PageController pageController = PageController(viewportFraction: 0.6);
+  PageController pageController = PageController(viewportFraction: 1);
 
   @override
   Widget build(BuildContext context) {
@@ -70,6 +70,9 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                           children: [
                             Container(
                               width: 300,
+                              constraints: BoxConstraints(
+                                    maxWidth: 300
+                              ),
                               decoration: BoxDecoration(
                                 color: Colors.red,
                               ),
