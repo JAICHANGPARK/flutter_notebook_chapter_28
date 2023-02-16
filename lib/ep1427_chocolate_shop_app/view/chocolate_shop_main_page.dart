@@ -154,10 +154,8 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                               children: [
                                 Expanded(
                                   child: Container(
-                                    decoration: BoxDecoration(
-                                      color: Colors.grey[100],
-                                      borderRadius: BorderRadius.circular(8)
-                                    ),
+                                    decoration:
+                                        BoxDecoration(color: Colors.grey[100], borderRadius: BorderRadius.circular(8)),
                                   ),
                                 ),
                                 SizedBox(
@@ -165,10 +163,8 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                                 ),
                                 Expanded(
                                   child: Container(
-                                    decoration: BoxDecoration(
-                                        color: Colors.grey[100],
-                                        borderRadius: BorderRadius.circular(8)
-                                    ),
+                                    decoration:
+                                        BoxDecoration(color: Colors.grey[100], borderRadius: BorderRadius.circular(8)),
                                   ),
                                 ),
                               ],
@@ -182,9 +178,7 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                                   Expanded(
                                     child: Container(
                                       decoration: BoxDecoration(
-                                          color: Colors.grey[100],
-                                          borderRadius: BorderRadius.circular(8)
-                                      ),
+                                          color: Colors.grey[100], borderRadius: BorderRadius.circular(8)),
                                     ),
                                   ),
                                   SizedBox(
@@ -193,9 +187,7 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                                   Expanded(
                                     child: Container(
                                       decoration: BoxDecoration(
-                                          color: Colors.grey[100],
-                                          borderRadius: BorderRadius.circular(8)
-                                      ),
+                                          color: Colors.grey[100], borderRadius: BorderRadius.circular(8)),
                                     ),
                                   ),
                                   SizedBox(
@@ -204,9 +196,7 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                                   Expanded(
                                     child: Container(
                                       decoration: BoxDecoration(
-                                          color: Colors.grey[100],
-                                          borderRadius: BorderRadius.circular(8)
-                                      ),
+                                          color: Colors.grey[100], borderRadius: BorderRadius.circular(8)),
                                     ),
                                   ),
                                   SizedBox(
@@ -215,9 +205,7 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                                   Expanded(
                                     child: Container(
                                       decoration: BoxDecoration(
-                                          color: Colors.grey[100],
-                                          borderRadius: BorderRadius.circular(8)
-                                      ),
+                                          color: Colors.grey[100], borderRadius: BorderRadius.circular(8)),
                                     ),
                                   ),
                                 ],
@@ -230,6 +218,21 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                         height: 54,
                         margin: const EdgeInsets.all(16),
                         color: Colors.brown,
+                        child: Row(
+                          children: [
+                            Icon(Icons.confirmation_number),
+                            Text(
+                              "12 attractive voucher for you",
+                              style: TextStyle(),
+                            ),
+                            Text(
+                              "Let me see!",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            )
+                          ],
+                        ),
                       ),
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 16),
