@@ -64,7 +64,6 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                       Container(
                         margin: const EdgeInsets.fromLTRB(16, 16, 0, 8),
                         height: 160,
-                        color: Colors.blue,
                         child: PageView(
                           controller: PageController(viewportFraction: 0.8),
                           padEnds: false,
@@ -86,6 +85,37 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                               decoration: BoxDecoration(
                                 color: Colors.orange,
                                 borderRadius: BorderRadius.circular(8),
+                                image: const DecorationImage(
+                                  image: NetworkImage(
+                                      "https://cdn.pixabay.com/photo/2019/11/15/12/14/choco-4628281_960_720.jpg"),
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                              child: Stack(
+                                children: [
+                                  Positioned(
+                                    left: 16,
+                                    top: 0,
+                                    child: Container(
+                                      child: Text(
+                                        "NEW",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      decoration: BoxDecoration(
+                                        color: Colors.red,
+                                      ),
+                                      padding: EdgeInsets.only(
+                                        left: 8,
+                                        right: 8,
+                                        top: 20,
+                                        bottom: 8,
+                                      ),
+                                    ),
+                                  )
+                                ],
                               ),
                             ),
                           ],
