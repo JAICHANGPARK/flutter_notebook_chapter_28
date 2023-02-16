@@ -147,16 +147,30 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                         height: 240,
                         color: Colors.pink,
                         padding: const EdgeInsets.all(16),
-                        child: const Column(
+                        child: Column(
                           children: [
                             Expanded(
                                 child: Row(
                               children: [
-                                Expanded(child: Placeholder()),
+                                Expanded(
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey[100],
+                                      borderRadius: BorderRadius.circular(8)
+                                    ),
+                                  ),
+                                ),
                                 SizedBox(
                                   width: 8,
                                 ),
-                                Expanded(child: Placeholder()),
+                                Expanded(
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                        color: Colors.grey[100],
+                                        borderRadius: BorderRadius.circular(8)
+                                    ),
+                                  ),
+                                ),
                               ],
                             )),
                             SizedBox(
@@ -165,19 +179,47 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                             Expanded(
                               child: Row(
                                 children: [
-                                  Expanded(child: Placeholder()),
+                                  Expanded(
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                          color: Colors.grey[100],
+                                          borderRadius: BorderRadius.circular(8)
+                                      ),
+                                    ),
+                                  ),
                                   SizedBox(
                                     width: 8,
                                   ),
-                                  Expanded(child: Placeholder()),
+                                  Expanded(
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                          color: Colors.grey[100],
+                                          borderRadius: BorderRadius.circular(8)
+                                      ),
+                                    ),
+                                  ),
                                   SizedBox(
                                     width: 8,
                                   ),
-                                  Expanded(child: Placeholder()),
+                                  Expanded(
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                          color: Colors.grey[100],
+                                          borderRadius: BorderRadius.circular(8)
+                                      ),
+                                    ),
+                                  ),
                                   SizedBox(
                                     width: 8,
                                   ),
-                                  Expanded(child: Placeholder()),
+                                  Expanded(
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                          color: Colors.grey[100],
+                                          borderRadius: BorderRadius.circular(8)
+                                      ),
+                                    ),
+                                  ),
                                 ],
                               ),
                             ),
