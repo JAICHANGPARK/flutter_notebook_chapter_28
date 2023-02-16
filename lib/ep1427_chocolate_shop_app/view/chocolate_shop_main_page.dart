@@ -57,9 +57,14 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                 Expanded(child: SingleChildScrollView(child: Column(
                   children: [
                     Container(
-                      margin: const EdgeInsets.symmetric(vertical: 16),
+                      margin: const EdgeInsets.fromLTRB(16, 16, 0 , 8),
                       height: 160,
                       color: Colors.blue,
+                      child: PageView(
+                        children: [
+
+                        ],
+                      ),
                     ),
                     Container(
                       height: 240,
