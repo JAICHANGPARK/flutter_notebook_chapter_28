@@ -11,7 +11,7 @@ class ChocolateShopMainPage extends StatefulWidget {
 class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
   int selectedIndex = 0;
 
-  // PageController pageController = PageController(viewportFraction: 0.8);
+  PageController pageController = PageController(viewportFraction: 0.8);
 
   @override
   Widget build(BuildContext context) {
@@ -65,7 +65,7 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                         margin: const EdgeInsets.fromLTRB(16, 16, 0, 8),
                         height: 160,
                         child: PageView(
-                          controller: PageController(viewportFraction: 0.8),
+                          controller: pageController,
                           padEnds: false,
                           children: [
                             Container(
@@ -97,19 +97,14 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                                     left: 16,
                                     top: 0,
                                     child: Container(
-                                      decoration: BoxDecoration(
+                                      decoration: const BoxDecoration(
                                         color: Colors.red,
                                         borderRadius: BorderRadius.only(
                                           bottomLeft: Radius.circular(4),
                                           bottomRight: Radius.circular(4),
-                                        )
+                                        ),
                                       ),
-                                      padding: EdgeInsets.only(
-                                        left: 8,
-                                        right: 8,
-                                        top: 20,
-                                        bottom: 8,
-                                      ),
+                                      padding: const EdgeInsets.only(left: 8, right: 8, top: 20, bottom: 8),
                                       child: const Text(
                                         "NEW",
                                         style: TextStyle(
@@ -131,6 +126,7 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                           alignment: Alignment.centerLeft,
                           child: DotsIndicator(
                             dotsCount: 5,
+                            position: pageController.page ?? 0,
                             decorator: DotsDecorator(
                               activeColor: Colors.brown,
                               activeSize: const Size(32, 8),
