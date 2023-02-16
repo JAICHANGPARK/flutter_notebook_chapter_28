@@ -215,20 +215,28 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                         ),
                       ),
                       Container(
-                        height: 54,
+                        height: 48,
                         margin: const EdgeInsets.all(16),
                         color: Colors.brown,
+                        padding: EdgeInsets.symmetric(horizontal: 8),
                         child: Row(
                           children: [
-                            Icon(Icons.confirmation_number),
+                            Icon(
+                              Icons.confirmation_number,
+                              color: Colors.white,
+                            ),
                             Text(
                               "12 attractive voucher for you",
-                              style: TextStyle(),
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
                             ),
+                            Spacer(),
                             Text(
                               "Let me see!",
                               style: TextStyle(
                                 color: Colors.white,
+                                fontWeight: FontWeight.bold,
                               ),
                             )
                           ],
