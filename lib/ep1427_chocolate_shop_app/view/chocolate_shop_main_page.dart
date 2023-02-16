@@ -97,21 +97,25 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                                     left: 16,
                                     top: 0,
                                     child: Container(
-                                      child: Text(
-                                        "NEW",
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
                                       decoration: BoxDecoration(
                                         color: Colors.red,
+                                        borderRadius: BorderRadius.only(
+                                          bottomLeft: Radius.circular(4),
+                                          bottomRight: Radius.circular(4),
+                                        )
                                       ),
                                       padding: EdgeInsets.only(
                                         left: 8,
                                         right: 8,
                                         top: 20,
                                         bottom: 8,
+                                      ),
+                                      child: const Text(
+                                        "NEW",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                       ),
                                     ),
                                   )
