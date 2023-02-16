@@ -71,21 +71,29 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                           children: [
                             Container(
                               margin: EdgeInsets.only(right: 16),
-                              decoration: BoxDecoration(
-                                color: Colors.red,
-                              ),
+                              decoration: BoxDecoration(color: Colors.red, borderRadius: BorderRadius.circular(8)),
                             ),
                             Container(
-
-                              decoration: BoxDecoration(
-                                color: Colors.orange,
-                              ),
-                            )
+                              margin: EdgeInsets.only(right: 16),
+                              decoration: BoxDecoration(color: Colors.orange, borderRadius: BorderRadius.circular(8)),
+                            ),
                           ],
                         ),
                       ),
-                      DotsIndicator(
-                        dotsCount: 5,
+                      Padding(
+                        padding: const EdgeInsets.only(left: 16, bottom: 16),
+                        child: Align(
+                          alignment: Alignment.centerLeft,
+                          child: DotsIndicator(
+                            dotsCount: 5,
+                            decorator: DotsDecorator(
+                              activeSize: Size(32, 8),
+                              activeShape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(6),
+                              ),
+                            ),
+                          ),
+                        ),
                       ),
                       Container(
                         height: 240,
