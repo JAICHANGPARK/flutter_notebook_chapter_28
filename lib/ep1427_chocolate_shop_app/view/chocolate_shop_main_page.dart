@@ -70,12 +70,23 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                           padEnds: false,
                           children: [
                             Container(
-                              margin: EdgeInsets.only(right: 16),
-                              decoration: BoxDecoration(color: Colors.red, borderRadius: BorderRadius.circular(8)),
+                              margin: const EdgeInsets.only(right: 16),
+                              decoration: BoxDecoration(
+                                color: Colors.red,
+                                borderRadius: BorderRadius.circular(8),
+                                image: const DecorationImage(
+                                  image: NetworkImage(
+                                      "https://cdn.pixabay.com/photo/2015/03/01/04/31/food-654317_960_720.jpg"),
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
                             ),
                             Container(
-                              margin: EdgeInsets.only(right: 16),
-                              decoration: BoxDecoration(color: Colors.orange, borderRadius: BorderRadius.circular(8)),
+                              margin: const EdgeInsets.only(right: 16),
+                              decoration: BoxDecoration(
+                                color: Colors.orange,
+                                borderRadius: BorderRadius.circular(8),
+                              ),
                             ),
                           ],
                         ),
@@ -87,7 +98,8 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                           child: DotsIndicator(
                             dotsCount: 5,
                             decorator: DotsDecorator(
-                              activeSize: Size(32, 8),
+                              activeColor: Colors.brown,
+                              activeSize: const Size(32, 8),
                               activeShape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(6),
                               ),
@@ -164,7 +176,7 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                       ),
                       Container(
                         height: 300,
-                        margin: EdgeInsets.fromLTRB(16, 0, 16, 0),
+                        margin: const EdgeInsets.fromLTRB(16, 0, 16, 0),
                         decoration: BoxDecoration(
                           color: Colors.blue,
                           borderRadius: BorderRadius.circular(8),
