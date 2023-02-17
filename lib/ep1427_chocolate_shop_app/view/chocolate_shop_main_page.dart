@@ -157,7 +157,7 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                                       color: Colors.grey[100],
                                       borderRadius: BorderRadius.circular(8),
                                     ),
-                                    child: const Stack(
+                                    child:  Stack(
                                       children: [
                                         Positioned(
                                           left: 12,
@@ -167,6 +167,15 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                                             style: TextStyle(
                                               fontWeight: FontWeight.bold,
                                             ),
+                                          ),
+                                        ),
+                                        Positioned(
+                                          right: -16,
+                                          bottom: -16,
+                                          child: Image.network(
+                                            "https://cdn.pixabay.com/photo/2013/07/13/12/46/cake-160296_960_720.png",
+                                            width: 84,
+                                            height: 84,
                                           ),
                                         )
                                       ],
