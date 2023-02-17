@@ -148,6 +148,25 @@ class _ChocoShopRegularCakePageState extends State<ChocoShopRegularCakePage> {
                                       fit: BoxFit.cover,
                                     ),
                                   ),
+                                  child: Stack(
+                                    children: [
+                                      Positioned(
+                                        child: Container(
+                                          decoration: BoxDecoration(),
+                                          child: Row(
+                                            children: [
+                                              Icon(
+                                                Icons.star,
+                                                color: Colors.white,
+                                                size: 18,
+                                              ),
+                                              Text("4.4"),
+                                            ],
+                                          ),
+                                        ),
+                                      )
+                                    ],
+                                  ),
                                 ),
                                 const Expanded(
                                   child: Padding(
