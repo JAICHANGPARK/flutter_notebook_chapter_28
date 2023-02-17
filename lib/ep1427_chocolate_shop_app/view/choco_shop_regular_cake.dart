@@ -127,11 +127,13 @@ class _ChocoShopRegularCakePageState extends State<ChocoShopRegularCakePage> {
                       padding: const EdgeInsets.symmetric(),
                       child: ListView.separated(
                         padding: EdgeInsets.zero,
-                        separatorBuilder: (_, __) => const Divider(),
+                        separatorBuilder: (_, __) => const Divider(
+                          height: 32,
+                          color: Colors.grey,
+                        ),
                         itemBuilder: (context, index) {
                           return Container(
                             height: 120,
-                            color: Colors.blue,
                             child: Row(
                               children: [
                                 Container(
