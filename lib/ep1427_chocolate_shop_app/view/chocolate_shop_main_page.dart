@@ -153,8 +153,22 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                               children: [
                                 Expanded(
                                   child: Container(
-                                    decoration:
-                                        BoxDecoration(color: Colors.grey[100], borderRadius: BorderRadius.circular(8)),
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey[100],
+                                      borderRadius: BorderRadius.circular(8),
+                                    ),
+                                    child: Stack(
+                                      children: [
+                                        Positioned(
+                                          child: Text(
+                                            "Regular Cake",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
+                                        )
+                                      ],
+                                    ),
                                   ),
                                 ),
                                 SizedBox(
@@ -195,7 +209,9 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                                   Expanded(
                                     child: Container(
                                       decoration: BoxDecoration(
-                                          color: Colors.grey[100], borderRadius: BorderRadius.circular(8)),
+                                        color: Colors.grey[100],
+                                        borderRadius: BorderRadius.circular(8),
+                                      ),
                                     ),
                                   ),
                                   SizedBox(
