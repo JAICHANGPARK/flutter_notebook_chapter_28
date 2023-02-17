@@ -421,6 +421,12 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                         decoration: BoxDecoration(
                           color: Colors.blue,
                           borderRadius: BorderRadius.circular(8),
+                          image: const DecorationImage(
+                            image: NetworkImage(
+                              "https://cdn.pixabay.com/photo/2017/09/14/14/33/cupcake-2749204_960_720.jpg",
+                            ),
+                            fit: BoxFit.cover
+                          ),
                         ),
                       )
                     ],
