@@ -12,6 +12,7 @@ class _ChocoShopRegularCakePageState extends State<ChocoShopRegularCakePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
             height: 260,
@@ -23,7 +24,7 @@ class _ChocoShopRegularCakePageState extends State<ChocoShopRegularCakePage> {
               ),
             ),
           ),
-          const Expanded(
+          Expanded(
             child: Padding(
               padding: EdgeInsets.only(left: 16, top: 16, right: 16),
               child: Column(
@@ -33,9 +34,49 @@ class _ChocoShopRegularCakePageState extends State<ChocoShopRegularCakePage> {
                     "Regular Cake",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 18,
+                      fontSize: 20,
                     ),
                   ),
+                  SizedBox(
+                    height: 8,
+                  ),
+                  Text("Suitable for you who want to celebrate something fun"),
+                  SizedBox(
+                    height: 64,
+                    child: Row(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.grey[400]!,
+                            ),
+                            borderRadius: BorderRadius.circular(32),
+                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                          child: Icon(Icons.tune),
+                          margin: EdgeInsets.only(right: 16),
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.grey[400]!,
+                            ),
+                            borderRadius: BorderRadius.circular(32),
+                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                          child: Row(
+                            children: [
+                              Text("Price"),
+                              Icon(
+                                Icons.keyboard_arrow_down,
+                              )
+                            ],
+                          ),
+                        ),
+                        Container(),
+                      ],
+                    ),
+                  )
                 ],
               ),
             ),
