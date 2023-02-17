@@ -160,6 +160,8 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                                     child: Stack(
                                       children: [
                                         Positioned(
+                                          left: 12,
+                                          top: 12,
                                           child: Text(
                                             "Regular Cake",
                                             style: TextStyle(
@@ -177,7 +179,21 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                                 Expanded(
                                   child: Container(
                                     decoration:
-                                        BoxDecoration(color: Colors.grey[100], borderRadius: BorderRadius.circular(8)),
+                                        BoxDecoration(color: Colors.grey[100], borderRadius: BorderRadius.circular(8),),
+                                    child: Stack(
+                                      children: [
+                                        Positioned(
+                                          left: 12,
+                                          top: 12,
+                                          child: Text(
+                                            "Candle",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
+                                        )
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ],
