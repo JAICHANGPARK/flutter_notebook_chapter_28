@@ -29,9 +29,12 @@ class _ChocoShopRegularCakePageState extends State<ChocoShopRegularCakePage> {
                   left: 16,
                   top: 72,
                   child: GestureDetector(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.of(context).pop();
+                    },
                     child: const CircleAvatar(
                       backgroundColor: Colors.white,
+                      foregroundColor: Colors.black,
                       child: Icon(
                         Icons.arrow_back,
                       ),
