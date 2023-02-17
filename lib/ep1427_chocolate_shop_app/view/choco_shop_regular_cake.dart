@@ -15,11 +15,31 @@ class _ChocoShopRegularCakePageState extends State<ChocoShopRegularCakePage> {
         children: [
           Container(
             height: 260,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Colors.orange,
+              image: DecorationImage(
+                image: NetworkImage("https://cdn.pixabay.com/photo/2022/12/16/08/45/cookies-7659168_960_720.jpg"),
+                fit: BoxFit.cover,
+              ),
             ),
           ),
-          Expanded(child: Placeholder()),
+          const Expanded(
+            child: Padding(
+              padding: EdgeInsets.only(left: 16, top: 16, right: 16),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    "Regular Cake",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
         ],
       ),
     );
