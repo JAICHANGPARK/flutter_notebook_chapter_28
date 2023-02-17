@@ -140,11 +140,16 @@ class _ChocoShopRegularCakePageState extends State<ChocoShopRegularCakePage> {
                                   decoration: BoxDecoration(
                                     color: Colors.orange,
                                     borderRadius: BorderRadius.circular(8),
+                                    image: const DecorationImage(
+                                      image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2018/08/30/20/47/gugelhupf-3643259_960_720.jpg"),
+                                      fit: BoxFit.cover,
+                                    ),
                                   ),
                                 ),
-                                Expanded(
+                                const Expanded(
                                   child: Padding(
-                                    padding: const EdgeInsets.all(16.0),
+                                    padding: EdgeInsets.all(16.0),
                                     child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
@@ -156,7 +161,7 @@ class _ChocoShopRegularCakePageState extends State<ChocoShopRegularCakePage> {
                                           ),
                                         ),
                                         SizedBox(
-                                          height: 12,
+                                          height: 8,
                                         ),
                                         Text("Size : Diameter 15cm & individual"),
                                         Spacer(),
