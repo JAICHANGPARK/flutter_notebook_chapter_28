@@ -67,7 +67,12 @@ class _ChocoShopRegularCakePageState extends State<ChocoShopRegularCakePage> {
                           margin: const EdgeInsets.only(right: 12),
                           child: const Row(
                             children: [
-                              Text("Price"),
+                              Text(
+                                "Price",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                               Icon(
                                 Icons.keyboard_arrow_down,
                               )
@@ -116,7 +121,23 @@ class _ChocoShopRegularCakePageState extends State<ChocoShopRegularCakePage> {
                         ),
                       ],
                     ),
-                  )
+                  ),
+                  Expanded(
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(),
+                      child: ListView.separated(
+                        padding: EdgeInsets.zero,
+                        separatorBuilder: (_, __) => Divider(),
+                        itemBuilder: (context, index) {
+                          return Container(
+                            height: 64,
+                            color: Colors.blue,
+                          );
+                        },
+                        itemCount: 10,
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),
