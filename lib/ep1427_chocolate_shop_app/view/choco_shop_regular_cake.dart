@@ -63,7 +63,7 @@ class _ChocoShopRegularCakePageState extends State<ChocoShopRegularCakePage> {
                             ),
                             borderRadius: BorderRadius.circular(32),
                           ),
-                          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
                           margin: const EdgeInsets.only(right: 12),
                           child: const Row(
                             children: [
@@ -81,7 +81,7 @@ class _ChocoShopRegularCakePageState extends State<ChocoShopRegularCakePage> {
                             ),
                             borderRadius: BorderRadius.circular(32),
                           ),
-                          padding: const EdgeInsets.symmetric(horizontal: 12, vertical:  8),
+                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                           margin: const EdgeInsets.only(right: 12),
                           child: const Row(
                             children: [
@@ -96,11 +96,16 @@ class _ChocoShopRegularCakePageState extends State<ChocoShopRegularCakePage> {
                             ),
                             borderRadius: BorderRadius.circular(32),
                           ),
-                          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                           margin: const EdgeInsets.only(right: 12),
                           child: const Row(
                             children: [
-                              Text("Rated 4+"),
+                              Text(
+                                "Rated 4+",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                             ],
                           ),
                         ),
