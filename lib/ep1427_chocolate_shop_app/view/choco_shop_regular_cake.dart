@@ -151,8 +151,8 @@ class _ChocoShopRegularCakePageState extends State<ChocoShopRegularCakePage> {
                                   child: Stack(
                                     children: [
                                       Positioned(
-                                        left: 4,
-                                        top: 4,
+                                        left: 8,
+                                        top: 8,
                                         child: Container(
                                           padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                                           decoration: BoxDecoration(
