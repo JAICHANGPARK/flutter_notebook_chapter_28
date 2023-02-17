@@ -23,6 +23,23 @@ class _ChocoShopRegularCakePageState extends State<ChocoShopRegularCakePage> {
                 fit: BoxFit.cover,
               ),
             ),
+            child: Stack(
+              children: [
+                Positioned(
+                  left: 16,
+                  top: 72,
+                  child: GestureDetector(
+                    onTap: () {},
+                    child: const CircleAvatar(
+                      backgroundColor: Colors.white,
+                      child: Icon(
+                        Icons.arrow_back,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
           ),
           Expanded(
             child: Padding(
