@@ -10,6 +10,18 @@ class ChocoShopRegularCakePage extends StatefulWidget {
 class _ChocoShopRegularCakePageState extends State<ChocoShopRegularCakePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Column(
+        children: [
+          Container(
+            height: 260,
+            decoration: BoxDecoration(
+              color: Colors.orange,
+            ),
+          ),
+          Expanded(child: Placeholder()),
+        ],
+      ),
+    );
   }
 }
