@@ -85,7 +85,12 @@ class _ChocoShopRegularCakePageState extends State<ChocoShopRegularCakePage> {
                           margin: const EdgeInsets.only(right: 12),
                           child: const Row(
                             children: [
-                              Text("Popular"),
+                              Text(
+                                "Popular",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                             ],
                           ),
                         ),
