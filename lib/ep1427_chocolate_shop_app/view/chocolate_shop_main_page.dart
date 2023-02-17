@@ -216,12 +216,8 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                       Container(
                         height: 48,
                         margin: const EdgeInsets.all(16),
-
                         padding: EdgeInsets.symmetric(horizontal: 8),
-                        decoration: BoxDecoration(
-                          color: Colors.brown[600]!,
-                          borderRadius: BorderRadius.circular(8)
-                        ),
+                        decoration: BoxDecoration(color: Colors.brown[600]!, borderRadius: BorderRadius.circular(8)),
                         child: Row(
                           children: [
                             Icon(
