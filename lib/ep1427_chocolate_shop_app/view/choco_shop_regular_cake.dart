@@ -26,21 +26,21 @@ class _ChocoShopRegularCakePageState extends State<ChocoShopRegularCakePage> {
           ),
           Expanded(
             child: Padding(
-              padding: EdgeInsets.only(left: 16, top: 16, right: 16),
+              padding: const EdgeInsets.only(left: 16, top: 16, right: 16),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  const Text(
                     "Regular Cake",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 20,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 8,
                   ),
-                  Text("Suitable for you who want to celebrate something fun"),
+                  const Text("Suitable for you who want to celebrate something fun"),
                   SizedBox(
                     height: 64,
                     child: Row(
@@ -52,9 +52,9 @@ class _ChocoShopRegularCakePageState extends State<ChocoShopRegularCakePage> {
                             ),
                             borderRadius: BorderRadius.circular(32),
                           ),
-                          padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
-                          child: Icon(Icons.tune),
-                          margin: EdgeInsets.only(right: 16),
+                          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                          margin: const EdgeInsets.only(right: 16),
+                          child: const Icon(Icons.tune),
                         ),
                         Container(
                           decoration: BoxDecoration(
@@ -63,8 +63,8 @@ class _ChocoShopRegularCakePageState extends State<ChocoShopRegularCakePage> {
                             ),
                             borderRadius: BorderRadius.circular(32),
                           ),
-                          padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
-                          child: Row(
+                          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                          child: const Row(
                             children: [
                               Text("Price"),
                               Icon(
