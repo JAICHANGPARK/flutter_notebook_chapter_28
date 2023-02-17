@@ -53,7 +53,7 @@ class _ChocoShopRegularCakePageState extends State<ChocoShopRegularCakePage> {
                             borderRadius: BorderRadius.circular(32),
                           ),
                           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
-                          margin: const EdgeInsets.only(right: 16),
+                          margin: const EdgeInsets.only(right: 12),
                           child: const Icon(Icons.tune),
                         ),
                         Container(
@@ -64,6 +64,7 @@ class _ChocoShopRegularCakePageState extends State<ChocoShopRegularCakePage> {
                             borderRadius: BorderRadius.circular(32),
                           ),
                           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                          margin: const EdgeInsets.only(right: 12),
                           child: const Row(
                             children: [
                               Text("Price"),
@@ -73,7 +74,36 @@ class _ChocoShopRegularCakePageState extends State<ChocoShopRegularCakePage> {
                             ],
                           ),
                         ),
-                        Container(),
+                        Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.grey[400]!,
+                            ),
+                            borderRadius: BorderRadius.circular(32),
+                          ),
+                          padding: const EdgeInsets.symmetric(horizontal: 12, vertical:  8),
+                          margin: const EdgeInsets.only(right: 12),
+                          child: const Row(
+                            children: [
+                              Text("Popular"),
+                            ],
+                          ),
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.grey[400]!,
+                            ),
+                            borderRadius: BorderRadius.circular(32),
+                          ),
+                          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                          margin: const EdgeInsets.only(right: 12),
+                          child: const Row(
+                            children: [
+                              Text("Rated 4+"),
+                            ],
+                          ),
+                        ),
                       ],
                     ),
                   )
