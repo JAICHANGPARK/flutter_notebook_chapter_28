@@ -151,16 +151,27 @@ class _ChocoShopRegularCakePageState extends State<ChocoShopRegularCakePage> {
                                   child: Stack(
                                     children: [
                                       Positioned(
+                                        left: 4,
+                                        top: 4,
                                         child: Container(
-                                          decoration: BoxDecoration(),
-                                          child: Row(
+                                          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                          decoration: BoxDecoration(
+                                            color: Colors.orange[300],
+                                            borderRadius: BorderRadius.circular(16),
+                                          ),
+                                          child: const Row(
                                             children: [
                                               Icon(
                                                 Icons.star,
                                                 color: Colors.white,
                                                 size: 18,
                                               ),
-                                              Text("4.4"),
+                                              Text(
+                                                "4.4",
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                ),
+                                              ),
                                             ],
                                           ),
                                         ),
