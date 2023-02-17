@@ -159,7 +159,7 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                                     ),
                                     child:  Stack(
                                       children: [
-                                        Positioned(
+                                        const Positioned(
                                           left: 12,
                                           top: 12,
                                           child: Text(
