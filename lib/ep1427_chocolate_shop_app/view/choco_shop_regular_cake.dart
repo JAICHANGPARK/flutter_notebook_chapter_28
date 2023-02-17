@@ -143,8 +143,31 @@ class _ChocoShopRegularCakePageState extends State<ChocoShopRegularCakePage> {
                                   ),
                                 ),
                                 Expanded(
-                                  child: Column(
-                                    children: [],
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          "Cookie Cream Layers",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 18,
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          height: 12,
+                                        ),
+                                        Text("Size : Diameter 15cm & individual"),
+                                        Spacer(),
+                                        Text(
+                                          "\$ 120",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        )
+                                      ],
+                                    ),
                                   ),
                                 )
                               ],
