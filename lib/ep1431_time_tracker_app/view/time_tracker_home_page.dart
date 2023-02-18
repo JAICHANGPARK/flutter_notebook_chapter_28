@@ -17,29 +17,39 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
           icon: Icon(Icons.menu),
         ),
         actions: [
-          IconButton(onPressed: () {}, icon: Icon(Icons.search)),
-          Badge(
-            label: Text("0"),
-            child: IconButton(
-              onPressed: () {},
-              icon: Icon(
-                Icons.notifications_none,
-              ),
+          Padding(
+            padding: const EdgeInsets.only(right: 16),
+            child: Row(
+              children: [
+                IconButton(onPressed: () {}, icon: Icon(Icons.search)),
+                Badge(
+                  label: Text("0"),
+                  backgroundColor: Colors.orange,
+                  textColor: Colors.black,
+
+                  child: IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.notifications_none,
+                    ),
+                  ),
+                ),
+                Container(
+                  height: 32,
+                  width: 32,
+                  margin: EdgeInsets.all(12),
+                  decoration: BoxDecoration(
+                    color: Colors.pink,
+                    borderRadius: BorderRadius.circular(4),
+                  ),
+                ),
+                Text("Dream"),
+                Icon(
+                  Icons.keyboard_arrow_down,
+                ),
+              ],
             ),
-          ),
-          Container(
-            height: 32,
-            width: 32,
-            margin: EdgeInsets.all(12),
-            decoration: BoxDecoration(
-              color: Colors.pink,
-              borderRadius: BorderRadius.circular(4),
-            ),
-          ),
-          Text("Dream"),
-          Icon(
-            Icons.keyboard_arrow_down,
-          ),
+          )
         ],
         title: Text("HR Tool"),
         backgroundColor: Colors.black,
