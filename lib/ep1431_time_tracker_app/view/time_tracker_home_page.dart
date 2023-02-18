@@ -58,7 +58,7 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
+            const Text(
               "Enter the hours",
               style: TextStyle(
                 color: Colors.black,
@@ -66,18 +66,18 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                 fontSize: 24
               ),
             ),
-            Text("Click on a day to enter working time"),
+            const Text("Click on a day to enter working time"),
             Container(
-              margin: EdgeInsets.symmetric(vertical: 16),
+              margin: const EdgeInsets.symmetric(vertical: 16),
               height: 200,
               color: Colors.blue,
             ),
             Container(
               height: 52,
               color: Colors.orange,
-              margin: EdgeInsets.only(bottom: 16),
+              margin: const EdgeInsets.only(bottom: 16),
             ),
-            Expanded(
+            const Expanded(
               child: Placeholder(),
             ),
           ],
