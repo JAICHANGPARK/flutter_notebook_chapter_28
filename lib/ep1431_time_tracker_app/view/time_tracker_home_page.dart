@@ -10,6 +10,17 @@ class TimeTrackerHomePage extends StatefulWidget {
 class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        leading: IconButton(
+          onPressed: () {},
+          icon: Icon(Icons.menu),
+        ),
+        actions: [
+          IconButton(onPressed: () {}, icon: Icon(Icons.search)),
+        ],
+        title: Text("HR Tool"),
+      ),
+    );
   }
 }
