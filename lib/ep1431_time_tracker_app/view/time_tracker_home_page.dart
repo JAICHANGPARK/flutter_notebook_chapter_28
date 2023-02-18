@@ -26,7 +26,20 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                 Icons.notifications_none,
               ),
             ),
-          )
+          ),
+          Container(
+            height: 32,
+            width: 32,
+            margin: EdgeInsets.all(12),
+            decoration: BoxDecoration(
+              color: Colors.pink,
+              borderRadius: BorderRadius.circular(4),
+            ),
+          ),
+          Text("Dream"),
+          Icon(
+            Icons.keyboard_arrow_down,
+          ),
         ],
         title: Text("HR Tool"),
         backgroundColor: Colors.black,
