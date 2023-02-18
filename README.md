@@ -1,6 +1,14 @@
 # flutter_notebook_chapter_28
 
-### EP1427
+### EP1431
+
+- Time tracker - mobile
+- by Paweł Samczuk for Xebia Poland
+- https://dribbble.com/shots/20683960-Time-tracker-mobile
+
+<img src="https://cdn.dribbble.com/userupload/4740385/file/original-1cd79f2bda02e17b14c8d1196aaacd19.png?compress=1&resize=9600x7200" width="500px"/>
+
+### EP1427-1430
 
 - Redesign Apps Dapur Cokelat
 - by Makkun for Pelorous
