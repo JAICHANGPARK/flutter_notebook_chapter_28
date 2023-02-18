@@ -14,22 +14,21 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
       appBar: AppBar(
         leading: IconButton(
           onPressed: () {},
-          icon: Icon(Icons.menu),
+          icon: const Icon(Icons.menu),
         ),
         actions: [
           Padding(
             padding: const EdgeInsets.only(right: 16),
             child: Row(
               children: [
-                IconButton(onPressed: () {}, icon: Icon(Icons.search)),
+                IconButton(onPressed: () {}, icon: const Icon(Icons.search)),
                 Badge(
-                  label: Text("0"),
+                  label: const Text("0"),
                   backgroundColor: Colors.orange,
                   textColor: Colors.black,
-
                   child: IconButton(
                     onPressed: () {},
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.notifications_none,
                     ),
                   ),
@@ -37,22 +36,52 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                 Container(
                   height: 32,
                   width: 32,
-                  margin: EdgeInsets.all(12),
+                  margin: const EdgeInsets.all(12),
                   decoration: BoxDecoration(
                     color: Colors.pink,
                     borderRadius: BorderRadius.circular(4),
                   ),
                 ),
-                Text("Dream"),
-                Icon(
+                const Text("Dream"),
+                const Icon(
                   Icons.keyboard_arrow_down,
                 ),
               ],
             ),
           )
         ],
-        title: Text("HR Tool"),
+        title: const Text("HR Tool"),
         backgroundColor: Colors.black,
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              "Enter the hours",
+              style: TextStyle(
+                color: Colors.black,
+                fontWeight: FontWeight.bold,
+                fontSize: 24
+              ),
+            ),
+            Text("Click on a day to enter working time"),
+            Container(
+              margin: EdgeInsets.symmetric(vertical: 16),
+              height: 200,
+              color: Colors.blue,
+            ),
+            Container(
+              height: 52,
+              color: Colors.orange,
+              margin: EdgeInsets.only(bottom: 16),
+            ),
+            Expanded(
+              child: Placeholder(),
+            ),
+          ],
+        ),
       ),
     );
   }
