@@ -18,8 +18,18 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
         ),
         actions: [
           IconButton(onPressed: () {}, icon: Icon(Icons.search)),
+          Badge(
+            label: Text("0"),
+            child: IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.notifications_none,
+              ),
+            ),
+          )
         ],
         title: Text("HR Tool"),
+        backgroundColor: Colors.black,
       ),
     );
   }
