@@ -250,10 +250,14 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                 ],
               ),
             ),
-             Expanded(
+            Expanded(
               child: Column(
                 children: [
-
+                  Container(
+                    height: 52,
+                    color: Colors.red,
+                  ),
+                  Expanded(child: Placeholder()),
                 ],
               ),
             ),
