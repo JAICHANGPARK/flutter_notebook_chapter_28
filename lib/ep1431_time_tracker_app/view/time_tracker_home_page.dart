@@ -300,25 +300,7 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                             .toList()),
                   ),
                   Expanded(
-                    child: IndexedStack(
-                      index: selectedDay.codeUnitAt(0),
-                      children: [
-                        Center(
-                          child: Text("${selectedDay.codeUnitAt(0)}"),
-                        ),
-                        Center(
-                          child: Text("${selectedDay.codeUnitAt(0)}"),
-                        ),
-                        Center(
-                          child: Text("${selectedDay.codeUnitAt(0)}"),
-                        ),
-                        Center(
-                          child: Text("${selectedDay.codeUnitAt(0)}"),
-                        ), Center(
-                          child: Text("${selectedDay.codeUnitAt(0)}"),
-                        )
-                      ],
-                    ),
+                    child: buildSelectedWidget(selectedDay),
                   ),
                 ],
               ),
@@ -327,5 +309,24 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
         ),
       ),
     );
+  }
+
+  Widget buildSelectedWidget(String day) {
+    switch (day) {
+      case "M":
+        return Container();
+      case "T":
+        return Container();
+      case "W":
+        return Container();
+      case "T":
+        return Container();
+      case "F":
+        return Container();
+      case "S":
+        return Container();
+      default:
+        return Container();
+    }
   }
 }
