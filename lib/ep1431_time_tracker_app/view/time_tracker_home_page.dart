@@ -205,6 +205,7 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                   ),
                   Container(
                     width: 42,
+                    margin: EdgeInsets.only(right: 16),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(4),
                       border: Border.all(),
@@ -218,8 +219,10 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                     "10-16 Jan 2022",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
+                      fontSize: 18,
                     ),
-                  )
+                  ),
+                  
                 ],
               ),
             ),
