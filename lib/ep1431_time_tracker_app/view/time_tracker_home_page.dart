@@ -271,7 +271,12 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Text("M"),
+                                Text(
+                                  "M",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
                                 SizedBox(
                                   height: 4,
                                 ),
