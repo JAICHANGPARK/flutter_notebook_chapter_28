@@ -60,11 +60,7 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
           children: [
             const Text(
               "Enter the hours",
-              style: TextStyle(
-                color: Colors.black,
-                fontWeight: FontWeight.bold,
-                fontSize: 24
-              ),
+              style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 24),
             ),
             const Text("Click on a day to enter working time"),
             Container(
@@ -73,14 +69,29 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
               color: Colors.blue,
               child: Column(
                 children: [
-                  Expanded(child: Row(
+                  Expanded(
+                      child: Row(
                     children: [
-                      Expanded(child: Placeholder()),
+                      Expanded(
+                          child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            "0",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 6,
+                          ),
+                          Text("Plan")
+                        ],
+                      )),
                       VerticalDivider(
                         color: Colors.grey,
                         width: 16,
                         thickness: 1.5,
-
                       ),
                       Expanded(child: Placeholder()),
                       VerticalDivider(
