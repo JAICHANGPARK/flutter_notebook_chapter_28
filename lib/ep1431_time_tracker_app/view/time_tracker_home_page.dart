@@ -264,7 +264,7 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                               (e) => Expanded(
                                 child: Container(
                                   decoration: BoxDecoration(
-                                    color: Colors.grey[300],
+                                    color: e == "S" ? Colors.grey[200] : Colors.grey[300],
                                     borderRadius: const BorderRadius.only(
                                       topRight: Radius.circular(4),
                                       topLeft: Radius.circular(4),
@@ -291,7 +291,11 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                             )
                             .toList()),
                   ),
-                  const Expanded(child: Placeholder()),
+                   Expanded(child: IndexedStack(
+                    children: [
+
+                    ],
+                  )),
                 ],
               ),
             ),
