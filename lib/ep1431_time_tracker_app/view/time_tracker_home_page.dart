@@ -192,29 +192,33 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                   Container(
                     // height: 48,
                     width: 42,
-                    margin: EdgeInsets.only(right: 16),
+                    margin: const EdgeInsets.only(right: 16),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(4),
-                      border: Border.all(),
+                      border: Border.all(
+                        color: Colors.grey[400]!,
+                      ),
                     ),
                     child: IconButton(
-                      icon: Icon(Icons.arrow_back),
+                      icon: const Icon(Icons.arrow_back),
                       onPressed: () {},
                     ),
                   ),
                   Container(
                     width: 42,
-                    margin: EdgeInsets.only(right: 16),
+                    margin: const EdgeInsets.only(right: 16),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(4),
-                      border: Border.all(),
+                      border: Border.all(
+                        color: Colors.grey[400]!,
+                      ),
                     ),
                     child: IconButton(
-                      icon: Icon(Icons.arrow_forward),
+                      icon: const Icon(Icons.arrow_forward),
                       onPressed: () {},
                     ),
                   ),
-                  Text(
+                  const Text(
                     "10-16 Jan 2022",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
@@ -224,13 +228,15 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                   Container(
                     // height: 48,
                     width: 42,
-                    margin: EdgeInsets.only(left: 8,right: 16),
+                    margin: const EdgeInsets.only(left: 8, right: 16),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(4),
-                      border: Border.all(),
+                      border: Border.all(
+                        color: Colors.grey[400]!,
+                      ),
                     ),
                     child: IconButton(
-                      icon: Icon(Icons.calendar_month),
+                      icon: const Icon(Icons.calendar_month),
                       onPressed: () async {
                         await showDatePicker(
                           context: context,
