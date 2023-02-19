@@ -8,7 +8,7 @@ class TimeTrackerHomePage extends StatefulWidget {
 }
 
 class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
-  
+  List<String> dayItems = ["M","T","W","T","F","S","S"];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
