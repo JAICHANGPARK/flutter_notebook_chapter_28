@@ -73,20 +73,25 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
               color: Colors.blue,
               child: Column(
                 children: [
-                  Expanded(child: Row(
-                    children: [
-                      Expanded(child: Placeholder()),
-                      VerticalDivider(
-                        color: Colors.grey,
-                        width: 1.5,
-                      ),
-                      Expanded(child: Placeholder()),
-                      VerticalDivider(
-                        color: Colors.grey,
-                        width: 1.5,
-                      ),
-                      Expanded(child: Placeholder()),
-                    ],
+                  Expanded(child: IntrinsicHeight(
+                    child: Row(
+                      children: [
+                        Expanded(child: Placeholder()),
+                        VerticalDivider(
+                          color: Colors.grey,
+                          width: 16,
+                          thickness: 1.5,
+
+                        ),
+                        Expanded(child: Placeholder()),
+                        VerticalDivider(
+                          color: Colors.grey,
+                          width: 16,
+                          thickness: 1.5,
+                        ),
+                        Expanded(child: Placeholder()),
+                      ],
+                    ),
                   )),
                   Expanded(child: Placeholder()),
                 ],
