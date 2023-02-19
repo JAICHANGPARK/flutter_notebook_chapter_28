@@ -222,7 +222,26 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                       fontSize: 18,
                     ),
                   ),
-                  
+                  Container(
+                    // height: 48,
+                    width: 42,
+                    margin: EdgeInsets.only(right: 16),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(4),
+                      border: Border.all(),
+                    ),
+                    child: IconButton(
+                      icon: Icon(Icons.calendar_month),
+                      onPressed: () async {
+                        await showDatePicker(
+                          context: context,
+                          initialDate: DateTime.now(),
+                          firstDate: DateTime.now(),
+                          lastDate: DateTime.now(),
+                        );
+                      },
+                    ),
+                  ),
                 ],
               ),
             ),
