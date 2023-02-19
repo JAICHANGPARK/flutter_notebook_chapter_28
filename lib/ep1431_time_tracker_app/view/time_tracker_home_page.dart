@@ -8,7 +8,8 @@ class TimeTrackerHomePage extends StatefulWidget {
 }
 
 class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
-  List<String> dayItems = ["M","T","W","T","F","S","S"];
+  List<String> dayItems = ["M", "T", "W", "T", "F", "S", "S"];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -258,198 +259,37 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                     height: 52,
                     color: Colors.red,
                     child: Row(
-                      children: [
-                        Expanded(
-                          child: Container(
-                            decoration: BoxDecoration(
-                              color: Colors.grey[300],
-                              borderRadius: const BorderRadius.only(
-                                topRight: Radius.circular(4),
-                                topLeft: Radius.circular(4),
-                              ),
-                            ),
-                            child: const Column(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Text(
-                                  "M",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
+                        children: dayItems
+                            .map(
+                              (e) => Expanded(
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.grey[300],
+                                    borderRadius: const BorderRadius.only(
+                                      topRight: Radius.circular(4),
+                                      topLeft: Radius.circular(4),
+                                    ),
+                                  ),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Text(
+                                        "${e}",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 4,
+                                      ),
+                                      Text("0:00"),
+                                    ],
                                   ),
                                 ),
-                                SizedBox(
-                                  height: 4,
-                                ),
-                                Text("0:00"),
-                              ],
-                            ),
-                          ),
-                        ),
-                        Expanded(
-                          child: Container(
-                            decoration: BoxDecoration(
-                              color: Colors.grey[300],
-                              borderRadius: const BorderRadius.only(
-                                topRight: Radius.circular(4),
-                                topLeft: Radius.circular(4),
                               ),
-                            ),
-                            child: const Column(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Text(
-                                  "M",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                                SizedBox(
-                                  height: 4,
-                                ),
-                                Text("0:00"),
-                              ],
-                            ),
-                          ),
-                        ),
-                        Expanded(
-                          child: Container(
-                            decoration: BoxDecoration(
-                              color: Colors.grey[300],
-                              borderRadius: const BorderRadius.only(
-                                topRight: Radius.circular(4),
-                                topLeft: Radius.circular(4),
-                              ),
-                            ),
-                            child: const Column(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Text(
-                                  "M",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                                SizedBox(
-                                  height: 4,
-                                ),
-                                Text("0:00"),
-                              ],
-                            ),
-                          ),
-                        ),
-                        Expanded(
-                          child: Container(
-                            decoration: BoxDecoration(
-                              color: Colors.grey[300],
-                              borderRadius: const BorderRadius.only(
-                                topRight: Radius.circular(4),
-                                topLeft: Radius.circular(4),
-                              ),
-                            ),
-                            child: const Column(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Text(
-                                  "M",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                                SizedBox(
-                                  height: 4,
-                                ),
-                                Text("0:00"),
-                              ],
-                            ),
-                          ),
-                        ),
-                        Expanded(
-                          child: Container(
-                            decoration: BoxDecoration(
-                              color: Colors.grey[300],
-                              borderRadius: const BorderRadius.only(
-                                topRight: Radius.circular(4),
-                                topLeft: Radius.circular(4),
-                              ),
-                            ),
-                            child: const Column(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Text(
-                                  "M",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                                SizedBox(
-                                  height: 4,
-                                ),
-                                Text("0:00"),
-                              ],
-                            ),
-                          ),
-                        ),
-                        Expanded(
-                          child: Container(
-                            decoration: BoxDecoration(
-                              color: Colors.grey[300],
-                              borderRadius: const BorderRadius.only(
-                                topRight: Radius.circular(4),
-                                topLeft: Radius.circular(4),
-                              ),
-                            ),
-                            child: const Column(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Text(
-                                  "M",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                                SizedBox(
-                                  height: 4,
-                                ),
-                                Text("0:00"),
-                              ],
-                            ),
-                          ),
-                        ),
-                        Expanded(
-                          child: Container(
-                            decoration: BoxDecoration(
-                              color: Colors.grey[300],
-                              borderRadius: const BorderRadius.only(
-                                topRight: Radius.circular(4),
-                                topLeft: Radius.circular(4),
-                              ),
-                            ),
-                            child: const Column(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Text(
-                                  "M",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                                SizedBox(
-                                  height: 4,
-                                ),
-                                Text("0:00"),
-                              ],
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
+                            )
+                            .toList()),
                   ),
                   const Expanded(child: Placeholder()),
                 ],
