@@ -314,17 +314,41 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
   Widget buildSelectedWidget(String day) {
     switch (day) {
       case "M":
-        return Container();
+        return Container(
+          child: Center(
+            child: Text(day),
+          ),
+        );
       case "T":
-        return Container();
+        return Container(
+          child: Center(
+            child: Text(day),
+          ),
+        );
       case "W":
-        return Container();
+        return Container(
+          child: Center(
+            child: Text(day),
+          ),
+        );
       case "T":
-        return Container();
+        return Container(
+          child: Center(
+            child: Text(day),
+          ),
+        );
       case "F":
-        return Container();
+        return Container(
+          child: Center(
+            child: Text(day),
+          ),
+        );
       case "S":
-        return Container();
+        return Container(
+          child: Center(
+            child: Text(day),
+          ),
+        );
       default:
         return Container();
     }
