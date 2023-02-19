@@ -305,6 +305,17 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                       children: [
                         Center(
                           child: Text("${selectedDay.codeUnitAt(0)}"),
+                        ),
+                        Center(
+                          child: Text("${selectedDay.codeUnitAt(0)}"),
+                        ),
+                        Center(
+                          child: Text("${selectedDay.codeUnitAt(0)}"),
+                        ),
+                        Center(
+                          child: Text("${selectedDay.codeUnitAt(0)}"),
+                        ), Center(
+                          child: Text("${selectedDay.codeUnitAt(0)}"),
                         )
                       ],
                     ),
