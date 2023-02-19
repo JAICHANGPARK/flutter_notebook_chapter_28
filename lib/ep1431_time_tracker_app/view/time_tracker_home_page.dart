@@ -9,6 +9,7 @@ class TimeTrackerHomePage extends StatefulWidget {
 
 class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
   List<String> dayItems = ["M", "T", "W", "T", "F", "S", "S"];
+  String selectedDay = "M";
 
   @override
   Widget build(BuildContext context) {
@@ -262,40 +263,52 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                         children: dayItems
                             .map(
                               (e) => Expanded(
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                    color: e == "S" ? Colors.grey[200] : Colors.grey[300],
-                                    borderRadius: const BorderRadius.only(
-                                      topRight: Radius.circular(4),
-                                      topLeft: Radius.circular(4),
+                                child: GestureDetector(
+                                  onTap: () {
+                                    setState(() {
+                                      selectedDay = e;
+                                    });
+                                  },
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: e == "S" ? Colors.grey[200] : Colors.grey[300],
+                                      borderRadius: const BorderRadius.only(
+                                        topRight: Radius.circular(4),
+                                        topLeft: Radius.circular(4),
+                                      ),
                                     ),
-                                  ),
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.center,
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: [
-                                      Text(
-                                        "$e",
-                                        style: const TextStyle(
-                                          fontWeight: FontWeight.bold,
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [
+                                        Text(
+                                          "$e",
+                                          style: const TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                          ),
                                         ),
-                                      ),
-                                      const SizedBox(
-                                        height: 4,
-                                      ),
-                                      const Text("0:00"),
-                                    ],
+                                        const SizedBox(
+                                          height: 4,
+                                        ),
+                                        const Text("0:00"),
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ),
                             )
                             .toList()),
                   ),
-                   Expanded(child: IndexedStack(
-                    children: [
-
-                    ],
-                  )),
+                  Expanded(
+                    child: IndexedStack(
+                      index: selectedDay.codeUnitAt(0),
+                      children: [
+                        Center(
+                          child: Text("${selectedDay.codeUnitAt(0)}"),
+                        )
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
