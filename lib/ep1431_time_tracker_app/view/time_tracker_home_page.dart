@@ -91,7 +91,7 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                       VerticalDivider(
                         color: Colors.grey,
                         width: 16,
-                        thickness: 1.5,
+                        thickness: 1,
                       ),
                       Expanded(
                         child: Column(
@@ -113,7 +113,7 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                       VerticalDivider(
                         color: Colors.grey,
                         width: 16,
-                        thickness: 1.5,
+                        thickness: 1,
                       ),
                       Expanded(
                         child: Column(
@@ -225,7 +225,7 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                   Container(
                     // height: 48,
                     width: 42,
-                    margin: EdgeInsets.only(right: 16),
+                    margin: EdgeInsets.only(left: 8,right: 16),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(4),
                       border: Border.all(),
