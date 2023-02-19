@@ -65,9 +65,8 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
             const Text("Click on a day to enter working time"),
             Container(
               margin: const EdgeInsets.symmetric(vertical: 16),
-              height: 200,
-              color: Colors.blue,
-              child: const Column(
+              height: 180,
+              child: const Column(`
                 children: [
                   Expanded(
                       child: Row(
@@ -131,7 +130,51 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                       ),),
                     ],
                   )),
-                  Expanded(child: Placeholder()),
+                  SizedBox(height: 8,),
+                  Expanded(child:Row(
+                    children: [
+                      Expanded(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              "0",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 6,
+                            ),
+                            Text("Holidays")
+                          ],
+                        ),
+                      ),
+                      VerticalDivider(
+                        color: Colors.grey,
+                        width: 16,
+                        thickness: 1.5,
+                      ),
+                      Expanded(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              "0",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 6,
+                            ),
+                            Text("Sickness")
+                          ],
+                        ),
+                      ),
+
+                    ],
+                  )),
                 ],
               ),
             ),
