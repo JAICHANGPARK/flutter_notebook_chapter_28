@@ -206,7 +206,7 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                   ),
                   Container(
                     width: 42,
-                    margin: const EdgeInsets.only(right: 16),
+                    margin: const EdgeInsets.only(right: 8),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(4),
                       border: Border.all(
