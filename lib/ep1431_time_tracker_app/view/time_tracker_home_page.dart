@@ -67,13 +67,34 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
               margin: const EdgeInsets.symmetric(vertical: 16),
               height: 200,
               color: Colors.blue,
-              child: Column(
+              child: const Column(
                 children: [
                   Expanded(
                       child: Row(
                     children: [
                       Expanded(
-                          child: Column(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              "0",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 6,
+                            ),
+                            Text("Plan")
+                          ],
+                        ),
+                      ),
+                      VerticalDivider(
+                        color: Colors.grey,
+                        width: 16,
+                        thickness: 1.5,
+                      ),
+                      Expanded(child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text(
@@ -85,21 +106,29 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                           SizedBox(
                             height: 6,
                           ),
-                          Text("Plan")
+                          Text("Working time")
                         ],
-                      )),
+                      ),),
                       VerticalDivider(
                         color: Colors.grey,
                         width: 16,
                         thickness: 1.5,
                       ),
-                      Expanded(child: Placeholder()),
-                      VerticalDivider(
-                        color: Colors.grey,
-                        width: 16,
-                        thickness: 1.5,
-                      ),
-                      Expanded(child: Placeholder()),
+                      Expanded(child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            "0",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 6,
+                          ),
+                          Text("Overtime")
+                        ],
+                      ),),
                     ],
                   )),
                   Expanded(child: Placeholder()),
