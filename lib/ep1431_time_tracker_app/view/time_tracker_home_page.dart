@@ -66,7 +66,7 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
             Container(
               margin: const EdgeInsets.symmetric(vertical: 16),
               height: 180,
-              child: const Column(`
+              child: const Column(
                 children: [
                   Expanded(
                       child: Row(
@@ -93,45 +93,52 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                         width: 16,
                         thickness: 1.5,
                       ),
-                      Expanded(child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text(
-                            "0",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
+                      Expanded(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              "0",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
-                          ),
-                          SizedBox(
-                            height: 6,
-                          ),
-                          Text("Working time")
-                        ],
-                      ),),
+                            SizedBox(
+                              height: 6,
+                            ),
+                            Text("Working time")
+                          ],
+                        ),
+                      ),
                       VerticalDivider(
                         color: Colors.grey,
                         width: 16,
                         thickness: 1.5,
                       ),
-                      Expanded(child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text(
-                            "0",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
+                      Expanded(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              "0",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
-                          ),
-                          SizedBox(
-                            height: 6,
-                          ),
-                          Text("Overtime")
-                        ],
-                      ),),
+                            SizedBox(
+                              height: 6,
+                            ),
+                            Text("Overtime")
+                          ],
+                        ),
+                      ),
                     ],
                   )),
-                  SizedBox(height: 8,),
-                  Expanded(child:Row(
+                  SizedBox(
+                    height: 8,
+                  ),
+                  Expanded(
+                      child: Row(
                     children: [
                       Expanded(
                         child: Column(
@@ -172,16 +179,48 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                           ],
                         ),
                       ),
-
                     ],
                   )),
                 ],
               ),
             ),
             Container(
-              height: 52,
+              height: 46,
               color: Colors.orange,
               margin: const EdgeInsets.only(bottom: 16),
+              child: Row(
+                children: [
+                  Container(
+                    // height: 48,
+                    // width: 48,
+                    margin: EdgeInsets.only(right: 16),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(4),
+                      border: Border.all(),
+                    ),
+                    child: IconButton(
+                      icon: Icon(Icons.arrow_back),
+                      onPressed: () {},
+                    ),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(4),
+                      border: Border.all(),
+                    ),
+                    child: IconButton(
+                      icon: Icon(Icons.arrow_forward),
+                      onPressed: () {},
+                    ),
+                  ),
+                  Text(
+                    "10-16 Jan 2022",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  )
+                ],
+              ),
             ),
             const Expanded(
               child: Placeholder(),
