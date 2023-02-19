@@ -275,15 +275,15 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
                                       Text(
-                                        "${e}",
-                                        style: TextStyle(
+                                        "$e",
+                                        style: const TextStyle(
                                           fontWeight: FontWeight.bold,
                                         ),
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         height: 4,
                                       ),
-                                      Text("0:00"),
+                                      const Text("0:00"),
                                     ],
                                   ),
                                 ),
