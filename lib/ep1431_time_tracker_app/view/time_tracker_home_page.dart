@@ -256,6 +256,27 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                   Container(
                     height: 52,
                     color: Colors.red,
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.grey[300],
+                              borderRadius: BorderRadius.only(
+                                topRight: Radius.circular(4),
+                                topLeft: Radius.circular(4),
+                              ),
+                            ),
+                          ),
+                        ),
+                        Expanded(child: Placeholder()),
+                        Expanded(child: Placeholder()),
+                        Expanded(child: Placeholder()),
+                        Expanded(child: Placeholder()),
+                        Expanded(child: Placeholder()),
+                        Expanded(child: Placeholder()),
+                      ],
+                    ),
                   ),
                   Expanded(child: Placeholder()),
                 ],
