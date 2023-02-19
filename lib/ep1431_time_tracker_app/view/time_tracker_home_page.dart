@@ -185,8 +185,7 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
               ),
             ),
             Container(
-              height: 46,
-              color: Colors.orange,
+              height: 42,
               margin: const EdgeInsets.only(bottom: 16),
               child: Row(
                 children: [
