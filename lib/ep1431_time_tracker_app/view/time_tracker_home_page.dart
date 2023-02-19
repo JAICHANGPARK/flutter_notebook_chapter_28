@@ -250,8 +250,12 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                 ],
               ),
             ),
-            const Expanded(
-              child: Placeholder(),
+             Expanded(
+              child: Column(
+                children: [
+
+                ],
+              ),
             ),
           ],
         ),
