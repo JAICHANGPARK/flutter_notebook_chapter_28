@@ -271,7 +271,11 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                                   },
                                   child: Container(
                                     decoration: BoxDecoration(
-                                      color: e == "S" ? Colors.grey[200] : Colors.grey[300],
+                                      color: e == "S"
+                                          ? Colors.grey[100]
+                                          : e == selectedDay
+                                              ? Colors.grey[200]
+                                              : Colors.grey[300],
                                       borderRadius: const BorderRadius.only(
                                         topRight: Radius.circular(4),
                                         topLeft: Radius.circular(4),
