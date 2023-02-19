@@ -262,23 +262,34 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                           child: Container(
                             decoration: BoxDecoration(
                               color: Colors.grey[300],
-                              borderRadius: BorderRadius.only(
+                              borderRadius: const BorderRadius.only(
                                 topRight: Radius.circular(4),
                                 topLeft: Radius.circular(4),
                               ),
                             ),
+                            child: const Column(
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text("M"),
+                                SizedBox(
+                                  height: 4,
+                                ),
+                                Text("0:00"),
+                              ],
+                            ),
                           ),
                         ),
-                        Expanded(child: Placeholder()),
-                        Expanded(child: Placeholder()),
-                        Expanded(child: Placeholder()),
-                        Expanded(child: Placeholder()),
-                        Expanded(child: Placeholder()),
-                        Expanded(child: Placeholder()),
+                        const Expanded(child: Placeholder()),
+                        const Expanded(child: Placeholder()),
+                        const Expanded(child: Placeholder()),
+                        const Expanded(child: Placeholder()),
+                        const Expanded(child: Placeholder()),
+                        const Expanded(child: Placeholder()),
                       ],
                     ),
                   ),
-                  Expanded(child: Placeholder()),
+                  const Expanded(child: Placeholder()),
                 ],
               ),
             ),
