@@ -71,6 +71,16 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
               margin: const EdgeInsets.symmetric(vertical: 16),
               height: 200,
               color: Colors.blue,
+              child: Column(
+                children: [
+                  Expanded(child: Row(
+                    children: [
+                      
+                    ],
+                  )),
+                  Expanded(child: Placeholder()),
+                ],
+              ),
             ),
             Container(
               height: 52,
