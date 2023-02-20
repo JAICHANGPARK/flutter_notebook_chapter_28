@@ -358,19 +358,33 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                Row(
-                  children: [
-                    Container(
-                      decoration: BoxDecoration(
-                        color: Colors.green,
-
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.green,
+                            ),
+                            padding: EdgeInsets.all(12),
+                            child: Text(
+                              "Accepted",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ),
+                          Spacer(),
+                          IconButton(
+                            onPressed: () {},
+                            icon: Icon(Icons.more_horiz),
+                          ),
+                        ],
                       ),
-                      child: Text("Accepted",style: TextStyle(
-                        color: Colors.white
-                      ),),
-                    )
-                  ],
+                    ],
+                  ),
                 ),
+                Divider(),
               ],
             ),
           ),
