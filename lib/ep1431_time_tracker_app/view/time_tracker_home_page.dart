@@ -326,17 +326,17 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Icon(Icons.access_time_rounded),
-                SizedBox(
+                const Icon(Icons.access_time_rounded),
+                const SizedBox(
                   height: 16,
                 ),
-                Text(
+                const Text(
                   "No entries for today",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 24,
                 ),
                 ElevatedButton.icon(
@@ -344,10 +344,10 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.orange,
                     foregroundColor: Colors.black,
-                    minimumSize: Size(120, 48),
+                    minimumSize: const Size(120, 48),
                   ),
-                  icon: Icon(Icons.add),
-                  label: Text("New time"),
+                  icon: const Icon(Icons.add),
+                  label: const Text("New time"),
                 )
               ],
             ),
