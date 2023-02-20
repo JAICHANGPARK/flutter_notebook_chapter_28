@@ -399,13 +399,25 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                         "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
                         " nisi ut aliquip ex ea commodo consequat",
                       ),
-                      const Row(
-                        children: [
-                          Icon(Icons.access_time_rounded),
-                          Text("1h"),
-                          Icon(Icons.check),
-                          Text("Free of charge")
-                        ],
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 16),
+                        child: const Row(
+                          children: [
+                            Icon(Icons.access_time_rounded),
+                            SizedBox(
+                              width: 8,
+                            ),
+                            Text("1h"),
+                            SizedBox(
+                              width: 16,
+                            ),
+                            Icon(Icons.check),
+                            SizedBox(
+                              width: 8,
+                            ),
+                            Text("Free of charge")
+                          ],
+                        ),
                       ),
                       const Row(
                         children: [Icon(Icons.tag), Text("asd1asd54sa"), Icon(Icons.attach_money), Text("4h")],
