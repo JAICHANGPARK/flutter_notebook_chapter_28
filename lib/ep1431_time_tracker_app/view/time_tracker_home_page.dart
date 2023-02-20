@@ -355,17 +355,23 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
         );
       case "T":
         return Container(
-          child: Center(
-            child: SingleChildScrollView(
-              child: Column(
-                children: [
-                  Row(
-                    children: [
-                      
-                    ],
-                  ),
-                ],
-              ),
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                Row(
+                  children: [
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.green,
+
+                      ),
+                      child: Text("Accepted",style: TextStyle(
+                        color: Colors.white
+                      ),),
+                    )
+                  ],
+                ),
+              ],
             ),
           ),
         );
