@@ -371,23 +371,26 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                               color: Colors.green,
                               borderRadius: BorderRadius.circular(8),
                             ),
-                            padding: EdgeInsets.all(12),
-                            child: Text(
+                            padding: const EdgeInsets.all(12),
+                            child: const Text(
                               "Accepted",
                               style: TextStyle(color: Colors.white),
                             ),
                           ),
-                          Spacer(),
+                          const Spacer(),
                           IconButton(
                             onPressed: () {},
-                            icon: Icon(Icons.more_horiz),
+                            icon: const Icon(Icons.more_horiz),
                           ),
                         ],
                       ),
-                      Text("Project ALPHA"),
-                      Text(
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 16),
+                        child: const Text("Project ALPHA"),
+                      ),
+                      const Text(
                           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"),
-                      Row(
+                      const Row(
                         children: [
                           Icon(Icons.access_time_rounded),
                           Text("1h"),
@@ -395,13 +398,13 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                           Text("Free of charge")
                         ],
                       ),
-                      Row(
+                      const Row(
                         children: [Icon(Icons.tag), Text("asd1asd54sa"), Icon(Icons.attach_money), Text("4h")],
                       )
                     ],
                   ),
                 ),
-                Divider(),
+                const Divider(),
               ],
             ),
           ),
