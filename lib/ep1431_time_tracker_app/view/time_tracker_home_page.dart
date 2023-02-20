@@ -319,8 +319,11 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
     switch (day) {
       case "M":
         return Container(
-          child: Center(
-            child: Text(day),
+          decoration: BoxDecoration(
+            color: Colors.grey[300],
+          ),
+          child: Column(
+            children: [],
           ),
         );
       case "T":
