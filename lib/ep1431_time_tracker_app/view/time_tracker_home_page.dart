@@ -330,7 +330,12 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                 SizedBox(
                   height: 16,
                 ),
-                Text("No entries for today"),
+                Text(
+                  "No entries for today",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
                 SizedBox(
                   height: 24,
                 ),
@@ -339,7 +344,7 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.orange,
                     foregroundColor: Colors.black,
-                    minimumSize: Size(120 ,48)
+                    minimumSize: Size(120, 48),
                   ),
                   icon: Icon(Icons.add),
                   label: Text("New time"),
