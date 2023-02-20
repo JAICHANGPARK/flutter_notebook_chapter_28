@@ -258,7 +258,7 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                 children: [
                   Container(
                     height: 52,
-                    color: Colors.red,
+                    // color: Colors.red,
                     child: Row(
                         children: dayItems
                             .map(
@@ -323,7 +323,13 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
             color: Colors.grey[300],
           ),
           child: Column(
-            children: [],
+            children: [
+              Icon(Icons.access_time_rounded),
+              Text("No entries for today"),
+              ElevatedButton.icon(
+                onPressed: () {}, icon: null, label: null,
+              )
+            ],
           ),
         );
       case "T":
