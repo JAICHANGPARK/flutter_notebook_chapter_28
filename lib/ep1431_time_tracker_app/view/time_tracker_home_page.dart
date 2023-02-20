@@ -260,6 +260,12 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                   onPressed: (){},
                   icon: Icon(Icons.add),
                   label: Text("New time"),
+                  style: ElevatedButton.styleFrom(
+                    foregroundColor: Colors.black,
+                    backgroundColor: Colors.orange,
+                    minimumSize: Size(MediaQuery.of(context).size.width,
+                    42)
+                  ),
                 ),
               ),
             Expanded(
