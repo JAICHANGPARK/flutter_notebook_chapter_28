@@ -320,7 +320,7 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
       case "M":
         return Container(
           decoration: BoxDecoration(
-            color: Colors.grey[300],
+            color: Colors.grey[200],
           ),
           child: Center(
             child: Column(
