@@ -367,6 +367,7 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                           Container(
                             decoration: BoxDecoration(
                               color: Colors.green,
+                              borderRadius: BorderRadius.circular(8),
                             ),
                             padding: EdgeInsets.all(12),
                             child: Text(
@@ -381,6 +382,17 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                           ),
                         ],
                       ),
+                      Text("Project ALPHA"),
+                      Text(
+                          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"),
+                      Row(
+                        children: [
+                          Icon(Icons.access_time_rounded),
+                          Text("1h"),
+                          Icon(Icons.check),
+                          Text("Free of charge")
+                        ],
+                      )
                     ],
                   ),
                 ),
