@@ -384,12 +384,21 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                           ),
                         ],
                       ),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 16),
-                        child: const Text("Project ALPHA"),
+                      const Padding(
+                        padding: EdgeInsets.symmetric(vertical: 16),
+                        child: Text(
+                          "Project ALPHA",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
                       ),
                       const Text(
-                          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"),
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, "
+                        "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+                        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+                        " nisi ut aliquip ex ea commodo consequat",
+                      ),
                       const Row(
                         children: [
                           Icon(Icons.access_time_rounded),
