@@ -392,6 +392,14 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                           Icon(Icons.check),
                           Text("Free of charge")
                         ],
+                      ),
+                      Row(
+                        children: [
+                          Icon(Icons.tag),
+                          Text("asd1asd54sa"),
+                          Icon(Icons.attach_money),
+                          Text("4h")
+                        ],
                       )
                     ],
                   ),
