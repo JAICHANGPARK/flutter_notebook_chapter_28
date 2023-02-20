@@ -253,6 +253,12 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                 ],
               ),
             ),
+            if (selectedDay == "T")
+              ElevatedButton.icon(
+                onPressed: (){},
+                icon: Icon(Icons.add),
+                label: Text("New time"),
+              ),
             Expanded(
               child: Column(
                 children: [
