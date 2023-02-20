@@ -356,7 +356,17 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
       case "T":
         return Container(
           child: Center(
-            child: Text(day),
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      
+                    ],
+                  ),
+                ],
+              ),
+            ),
           ),
         );
       case "W":
