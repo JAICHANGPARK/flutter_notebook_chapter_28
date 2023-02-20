@@ -322,14 +322,25 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
           decoration: BoxDecoration(
             color: Colors.grey[300],
           ),
-          child: Column(
-            children: [
-              Icon(Icons.access_time_rounded),
-              Text("No entries for today"),
-              ElevatedButton.icon(
-                onPressed: () {}, icon: null, label: null,
-              )
-            ],
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(Icons.access_time_rounded),
+                SizedBox(
+                  height: 16,
+                ),
+                Text("No entries for today"),
+                SizedBox(
+                  height: 24,
+                ),
+                ElevatedButton.icon(
+                  onPressed: () {},
+                  icon: Icon(Icons.add),
+                  label: Text("New time"),
+                )
+              ],
+            ),
           ),
         );
       case "T":
