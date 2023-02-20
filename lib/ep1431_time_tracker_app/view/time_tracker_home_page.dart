@@ -357,10 +357,12 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
         return Container(
           child: SingleChildScrollView(
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(
                   padding: const EdgeInsets.all(16.0),
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Row(
                         children: [
@@ -394,12 +396,7 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                         ],
                       ),
                       Row(
-                        children: [
-                          Icon(Icons.tag),
-                          Text("asd1asd54sa"),
-                          Icon(Icons.attach_money),
-                          Text("4h")
-                        ],
+                        children: [Icon(Icons.tag), Text("asd1asd54sa"), Icon(Icons.attach_money), Text("4h")],
                       )
                     ],
                   ),
