@@ -23,6 +23,24 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
               Icons.home_filled,
             ),
             label: "Home",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.category_outlined,
+            ),
+            label: "Category",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.bookmark_added_outlined,
+            ),
+            label: "Saved",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.person_outlined,
+            ),
+            label: "Profile",
           )
         ],
       ),
