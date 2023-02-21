@@ -9,7 +9,6 @@ class FreelancerMainPage extends StatefulWidget {
 
 class _FreelancerMainPageState extends State<FreelancerMainPage> {
   int selectedIndex = 0;
-  
 
   @override
   Widget build(BuildContext context) {
@@ -22,6 +21,8 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
       bottomNavigationBar: SizedBox(
         height: 82,
         child: BottomNavigationBar(
+          onTap: (idx) => setState(() => selectedIndex = idx),
+          currentIndex: selectedIndex,
           selectedItemColor: Colors.red,
           unselectedItemColor: Colors.grey,
           type: BottomNavigationBarType.fixed,
