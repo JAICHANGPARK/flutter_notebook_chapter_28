@@ -21,8 +21,18 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
             children: [
               Row(
                 children: [
-                  Text("Hey"),
-                  Text("Dream Walker"),
+                  Text(
+                    "Hey, ",
+                    style: TextStyle(
+                      color: Colors.grey,
+                    ),
+                  ),
+                  Text(
+                    "Dream Walker",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                   Spacer(),
                   CircleAvatar(),
                 ],
