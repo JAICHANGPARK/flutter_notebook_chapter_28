@@ -14,38 +14,52 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          children: [
-            Row(
-              children: [
-                Text("Hey"),
-                Text("Dream Walker"),
-                Spacer(),
-                CircleAvatar(),
-              ],
-            ),
-            Text("Find a projects"),
-            Container(
-              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-              decoration: BoxDecoration(
-                border: Border.all(
-                  color: Colors.grey[400]!,
-                ),
-                borderRadius: BorderRadius.circular(24),
-              ),
-              child: Row(
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
                 children: [
-                  Expanded(
-                      child: TextField(
-                    decoration: InputDecoration(
-                      border: InputBorder.none,
-                    ),
-                  )),
+                  Text("Hey"),
+                  Text("Dream Walker"),
+                  Spacer(),
                   CircleAvatar(),
                 ],
               ),
-            )
-          ],
+              SizedBox(
+                height: 24,
+              ),
+              Text(
+                "Find a projects",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 24,
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.symmetric(vertical: 16),
+                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    color: Colors.grey[400]!,
+                  ),
+                  borderRadius: BorderRadius.circular(32),
+                ),
+                child: Row(
+                  children: [
+                    Expanded(
+                        child: TextField(
+                      decoration: InputDecoration(
+                        border: InputBorder.none,
+                      ),
+                    )),
+                    CircleAvatar(),
+                  ],
+                ),
+              )
+            ],
+          ),
         ),
       ),
       bottomNavigationBar: SizedBox(
