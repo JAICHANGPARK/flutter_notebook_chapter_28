@@ -13,36 +13,40 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
-          children: [],
+          children: const [],
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.home_filled,
+      bottomNavigationBar: SizedBox(
+        height: 82,
+        child: BottomNavigationBar(
+          type: BottomNavigationBarType.fixed,
+          items: const [
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.home_filled,
+              ),
+              label: "Home",
             ),
-            label: "Home",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.category_outlined,
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.category_outlined,
+              ),
+              label: "Category",
             ),
-            label: "Category",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.bookmark_added_outlined,
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.bookmark_added_outlined,
+              ),
+              label: "Saved",
             ),
-            label: "Saved",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.person_outlined,
-            ),
-            label: "Profile",
-          )
-        ],
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.person_outlined,
+              ),
+              label: "Profile",
+            )
+          ],
+        ),
       ),
     );
   }
