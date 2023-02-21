@@ -15,7 +15,7 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
-          children:  [
+          children: [
             Row(
               children: [
                 Text("Hey"),
@@ -26,9 +26,21 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
             ),
             Text("Find a projects"),
             Container(
+              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+              decoration: BoxDecoration(
+                border: Border.all(
+                  color: Colors.grey[400]!,
+                ),
+                borderRadius: BorderRadius.circular(24),
+              ),
               child: Row(
                 children: [
-                  Expanded(child: TextField()),
+                  Expanded(
+                      child: TextField(
+                    decoration: InputDecoration(
+                      border: InputBorder.none,
+                    ),
+                  )),
                   CircleAvatar(),
                 ],
               ),
