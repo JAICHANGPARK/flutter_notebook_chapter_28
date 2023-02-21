@@ -19,7 +19,7 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Row(
+              const Row(
                 children: [
                   Text(
                     "Hey, ",
@@ -37,10 +37,10 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                   CircleAvatar(),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 24,
               ),
-              Text(
+              const Text(
                 "Find a projects",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
@@ -48,15 +48,15 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                 ),
               ),
               Container(
-                margin: EdgeInsets.symmetric(vertical: 16),
-                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                margin: const EdgeInsets.symmetric(vertical: 16),
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                 decoration: BoxDecoration(
                   border: Border.all(
                     color: Colors.grey[400]!,
                   ),
                   borderRadius: BorderRadius.circular(32),
                 ),
-                child: Row(
+                child: const Row(
                   children: [
                     Expanded(
                         child: TextField(
