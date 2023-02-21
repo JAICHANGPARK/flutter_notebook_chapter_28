@@ -58,7 +58,7 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                 ),
                 child: Row(
                   children: [
-                    Expanded(
+                    const Expanded(
                       child: TextField(
                         decoration: InputDecoration(
                           border: InputBorder.none,
@@ -70,11 +70,21 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                     CircleAvatar(
                       backgroundColor: Colors.grey[200]!,
                       foregroundColor: Colors.black,
-                      child: Icon(Icons.filter_alt_outlined),
+                      child: const Icon(Icons.filter_alt_outlined),
                     ),
                   ],
                 ),
-              )
+              ),
+              Row(
+                children: [
+                  Text("Recent searches:"),
+                  Expanded(child: ListView()),
+                ],
+              ),
+              SizedBox(
+                height: 16,
+              ),
+              Expanded(child: Placeholder()),
             ],
           ),
         ),
