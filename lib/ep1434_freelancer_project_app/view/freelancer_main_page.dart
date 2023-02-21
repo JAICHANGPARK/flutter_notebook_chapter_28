@@ -8,6 +8,9 @@ class FreelancerMainPage extends StatefulWidget {
 }
 
 class _FreelancerMainPageState extends State<FreelancerMainPage> {
+  int selectedIndex = 0;
+  
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,6 +22,8 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
       bottomNavigationBar: SizedBox(
         height: 82,
         child: BottomNavigationBar(
+          selectedItemColor: Colors.red,
+          unselectedItemColor: Colors.grey,
           type: BottomNavigationBarType.fixed,
           items: const [
             BottomNavigationBarItem(
@@ -26,18 +31,21 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                 Icons.home_filled,
               ),
               label: "Home",
+              tooltip: "Home",
             ),
             BottomNavigationBarItem(
               icon: Icon(
                 Icons.category_outlined,
               ),
               label: "Category",
+              tooltip: "Category",
             ),
             BottomNavigationBarItem(
               icon: Icon(
                 Icons.bookmark_added_outlined,
               ),
               label: "Saved",
+              tooltip: "Saved",
             ),
             BottomNavigationBarItem(
               icon: Icon(
