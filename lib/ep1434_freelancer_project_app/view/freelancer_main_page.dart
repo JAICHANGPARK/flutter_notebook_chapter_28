@@ -56,7 +56,7 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                   ),
                   borderRadius: BorderRadius.circular(32),
                 ),
-                child: const Row(
+                child: Row(
                   children: [
                     Expanded(
                       child: TextField(
@@ -67,7 +67,11 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                         ),
                       ),
                     ),
-                    CircleAvatar(),
+                    CircleAvatar(
+                      backgroundColor: Colors.grey[200]!,
+                      foregroundColor: Colors.black,
+                      child: Icon(Icons.filter_alt_outlined),
+                    ),
                   ],
                 ),
               )
