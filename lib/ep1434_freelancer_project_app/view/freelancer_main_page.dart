@@ -15,7 +15,25 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
-          children: const [],
+          children:  [
+            Row(
+              children: [
+                Text("Hey"),
+                Text("Dream Walker"),
+                Spacer(),
+                CircleAvatar(),
+              ],
+            ),
+            Text("Find a projects"),
+            Container(
+              child: Row(
+                children: [
+                  Expanded(child: TextField()),
+                  CircleAvatar(),
+                ],
+              ),
+            )
+          ],
         ),
       ),
       bottomNavigationBar: SizedBox(
