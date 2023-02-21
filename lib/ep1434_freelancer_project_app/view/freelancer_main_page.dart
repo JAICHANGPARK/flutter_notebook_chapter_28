@@ -11,7 +11,13 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
+      body: SafeArea(
+        child: Column(
+          children: [
+            
+          ],
+        ),
+      ),
     );
   }
 }
