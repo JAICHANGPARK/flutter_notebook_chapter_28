@@ -258,8 +258,8 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                 padding: const EdgeInsets.only(bottom: 16),
                 child: ElevatedButton.icon(
                   onPressed: (){},
-                  icon: Icon(Icons.add),
-                  label: Text("New time"),
+                  icon: const Icon(Icons.add),
+                  label: const Text("New time"),
                   style: ElevatedButton.styleFrom(
                     foregroundColor: Colors.black,
                     backgroundColor: Colors.orange,
