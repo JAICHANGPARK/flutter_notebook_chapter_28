@@ -59,11 +59,14 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                 child: const Row(
                   children: [
                     Expanded(
-                        child: TextField(
-                      decoration: InputDecoration(
-                        border: InputBorder.none,
+                      child: TextField(
+                        decoration: InputDecoration(
+                          border: InputBorder.none,
+                          icon: Icon(Icons.search),
+                          hintText: "Search projects...",
+                        ),
                       ),
-                    )),
+                    ),
                     CircleAvatar(),
                   ],
                 ),
