@@ -13,10 +13,18 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
-          children: [
-            
-          ],
+          children: [],
         ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.home_filled,
+            ),
+            label: "Home",
+          )
+        ],
       ),
     );
   }
