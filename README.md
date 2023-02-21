@@ -1,6 +1,14 @@
 # flutter_notebook_chapter_28
 
-### EP1431
+### EP1434
+
+- Freelancer Project App
+- by Vetrick Wilsen
+- https://dribbble.com/shots/20692719-Freelancer-Project-App
+
+<img src="https://cdn.dribbble.com/userupload/4763733/file/original-10a92f8e26aa4418bb75b42854c10712.png?compress=1&resize=6400x4800" width="500px"/>
+
+### EP1431-1433
 
 - Time tracker - mobile
 - by Paweł Samczuk for Xebia Poland
