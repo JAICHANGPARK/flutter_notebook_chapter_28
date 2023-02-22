@@ -84,19 +84,17 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
               SizedBox(
                 height: 16,
               ),
-              Expanded(
-                child: Column(
-                  children: [
-                    Text("Popular projects"),
-                    Expanded(
-                      child: ListView.builder(
-                        itemBuilder: (context, index) {
-                          return Container();
-                        },
-                      ),
-                    )
-                  ],
-                ),
+              Column(
+                children: [
+                  Text("Popular projects"),
+                  Expanded(
+                    child: ListView.builder(
+                      itemBuilder: (context, index) {
+                        return Container();
+                      },
+                    ),
+                  )
+                ],
               ),
             ],
           ),
