@@ -108,17 +108,30 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                             border: Border.all(),
                             borderRadius: BorderRadius.circular(8),
                           ),
+                          padding: EdgeInsets.all(16),
                           child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Container(
-                                child: const Row(
-                                  children: [
-                                    Icon(
-                                      Icons.location_on_outlined,
-                                      size: 14,
-                                    ),
-                                    Text("Hong Kong"),
-                                  ],
+                              IntrinsicWidth(
+                                child: Container(
+                                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                  decoration: BoxDecoration(
+                                    color: Colors.grey[200],
+                                    borderRadius: BorderRadius.circular(32),
+                                  ),
+                                  child: const Row(
+                                    children: [
+                                      Icon(
+                                        Icons.location_on_outlined,
+                                        size: 14,
+                                        color: Colors.grey,
+                                      ),
+                                      SizedBox(
+                                        width: 8,
+                                      ),
+                                      Text("Hong Kong"),
+                                    ],
+                                  ),
                                 ),
                               ),
                               const Text("Create an Eye-Catching UI for Our Fitness App(Only Freelancers)"),
@@ -160,62 +173,66 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                                       ],
                                     ),
                                   )),
-                                  SizedBox(width: 16,),
+                                  SizedBox(
+                                    width: 16,
+                                  ),
                                   Expanded(
                                       child: Container(
-                                        decoration: BoxDecoration(
-                                          borderRadius: BorderRadius.circular(6),
-                                          border: Border.all(),
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(6),
+                                      border: Border.all(),
+                                    ),
+                                    padding: EdgeInsets.symmetric(vertical: 12),
+                                    child: Column(
+                                      children: [
+                                        Text(
+                                          "\$290",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                          ),
                                         ),
-                                        padding: EdgeInsets.symmetric(vertical: 12),
-                                        child: Column(
-                                          children: [
-                                            Text(
-                                              "\$290",
-                                              style: TextStyle(
-                                                fontWeight: FontWeight.bold,
-                                              ),
-                                            ),
-                                            SizedBox(
-                                              height: 6,
-                                            ),
-                                            Text(
-                                              "Fixed-price",
-                                              style: TextStyle(
-                                                fontSize: 12,
-                                              ),
-                                            )
-                                          ],
+                                        SizedBox(
+                                          height: 6,
                                         ),
-                                      )),
-                                  SizedBox(width: 16,),
+                                        Text(
+                                          "Fixed-price",
+                                          style: TextStyle(
+                                            fontSize: 12,
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  )),
+                                  SizedBox(
+                                    width: 16,
+                                  ),
                                   Expanded(
                                       child: Container(
-                                        decoration: BoxDecoration(
-                                          borderRadius: BorderRadius.circular(6),
-                                          border: Border.all(),
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(6),
+                                      border: Border.all(),
+                                    ),
+                                    padding: EdgeInsets.symmetric(vertical: 12),
+                                    child: Column(
+                                      children: [
+                                        Text(
+                                          "\$290",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                          ),
                                         ),
-                                        padding: EdgeInsets.symmetric(vertical: 12),
-                                        child: Column(
-                                          children: [
-                                            Text(
-                                              "\$290",
-                                              style: TextStyle(
-                                                fontWeight: FontWeight.bold,
-                                              ),
-                                            ),
-                                            SizedBox(
-                                              height: 6,
-                                            ),
-                                            Text(
-                                              "Fixed-price",
-                                              style: TextStyle(
-                                                fontSize: 12,
-                                              ),
-                                            )
-                                          ],
+                                        SizedBox(
+                                          height: 6,
                                         ),
-                                      )),
+                                        Text(
+                                          "Fixed-price",
+                                          style: TextStyle(
+                                            fontSize: 12,
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  )),
                                 ],
                               ),
                               Text(
