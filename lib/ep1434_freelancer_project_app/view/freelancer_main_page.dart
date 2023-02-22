@@ -133,16 +133,40 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                               ),
                               Row(
                                 children: [
-                                  Expanded(child: Placeholder()),
+                                  Expanded(
+                                      child: Container(
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(6),
+                                      border: Border.all(),
+                                    ),
+                                    padding: EdgeInsets.symmetric(vertical: 12),
+                                    child: Column(
+                                      children: [
+                                        Text(
+                                          "\$290",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          height: 6,
+                                        ),
+                                        Text(
+                                          "Fixed-price",
+                                          style: TextStyle(
+                                            fontSize: 12,
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  )),
                                   Expanded(child: Placeholder()),
                                   Expanded(child: Placeholder()),
                                 ],
                               ),
                               Text(
                                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-                                style: TextStyle(
-                                  fontSize: 12
-                                ),
+                                style: TextStyle(fontSize: 12),
                               ),
                               Text("tags")
                             ],
