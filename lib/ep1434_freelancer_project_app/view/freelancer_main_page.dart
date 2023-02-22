@@ -78,7 +78,11 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
               Row(
                 children: [
                   Text("Recent searches:"),
-                  Expanded(child: ListView()),
+                  // Expanded(
+                  //     child: ListView(
+                  //   scrollDirection: Axis.horizontal,
+                  //   children: [],
+                  // )),
                 ],
               ),
               SizedBox(
