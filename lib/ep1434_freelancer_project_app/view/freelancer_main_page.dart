@@ -88,7 +88,13 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                 child: Column(
                   children: [
                     Text("Popular projects"),
-                    Expanded(child: Placeholder())
+                    Expanded(
+                      child: ListView.builder(
+                        itemBuilder: (context, index) {
+                          return Container();
+                        },
+                      ),
+                    )
                   ],
                 ),
               ),
