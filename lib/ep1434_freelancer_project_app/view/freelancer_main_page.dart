@@ -84,7 +84,14 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
               SizedBox(
                 height: 16,
               ),
-              Expanded(child: Placeholder()),
+              Expanded(
+                child: Column(
+                  children: [
+                    Text("Popular projects"),
+                    Expanded(child: Placeholder())
+                  ],
+                ),
+              ),
             ],
           ),
         ),
