@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_28/ep1434_freelancer_project_app/view/freelancer_main_page.dart';
 
 void main() {
-  runApp(FreelancerProjectApp());
+  runApp(const FreelancerProjectApp());
 }
 
 class FreelancerProjectApp extends StatelessWidget {
@@ -12,7 +12,7 @@ class FreelancerProjectApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: {
-        "/": (context) => FreelancerMainPage(),
+        "/": (context) => const FreelancerMainPage(),
       },
     );
   }
