@@ -108,13 +108,17 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                             border: Border.all(),
                             borderRadius: BorderRadius.circular(8),
                           ),
-                          padding: EdgeInsets.all(16),
+                          padding: const EdgeInsets.all(16),
+                          margin: const EdgeInsets.only(bottom: 16),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               IntrinsicWidth(
                                 child: Container(
-                                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                  padding: const EdgeInsets.symmetric(
+                                    horizontal: 8,
+                                    vertical: 4,
+                                  ),
                                   decoration: BoxDecoration(
                                     color: Colors.grey[200],
                                     borderRadius: BorderRadius.circular(32),
@@ -144,102 +148,136 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                                   )
                                 ],
                               ),
-                              Row(
-                                children: [
-                                  Expanded(
-                                      child: Container(
-                                    decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(6),
-                                      border: Border.all(),
-                                    ),
-                                    padding: EdgeInsets.symmetric(vertical: 12),
-                                    child: Column(
-                                      children: [
-                                        Text(
-                                          "\$290",
-                                          style: TextStyle(
-                                            fontWeight: FontWeight.bold,
+                              Padding(
+                                padding: const EdgeInsets.symmetric(vertical: 16),
+                                child: Row(
+                                  children: [
+                                    Expanded(
+                                        child: Container(
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(6),
+                                        border: Border.all(),
+                                      ),
+                                      padding: const EdgeInsets.symmetric(vertical: 8),
+                                      child: const Column(
+                                        children: [
+                                          Text(
+                                            "\$290",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                            ),
                                           ),
-                                        ),
-                                        SizedBox(
-                                          height: 6,
-                                        ),
-                                        Text(
-                                          "Fixed-price",
-                                          style: TextStyle(
-                                            fontSize: 12,
+                                          SizedBox(
+                                            height: 6,
                                           ),
-                                        )
-                                      ],
+                                          Text(
+                                            "Fixed-price",
+                                            style: TextStyle(
+                                              fontSize: 12,
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                    )),
+                                    const SizedBox(
+                                      width: 16,
                                     ),
-                                  )),
-                                  SizedBox(
-                                    width: 16,
-                                  ),
-                                  Expanded(
-                                      child: Container(
-                                    decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(6),
-                                      border: Border.all(),
-                                    ),
-                                    padding: EdgeInsets.symmetric(vertical: 12),
-                                    child: Column(
-                                      children: [
-                                        Text(
-                                          "\$290",
-                                          style: TextStyle(
-                                            fontWeight: FontWeight.bold,
+                                    Expanded(
+                                        child: Container(
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(6),
+                                        border: Border.all(),
+                                      ),
+                                      padding: const EdgeInsets.symmetric(vertical: 8),
+                                      child: const Column(
+                                        children: [
+                                          Text(
+                                            "\$290",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                            ),
                                           ),
-                                        ),
-                                        SizedBox(
-                                          height: 6,
-                                        ),
-                                        Text(
-                                          "Fixed-price",
-                                          style: TextStyle(
-                                            fontSize: 12,
+                                          SizedBox(
+                                            height: 6,
                                           ),
-                                        )
-                                      ],
+                                          Text(
+                                            "Fixed-price",
+                                            style: TextStyle(
+                                              fontSize: 12,
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                    )),
+                                    const SizedBox(
+                                      width: 16,
                                     ),
-                                  )),
-                                  SizedBox(
-                                    width: 16,
-                                  ),
-                                  Expanded(
-                                      child: Container(
-                                    decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(6),
-                                      border: Border.all(),
-                                    ),
-                                    padding: EdgeInsets.symmetric(vertical: 12),
-                                    child: Column(
-                                      children: [
-                                        Text(
-                                          "\$290",
-                                          style: TextStyle(
-                                            fontWeight: FontWeight.bold,
+                                    Expanded(
+                                        child: Container(
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(6),
+                                        border: Border.all(),
+                                      ),
+                                      padding: const EdgeInsets.symmetric(vertical: 8),
+                                      child: const Column(
+                                        children: [
+                                          Text(
+                                            "\$290",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                            ),
                                           ),
-                                        ),
-                                        SizedBox(
-                                          height: 6,
-                                        ),
-                                        Text(
-                                          "Fixed-price",
-                                          style: TextStyle(
-                                            fontSize: 12,
+                                          SizedBox(
+                                            height: 6,
                                           ),
-                                        )
-                                      ],
-                                    ),
-                                  )),
-                                ],
+                                          Text(
+                                            "Fixed-price",
+                                            style: TextStyle(
+                                              fontSize: 12,
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                    )),
+                                  ],
+                                ),
                               ),
-                              Text(
+                              const Text(
                                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
                                 style: TextStyle(fontSize: 12),
                               ),
-                              Text("tags")
+                              const Text("tags"),
+                              Wrap(
+                                children: [
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey[200],
+                                      borderRadius: BorderRadius.circular(24),
+                                    ),
+                                    child: Text("UI Design"),
+                                  ),
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey[200],
+                                      borderRadius: BorderRadius.circular(24),
+                                    ),
+                                    child: Text("UI Design"),
+                                  ),
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey[200],
+                                      borderRadius: BorderRadius.circular(24),
+                                    ),
+                                    child: Text("UI Design"),
+                                  ),  Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey[200],
+                                      borderRadius: BorderRadius.circular(24),
+                                    ),
+                                    child: Text("UI Design"),
+                                  )
+                                ],
+                              )
                             ],
                           ),
                         );
