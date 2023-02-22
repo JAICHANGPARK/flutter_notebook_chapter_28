@@ -76,15 +76,15 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
             ),
             Row(
               children: [
-                Text("Recent searches:"),
+                const Text("Recent searches:"),
                 Container(
-                  child: Text("UI Design"),
+                  child: const Text("UI Design"),
                 ),
                 Container(
-                  child: Text("Landing Page"),
+                  child: const Text("Landing Page"),
                 ),
                 Container(
-                  child: Text("Banner Design"),
+                  child: const Text("Banner Design"),
                 ),
                 // Expanded(
                 //     child: ListView(
@@ -93,13 +93,13 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                 // )),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 16,
             ),
             Expanded(
               child: Column(
                 children: [
-                  Text("Popular projects"),
+                  const Text("Popular projects"),
                   Expanded(
                     child: ListView.builder(
                       itemBuilder: (context, index) {
@@ -111,15 +111,18 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                           child: Column(
                             children: [
                               Container(
-                                child: Row(
+                                child: const Row(
                                   children: [
-                                    Icon(Icons.location_on_outlined, size: 14,),
+                                    Icon(
+                                      Icons.location_on_outlined,
+                                      size: 14,
+                                    ),
                                     Text("Hong Kong"),
                                   ],
                                 ),
                               ),
-                              Text("Create an Eye-Catching UI for Our Fitness App(Only Freelancers)"),
-                              Row(
+                              const Text("Create an Eye-Catching UI for Our Fitness App(Only Freelancers)"),
+                              const Row(
                                 children: [
                                   Text("Posted 2 hours ago - Payment Unverified"),
                                   CircleAvatar(
@@ -127,7 +130,21 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                                     backgroundColor: Colors.red,
                                   )
                                 ],
-                              )
+                              ),
+                              Row(
+                                children: [
+                                  Expanded(child: Placeholder()),
+                                  Expanded(child: Placeholder()),
+                                  Expanded(child: Placeholder()),
+                                ],
+                              ),
+                              Text(
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                                style: TextStyle(
+                                  fontSize: 12
+                                ),
+                              ),
+                              Text("tags")
                             ],
                           ),
                         );
