@@ -160,8 +160,62 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                                       ],
                                     ),
                                   )),
-                                  Expanded(child: Placeholder()),
-                                  Expanded(child: Placeholder()),
+                                  SizedBox(width: 16,),
+                                  Expanded(
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.circular(6),
+                                          border: Border.all(),
+                                        ),
+                                        padding: EdgeInsets.symmetric(vertical: 12),
+                                        child: Column(
+                                          children: [
+                                            Text(
+                                              "\$290",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                            SizedBox(
+                                              height: 6,
+                                            ),
+                                            Text(
+                                              "Fixed-price",
+                                              style: TextStyle(
+                                                fontSize: 12,
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      )),
+                                  SizedBox(width: 16,),
+                                  Expanded(
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.circular(6),
+                                          border: Border.all(),
+                                        ),
+                                        padding: EdgeInsets.symmetric(vertical: 12),
+                                        child: Column(
+                                          children: [
+                                            Text(
+                                              "\$290",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                            SizedBox(
+                                              height: 6,
+                                            ),
+                                            Text(
+                                              "Fixed-price",
+                                              style: TextStyle(
+                                                fontSize: 12,
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      )),
                                 ],
                               ),
                               Text(
