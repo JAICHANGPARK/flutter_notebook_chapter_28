@@ -94,14 +94,25 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
               ],
             ),
             const SizedBox(
-              height: 16,
+              height: 32,
             ),
             Expanded(
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text("Popular projects"),
+                  const Text(
+                    "Popular projects",
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 16,
+                  ),
                   Expanded(
                     child: ListView.builder(
+                      padding: EdgeInsets.zero,
                       itemBuilder: (context, index) {
                         return Container(
                           decoration: BoxDecoration(
@@ -269,7 +280,8 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                                       borderRadius: BorderRadius.circular(24),
                                     ),
                                     child: Text("UI Design"),
-                                  ),  Container(
+                                  ),
+                                  Container(
                                     decoration: BoxDecoration(
                                       color: Colors.grey[200],
                                       borderRadius: BorderRadius.circular(24),
