@@ -189,24 +189,37 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                                   ),
                                 ),
                               ),
-                              const Text(
-                                "Create an Eye-Catching UI for Our Fitness App(Only Freelancers)",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 16,
+                              Padding(
+                                padding: const EdgeInsets.symmetric(vertical: 8),
+                                child: const Text(
+                                  "Create an Eye-Catching UI for Our Fitness App(Only Freelancers)",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 16,
+                                  ),
                                 ),
                               ),
-                              const Row(
-                                children: [
-                                  Text("Posted 2 hours ago - Payment Unverified"),
-                                  CircleAvatar(
-                                    radius: 8,
-                                    backgroundColor: Colors.red,
-                                  )
-                                ],
+                              Padding(
+                                padding: const EdgeInsets.only(bottom: 8.0),
+                                child: const Row(
+                                  children: [
+                                    Text(
+                                      "Posted 2 hours ago - Payment Unverified",
+                                      style: TextStyle(
+                                        fontSize: 12,
+
+                                      ),
+                                    ),
+                                    SizedBox(width: 6,),
+                                    CircleAvatar(
+                                      radius: 4,
+                                      backgroundColor: Colors.red,
+                                    )
+                                  ],
+                                ),
                               ),
                               Padding(
-                                padding: const EdgeInsets.symmetric(vertical: 16),
+                                padding: const EdgeInsets.symmetric(vertical: 8),
                                 child: Row(
                                   children: [
                                     Expanded(
