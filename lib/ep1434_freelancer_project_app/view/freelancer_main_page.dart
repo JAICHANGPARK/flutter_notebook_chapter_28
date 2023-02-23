@@ -156,7 +156,9 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                       itemBuilder: (context, index) {
                         return Container(
                           decoration: BoxDecoration(
-                            border: Border.all(),
+                            border: Border.all(
+                              color: Colors.grey[200]!,
+                            ),
                             borderRadius: BorderRadius.circular(8),
                           ),
                           padding: const EdgeInsets.all(16),
@@ -189,9 +191,9 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                                   ),
                                 ),
                               ),
-                              Padding(
-                                padding: const EdgeInsets.symmetric(vertical: 8),
-                                child: const Text(
+                              const Padding(
+                                padding: EdgeInsets.symmetric(vertical: 8),
+                                child: Text(
                                   "Create an Eye-Catching UI for Our Fitness App(Only Freelancers)",
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
@@ -199,18 +201,19 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                                   ),
                                 ),
                               ),
-                              Padding(
-                                padding: const EdgeInsets.only(bottom: 8.0),
-                                child: const Row(
+                              const Padding(
+                                padding: EdgeInsets.only(bottom: 8.0),
+                                child: Row(
                                   children: [
                                     Text(
                                       "Posted 2 hours ago - Payment Unverified",
                                       style: TextStyle(
                                         fontSize: 12,
-
                                       ),
                                     ),
-                                    SizedBox(width: 6,),
+                                    SizedBox(
+                                      width: 6,
+                                    ),
                                     CircleAvatar(
                                       radius: 4,
                                       backgroundColor: Colors.red,
@@ -318,40 +321,64 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                                   ],
                                 ),
                               ),
-                              const Text(
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-                                style: TextStyle(fontSize: 12),
+                              Padding(
+                                padding: const EdgeInsets.symmetric(vertical: 12),
+                                child: const Text(
+                                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                                  style: TextStyle(fontSize: 12),
+                                ),
                               ),
                               const Text("tags"),
+                              SizedBox(
+                                height: 8,
+                              ),
                               Wrap(
                                 children: [
                                   Container(
+                                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                                     decoration: BoxDecoration(
                                       color: Colors.grey[200],
                                       borderRadius: BorderRadius.circular(24),
                                     ),
-                                    child: const Text("UI Design"),
+                                    child: const Text(
+                                      "UI Design",
+                                      style: TextStyle(
+                                        fontSize: 12,
+                                      ),
+                                    ),
                                   ),
                                   Container(
+                                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                                     decoration: BoxDecoration(
                                       color: Colors.grey[200],
                                       borderRadius: BorderRadius.circular(24),
                                     ),
-                                    child: const Text("UI Design"),
+                                    child: const Text("UI Design",
+                                      style: TextStyle(
+                                        fontSize: 12,
+                                      ),),
                                   ),
                                   Container(
+                                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                                     decoration: BoxDecoration(
                                       color: Colors.grey[200],
                                       borderRadius: BorderRadius.circular(24),
                                     ),
-                                    child: const Text("UI Design"),
+                                    child: const Text("UI Design",
+                                      style: TextStyle(
+                                        fontSize: 12,
+                                      ),),
                                   ),
                                   Container(
+                                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                                     decoration: BoxDecoration(
                                       color: Colors.grey[200],
                                       borderRadius: BorderRadius.circular(24),
                                     ),
-                                    child: const Text("UI Design"),
+                                    child: const Text("UI Design",
+                                      style: TextStyle(
+                                        fontSize: 12,
+                                      ),),
                                   )
                                 ],
                               )
