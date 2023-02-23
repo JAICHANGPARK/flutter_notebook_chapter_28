@@ -107,7 +107,7 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 16,
                   ),
                   Expanded(
@@ -265,28 +265,28 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                                       color: Colors.grey[200],
                                       borderRadius: BorderRadius.circular(24),
                                     ),
-                                    child: Text("UI Design"),
+                                    child: const Text("UI Design"),
                                   ),
                                   Container(
                                     decoration: BoxDecoration(
                                       color: Colors.grey[200],
                                       borderRadius: BorderRadius.circular(24),
                                     ),
-                                    child: Text("UI Design"),
+                                    child: const Text("UI Design"),
                                   ),
                                   Container(
                                     decoration: BoxDecoration(
                                       color: Colors.grey[200],
                                       borderRadius: BorderRadius.circular(24),
                                     ),
-                                    child: Text("UI Design"),
+                                    child: const Text("UI Design"),
                                   ),
                                   Container(
                                     decoration: BoxDecoration(
                                       color: Colors.grey[200],
                                       borderRadius: BorderRadius.circular(24),
                                     ),
-                                    child: Text("UI Design"),
+                                    child: const Text("UI Design"),
                                   )
                                 ],
                               )
