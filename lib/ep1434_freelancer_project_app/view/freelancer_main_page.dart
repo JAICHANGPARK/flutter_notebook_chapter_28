@@ -226,7 +226,9 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                                         child: Container(
                                       decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(6),
-                                        border: Border.all(),
+                                        border: Border.all(
+                                          color: Colors.grey[200]!,
+                                        ),
                                       ),
                                       padding: const EdgeInsets.symmetric(vertical: 8),
                                       child: const Column(
@@ -256,7 +258,9 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                                         child: Container(
                                       decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(6),
-                                        border: Border.all(),
+                                        border: Border.all(
+                                          color: Colors.grey[200]!,
+                                        ),
                                       ),
                                       padding: const EdgeInsets.symmetric(vertical: 8),
                                       child: const Column(
@@ -286,7 +290,9 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                                         child: Container(
                                       decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(6),
-                                        border: Border.all(),
+                                        border: Border.all(
+                                          color: Colors.grey[200]!,
+                                        ),
                                       ),
                                       padding: const EdgeInsets.symmetric(vertical: 8),
                                       child: const Column(
