@@ -89,8 +89,8 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                             color: Colors.indigo,
                             borderRadius: BorderRadius.circular(24),
                           ),
-                          margin: EdgeInsets.only(left: 12),
-                          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                          margin: const EdgeInsets.only(left: 12),
+                          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                           child: const Text(
                             "UI Design",
                             style: TextStyle(
@@ -102,20 +102,30 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                         Container(
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(24),
-                            border: Border.all(),
+                            border: Border.all(color: Colors.grey[300]!),
                           ),
-                          margin: EdgeInsets.only(left: 12),
-                          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                          child: const Text("Landing Page"),
+                          margin: const EdgeInsets.only(left: 12),
+                          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                          child: const Text(
+                            "Landing Page",
+                            style: TextStyle(
+                              fontSize: 12,
+                            ),
+                          ),
                         ),
                         Container(
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(24),
-                            border: Border.all(),
+                            border: Border.all(color: Colors.grey[300]!),
                           ),
-                          margin: EdgeInsets.only(left: 12),
-                          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                          child: const Text("Banner Design"),
+                          margin: const EdgeInsets.only(left: 12),
+                          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                          child: const Text(
+                            "Banner Design",
+                            style: TextStyle(
+                              fontSize: 12,
+                            ),
+                          ),
                         ),
                       ],
                     ),
@@ -179,7 +189,13 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                                   ),
                                 ),
                               ),
-                              const Text("Create an Eye-Catching UI for Our Fitness App(Only Freelancers)"),
+                              const Text(
+                                "Create an Eye-Catching UI for Our Fitness App(Only Freelancers)",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 16,
+                                ),
+                              ),
                               const Row(
                                 children: [
                                   Text("Posted 2 hours ago - Payment Unverified"),
