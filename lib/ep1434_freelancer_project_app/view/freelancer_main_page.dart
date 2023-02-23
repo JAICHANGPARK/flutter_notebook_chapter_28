@@ -9,6 +9,7 @@ class FreelancerMainPage extends StatefulWidget {
 
 class _FreelancerMainPageState extends State<FreelancerMainPage> {
   int selectedIndex = 0;
+  Color borderColor = Colors.grey[300]!;
 
   @override
   Widget build(BuildContext context) {
@@ -157,7 +158,7 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                         return Container(
                           decoration: BoxDecoration(
                             border: Border.all(
-                              color: Colors.grey[200]!,
+                              color: borderColor,
                             ),
                             borderRadius: BorderRadius.circular(8),
                           ),
@@ -230,7 +231,7 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                                       decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(6),
                                         border: Border.all(
-                                          color: Colors.grey[200]!,
+                                          color:borderColor,
                                         ),
                                       ),
                                       padding: const EdgeInsets.symmetric(vertical: 8),
@@ -262,7 +263,7 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                                       decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(6),
                                         border: Border.all(
-                                          color: Colors.grey[200]!,
+                                          color: borderColor,
                                         ),
                                       ),
                                       padding: const EdgeInsets.symmetric(vertical: 8),
@@ -294,7 +295,7 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                                       decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(6),
                                         border: Border.all(
-                                          color: Colors.grey[200]!,
+                                          color: borderColor,
                                         ),
                                       ),
                                       padding: const EdgeInsets.symmetric(vertical: 8),
@@ -321,23 +322,33 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                                   ],
                                 ),
                               ),
-                              Padding(
-                                padding: const EdgeInsets.symmetric(vertical: 12),
-                                child: const Text(
-                                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-                                  style: TextStyle(fontSize: 12),
+                              const Padding(
+                                padding: EdgeInsets.symmetric(vertical: 12),
+                                child: Text(
+                                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit,"
+                                  " sed do eiusmod tempor incididunt ut labore et dolore "
+                                  "magna aliqua. ",
+                                  style: TextStyle(
+                                    fontSize: 12,
+                                    color: Colors.grey,
+                                  ),
                                 ),
                               ),
-                              const Text("tags"),
-                              SizedBox(
-                                height: 8,
+                              const Text(
+                                "Tags",
+                                style: TextStyle(
+                                  color: Colors.grey,
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 12,
                               ),
                               Wrap(
                                 spacing: 8,
                                 runSpacing: 8,
                                 children: [
                                   Container(
-                                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                                    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                                     decoration: BoxDecoration(
                                       color: Colors.grey[200],
                                       borderRadius: BorderRadius.circular(24),
@@ -350,7 +361,7 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                                     ),
                                   ),
                                   Container(
-                                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                                    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                                     decoration: BoxDecoration(
                                       color: Colors.grey[200],
                                       borderRadius: BorderRadius.circular(24),
@@ -363,7 +374,7 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                                     ),
                                   ),
                                   Container(
-                                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                                    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                                     decoration: BoxDecoration(
                                       color: Colors.grey[200],
                                       borderRadius: BorderRadius.circular(24),
@@ -376,7 +387,7 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                                     ),
                                   ),
                                   Container(
-                                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                                    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                                     decoration: BoxDecoration(
                                       color: Colors.grey[200],
                                       borderRadius: BorderRadius.circular(24),
