@@ -78,12 +78,36 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
               children: [
                 const Text("Recent searches:"),
                 Container(
-                  child: const Text("UI Design"),
+                  decoration: BoxDecoration(
+                    color: Colors.indigo,
+                    borderRadius: BorderRadius.circular(24),
+                  ),
+                  margin: EdgeInsets.only(left: 12),
+                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                  child: const Text(
+                    "UI Design",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 12,
+                    ),
+                  ),
                 ),
                 Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(24),
+                    border: Border.all(),
+                  ),
+                  margin: EdgeInsets.only(left: 12),
+                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                   child: const Text("Landing Page"),
                 ),
                 Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(24),
+                    border: Border.all(),
+                  ),
+                  margin: EdgeInsets.only(left: 12),
+                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                   child: const Text("Banner Design"),
                 ),
                 // Expanded(
