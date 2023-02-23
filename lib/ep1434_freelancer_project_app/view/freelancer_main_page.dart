@@ -338,7 +338,6 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                                 children: [
                                   Container(
                                     padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
-
                                     decoration: BoxDecoration(
                                       color: Colors.grey[200],
                                       borderRadius: BorderRadius.circular(24),
@@ -351,16 +350,17 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                                     ),
                                   ),
                                   Container(
-
                                     padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                                     decoration: BoxDecoration(
                                       color: Colors.grey[200],
                                       borderRadius: BorderRadius.circular(24),
                                     ),
-                                    child: const Text("UI Design",
+                                    child: const Text(
+                                      "UI Design",
                                       style: TextStyle(
                                         fontSize: 12,
-                                      ),),
+                                      ),
+                                    ),
                                   ),
                                   Container(
                                     padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
@@ -368,10 +368,12 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                                       color: Colors.grey[200],
                                       borderRadius: BorderRadius.circular(24),
                                     ),
-                                    child: const Text("UI Design",
+                                    child: const Text(
+                                      "UI Design",
                                       style: TextStyle(
                                         fontSize: 12,
-                                      ),),
+                                      ),
+                                    ),
                                   ),
                                   Container(
                                     padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
@@ -379,10 +381,12 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                                       color: Colors.grey[200],
                                       borderRadius: BorderRadius.circular(24),
                                     ),
-                                    child: const Text("UI Design",
+                                    child: const Text(
+                                      "UI Design",
                                       style: TextStyle(
                                         fontSize: 12,
-                                      ),),
+                                      ),
+                                    ),
                                   )
                                 ],
                               )
