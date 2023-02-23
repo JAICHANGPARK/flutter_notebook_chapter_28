@@ -333,9 +333,12 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                                 height: 8,
                               ),
                               Wrap(
+                                spacing: 8,
+                                runSpacing: 8,
                                 children: [
                                   Container(
                                     padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+
                                     decoration: BoxDecoration(
                                       color: Colors.grey[200],
                                       borderRadius: BorderRadius.circular(24),
@@ -348,6 +351,7 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                                     ),
                                   ),
                                   Container(
+
                                     padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                                     decoration: BoxDecoration(
                                       color: Colors.grey[200],
