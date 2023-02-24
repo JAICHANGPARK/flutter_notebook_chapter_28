@@ -16,7 +16,7 @@ class _ESSAMainPageState extends State<ESSAMainPage> {
           padding: const EdgeInsets.symmetric(vertical: 32, horizontal: 16),
           child: Column(
             children: [
-              Expanded(
+              const Expanded(
                 child: Row(
                   children: [
                     Expanded(
@@ -51,36 +51,36 @@ class _ESSAMainPageState extends State<ESSAMainPage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       height: 42,
                     ),
-                    Text(
+                    const Text(
                       "Reduce the workloads\nof HR management.",
                       style: TextStyle(
                         fontSize: 32,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 32),
+                    const Padding(
+                      padding: EdgeInsets.symmetric(vertical: 32),
                       child: Text("Help you to improve efficiency, accuracy, engagement, "
                           "and cost savings for employers."),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 12,
                     ),
                     ElevatedButton(
                       onPressed: () {},
-                      child: Text("I'm a Manager"),
+                      child: const Text("I'm a Manager"),
                       style: ElevatedButton.styleFrom(
-                        minimumSize: Size(double.infinity, 60),
-                        textStyle: TextStyle(
+                        minimumSize: const Size(double.infinity, 60),
+                        textStyle: const TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 12,
                     ),
                     Container(
@@ -91,7 +91,7 @@ class _ESSAMainPageState extends State<ESSAMainPage> {
                           color: Colors.grey[300]!,
                         ),
                       ),
-                      child: Center(
+                      child: const Center(
                         child: Text(
                           "I'm a Employee",
                           style: TextStyle(
