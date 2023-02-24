@@ -17,24 +17,29 @@ class _ESSAMainPageState extends State<ESSAMainPage> {
           child: Column(
             children: [
               Expanded(
-                
                 child: Row(
                   children: [
                     Expanded(
                       child: Column(
                         children: [
                           Expanded(child: Placeholder()),
-                          SizedBox(height: 8,),
+                          SizedBox(
+                            height: 8,
+                          ),
                           Expanded(child: Placeholder()),
                         ],
                       ),
                     ),
-                    SizedBox(width: 8,),
+                    SizedBox(
+                      width: 8,
+                    ),
                     Expanded(
                       child: Column(
                         children: [
                           Expanded(child: Placeholder()),
-                          SizedBox(height: 8,),
+                          SizedBox(
+                            height: 8,
+                          ),
                           Expanded(child: Placeholder()),
                         ],
                       ),
@@ -42,23 +47,52 @@ class _ESSAMainPageState extends State<ESSAMainPage> {
                   ],
                 ),
               ),
-              SizedBox(
-                height: 32,
-              ),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("Reduce the workloads\nof HR management."),
-                    Text("Help you to improve efficiency, accuracy, engagement, "
-                        "and cost savings for employers."),
-                    ElevatedButton(
-                      onPressed: () {},
-                      child: Text("I'm a Manager"),
+                    SizedBox(
+                      height: 42,
+                    ),
+                    Text(
+                      "Reduce the workloads\nof HR management.",
+                      style: TextStyle(
+                        fontSize: 32,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 42),
+                      child: Text("Help you to improve efficiency, accuracy, engagement, "
+                          "and cost savings for employers."),
                     ),
                     ElevatedButton(
                       onPressed: () {},
-                      child: Text("I'm a Employee"),
+                      child: Text("I'm a Manager"),
+                      style: ElevatedButton.styleFrom(
+                        minimumSize: Size(double.infinity, 60),
+                        textStyle: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 12,
+                    ),
+                    Container(
+                      height: 60,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(4),
+                        border: Border.all(
+                          color: Colors.grey[300]!,
+                        ),
+                      ),
+                      child: Center(
+                        child: Text(
+                          "I'm a Employee",
+                        ),
+                      ),
                     )
                   ],
                 ),
