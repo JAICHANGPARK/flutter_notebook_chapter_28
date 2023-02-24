@@ -91,6 +91,10 @@ class _ESSAMainPageState extends State<ESSAMainPage> {
                       child: Center(
                         child: Text(
                           "I'm a Employee",
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                       ),
                     )
