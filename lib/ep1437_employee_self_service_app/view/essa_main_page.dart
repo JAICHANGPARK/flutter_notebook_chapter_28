@@ -62,9 +62,12 @@ class _ESSAMainPageState extends State<ESSAMainPage> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 42),
+                      padding: const EdgeInsets.symmetric(vertical: 32),
                       child: Text("Help you to improve efficiency, accuracy, engagement, "
                           "and cost savings for employers."),
+                    ),
+                    SizedBox(
+                      height: 12,
                     ),
                     ElevatedButton(
                       onPressed: () {},
