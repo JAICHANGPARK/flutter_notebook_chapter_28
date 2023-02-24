@@ -22,11 +22,11 @@ class _ESSAMainPageState extends State<ESSAMainPage> {
                     Expanded(
                       child: Column(
                         children: [
-                          Expanded(child: Placeholder()),
+                          Expanded(flex: 4, child: Placeholder()),
                           SizedBox(
                             height: 8,
                           ),
-                          Expanded(child: Placeholder()),
+                          Expanded(flex: 7, child: Placeholder()),
                         ],
                       ),
                     ),
@@ -36,11 +36,11 @@ class _ESSAMainPageState extends State<ESSAMainPage> {
                     Expanded(
                       child: Column(
                         children: [
-                          Expanded(child: Placeholder()),
+                          Expanded(flex: 7, child: Placeholder()),
                           SizedBox(
                             height: 8,
                           ),
-                          Expanded(child: Placeholder()),
+                          Expanded(flex: 4, child: Placeholder()),
                         ],
                       ),
                     ),
