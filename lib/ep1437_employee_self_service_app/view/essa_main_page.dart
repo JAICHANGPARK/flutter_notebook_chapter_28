@@ -13,10 +13,11 @@ class _ESSAMainPageState extends State<ESSAMainPage> {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(16.0),
+          padding: const EdgeInsets.symmetric(vertical: 32, horizontal: 16),
           child: Column(
             children: [
               Expanded(
+                
                 child: Row(
                   children: [
                     Expanded(
