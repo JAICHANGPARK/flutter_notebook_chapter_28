@@ -1,6 +1,14 @@
 # flutter_notebook_chapter_28
 
-### EP1434
+### EP1437
+
+- Employee Self Service App
+- by Ali Husni for Pickolab Studio
+- https://dribbble.com/shots/20737863-Employee-Self-Service-App
+
+<img src="https://cdn.dribbble.com/userupload/4883527/file/original-2dff299276346315e0acf13b19a8ecaf.png?compress=1&resize=3200x2400" width="500px"/>
+
+### EP1434-1436
 
 - Freelancer Project App
 - by Vetrick Wilsen
