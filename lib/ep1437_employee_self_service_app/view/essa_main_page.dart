@@ -29,12 +29,24 @@ class _ESSAMainPageState extends State<ESSAMainPage> {
                               decoration: BoxDecoration(
                                 color: Colors.orange[50],
                               ),
+                              padding: EdgeInsets.all(16),
                               child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   CircleAvatar(
                                     backgroundColor: Colors.white,
                                   ),
-                                  Text("Attendacne management")
+                                  SizedBox(
+                                    height: 8,
+                                  ),
+                                  Text(
+                                    "Attendacne management",
+                                    style: TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold,
+                                      height: 1.5,
+                                    ),
+                                  )
                                 ],
                               ),
                             ),
