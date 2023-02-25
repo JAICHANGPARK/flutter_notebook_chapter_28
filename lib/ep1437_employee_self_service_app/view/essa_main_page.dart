@@ -28,9 +28,10 @@ class _ESSAMainPageState extends State<ESSAMainPage> {
                               width: double.infinity,
                               decoration: BoxDecoration(
                                 color: Colors.orange[50],
+                                borderRadius: BorderRadius.circular(8),
                               ),
-                              padding: EdgeInsets.all(16),
-                              child: Column(
+                              padding: const EdgeInsets.all(16),
+                              child: const Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   CircleAvatar(
@@ -40,7 +41,7 @@ class _ESSAMainPageState extends State<ESSAMainPage> {
                                     height: 8,
                                   ),
                                   Text(
-                                    "Attendacne management",
+                                    "Attendance management",
                                     style: TextStyle(
                                       fontSize: 18,
                                       fontWeight: FontWeight.bold,
@@ -51,17 +52,17 @@ class _ESSAMainPageState extends State<ESSAMainPage> {
                               ),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 8,
                           ),
-                          Expanded(flex: 7, child: Placeholder()),
+                          const Expanded(flex: 7, child: Placeholder()),
                         ],
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 8,
                     ),
-                    Expanded(
+                    const Expanded(
                       child: Column(
                         children: [
                           Expanded(flex: 7, child: Placeholder()),
