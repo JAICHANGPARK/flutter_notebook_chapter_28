@@ -16,7 +16,10 @@ class _EssaHomePageState extends State<EssaHomePage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
-          children: const [],
+          children: const [
+            Expanded(child: Placeholder(),),
+            Expanded(child: Placeholder(),),
+          ],
         ),
       ),
       bottomNavigationBar: SizedBox(
@@ -29,6 +32,7 @@ class _EssaHomePageState extends State<EssaHomePage> {
               currentIndex = idx;
             });
           },
+          iconSize: 28,
           items: const [
             BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
             BottomNavigationBarItem(icon: Icon(Icons.notifications_none), label: "Notification"),
