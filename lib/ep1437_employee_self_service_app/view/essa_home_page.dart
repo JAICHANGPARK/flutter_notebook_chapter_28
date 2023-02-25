@@ -15,16 +15,16 @@ class _EssaHomePageState extends State<EssaHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: const SafeArea(
+      body: SafeArea(
         child: Column(
           children: [
             Expanded(
               child: Padding(
-                padding: EdgeInsets.fromLTRB(16.0, 32, 16, 16),
+                padding: const EdgeInsets.fromLTRB(16.0, 32, 16, 16),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Row(
+                    const Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Column(
@@ -46,7 +46,7 @@ class _EssaHomePageState extends State<EssaHomePage> {
                         CircleAvatar(),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 16,
                     ),
                     Expanded(
@@ -58,7 +58,7 @@ class _EssaHomePageState extends State<EssaHomePage> {
                                 Expanded(
                                   child: Card(
                                     child: Padding(
-                                      padding: EdgeInsets.all(12.0),
+                                      padding: const EdgeInsets.all(12.0),
                                       child: Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -67,24 +67,38 @@ class _EssaHomePageState extends State<EssaHomePage> {
                                             children: [
                                               CircleAvatar(
                                                 radius: 16,
+                                                backgroundColor: Colors.green[50]!,
                                               ),
-                                              SizedBox(
+                                              const SizedBox(
                                                 width: 8,
                                               ),
-                                              Text("Check In"),
+                                              const Text("Check In"),
                                             ],
                                           ),
-                                          Text(
+                                          const Text(
                                             "08:30 am",
                                             style: TextStyle(
                                               fontWeight: FontWeight.bold,
                                               fontSize: 18,
                                             ),
                                           ),
-                                          Row(
+                                          const Row(
+                                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                             children: [
-                                              Text("On time"),
-                                              Text("+150 pt"),
+                                              Text(
+                                                "On time",
+                                                style: TextStyle(
+                                                  fontSize: 12,
+                                                  color: Colors.grey,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
+                                              Text(
+                                                "+150 pt",
+                                                style: TextStyle(
+                                                  color: Colors.green,
+                                                ),
+                                              ),
                                             ],
                                           )
                                         ],
@@ -92,17 +106,17 @@ class _EssaHomePageState extends State<EssaHomePage> {
                                     ),
                                   ),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   width: 8,
                                 ),
-                                Expanded(child: Placeholder()),
+                                const Expanded(child: Placeholder()),
                               ],
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 8,
                           ),
-                          Expanded(
+                          const Expanded(
                             child: Row(
                               children: [
                                 Expanded(child: Placeholder()),
@@ -120,7 +134,7 @@ class _EssaHomePageState extends State<EssaHomePage> {
                 ),
               ),
             ),
-            Expanded(
+            const Expanded(
               child: Placeholder(),
             ),
           ],
