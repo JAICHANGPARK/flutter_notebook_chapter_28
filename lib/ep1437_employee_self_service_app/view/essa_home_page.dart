@@ -15,27 +15,39 @@ class _EssaHomePageState extends State<EssaHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
+      body: const SafeArea(
         child: Column(
-          children: const [
+          children: [
             Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text("Morning, Dream Walker"),
-                          Text("24 February 2023"),
-                        ],
-                      ),
-                      CircleAvatar(),
-                    ],
-                  )
-                ],
+              child: Padding(
+                padding: EdgeInsets.all(16.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "Morning, Dream Walker",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 8,
+                            ),
+                            Text("24 February 2023"),
+                          ],
+                        ),
+                        CircleAvatar(),
+                      ],
+                    )
+                  ],
+                ),
               ),
             ),
             Expanded(
