@@ -53,13 +53,36 @@ class _EssaHomePageState extends State<EssaHomePage> {
                       child: Column(
                         children: [
                           Expanded(
-                              child: Row(
-                            children: [
-                              Expanded(child: Placeholder()),
-                              Expanded(child: Placeholder()),
-                            ],
-                          )),
-                          Expanded(child: Placeholder()),
+                            child: Row(
+                              children: [
+                                Expanded(
+                                  child: Card(
+                                    child: Column(
+                                      children: [],
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 8,
+                                ),
+                                Expanded(child: Placeholder()),
+                              ],
+                            ),
+                          ),
+                          SizedBox(
+                            height: 8,
+                          ),
+                          Expanded(
+                            child: Row(
+                              children: [
+                                Expanded(child: Placeholder()),
+                                SizedBox(
+                                  width: 8,
+                                ),
+                                Expanded(child: Placeholder()),
+                              ],
+                            ),
+                          ),
                         ],
                       ),
                     )
