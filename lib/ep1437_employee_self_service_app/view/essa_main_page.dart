@@ -38,7 +38,7 @@ class _ESSAMainPageState extends State<ESSAMainPage> {
                                     backgroundColor: Colors.white,
                                   ),
                                   SizedBox(
-                                    height: 8,
+                                    height: 16,
                                   ),
                                   Text(
                                     "Attendance management",
@@ -218,7 +218,7 @@ class _ESSAMainPageState extends State<ESSAMainPage> {
                             child: Container(
                               width: double.infinity,
                               decoration: BoxDecoration(
-                                color: Colors.orange[50],
+                                color: Colors.indigo[50],
                                 borderRadius: BorderRadius.circular(8),
                               ),
                               padding: const EdgeInsets.all(16),
@@ -229,10 +229,10 @@ class _ESSAMainPageState extends State<ESSAMainPage> {
                                     backgroundColor: Colors.white,
                                   ),
                                   SizedBox(
-                                    height: 8,
+                                    height: 16,
                                   ),
                                   Text(
-                                    "Attendance management",
+                                    "Enhanced Data Accuracy",
                                     style: TextStyle(
                                       fontSize: 18,
                                       fontWeight: FontWeight.bold,
