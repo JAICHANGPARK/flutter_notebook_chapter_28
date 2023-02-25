@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_28/ep1437_employee_self_service_app/view/essa_home_page.dart';
 
 class ESSAMainPage extends StatefulWidget {
   const ESSAMainPage({Key? key}) : super(key: key);
@@ -292,20 +293,29 @@ class _ESSAMainPageState extends State<ESSAMainPage> {
                     const SizedBox(
                       height: 12,
                     ),
-                    Container(
-                      height: 60,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(4),
-                        border: Border.all(
-                          color: Colors.grey[300]!,
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).pushReplacement(
+                          MaterialPageRoute<void>(
+                            builder: (BuildContext context) => const EssaHomePage(),
+                          ),
+                        );
+                      },
+                      child: Container(
+                        height: 60,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(4),
+                          border: Border.all(
+                            color: Colors.grey[300]!,
+                          ),
                         ),
-                      ),
-                      child: const Center(
-                        child: Text(
-                          "I'm a Employee",
-                          style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
+                        child: const Center(
+                          child: Text(
+                            "I'm a Employee",
+                            style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                         ),
                       ),
