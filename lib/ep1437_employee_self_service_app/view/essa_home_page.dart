@@ -15,6 +15,7 @@ class _EssaHomePageState extends State<EssaHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.blueGrey[50],
       body: SafeArea(
         child: Column(
           children: [
@@ -57,6 +58,7 @@ class _EssaHomePageState extends State<EssaHomePage> {
                               children: [
                                 Expanded(
                                   child: Card(
+                                    elevation: 4,
                                     child: Padding(
                                       padding: const EdgeInsets.all(12.0),
                                       child: Column(
@@ -111,6 +113,7 @@ class _EssaHomePageState extends State<EssaHomePage> {
                                 ),
                                 Expanded(
                                   child: Card(
+                                    elevation: 4,
                                     child: Padding(
                                       padding: const EdgeInsets.all(12.0),
                                       child: Column(
@@ -166,11 +169,12 @@ class _EssaHomePageState extends State<EssaHomePage> {
                           const SizedBox(
                             height: 8,
                           ),
-                           Expanded(
+                          Expanded(
                             child: Row(
                               children: [
                                 Expanded(
                                   child: Card(
+                                    elevation: 4,
                                     child: Padding(
                                       padding: const EdgeInsets.all(12.0),
                                       child: Column(
@@ -225,6 +229,7 @@ class _EssaHomePageState extends State<EssaHomePage> {
                                 ),
                                 Expanded(
                                   child: Card(
+                                    elevation: 4,
                                     child: Padding(
                                       padding: const EdgeInsets.all(12.0),
                                       child: Column(
@@ -284,8 +289,13 @@ class _EssaHomePageState extends State<EssaHomePage> {
                 ),
               ),
             ),
-            const Expanded(
-              child: Placeholder(),
+            SizedBox(
+              height: 8,
+            ),
+            Expanded(
+              child: Container(
+                color: Colors.white,
+              ),
             ),
           ],
         ),
