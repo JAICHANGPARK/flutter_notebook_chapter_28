@@ -57,22 +57,38 @@ class _EssaHomePageState extends State<EssaHomePage> {
                               children: [
                                 Expanded(
                                   child: Card(
-                                    child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        Row(
-                                          children: [
-                                            CircleAvatar(),
-                                            Text("Check In"),
-                                          ],
-                                        ),
-                                        Text("08:30 am"),
-                                        Row(
-                                          children: [
-                                            Text("On time"),
-                                          ],
-                                        )
-                                      ],
+                                    child: Padding(
+                                      padding: EdgeInsets.all(12.0),
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          Row(
+                                            children: [
+                                              CircleAvatar(
+                                                radius: 16,
+                                              ),
+                                              SizedBox(
+                                                width: 8,
+                                              ),
+                                              Text("Check In"),
+                                            ],
+                                          ),
+                                          Text(
+                                            "08:30 am",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 18,
+                                            ),
+                                          ),
+                                          Row(
+                                            children: [
+                                              Text("On time"),
+                                              Text("+150 pt"),
+                                            ],
+                                          )
+                                        ],
+                                      ),
                                     ),
                                   ),
                                 ),
