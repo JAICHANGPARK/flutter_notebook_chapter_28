@@ -20,7 +20,7 @@ class _EssaHomePageState extends State<EssaHomePage> {
           children: [
             Expanded(
               child: Padding(
-                padding: EdgeInsets.all(16.0),
+                padding: EdgeInsets.fromLTRB(16.0, 32, 16, 16),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -45,6 +45,23 @@ class _EssaHomePageState extends State<EssaHomePage> {
                         ),
                         CircleAvatar(),
                       ],
+                    ),
+                    SizedBox(
+                      height: 16,
+                    ),
+                    Expanded(
+                      child: Column(
+                        children: [
+                          Expanded(
+                              child: Row(
+                            children: [
+                              Expanded(child: Placeholder()),
+                              Expanded(child: Placeholder()),
+                            ],
+                          )),
+                          Expanded(child: Placeholder()),
+                        ],
+                      ),
                     )
                   ],
                 ),
