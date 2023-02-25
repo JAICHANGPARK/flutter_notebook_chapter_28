@@ -142,7 +142,7 @@ class _ESSAMainPageState extends State<ESSAMainPage> {
                             child: Container(
                               padding: const EdgeInsets.all(16),
                               decoration: BoxDecoration(
-                                color: Colors.purple[50],
+                                color: Colors.green[50],
                                 borderRadius: BorderRadius.circular(8),
                               ),
                               child: Column(
@@ -154,7 +154,7 @@ class _ESSAMainPageState extends State<ESSAMainPage> {
                                   const Padding(
                                     padding: EdgeInsets.symmetric(vertical: 16),
                                     child: Text(
-                                      "Increase Your Workflow",
+                                      "Employee Cost Savings",
                                       style: TextStyle(
                                         fontSize: 18,
                                         fontWeight: FontWeight.bold,
@@ -166,7 +166,7 @@ class _ESSAMainPageState extends State<ESSAMainPage> {
                                     crossAxisAlignment: CrossAxisAlignment.end,
                                     children: [
                                       const Text(
-                                        "+200%",
+                                        "-\$10.1k",
                                         style: TextStyle(
                                           fontSize: 16,
                                         ),
@@ -174,34 +174,34 @@ class _ESSAMainPageState extends State<ESSAMainPage> {
                                       const Spacer(),
                                       Container(
                                         height: 20,
-                                        width: 8,
+                                        width: 10,
                                         margin: const EdgeInsets.only(right: 6),
                                         decoration: BoxDecoration(
-                                          color: Colors.purple[200],
+                                          color: Colors.green[200],
                                         ),
                                       ),
                                       Container(
                                         height: 32,
-                                        width: 8,
+                                        width: 10,
                                         margin: const EdgeInsets.only(right: 6),
                                         decoration: BoxDecoration(
-                                          color: Colors.purple[200],
+                                          color: Colors.green[200],
                                         ),
                                       ),
                                       Container(
-                                        height: 48,
-                                        width: 8,
+                                        height: 24,
+                                        width: 10,
                                         margin: const EdgeInsets.only(right: 6),
                                         decoration: BoxDecoration(
-                                          color: Colors.purple[200],
+                                          color: Colors.green[200],
                                         ),
                                       ),
                                       Container(
-                                        height: 56,
-                                        width: 8,
+                                        height: 52,
+                                        width: 10,
                                         margin: const EdgeInsets.only(right: 6),
                                         decoration: BoxDecoration(
-                                          color: Colors.purple[200],
+                                          color: Colors.green[200],
                                         ),
                                       )
                                     ],
