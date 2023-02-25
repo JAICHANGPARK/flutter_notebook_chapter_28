@@ -210,7 +210,7 @@ class _ESSAMainPageState extends State<ESSAMainPage> {
                               ),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 8,
                           ),
                           Expanded(
@@ -286,7 +286,7 @@ class _ESSAMainPageState extends State<ESSAMainPage> {
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
                           ),
-                          backgroundColor: Color.fromRGBO(51, 61, 85, 1)),
+                          backgroundColor: const Color.fromRGBO(51, 61, 85, 1)),
                       child: const Text("I'm a Manager"),
                     ),
                     const SizedBox(
