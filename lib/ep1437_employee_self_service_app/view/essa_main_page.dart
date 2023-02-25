@@ -265,21 +265,28 @@ class _ESSAMainPageState extends State<ESSAMainPage> {
                     ),
                     const Padding(
                       padding: EdgeInsets.symmetric(vertical: 32),
-                      child: Text("Help you to improve efficiency, accuracy, engagement, "
-                          "and cost savings for employers."),
+                      child: Text(
+                        "Help you to improve efficiency, accuracy, engagement, "
+                        "and cost savings for employers.",
+                        style: TextStyle(
+                          height: 2,
+                          color: Colors.blueGrey,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                     ),
                     const SizedBox(
-                      height: 12,
+                      height: 8,
                     ),
                     ElevatedButton(
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
-                        minimumSize: const Size(double.infinity, 60),
-                        textStyle: const TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
+                          minimumSize: const Size(double.infinity, 60),
+                          textStyle: const TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                          ),
+                          backgroundColor: Color.fromRGBO(51, 61, 85, 1)),
                       child: const Text("I'm a Manager"),
                     ),
                     const SizedBox(
