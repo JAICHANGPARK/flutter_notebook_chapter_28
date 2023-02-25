@@ -58,9 +58,16 @@ class _ESSAMainPageState extends State<ESSAMainPage> {
                           Expanded(
                             flex: 7,
                             child: Container(
+                              padding: EdgeInsets.all(16),
                               decoration: BoxDecoration(
+                                
                                 color: Colors.purple[50],
                                 borderRadius: BorderRadius.circular(8),
+                              ),
+                              child: Column(
+                                children: [
+                                  
+                                ],
                               ),
                             ),
                           ),
