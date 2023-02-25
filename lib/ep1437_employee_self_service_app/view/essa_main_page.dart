@@ -58,15 +58,40 @@ class _ESSAMainPageState extends State<ESSAMainPage> {
                           Expanded(
                             flex: 7,
                             child: Container(
-                              padding: EdgeInsets.all(16),
+                              padding: const EdgeInsets.all(16),
                               decoration: BoxDecoration(
-                                
                                 color: Colors.purple[50],
                                 borderRadius: BorderRadius.circular(8),
                               ),
                               child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  
+                                  CircleAvatar(
+                                    backgroundColor: Colors.white,
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsets.symmetric(vertical: 8),
+                                    child: Text(
+                                      "Increase Your Workflow",
+                                      style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                        height: 1.5,
+                                      ),
+                                    ),
+                                  ),
+                                  Row(
+                                    children: [
+                                      Text("+200%"),
+                                      Container(
+                                        height: 20,
+                                        width: 8,
+                                        decoration: BoxDecoration(
+                                          color: Colors.purple[200],
+                                        ),
+                                      )
+                                    ],
+                                  )
                                 ],
                               ),
                             ),
