@@ -66,10 +66,10 @@ class _ESSAMainPageState extends State<ESSAMainPage> {
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  CircleAvatar(
+                                  const CircleAvatar(
                                     backgroundColor: Colors.white,
                                   ),
-                                  Padding(
+                                  const Padding(
                                     padding: EdgeInsets.symmetric(vertical: 8),
                                     child: Text(
                                       "Increase Your Workflow",
@@ -81,11 +81,38 @@ class _ESSAMainPageState extends State<ESSAMainPage> {
                                     ),
                                   ),
                                   Row(
+                                    crossAxisAlignment: CrossAxisAlignment.end,
                                     children: [
-                                      Text("+200%"),
+                                      const Text("+200%"),
+                                      const Spacer(),
                                       Container(
                                         height: 20,
                                         width: 8,
+                                        margin: const EdgeInsets.only(right: 6),
+                                        decoration: BoxDecoration(
+                                          color: Colors.purple[200],
+                                        ),
+                                      ),
+                                      Container(
+                                        height: 32,
+                                        width: 8,
+                                        margin: const EdgeInsets.only(right: 6),
+                                        decoration: BoxDecoration(
+                                          color: Colors.purple[200],
+                                        ),
+                                      ),
+                                      Container(
+                                        height: 48,
+                                        width: 8,
+                                        margin: const EdgeInsets.only(right: 6),
+                                        decoration: BoxDecoration(
+                                          color: Colors.purple[200],
+                                        ),
+                                      ),
+                                      Container(
+                                        height: 56,
+                                        width: 8,
+                                        margin: const EdgeInsets.only(right: 6),
                                         decoration: BoxDecoration(
                                           color: Colors.purple[200],
                                         ),
