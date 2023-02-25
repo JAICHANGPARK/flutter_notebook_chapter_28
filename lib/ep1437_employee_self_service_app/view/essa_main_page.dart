@@ -16,7 +16,7 @@ class _ESSAMainPageState extends State<ESSAMainPage> {
           padding: const EdgeInsets.symmetric(vertical: 32, horizontal: 16),
           child: Column(
             children: [
-              const Expanded(
+               Expanded(
                 child: Row(
                   children: [
                     Expanded(
@@ -24,14 +24,16 @@ class _ESSAMainPageState extends State<ESSAMainPage> {
                         children: [
                           Expanded(
                             flex: 4,
-                            child: Column(
-                              children: [
-                                CircleAvatar(
-                                  backgroundColor: Colors.white,
-                                  
-                                ),
-                                Text("Attendacne management")
-                              ],
+                            child: Container(
+                              child: Column(
+                                children: [
+                                  CircleAvatar(
+                                    backgroundColor: Colors.white,
+
+                                  ),
+                                  Text("Attendacne management")
+                                ],
+                              ),
                             ),
                           ),
                           SizedBox(
