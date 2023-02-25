@@ -303,6 +303,7 @@ class _EssaHomePageState extends State<EssaHomePage> {
       bottomNavigationBar: SizedBox(
         height: 80,
         child: BottomNavigationBar(
+          backgroundColor: Colors.white,
           currentIndex: currentIndex,
           type: BottomNavigationBarType.fixed,
           onTap: (idx) {
