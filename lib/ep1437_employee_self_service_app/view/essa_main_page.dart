@@ -56,7 +56,7 @@ class _ESSAMainPageState extends State<ESSAMainPage> {
                             height: 8,
                           ),
                           Expanded(
-                            flex: 7,
+                            flex: 6,
                             child: Container(
                               padding: const EdgeInsets.all(16),
                               decoration: BoxDecoration(
@@ -70,7 +70,7 @@ class _ESSAMainPageState extends State<ESSAMainPage> {
                                     backgroundColor: Colors.white,
                                   ),
                                   const Padding(
-                                    padding: EdgeInsets.symmetric(vertical: 8),
+                                    padding: EdgeInsets.symmetric(vertical: 16),
                                     child: Text(
                                       "Increase Your Workflow",
                                       style: TextStyle(
@@ -83,7 +83,12 @@ class _ESSAMainPageState extends State<ESSAMainPage> {
                                   Row(
                                     crossAxisAlignment: CrossAxisAlignment.end,
                                     children: [
-                                      const Text("+200%"),
+                                      const Text(
+                                        "+200%",
+                                        style: TextStyle(
+                                          fontSize: 16,
+                                        ),
+                                      ),
                                       const Spacer(),
                                       Container(
                                         height: 20,
