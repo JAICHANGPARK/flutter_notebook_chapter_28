@@ -25,7 +25,13 @@ class _ESSAMainPageState extends State<ESSAMainPage> {
                           Expanded(
                             flex: 4,
                             child: Column(
-                              children: [],
+                              children: [
+                                CircleAvatar(
+                                  backgroundColor: Colors.white,
+                                  
+                                ),
+                                Text("Attendacne management")
+                              ],
                             ),
                           ),
                           SizedBox(
