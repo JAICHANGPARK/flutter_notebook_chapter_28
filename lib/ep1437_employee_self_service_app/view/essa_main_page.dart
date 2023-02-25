@@ -134,7 +134,7 @@ class _ESSAMainPageState extends State<ESSAMainPage> {
                     const SizedBox(
                       width: 8,
                     ),
-                     Expanded(
+                    Expanded(
                       child: Column(
                         children: [
                           Expanded(
@@ -273,7 +273,6 @@ class _ESSAMainPageState extends State<ESSAMainPage> {
                     ),
                     ElevatedButton(
                       onPressed: () {},
-                      child: const Text("I'm a Manager"),
                       style: ElevatedButton.styleFrom(
                         minimumSize: const Size(double.infinity, 60),
                         textStyle: const TextStyle(
@@ -281,6 +280,7 @@ class _ESSAMainPageState extends State<ESSAMainPage> {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
+                      child: const Text("I'm a Manager"),
                     ),
                     const SizedBox(
                       height: 12,
