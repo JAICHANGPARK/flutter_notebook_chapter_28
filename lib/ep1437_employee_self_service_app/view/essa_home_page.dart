@@ -58,7 +58,21 @@ class _EssaHomePageState extends State<EssaHomePage> {
                                 Expanded(
                                   child: Card(
                                     child: Column(
-                                      children: [],
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Row(
+                                          children: [
+                                            CircleAvatar(),
+                                            Text("Check In"),
+                                          ],
+                                        ),
+                                        Text("08:30 am"),
+                                        Row(
+                                          children: [
+                                            Text("On time"),
+                                          ],
+                                        )
+                                      ],
                                     ),
                                   ),
                                 ),
