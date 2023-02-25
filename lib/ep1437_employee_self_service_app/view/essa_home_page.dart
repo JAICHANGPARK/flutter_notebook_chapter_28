@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 ///Essa = Employee Self Service App
 class EssaHomePage extends StatefulWidget {
@@ -17,8 +18,29 @@ class _EssaHomePageState extends State<EssaHomePage> {
       body: SafeArea(
         child: Column(
           children: const [
-            Expanded(child: Placeholder(),),
-            Expanded(child: Placeholder(),),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text("Morning, Dream Walker"),
+                          Text("24 February 2023"),
+                        ],
+                      ),
+                      CircleAvatar(),
+                    ],
+                  )
+                ],
+              ),
+            ),
+            Expanded(
+              child: Placeholder(),
+            ),
           ],
         ),
       ),
