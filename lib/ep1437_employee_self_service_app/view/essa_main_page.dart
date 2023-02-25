@@ -55,7 +55,15 @@ class _ESSAMainPageState extends State<ESSAMainPage> {
                           const SizedBox(
                             height: 8,
                           ),
-                          const Expanded(flex: 7, child: Placeholder()),
+                          Expanded(
+                            flex: 7,
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.purple[50],
+                                borderRadius: BorderRadius.circular(8),
+                              ),
+                            ),
+                          ),
                         ],
                       ),
                     ),
