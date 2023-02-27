@@ -289,9 +289,7 @@ class _EssaHomePageState extends State<EssaHomePage> {
                 ),
               ),
             ),
-            const SizedBox(
-              height: 8,
-            ),
+            const SizedBox(height: 16),
             Expanded(
               child: Container(
                 padding: const EdgeInsets.all(16),
@@ -323,17 +321,18 @@ class _EssaHomePageState extends State<EssaHomePage> {
                     Expanded(
                       child: ListView.builder(
                         itemBuilder: (context, index) {
-                          return const Padding(
-                            padding: EdgeInsets.only(bottom: 24),
+                          return Padding(
+                            padding: const EdgeInsets.only(bottom: 32),
                             child: Row(
                               children: [
                                 CircleAvatar(
-                                  radius: 20,
+                                  radius: 24,
+                                  backgroundColor: Colors.green[50],
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   width: 16,
                                 ),
-                                Column(
+                                const Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
@@ -352,8 +351,8 @@ class _EssaHomePageState extends State<EssaHomePage> {
                                     ),
                                   ],
                                 ),
-                                Spacer(),
-                                Column(
+                                const Spacer(),
+                                const Column(
                                   crossAxisAlignment: CrossAxisAlignment.end,
                                   children: [
                                     Text(
