@@ -320,22 +320,26 @@ class _EssaHomePageState extends State<EssaHomePage> {
                     Expanded(
                       child: ListView.builder(
                         itemBuilder: (context, index) {
-                          return Row(
-                            children: [
-                              CircleAvatar(
-                                radius: 24,
-                              ),
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text("Check In"),
-                                  SizedBox(
-                                    height: 4,
-                                  ),
-                                  Text("23 Feb 2023"),
-                                ],
-                              ),
-                            ],
+                          return Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 8),
+                            child: Row(
+                              children: [
+                                CircleAvatar(
+                                  radius: 24,
+                                ),
+                                SizedBox(width: 16,)
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text("Check In"),
+                                    SizedBox(
+                                      height: 4,
+                                    ),
+                                    Text("23 Feb 2023"),
+                                  ],
+                                ),
+                              ],
+                            ),
                           );
                         },
                       ),
