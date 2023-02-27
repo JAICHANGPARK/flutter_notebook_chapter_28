@@ -317,6 +317,29 @@ class _EssaHomePageState extends State<EssaHomePage> {
                         ),
                       ],
                     ),
+                    Expanded(
+                      child: ListView.builder(
+                        itemBuilder: (context, index) {
+                          return Row(
+                            children: [
+                              CircleAvatar(
+                                radius: 24,
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text("Check In"),
+                                  SizedBox(
+                                    height: 4,
+                                  ),
+                                  Text("23 Feb 2023"),
+                                ],
+                              ),
+                            ],
+                          );
+                        },
+                      ),
+                    ),
                   ],
                 ),
               ),
