@@ -370,8 +370,20 @@ class _EssaHomePageState extends State<EssaHomePage> {
                                     Text.rich(
                                       TextSpan(
                                         children: [
-                                          TextSpan(text: "Late"),
-                                          TextSpan(text: "+5 pt"),
+                                          TextSpan(
+                                            text: "Late",
+                                            style: TextStyle(
+                                              color: Colors.grey,
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
+                                          TextSpan(
+                                            text: "+5 pt",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.green,
+                                            ),
+                                          ),
                                         ],
                                       ),
                                     )
