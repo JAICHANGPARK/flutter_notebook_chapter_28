@@ -354,6 +354,11 @@ class _EssaHomePageState extends State<EssaHomePage> {
                                     ),
                                   ],
                                 ),
+                                Column(
+                                  children: [
+
+                                  ],
+                                )
                               ],
                             ),
                           );
