@@ -20,7 +20,7 @@ dependencies:
   freezed_annotation: any
   json_annotation: any
   flutter_speed_dial: ^6.2.0
-  fl_chart: ^0.60.0
+  fl_chart: ^0.61.0
   intl: any
   dots_indicator: ^2.1.0
 
