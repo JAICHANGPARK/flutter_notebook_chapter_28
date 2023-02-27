@@ -317,11 +317,14 @@ class _EssaHomePageState extends State<EssaHomePage> {
                         ),
                       ],
                     ),
+                    SizedBox(
+                      height: 16,
+                    ),
                     Expanded(
                       child: ListView.builder(
                         itemBuilder: (context, index) {
                           return Padding(
-                            padding: const EdgeInsets.symmetric(vertical: 8),
+                            padding: const EdgeInsets.only(bottom: 24),
                             child: Row(
                               children: [
                                 CircleAvatar(
