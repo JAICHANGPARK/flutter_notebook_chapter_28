@@ -354,18 +354,24 @@ class _EssaHomePageState extends State<EssaHomePage> {
                                     ),
                                   ],
                                 ),
+                                Spacer(),
                                 Column(
                                   children: [
-                                    Text("09:15 am"),
+                                    Text(
+                                      "09:15 am",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 18,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: 8,
+                                    ),
                                     Text.rich(
                                       TextSpan(
                                         children: [
-                                          TextSpan(
-                                            text: "Late"
-                                          ),
-                                          TextSpan(
-                                              text: "+5 pt"
-                                          ),
+                                          TextSpan(text: "Late"),
+                                          TextSpan(text: "+5 pt"),
                                         ],
                                       ),
                                     )
