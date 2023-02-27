@@ -356,7 +356,19 @@ class _EssaHomePageState extends State<EssaHomePage> {
                                 ),
                                 Column(
                                   children: [
-
+                                    Text("09:15 am"),
+                                    Text.rich(
+                                      TextSpan(
+                                        children: [
+                                          TextSpan(
+                                            text: "Late"
+                                          ),
+                                          TextSpan(
+                                              text: "+5 pt"
+                                          ),
+                                        ],
+                                      ),
+                                    )
                                   ],
                                 )
                               ],
