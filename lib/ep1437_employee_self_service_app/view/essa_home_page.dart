@@ -325,17 +325,30 @@ class _EssaHomePageState extends State<EssaHomePage> {
                             child: Row(
                               children: [
                                 CircleAvatar(
-                                  radius: 24,
+                                  radius: 20,
                                 ),
-                                SizedBox(width: 16,)
+                                SizedBox(
+                                  width: 16,
+                                ),
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text("Check In"),
-                                    SizedBox(
-                                      height: 4,
+                                    Text(
+                                      "Check In",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 18,
+                                      ),
                                     ),
-                                    Text("23 Feb 2023"),
+                                    SizedBox(
+                                      height: 8,
+                                    ),
+                                    Text(
+                                      "23 Feb 2023",
+                                      style: TextStyle(
+                                        color: Colors.grey,
+                                      ),
+                                    ),
                                   ],
                                 ),
                               ],
