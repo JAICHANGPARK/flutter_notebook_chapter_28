@@ -294,7 +294,7 @@ class _EssaHomePageState extends State<EssaHomePage> {
             ),
             Expanded(
               child: Container(
-                padding: EdgeInsets.all(16),
+                padding: const EdgeInsets.all(16),
                 color: Colors.white,
                 child: Column(
                   children: [
@@ -317,14 +317,14 @@ class _EssaHomePageState extends State<EssaHomePage> {
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 16,
                     ),
                     Expanded(
                       child: ListView.builder(
                         itemBuilder: (context, index) {
-                          return Padding(
-                            padding: const EdgeInsets.only(bottom: 24),
+                          return const Padding(
+                            padding: EdgeInsets.only(bottom: 24),
                             child: Row(
                               children: [
                                 CircleAvatar(
@@ -348,14 +348,13 @@ class _EssaHomePageState extends State<EssaHomePage> {
                                     ),
                                     Text(
                                       "23 Feb 2023",
-                                      style: TextStyle(
-                                        color: Colors.grey,
-                                      ),
+                                      style: TextStyle(color: Colors.grey, fontSize: 16),
                                     ),
                                   ],
                                 ),
                                 Spacer(),
                                 Column(
+                                  crossAxisAlignment: CrossAxisAlignment.end,
                                   children: [
                                     Text(
                                       "09:15 am",
@@ -371,10 +370,11 @@ class _EssaHomePageState extends State<EssaHomePage> {
                                       TextSpan(
                                         children: [
                                           TextSpan(
-                                            text: "Late",
+                                            text: "Late * ",
                                             style: TextStyle(
                                               color: Colors.grey,
                                               fontWeight: FontWeight.bold,
+                                              fontSize: 16,
                                             ),
                                           ),
                                           TextSpan(
@@ -382,6 +382,7 @@ class _EssaHomePageState extends State<EssaHomePage> {
                                             style: TextStyle(
                                               fontWeight: FontWeight.bold,
                                               color: Colors.green,
+                                              fontSize: 16,
                                             ),
                                           ),
                                         ],
