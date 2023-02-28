@@ -19,9 +19,15 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                 children: [
                   Container(
                     color: Colors.black,
+                    height: MediaQuery.of(context).size.height / 1.5,
                   ),
                   Container(
                     color: Colors.white,
+                    child: Column(
+                      children: [
+
+                      ],
+                    ),
                   ),
                 ],
               ),
@@ -33,7 +39,7 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
             bottom: 0,
             child: Container(
               height: 80,
-              color: Colors.grey[100],
+              color: Colors.grey[200],
               child: const Stack(
                 children: [],
               ),
