@@ -20,6 +20,47 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                   Container(
                     color: Colors.black,
                     height: MediaQuery.of(context).size.height / 1.5,
+                    width: double.infinity,
+                    padding: EdgeInsets.fromLTRB(16, 64, 16, 24),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            Icons.newspaper,
+                          ),
+                          color: Colors.greenAccent,
+                          iconSize: 32,
+                        ),
+                        SizedBox(
+                          height: 16,
+                        ),
+                        Text(
+                          "Must you know today",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 26,
+                            color: Colors.white,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 16,
+                        ),
+                        Text(
+                          "Monday, January 16. 2023",
+                          style: TextStyle(
+                            color: Colors.grey,
+                          ),
+                        ),
+                        Expanded(
+                          child: ListView.builder(
+                            scrollDirection: Axis.horizontal,
+                            itemBuilder: (context, index) {},
+                          ),
+                        )
+                      ],
+                    ),
                   ),
                   Container(
                     color: Colors.white,
