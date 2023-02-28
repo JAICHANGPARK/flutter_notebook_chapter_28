@@ -13,9 +13,18 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
     return Scaffold(
       body: Stack(
         children: [
-          Positioned(
-            child: Column(
-              children: [],
+          Positioned.fill(
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  Container(
+                    color: Colors.black,
+                  ),
+                  Container(
+                    color: Colors.white,
+                  ),
+                ],
+              ),
             ),
           ),
           Positioned(
@@ -25,7 +34,7 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
             child: Container(
               height: 80,
               color: Colors.grey[100],
-              child: Stack(
+              child: const Stack(
                 children: [],
               ),
             ),
