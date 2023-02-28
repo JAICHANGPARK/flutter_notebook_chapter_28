@@ -23,7 +23,7 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                   ),
                   Container(
                     color: Colors.white,
-                    child: Column(
+                    child: const Column(
                       children: [],
                     ),
                   ),
@@ -36,7 +36,7 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
             right: 0,
             bottom: 0,
             child: Container(
-              height: 80,
+              height: 100,
               color: Colors.grey[200],
               child: Stack(
                 children: [
@@ -47,9 +47,62 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                     top: 16,
                     child: Container(
                       color: Colors.orange,
+                      child: Row(
+                        children: [
+                          Expanded(
+                              child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(
+                                Icons.home_filled,
+                                size: 38,
+                              ),
+                              SizedBox(
+                                height: 6,
+                              ),
+                              Text(
+                                "Homepage",
+                                style: TextStyle(fontSize: 12),
+                              )
+                            ],
+                          )),
+                          Expanded(child: Column()),
+                          Expanded(child: Column()),
+                          Expanded(child: Column()),
+                          Expanded(child: Column()),
+                        ],
+                      ),
                     ),
                   ),
-                  Positioned(child: Center(child: CircleAvatar(radius: 32,)))
+                  Positioned(
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    top: 0,
+                    child: Center(
+                      child: Column(
+                        children: [
+                          CircleAvatar(
+                            radius: 32,
+                            backgroundColor: Colors.grey[100],
+                            child: const CircleAvatar(
+                              radius: 28,
+                              backgroundColor: Colors.greenAccent,
+                              foregroundColor: Colors.black,
+                              child: Icon(
+                                Icons.search,
+                                size: 42,
+                              ),
+                            ),
+                          ),
+                          const SizedBox(
+                            height: 8,
+                          ),
+                          const Text("Discover"),
+                        ],
+                      ),
+                    ),
+                  )
                 ],
               ),
             ),
