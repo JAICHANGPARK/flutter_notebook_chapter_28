@@ -24,9 +24,7 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                   Container(
                     color: Colors.white,
                     child: Column(
-                      children: [
-
-                      ],
+                      children: [],
                     ),
                   ),
                 ],
@@ -40,8 +38,19 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
             child: Container(
               height: 80,
               color: Colors.grey[200],
-              child: const Stack(
-                children: [],
+              child: Stack(
+                children: [
+                  Positioned(
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    top: 16,
+                    child: Container(
+                      color: Colors.orange,
+                    ),
+                  ),
+                  Positioned(child: Center(child: CircleAvatar(radius: 32,)))
+                ],
               ),
             ),
           )
