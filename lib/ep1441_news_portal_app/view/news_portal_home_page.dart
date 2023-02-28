@@ -13,7 +13,23 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
     return Scaffold(
       body: Stack(
         children: [
-
+          Positioned(
+            child: Column(
+              children: [],
+            ),
+          ),
+          Positioned(
+            left: 0,
+            right: 0,
+            bottom: 0,
+            child: Container(
+              height: 80,
+              color: Colors.grey[100],
+              child: Stack(
+                children: [],
+              ),
+            ),
+          )
         ],
       ),
     );
