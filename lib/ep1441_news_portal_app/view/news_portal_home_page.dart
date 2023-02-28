@@ -66,10 +66,57 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                               )
                             ],
                           )),
+                          Expanded(
+                              child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(
+                                Icons.bookmark_border,
+                                size: 38,
+                              ),
+                              SizedBox(
+                                height: 6,
+                              ),
+                              Text(
+                                "Bookmark",
+                                style: TextStyle(fontSize: 12),
+                              )
+                            ],
+                          )),
                           Expanded(child: Column()),
-                          Expanded(child: Column()),
-                          Expanded(child: Column()),
-                          Expanded(child: Column()),
+                          Expanded(
+                              child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Badge(
+                                child: Icon(
+                                  Icons.notifications_none,
+                                  size: 38,
+                                ),
+                              ),
+                              SizedBox(
+                                height: 6,
+                              ),
+                              Text(
+                                "Notification",
+                                style: TextStyle(fontSize: 12),
+                              )
+                            ],
+                          )),
+                          Expanded(
+                              child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              CircleAvatar(),
+                              SizedBox(
+                                height: 6,
+                              ),
+                              Text(
+                                "Profile",
+                                style: TextStyle(fontSize: 12),
+                              )
+                            ],
+                          )),
                         ],
                       ),
                     ),
