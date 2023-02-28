@@ -37,7 +37,7 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
             bottom: 0,
             child: Container(
               height: 100,
-              color: Colors.grey[200],
+              // color: Colors.grey[200],
               child: Stack(
                 children: [
                   Positioned(
@@ -46,8 +46,8 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                     bottom: 0,
                     top: 16,
                     child: Container(
-                      color: Colors.orange,
-                      child: Row(
+                      color: Colors.grey[100],
+                      child: const Row(
                         children: [
                           Expanded(
                               child: Column(
