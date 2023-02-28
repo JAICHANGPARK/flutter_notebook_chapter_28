@@ -62,7 +62,10 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                               ),
                               Text(
                                 "Homepage",
-                                style: TextStyle(fontSize: 12),
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.bold,
+                                ),
                               )
                             ],
                           )),
@@ -73,13 +76,17 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                               Icon(
                                 Icons.bookmark_border,
                                 size: 38,
+                                color: Colors.grey,
                               ),
                               SizedBox(
                                 height: 6,
                               ),
                               Text(
                                 "Bookmark",
-                                style: TextStyle(fontSize: 12),
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  color: Colors.grey,
+                                ),
                               )
                             ],
                           )),
@@ -92,6 +99,7 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                                 child: Icon(
                                   Icons.notifications_none,
                                   size: 38,
+                                  color: Colors.grey,
                                 ),
                               ),
                               SizedBox(
@@ -99,7 +107,10 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                               ),
                               Text(
                                 "Notification",
-                                style: TextStyle(fontSize: 12),
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  color: Colors.grey,
+                                ),
                               )
                             ],
                           )),
@@ -113,7 +124,10 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                               ),
                               Text(
                                 "Profile",
-                                style: TextStyle(fontSize: 12),
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  color: Colors.grey,
+                                ),
                               )
                             ],
                           )),
@@ -145,7 +159,12 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                           const SizedBox(
                             height: 8,
                           ),
-                          const Text("Discover"),
+                          const Text(
+                            "Discover",
+                            style: TextStyle(
+                              color: Colors.grey,
+                            ),
+                          ),
                         ],
                       ),
                     ),
