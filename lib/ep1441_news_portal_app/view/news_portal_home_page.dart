@@ -55,7 +55,7 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                             children: [
                               Icon(
                                 Icons.home_filled,
-                                size: 38,
+                                size: 34,
                               ),
                               SizedBox(
                                 height: 6,
@@ -75,7 +75,7 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                             children: [
                               Icon(
                                 Icons.bookmark_border,
-                                size: 38,
+                                size: 34,
                                 color: Colors.grey,
                               ),
                               SizedBox(
@@ -98,7 +98,7 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                               Badge(
                                 child: Icon(
                                   Icons.notifications_none,
-                                  size: 38,
+                                  size: 34,
                                   color: Colors.grey,
                                 ),
                               ),
@@ -152,7 +152,7 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                               foregroundColor: Colors.black,
                               child: Icon(
                                 Icons.search,
-                                size: 42,
+                                size: 34,
                               ),
                             ),
                           ),
