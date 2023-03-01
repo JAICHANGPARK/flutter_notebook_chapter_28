@@ -128,8 +128,11 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                   ),
                   Container(
                     color: Colors.white,
-                    child: const Column(
-                      children: [],
+                    child:  Column(
+                      children: [
+                        Container(height: 64,
+                        color: Colors.blue,)
+                      ],
                     ),
                   ),
                 ],
