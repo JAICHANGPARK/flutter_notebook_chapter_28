@@ -25,16 +25,22 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        IconButton(
-                          onPressed: () {},
-                          icon: Icon(
-                            Icons.newspaper,
-                          ),
+                        // IconButton(
+                        //   constraints: BoxConstraints(),
+                        //   onPressed: () {},
+                        //   icon: Icon(
+                        //     Icons.newspaper,
+                        //   ),
+                        //   color: Colors.greenAccent,
+                        //   iconSize: 32,
+                        // ),
+                        Icon(
+                          Icons.newspaper,
+                          size: 32,
                           color: Colors.greenAccent,
-                          iconSize: 32,
                         ),
                         SizedBox(
-                          height: 16,
+                          height: 24,
                         ),
                         Text(
                           "Must you know today",
@@ -56,7 +62,12 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                         Expanded(
                           child: ListView.builder(
                             scrollDirection: Axis.horizontal,
-                            itemBuilder: (context, index) {},
+                            itemBuilder: (context, index) {
+                              return Container(
+                                width: 200,
+                                color: Colors.blue,
+                              );
+                            },
                           ),
                         )
                       ],
