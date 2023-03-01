@@ -138,12 +138,39 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                         Column(
                           children: List.generate(
                             10,
-                            (index) => Column(
-                              children: [
-                                Divider(
-                                  color: Colors.grey,
-                                ),
-                              ],
+                            (index) => Padding(
+                              padding: const EdgeInsets.fromLTRB(16.0, 8, 16, 16),
+                              child: Column(
+                                children: [
+                                  Row(
+                                    children: [
+                                      CircleAvatar(
+                                        radius: 16,
+                                      ),
+                                      Text("Dream Walker"),
+                                    ],
+                                  ),
+                                  Row(
+                                    children: [
+                                      Expanded(
+                                        child: Text(
+                                          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+                                          maxLines: 2,
+                                          overflow: TextOverflow.ellipsis,
+                                        ),
+                                      ),
+                                      Container(
+                                        height: 80,
+                                        width: 100,
+                                        color: Colors.blue,
+                                      )
+                                    ],
+                                  ),
+                                  Divider(
+                                    color: Colors.grey,
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                         )
