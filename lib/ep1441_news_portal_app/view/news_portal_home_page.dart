@@ -147,6 +147,9 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                                       CircleAvatar(
                                         radius: 16,
                                       ),
+                                      SizedBox(
+                                        width: 8,
+                                      ),
                                       Text("Dream Walker"),
                                     ],
                                   ),
@@ -168,6 +171,18 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                                         height: 80,
                                         width: 100,
                                         color: Colors.blue,
+                                      )
+                                    ],
+                                  ),
+                                  SizedBox(
+                                    height: 8,
+                                  ),
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Text("5 min read - 31m ago"),
+                                      Icon(
+                                        Icons.more_horiz,
                                       )
                                     ],
                                   ),
