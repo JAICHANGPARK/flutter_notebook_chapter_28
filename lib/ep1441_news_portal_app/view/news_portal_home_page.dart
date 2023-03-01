@@ -128,12 +128,25 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                   ),
                   Container(
                     color: Colors.white,
-                    child:  Column(
+                    child: Column(
                       children: [
                         Container(
                           margin: EdgeInsets.fromLTRB(16, 16, 0, 16),
                           height: 54,
-                        color: Colors.blue,)
+                          color: Colors.blue,
+                        ),
+                        Column(
+                          children: List.generate(
+                            10,
+                            (index) => Column(
+                              children: [
+                                Divider(
+                                  color: Colors.grey,
+                                ),
+                              ],
+                            ),
+                          ),
+                        )
                       ],
                     ),
                   ),
