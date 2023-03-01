@@ -130,7 +130,9 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                     color: Colors.white,
                     child:  Column(
                       children: [
-                        Container(height: 64,
+                        Container(
+                          margin: EdgeInsets.fromLTRB(16, 16, 0, 16),
+                          height: 54,
                         color: Colors.blue,)
                       ],
                     ),
