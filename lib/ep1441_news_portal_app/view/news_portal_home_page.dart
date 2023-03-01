@@ -67,38 +67,46 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                               itemBuilder: (context, index) {
                                 return Container(
                                   width: 240,
-                                  margin: EdgeInsets.only(right: 16),
+                                  margin: const EdgeInsets.only(right: 16),
                                   color: Colors.blue,
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Container(
-                                        height: 240,
-                                        decoration: BoxDecoration(
+                                        height: 220,
+                                        decoration: const BoxDecoration(
                                           color: Colors.grey,
                                         ),
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         height: 8,
                                       ),
-                                      Text(
+                                      const Text(
                                         "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
                                         maxLines: 2,
                                         style: TextStyle(
-                                            fontSize: 16,
+                                            fontSize: 18,
                                             fontWeight: FontWeight.bold,
                                             color: Colors.white,
                                             height: 1.5),
                                       ),
-                                      Text(
-                                        "5 min read - 31m ago",
-                                        style: TextStyle(
-                                          color: Colors.grey,
+                                      Padding(
+                                        padding: const EdgeInsets.symmetric(vertical: 12),
+                                        child: const Text(
+                                          "5 min read - 31m ago",
+                                          style: TextStyle(
+                                            color: Colors.grey,
+                                          ),
                                         ),
                                       ),
-                                      Row(
+                                      const Row(
                                         children: [
-                                          CircleAvatar(),
+                                          CircleAvatar(
+                                            radius: 18,
+                                          ),
+                                          SizedBox(
+                                            width: 8,
+                                          ),
                                           Text(
                                             "Dream Walker",
                                             style: TextStyle(
