@@ -70,6 +70,7 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                                   margin: EdgeInsets.only(right: 16),
                                   color: Colors.blue,
                                   child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Container(
                                         height: 240,
