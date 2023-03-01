@@ -21,7 +21,7 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                     color: Colors.black,
                     height: MediaQuery.of(context).size.height / 1.5,
                     width: double.infinity,
-                    padding: EdgeInsets.fromLTRB(16, 64, 16, 24),
+                    padding: const EdgeInsets.fromLTRB(16, 64, 0, 24),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -34,15 +34,15 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                         //   color: Colors.greenAccent,
                         //   iconSize: 32,
                         // ),
-                        Icon(
+                        const Icon(
                           Icons.newspaper,
                           size: 32,
                           color: Colors.greenAccent,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 24,
                         ),
-                        Text(
+                        const Text(
                           "Must you know today",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
@@ -50,24 +50,68 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                             color: Colors.white,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 16,
                         ),
-                        Text(
+                        const Text(
                           "Monday, January 16. 2023",
                           style: TextStyle(
                             color: Colors.grey,
                           ),
                         ),
                         Expanded(
-                          child: ListView.builder(
-                            scrollDirection: Axis.horizontal,
-                            itemBuilder: (context, index) {
-                              return Container(
-                                width: 200,
-                                color: Colors.blue,
-                              );
-                            },
+                          child: Padding(
+                            padding: const EdgeInsets.only(top: 16),
+                            child: ListView.builder(
+                              scrollDirection: Axis.horizontal,
+                              itemBuilder: (context, index) {
+                                return Container(
+                                  width: 240,
+                                  margin: EdgeInsets.only(right: 16),
+                                  color: Colors.blue,
+                                  child: Column(
+                                    children: [
+                                      Container(
+                                        height: 240,
+                                        decoration: BoxDecoration(
+                                          color: Colors.grey,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 8,
+                                      ),
+                                      Text(
+                                        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                                        maxLines: 2,
+                                        style: TextStyle(
+                                            fontSize: 16,
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.white,
+                                            height: 1.5),
+                                      ),
+                                      Text(
+                                        "5 min read - 31m ago",
+                                        style: TextStyle(
+                                          color: Colors.grey,
+                                        ),
+                                      ),
+                                      Row(
+                                        children: [
+                                          CircleAvatar(),
+                                          Text(
+                                            "Dream Walker",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
+                                        ],
+                                      )
+                                    ],
+                                  ),
+                                );
+                              },
+                            ),
                           ),
                         )
                       ],
