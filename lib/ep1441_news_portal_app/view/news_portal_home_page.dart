@@ -174,10 +174,26 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                                   color: Colors.grey[200],
                                   borderRadius: BorderRadius.circular(24),
                                 ),
-                                margin: EdgeInsets.only(right: 16),
-                                padding: EdgeInsets.symmetric(horizontal: 20),
-                                child: Icon(
+                                margin: const EdgeInsets.only(right: 12),
+                                padding: const EdgeInsets.symmetric(horizontal: 16),
+                                child: const Icon(
                                   Icons.add,
+                                ),
+                              ),
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.black,
+                                  borderRadius: BorderRadius.circular(24),
+                                ),
+                                margin: const EdgeInsets.only(right: 12),
+                                padding: const EdgeInsets.symmetric(horizontal: 16),
+                                child: const Center(
+                                  child: Text(
+                                    "For You",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  ),
                                 ),
                               )
                             ],
