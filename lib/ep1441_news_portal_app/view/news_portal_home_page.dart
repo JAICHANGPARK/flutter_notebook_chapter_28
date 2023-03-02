@@ -77,6 +77,12 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                                         height: 220,
                                         decoration: const BoxDecoration(
                                           color: Colors.grey,
+                                          image: DecorationImage(
+                                            image: NetworkImage(
+                                              "https://cdn.pixabay.com/photo/2023/02/09/16/36/bridge-7779222_960_720.jpg",
+                                            ),
+                                            fit: BoxFit.cover,
+                                          ),
                                         ),
                                         child: Stack(
                                           children: [
@@ -271,14 +277,20 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                                             fontWeight: FontWeight.bold,
                                             height: 1.5,
                                             fontSize: 18,
-
                                           ),
                                         ),
                                       ),
                                       Container(
                                         height: 80,
                                         width: 100,
-                                        color: Colors.blue,
+                                        decoration: const BoxDecoration(
+                                          color: Colors.blue,
+                                          image: DecorationImage(
+                                            image: NetworkImage(
+                                                "https://cdn.pixabay.com/photo/2022/11/16/16/56/city-7596379_960_720.jpg"),
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ),
                                       )
                                     ],
                                   ),
