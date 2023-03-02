@@ -78,8 +78,10 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                                         decoration: const BoxDecoration(
                                           color: Colors.grey,
                                         ),
+
                                         child: Stack(
                                           children: [
+                                            Positioned(child: Container()),
                                             CircleAvatar(
                                               radius: 6,
                                               backgroundColor: Colors.red[200],
