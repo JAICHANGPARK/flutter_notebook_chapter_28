@@ -164,14 +164,15 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                       children: [
                         Container(
                           margin: const EdgeInsets.fromLTRB(16, 16, 0, 16),
-                          height: 54,
+                          height: 48,
                           color: Colors.blue,
                           child: ListView(
                             scrollDirection: Axis.horizontal,
                             children: [
                               Container(
                                 decoration: BoxDecoration(
-                                  color: Colors.grey,
+                                  color: Colors.grey[200],
+                                  borderRadius: BorderRadius.circular(24)
                                 ),
                                 padding: EdgeInsets.symmetric(horizontal: 16),
                                 child: Icon(
