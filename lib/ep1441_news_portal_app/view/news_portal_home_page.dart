@@ -258,6 +258,7 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                                         "Dream Walker",
                                         style: TextStyle(
                                           fontWeight: FontWeight.bold,
+                                          fontSize: 18
                                         ),
                                       ),
                                     ],
