@@ -172,12 +172,12 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                               Container(
                                 decoration: BoxDecoration(
                                   color: Colors.grey[200],
-                                  borderRadius: BorderRadius.circular(24)
+                                  borderRadius: BorderRadius.circular(24),
                                 ),
-                                padding: EdgeInsets.symmetric(horizontal: 16),
+                                margin: EdgeInsets.only(right: 16),
+                                padding: EdgeInsets.symmetric(horizontal: 20),
                                 child: Icon(
                                   Icons.add,
-
                                 ),
                               )
                             ],
