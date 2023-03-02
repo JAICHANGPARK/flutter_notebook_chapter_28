@@ -70,7 +70,6 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                                 return Container(
                                   width: 240,
                                   margin: const EdgeInsets.only(right: 16),
-                                  color: Colors.blue,
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
@@ -78,6 +77,17 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                                         height: 220,
                                         decoration: const BoxDecoration(
                                           color: Colors.grey,
+                                        ),
+                                        child: Stack(
+                                          children: [
+                                            CircleAvatar(
+                                              radius: 6,
+                                              backgroundColor: Colors.red[200],
+                                            ),
+                                            Text("LIVE", style: TextStyle(
+                                              color: Colors.white
+                                            ),)
+                                          ],
                                         ),
                                       ),
                                       const SizedBox(
