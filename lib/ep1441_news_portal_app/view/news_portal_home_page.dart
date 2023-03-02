@@ -88,11 +88,15 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                                                     color: Colors.red,
                                                     borderRadius: BorderRadius.circular(16),
                                                   ),
+                                                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                                                   child: Row(
                                                     children: [
                                                       CircleAvatar(
-                                                        radius: 6,
+                                                        radius: 4,
                                                         backgroundColor: Colors.red[200],
+                                                      ),
+                                                      SizedBox(
+                                                        width: 4,
                                                       ),
                                                       Text(
                                                         "LIVE",
