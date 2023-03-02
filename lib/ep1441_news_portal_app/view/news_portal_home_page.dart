@@ -164,7 +164,11 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                                           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
                                           maxLines: 2,
                                           overflow: TextOverflow.ellipsis,
-                                          style: TextStyle(fontWeight: FontWeight.bold, height: 1.5, fontSize: 15),
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            height: 1.5,
+                                            fontSize: 15,
+                                          ),
                                         ),
                                       ),
                                       Container(
