@@ -100,7 +100,9 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                                                       ),
                                                       Text(
                                                         "LIVE",
-                                                        style: TextStyle(color: Colors.white),
+                                                        style: TextStyle(
+                                                          color: Colors.white,
+                                                        ),
                                                       )
                                                     ],
                                                   ),
