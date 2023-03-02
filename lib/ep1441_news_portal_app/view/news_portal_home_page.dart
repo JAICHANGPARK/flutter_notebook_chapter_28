@@ -69,7 +69,7 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                               itemBuilder: (context, index) {
                                 return Container(
                                   width: 240,
-                                  margin: const EdgeInsets.only(right: 24),
+                                  margin: const EdgeInsets.only(right: 28),
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
