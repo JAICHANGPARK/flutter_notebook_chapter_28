@@ -90,9 +90,9 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                                             color: Colors.white,
                                             height: 1.5),
                                       ),
-                                      Padding(
-                                        padding: const EdgeInsets.symmetric(vertical: 12),
-                                        child: const Text(
+                                      const Padding(
+                                        padding: EdgeInsets.symmetric(vertical: 12),
+                                        child: Text(
                                           "5 min read - 31m ago",
                                           style: TextStyle(
                                             color: Colors.grey,
@@ -131,7 +131,7 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                     child: Column(
                       children: [
                         Container(
-                          margin: EdgeInsets.fromLTRB(16, 16, 0, 16),
+                          margin: const EdgeInsets.fromLTRB(16, 16, 0, 16),
                           height: 54,
                           color: Colors.blue,
                         ),
@@ -142,7 +142,7 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                               padding: const EdgeInsets.fromLTRB(16.0, 8, 16, 16),
                               child: Column(
                                 children: [
-                                  Row(
+                                  const Row(
                                     children: [
                                       CircleAvatar(
                                         radius: 16,
@@ -153,13 +153,13 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                                       Text("Dream Walker"),
                                     ],
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 16,
                                   ),
                                   Row(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      Expanded(
+                                      const Expanded(
                                         child: Text(
                                           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
                                           maxLines: 2,
@@ -178,10 +178,10 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                                       )
                                     ],
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 8,
                                   ),
-                                  Row(
+                                  const Row(
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
                                       Text("5 min read - 31m ago"),
@@ -190,7 +190,7 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                                       )
                                     ],
                                   ),
-                                  Divider(
+                                  const Divider(
                                     color: Colors.grey,
                                   ),
                                 ],
