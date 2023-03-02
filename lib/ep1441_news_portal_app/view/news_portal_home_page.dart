@@ -165,7 +165,6 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                         Container(
                           margin: const EdgeInsets.fromLTRB(16, 16, 0, 16),
                           height: 48,
-                          color: Colors.blue,
                           child: ListView(
                             scrollDirection: Axis.horizontal,
                             children: [
