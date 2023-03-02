@@ -8,6 +8,8 @@ class NewsPortalHomePage extends StatefulWidget {
 }
 
 class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
+  Color accentColor = Color.fromRGBO(161, 237, 177, 1);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,10 +36,10 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                         //   color: Colors.greenAccent,
                         //   iconSize: 32,
                         // ),
-                        const Icon(
+                        Icon(
                           Icons.newspaper,
                           size: 32,
-                          color: Colors.greenAccent,
+                          color: accentColor,
                         ),
                         const SizedBox(
                           height: 24,
@@ -320,9 +322,9 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                           CircleAvatar(
                             radius: 32,
                             backgroundColor: Colors.grey[100],
-                            child: const CircleAvatar(
+                            child: CircleAvatar(
                               radius: 28,
-                              backgroundColor: Colors.greenAccent,
+                              backgroundColor: accentColor,
                               foregroundColor: Colors.black,
                               child: Icon(
                                 Icons.search,
