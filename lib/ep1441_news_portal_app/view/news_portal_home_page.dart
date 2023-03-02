@@ -8,7 +8,7 @@ class NewsPortalHomePage extends StatefulWidget {
 }
 
 class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
-  Color accentColor = Color.fromRGBO(161, 237, 177, 1);
+  Color accentColor = const Color.fromRGBO(161, 237, 177, 1);
 
   @override
   Widget build(BuildContext context) {
@@ -69,7 +69,7 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                               itemBuilder: (context, index) {
                                 return Container(
                                   width: 240,
-                                  margin: const EdgeInsets.only(right: 16),
+                                  margin: const EdgeInsets.only(right: 24),
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
@@ -88,17 +88,17 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                                                     color: Colors.red,
                                                     borderRadius: BorderRadius.circular(16),
                                                   ),
-                                                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                                                   child: Row(
                                                     children: [
                                                       CircleAvatar(
                                                         radius: 4,
                                                         backgroundColor: Colors.red[200],
                                                       ),
-                                                      SizedBox(
+                                                      const SizedBox(
                                                         width: 4,
                                                       ),
-                                                      Text(
+                                                      const Text(
                                                         "LIVE",
                                                         style: TextStyle(
                                                           color: Colors.white,
@@ -356,7 +356,7 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                               radius: 28,
                               backgroundColor: accentColor,
                               foregroundColor: Colors.black,
-                              child: Icon(
+                              child: const Icon(
                                 Icons.search,
                                 size: 34,
                               ),
