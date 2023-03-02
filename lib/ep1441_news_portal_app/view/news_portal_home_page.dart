@@ -81,24 +81,26 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                                         child: Stack(
                                           children: [
                                             Positioned(
+                                                left: 16,
+                                                bottom: 16,
                                                 child: Container(
-                                              decoration: BoxDecoration(
-                                                color: Colors.red,
-                                                borderRadius: BorderRadius.circular(16)
-                                              ),
-                                              child: Row(
-                                                children: [
-                                                  CircleAvatar(
-                                                    radius: 6,
-                                                    backgroundColor: Colors.red[200],
+                                                  decoration: BoxDecoration(
+                                                    color: Colors.red,
+                                                    borderRadius: BorderRadius.circular(16),
                                                   ),
-                                                  Text(
-                                                    "LIVE",
-                                                    style: TextStyle(color: Colors.white),
-                                                  )
-                                                ],
-                                              ),
-                                            )),
+                                                  child: Row(
+                                                    children: [
+                                                      CircleAvatar(
+                                                        radius: 6,
+                                                        backgroundColor: Colors.red[200],
+                                                      ),
+                                                      Text(
+                                                        "LIVE",
+                                                        style: TextStyle(color: Colors.white),
+                                                      )
+                                                    ],
+                                                  ),
+                                                )),
                                           ],
                                         ),
                                       ),
