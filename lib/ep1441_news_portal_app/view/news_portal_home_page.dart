@@ -172,7 +172,7 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                               Container(
                                 decoration: BoxDecoration(
                                   color: Colors.grey[200],
-                                  borderRadius: BorderRadius.circular(24),
+                                  borderRadius: BorderRadius.circular(20),
                                 ),
                                 margin: const EdgeInsets.only(right: 12),
                                 padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -183,7 +183,7 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                               Container(
                                 decoration: BoxDecoration(
                                   color: Colors.black,
-                                  borderRadius: BorderRadius.circular(24),
+                                  borderRadius: BorderRadius.circular(20),
                                 ),
                                 margin: const EdgeInsets.only(right: 12),
                                 padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -200,7 +200,7 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                               Container(
                                 decoration: BoxDecoration(
                                   color: Colors.grey[200],
-                                  borderRadius: BorderRadius.circular(24),
+                                  borderRadius: BorderRadius.circular(20),
                                 ),
                                 margin: const EdgeInsets.only(right: 12),
                                 padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -211,6 +211,23 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                                       fontWeight: FontWeight.bold,
                                         // color: Colors.white,
                                         ),
+                                  ),
+                                ),
+                              ),
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.grey[200],
+                                  borderRadius: BorderRadius.circular(20),
+                                ),
+                                margin: const EdgeInsets.only(right: 12),
+                                padding: const EdgeInsets.symmetric(horizontal: 16),
+                                child: const Center(
+                                  child: Text(
+                                    "Technology",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      // color: Colors.white,
+                                    ),
                                   ),
                                 ),
                               )
