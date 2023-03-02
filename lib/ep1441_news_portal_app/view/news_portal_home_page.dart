@@ -208,8 +208,8 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                                     "Politics",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
-                                        // color: Colors.white,
-                                        ),
+                                      // color: Colors.white,
+                                    ),
                                   ),
                                 ),
                               ),
@@ -248,7 +248,12 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                                       SizedBox(
                                         width: 8,
                                       ),
-                                      Text("Dream Walker"),
+                                      Text(
+                                        "Dream Walker",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
                                     ],
                                   ),
                                   const SizedBox(
@@ -265,7 +270,8 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                                           style: TextStyle(
                                             fontWeight: FontWeight.bold,
                                             height: 1.5,
-                                            fontSize: 15,
+                                            fontSize: 18,
+
                                           ),
                                         ),
                                       ),
