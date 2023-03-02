@@ -192,7 +192,25 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                                     "For You",
                                     style: TextStyle(
                                       color: Colors.white,
+                                      fontWeight: FontWeight.bold,
                                     ),
+                                  ),
+                                ),
+                              ),
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.grey[200],
+                                  borderRadius: BorderRadius.circular(24),
+                                ),
+                                margin: const EdgeInsets.only(right: 12),
+                                padding: const EdgeInsets.symmetric(horizontal: 16),
+                                child: const Center(
+                                  child: Text(
+                                    "Politics",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                        // color: Colors.white,
+                                        ),
                                   ),
                                 ),
                               )
