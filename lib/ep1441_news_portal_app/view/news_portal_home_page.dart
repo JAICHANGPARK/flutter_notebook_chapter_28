@@ -78,17 +78,27 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                                         decoration: const BoxDecoration(
                                           color: Colors.grey,
                                         ),
-
                                         child: Stack(
                                           children: [
-                                            Positioned(child: Container()),
-                                            CircleAvatar(
-                                              radius: 6,
-                                              backgroundColor: Colors.red[200],
-                                            ),
-                                            Text("LIVE", style: TextStyle(
-                                              color: Colors.white
-                                            ),)
+                                            Positioned(
+                                                child: Container(
+                                              decoration: BoxDecoration(
+                                                color: Colors.red,
+                                                borderRadius: BorderRadius.circular(16)
+                                              ),
+                                              child: Row(
+                                                children: [
+                                                  CircleAvatar(
+                                                    radius: 6,
+                                                    backgroundColor: Colors.red[200],
+                                                  ),
+                                                  Text(
+                                                    "LIVE",
+                                                    style: TextStyle(color: Colors.white),
+                                                  )
+                                                ],
+                                              ),
+                                            )),
                                           ],
                                         ),
                                       ),
