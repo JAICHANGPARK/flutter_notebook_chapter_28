@@ -45,7 +45,7 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
               IconButton(
                 onPressed: () {},
                 icon: const Icon(
-                  Icons.business_center,
+                  Icons.business_center_outlined,
                 ),
                 iconSize: 28,
               ),
@@ -54,7 +54,14 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
                 width: 42,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: Colors.red,
+                  color: Colors.white,
+                  border: Border.all(
+                    color: Colors.red,
+                  ),
+                ),
+                padding: EdgeInsets.all(2),
+                child: CircleAvatar(
+                  
                 ),
               )
             ],
