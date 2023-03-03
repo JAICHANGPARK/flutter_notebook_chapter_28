@@ -19,6 +19,7 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
           height: 80,
           padding: EdgeInsets.symmetric(horizontal: 16),
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               IconButton(
                 onPressed: () {},
@@ -30,21 +31,21 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
               IconButton(
                 onPressed: () {},
                 icon: const Icon(
-                  Icons.home_filled,
+                  Icons.explore_outlined,
                 ),
                 iconSize: 28,
               ),
               IconButton(
                 onPressed: () {},
                 icon: const Icon(
-                  Icons.home_filled,
+                  Icons.public_outlined,
                 ),
                 iconSize: 28,
               ),
               IconButton(
                 onPressed: () {},
                 icon: const Icon(
-                  Icons.home_filled,
+                  Icons.business_center,
                 ),
                 iconSize: 28,
               ),
