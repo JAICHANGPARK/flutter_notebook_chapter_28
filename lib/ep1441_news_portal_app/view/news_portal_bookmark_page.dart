@@ -33,14 +33,17 @@ class _NewsPortalBookmarkPageState extends State<NewsPortalBookmarkPage> {
                   ),
                 ),
               ),
+              SizedBox(
+                height: 16,
+              ),
               Expanded(
                   child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: [
                   Container(
-                    decoration: BoxDecoration(
-                      color: Colors.white.withOpacity(0.2),
-                    ),
+                    decoration:
+                        BoxDecoration(color: Colors.white.withOpacity(0.2), borderRadius: BorderRadius.circular(16)),
+                    padding: EdgeInsets.symmetric(horizontal: 16),
                     child: const Center(
                       child: Icon(
                         Icons.add,
