@@ -60,13 +60,16 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
                   ),
                 ),
                 padding: EdgeInsets.all(2),
-                child: CircleAvatar(
-                  
-                ),
+                child: CircleAvatar(),
               )
             ],
           ),
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        backgroundColor: Colors.red[300],
+        child: Icon(Icons.chat_outlined),
       ),
     );
   }
