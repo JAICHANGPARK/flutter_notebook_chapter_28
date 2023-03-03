@@ -104,7 +104,95 @@ class _NewsPortalBookmarkPageState extends State<NewsPortalBookmarkPage> {
             ],
           ),
         ),
-        const Expanded(child: Placeholder()),
+        SizedBox(
+          height: 16,
+        ),
+        Expanded(
+          child: ListView.builder(
+            padding: EdgeInsets.zero,
+            itemBuilder: (context, index) {
+              return Padding(
+                padding: const EdgeInsets.fromLTRB(16.0, 8, 16, 16),
+                child: Column(
+                  children: [
+                    const Row(
+                      children: [
+                        CircleAvatar(
+                          radius: 16,
+                        ),
+                        SizedBox(
+                          width: 8,
+                        ),
+                        Text(
+                          "Dream Walker",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(
+                      height: 16,
+                    ),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const Expanded(
+                          child: Text(
+                            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+                            maxLines: 2,
+                            overflow: TextOverflow.ellipsis,
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              height: 1.5,
+                              fontSize: 18,
+                            ),
+                          ),
+                        ),
+                        Container(
+                          height: 80,
+                          width: 100,
+                          decoration: const BoxDecoration(
+                            color: Colors.blue,
+                            image: DecorationImage(
+                              image: NetworkImage(
+                                  "https://cdn.pixabay.com/photo/2022/11/16/16/56/city-7596379_960_720.jpg"),
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                        )
+                      ],
+                    ),
+                    const SizedBox(
+                      height: 8,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text("5 min read - 31m ago"),
+                        PopupMenuButton(
+                          itemBuilder: (context) {
+                            return [
+                              PopupMenuItem(child: Text("Delete From Bookmark")),
+                            ];
+                          },
+                          icon: Icon(
+                            Icons.more_horiz,
+                          ),
+                        ),
+
+                      ],
+                    ),
+                    const Divider(
+                      color: Colors.grey,
+                    ),
+                  ],
+                ),
+              );
+            },
+          ),
+        ),
       ],
     );
   }
