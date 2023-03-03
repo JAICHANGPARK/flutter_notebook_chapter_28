@@ -1,14 +1,12 @@
 # flutter_notebook_chapter_28
 
-
-
 ### EP1445
 
 - Social Trip App - UX/UI
 - by IKAKO®
 - https://dribbble.com/shots/20816168-Social-Trip-App-UX-UI
 
-<img src="https://cdn.dribbble.com/userupload/4986296/file/original-44088c92914342d7897210ca845a4dfd.png?compress=1&resize=1600x1200" width="500px"/>
+<img src="https://cdn.dribbble.com/userupload/5089397/file/original-5d9fe64b7f67603a244b5bf95fbebcdb.png?compress=1&resize=3216x2416" width="500px"/>
 
 ### EP1441-1444
 
@@ -76,7 +74,7 @@
 
 ### EP1414-1415
 
-- FoodTreat – Onboarding 
+- FoodTreat – Onboarding
 - by Magdalena Zych
 - https://dribbble.com/shots/20524657-FoodTreat-Onboarding/
 
