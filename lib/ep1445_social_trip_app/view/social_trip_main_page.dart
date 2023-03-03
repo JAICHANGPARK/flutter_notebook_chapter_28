@@ -14,7 +14,18 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
       body: Column(
         children: [],
       ),
-
+      bottomNavigationBar: BottomAppBar(
+        child: Row(
+          children: [
+            IconButton(
+              onPressed: () {},
+              icon: const Icon(
+                Icons.home_filled,
+              ),
+            )
+          ],
+        ),
+      ),
     );
   }
 }
