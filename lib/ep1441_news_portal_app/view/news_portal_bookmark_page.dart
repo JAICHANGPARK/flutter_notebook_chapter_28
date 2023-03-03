@@ -43,7 +43,7 @@ class _NewsPortalBookmarkPageState extends State<NewsPortalBookmarkPage> {
                   Container(
                     decoration: BoxDecoration(
                       color: Colors.white.withOpacity(0.2),
-                      borderRadius: BorderRadius.circular(16),
+                      borderRadius: BorderRadius.circular(24),
                     ),
                     padding: EdgeInsets.symmetric(horizontal: 16),
                     child: const Center(
@@ -56,16 +56,13 @@ class _NewsPortalBookmarkPageState extends State<NewsPortalBookmarkPage> {
                   ),
                   Container(
                     decoration: BoxDecoration(
-                      color: Colors.white.withOpacity(0.2),
-                      borderRadius: BorderRadius.circular(16),
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(24),
                     ),
                     margin: EdgeInsets.only(right: 12),
                     padding: EdgeInsets.symmetric(horizontal: 16),
                     child: const Center(
-                      child: Icon(
-                        Icons.add,
-                        color: Colors.white,
-                      ),
+                      child: Text("Hot News",),
                     ),
                   ),
                 ],
