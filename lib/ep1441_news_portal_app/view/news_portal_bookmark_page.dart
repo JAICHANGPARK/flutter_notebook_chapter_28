@@ -41,8 +41,25 @@ class _NewsPortalBookmarkPageState extends State<NewsPortalBookmarkPage> {
                 scrollDirection: Axis.horizontal,
                 children: [
                   Container(
-                    decoration:
-                        BoxDecoration(color: Colors.white.withOpacity(0.2), borderRadius: BorderRadius.circular(16)),
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.2),
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                    padding: EdgeInsets.symmetric(horizontal: 16),
+                    child: const Center(
+                      child: Icon(
+                        Icons.add,
+                        color: Colors.white,
+                      ),
+                    ),
+                    margin: EdgeInsets.only(right: 12),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.2),
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                    margin: EdgeInsets.only(right: 12),
                     padding: EdgeInsets.symmetric(horizontal: 16),
                     child: const Center(
                       child: Icon(
