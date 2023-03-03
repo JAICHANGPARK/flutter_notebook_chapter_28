@@ -33,7 +33,7 @@ class _NewsPortalBookmarkPageState extends State<NewsPortalBookmarkPage> {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 16,
               ),
               Expanded(
@@ -45,22 +45,22 @@ class _NewsPortalBookmarkPageState extends State<NewsPortalBookmarkPage> {
                       color: Colors.white.withOpacity(0.2),
                       borderRadius: BorderRadius.circular(24),
                     ),
-                    padding: EdgeInsets.symmetric(horizontal: 16),
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
                     child: const Center(
                       child: Icon(
                         Icons.add,
                         color: Colors.white,
                       ),
                     ),
-                    margin: EdgeInsets.only(right: 12),
+                    margin: const EdgeInsets.only(right: 12),
                   ),
                   Container(
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(24),
                     ),
-                    margin: EdgeInsets.only(right: 12),
-                    padding: EdgeInsets.symmetric(horizontal: 20),
+                    margin: const EdgeInsets.only(right: 12),
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
                     child: const Center(
                       child: Text(
                         "Hot News",
@@ -72,8 +72,8 @@ class _NewsPortalBookmarkPageState extends State<NewsPortalBookmarkPage> {
                       color: Colors.white.withOpacity(.2),
                       borderRadius: BorderRadius.circular(24),
                     ),
-                    margin: EdgeInsets.only(right: 12),
-                    padding: EdgeInsets.symmetric(horizontal: 20),
+                    margin: const EdgeInsets.only(right: 12),
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
                     child: const Center(
                       child: Text(
                         "Reading List",
@@ -88,8 +88,8 @@ class _NewsPortalBookmarkPageState extends State<NewsPortalBookmarkPage> {
                       color: Colors.white.withOpacity(.2),
                       borderRadius: BorderRadius.circular(24),
                     ),
-                    margin: EdgeInsets.only(right: 12),
-                    padding: EdgeInsets.symmetric(horizontal: 20),
+                    margin: const EdgeInsets.only(right: 12),
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
                     child: const Center(
                       child: Text(
                         "Reading List",
