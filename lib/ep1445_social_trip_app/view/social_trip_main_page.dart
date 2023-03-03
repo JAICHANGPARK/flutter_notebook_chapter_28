@@ -15,15 +15,49 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
         children: [],
       ),
       bottomNavigationBar: BottomAppBar(
-        child: Row(
-          children: [
-            IconButton(
-              onPressed: () {},
-              icon: const Icon(
-                Icons.home_filled,
+        child: Container(
+          height: 80,
+          padding: EdgeInsets.symmetric(horizontal: 16),
+          child: Row(
+            children: [
+              IconButton(
+                onPressed: () {},
+                icon: const Icon(
+                  Icons.home_filled,
+                ),
+                iconSize: 28,
               ),
-            )
-          ],
+              IconButton(
+                onPressed: () {},
+                icon: const Icon(
+                  Icons.home_filled,
+                ),
+                iconSize: 28,
+              ),
+              IconButton(
+                onPressed: () {},
+                icon: const Icon(
+                  Icons.home_filled,
+                ),
+                iconSize: 28,
+              ),
+              IconButton(
+                onPressed: () {},
+                icon: const Icon(
+                  Icons.home_filled,
+                ),
+                iconSize: 28,
+              ),
+              Container(
+                height: 42,
+                width: 42,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: Colors.red,
+                ),
+              )
+            ],
+          ),
         ),
       ),
     );
