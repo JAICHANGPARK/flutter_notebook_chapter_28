@@ -1,7 +1,16 @@
 # flutter_notebook_chapter_28
 
 
-### EP1441
+
+### EP1445
+
+- Social Trip App - UX/UI
+- by IKAKO®
+- https://dribbble.com/shots/20816168-Social-Trip-App-UX-UI
+
+<img src="https://cdn.dribbble.com/userupload/4986296/file/original-44088c92914342d7897210ca845a4dfd.png?compress=1&resize=1600x1200" width="500px"/>
+
+### EP1441-1444
 
 - Qoorant - News Portal App UI Kit
 - by Rusdhy Jasmin for Pickolab Studio
