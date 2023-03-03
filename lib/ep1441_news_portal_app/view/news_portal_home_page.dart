@@ -323,7 +323,7 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                     ],
                   ),
                 ),
-                NewsPortalBookmarkPage(),
+                const NewsPortalBookmarkPage(),
               ],
             ),
           ),
@@ -360,7 +360,7 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                                   size: 34,
                                   color: pageIndex == 0 ? Colors.black : Colors.grey,
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 6,
                                 ),
                                 Text(
@@ -389,7 +389,7 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                                   size: 34,
                                   color: pageIndex == 1 ? Colors.black : Colors.grey,
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 6,
                                 ),
                                 Text(
@@ -402,8 +402,8 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                               ],
                             ),
                           )),
-                          Expanded(child: Column()),
-                          Expanded(
+                          const Expanded(child: Column()),
+                          const Expanded(
                               child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
@@ -426,7 +426,7 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                               )
                             ],
                           )),
-                          Expanded(
+                          const Expanded(
                               child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
