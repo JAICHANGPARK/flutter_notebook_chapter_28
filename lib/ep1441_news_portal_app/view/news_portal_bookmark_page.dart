@@ -46,13 +46,13 @@ class _NewsPortalBookmarkPageState extends State<NewsPortalBookmarkPage> {
                       borderRadius: BorderRadius.circular(24),
                     ),
                     padding: const EdgeInsets.symmetric(horizontal: 16),
+                    margin: const EdgeInsets.only(right: 12),
                     child: const Center(
                       child: Icon(
                         Icons.add,
                         color: Colors.white,
                       ),
                     ),
-                    margin: const EdgeInsets.only(right: 12),
                   ),
                   Container(
                     decoration: BoxDecoration(
