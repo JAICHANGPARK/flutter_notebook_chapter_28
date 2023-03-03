@@ -15,26 +15,45 @@ class _NewsPortalBookmarkPageState extends State<NewsPortalBookmarkPage> {
         Container(
           height: 200,
           color: Colors.black,
-          padding: EdgeInsets.only(top: 72, left: 16),
+          padding: const EdgeInsets.only(
+            top: 72,
+            left: 20,
+            bottom: 16,
+          ),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Expanded(
+              const Expanded(
                 child: Text(
                   "My bookmark",
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
+                    fontSize: 38,
                   ),
                 ),
               ),
-              Expanded(child: ListView(children: [
-                
-              ],))
-
+              Expanded(
+                  child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.2),
+                    ),
+                    child: const Center(
+                      child: Icon(
+                        Icons.add,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ],
+              ))
             ],
           ),
         ),
-        Expanded(child: Placeholder()),
+        const Expanded(child: Placeholder()),
       ],
     );
   }
