@@ -60,9 +60,43 @@ class _NewsPortalBookmarkPageState extends State<NewsPortalBookmarkPage> {
                       borderRadius: BorderRadius.circular(24),
                     ),
                     margin: EdgeInsets.only(right: 12),
-                    padding: EdgeInsets.symmetric(horizontal: 16),
+                    padding: EdgeInsets.symmetric(horizontal: 20),
                     child: const Center(
-                      child: Text("Hot News",),
+                      child: Text(
+                        "Hot News",
+                      ),
+                    ),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(.2),
+                      borderRadius: BorderRadius.circular(24),
+                    ),
+                    margin: EdgeInsets.only(right: 12),
+                    padding: EdgeInsets.symmetric(horizontal: 20),
+                    child: const Center(
+                      child: Text(
+                        "Reading List",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(.2),
+                      borderRadius: BorderRadius.circular(24),
+                    ),
+                    margin: EdgeInsets.only(right: 12),
+                    padding: EdgeInsets.symmetric(horizontal: 20),
+                    child: const Center(
+                      child: Text(
+                        "Reading List",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
                     ),
                   ),
                 ],
