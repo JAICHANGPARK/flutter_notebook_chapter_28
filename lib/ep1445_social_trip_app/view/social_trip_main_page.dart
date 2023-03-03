@@ -11,13 +11,13 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
+      body: const Column(
         children: [],
       ),
       bottomNavigationBar: BottomAppBar(
         child: Container(
           height: 80,
-          padding: EdgeInsets.symmetric(horizontal: 16),
+          padding: const EdgeInsets.symmetric(horizontal: 16),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -59,8 +59,8 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
                     color: Colors.red,
                   ),
                 ),
-                padding: EdgeInsets.all(2),
-                child: CircleAvatar(),
+                padding: const EdgeInsets.all(2),
+                child: const CircleAvatar(),
               )
             ],
           ),
@@ -69,7 +69,7 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         backgroundColor: Colors.red[300],
-        child: Icon(Icons.chat_outlined),
+        child: const Icon(Icons.chat_outlined),
       ),
     );
   }
