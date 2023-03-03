@@ -15,6 +15,24 @@ class _NewsPortalBookmarkPageState extends State<NewsPortalBookmarkPage> {
         Container(
           height: 200,
           color: Colors.black,
+          padding: EdgeInsets.only(top: 72, left: 16),
+          child: Column(
+            children: [
+              Expanded(
+                child: Text(
+                  "My bookmark",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              Expanded(child: ListView(children: [
+                
+              ],))
+
+            ],
+          ),
         ),
         Expanded(child: Placeholder()),
       ],
