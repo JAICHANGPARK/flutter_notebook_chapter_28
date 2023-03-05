@@ -103,19 +103,62 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
             ),
             Container(
               height: 54,
-              margin: EdgeInsets.all(16),
+              margin: const EdgeInsets.all(16),
               decoration: BoxDecoration(
                 border: Border.all(
                   color: Colors.grey,
                 ),
                 borderRadius: BorderRadius.circular(8),
               ),
-              padding: EdgeInsets.symmetric(horizontal: 16),
-              child: TextField(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: const TextField(
                 decoration: InputDecoration(
                   hintText: "Search",
                   icon: Icon(Icons.search),
                   border: InputBorder.none,
+                ),
+              ),
+            ),
+            Expanded(
+              child: SingleChildScrollView(
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          const CircleAvatar(
+                            radius: 18,
+                            backgroundColor: Colors.red,
+                            child: CircleAvatar(
+                              radius: 16,
+                            ),
+                          ),
+                          const SizedBox(
+                            width: 6,
+                          ),
+                          const Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Dreamwalker",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 16,
+                                ),
+                              ),
+                              Text("Seoul, Republic of Korea"),
+                            ],
+                          ),
+                          const Spacer(),
+                          IconButton(
+                            onPressed: () {},
+                            icon: const Icon(Icons.more_vert),
+                          )
+                        ],
+                      )
+                    ],
+                  ),
                 ),
               ),
             )
