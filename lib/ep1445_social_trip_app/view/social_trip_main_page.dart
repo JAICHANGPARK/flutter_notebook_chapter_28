@@ -147,7 +147,16 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
                                   fontSize: 16,
                                 ),
                               ),
-                              Text("Seoul, Republic of Korea"),
+                              SizedBox(
+                                height: 4,
+                              ),
+                              Text(
+                                "Seoul, Republic of Korea",
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  color: Colors.grey,
+                                ),
+                              ),
                             ],
                           ),
                           const Spacer(),
