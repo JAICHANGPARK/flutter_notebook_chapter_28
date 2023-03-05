@@ -136,6 +136,7 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
                                 child: Center(
                                   child: CircleAvatar(
                                     radius: 16.5,
+                                    backgroundColor: Colors.grey,
                                   ),
                                 ),
                               ),
