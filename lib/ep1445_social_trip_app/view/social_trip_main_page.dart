@@ -44,10 +44,39 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
                               const SizedBox(
                                 width: 8,
                               ),
-                              const Text("3K")
+                              const Text(
+                                "3K",
+                                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                              )
                             ],
                           ),
                         ),
+                        Spacer(),
+                        Container(
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            border: Border.all(
+                              color: Colors.grey[300]!,
+                            ),
+                          ),
+                          child: IconButton(
+                            icon: Icon(Icons.add),
+                            onPressed: () {},
+                          ),
+                        ),
+                        SizedBox(width: 8),
+                        Container(
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            border: Border.all(
+                              color: Colors.grey[300]!,
+                            ),
+                          ),
+                          child: IconButton(
+                            icon: Icon(Icons.tune),
+                            onPressed: () {},
+                          ),
+                        )
                       ],
                     ),
                   ),
@@ -59,9 +88,7 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
                     child: Center(
                       child: Text(
                         "Trips",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                        ),
+                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                       ),
                     ),
                   )
