@@ -43,6 +43,14 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
                     ),
                   ],
                 ),
+                Center(
+                  child: Text(
+                    "Trips",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                )
               ],
             )
           ],
