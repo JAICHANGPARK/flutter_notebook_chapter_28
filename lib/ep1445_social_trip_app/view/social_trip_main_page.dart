@@ -133,8 +133,10 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
                               const CircleAvatar(
                                 radius: 18,
                                 backgroundColor: Colors.red,
-                                child: CircleAvatar(
-                                  radius: 16,
+                                child: Center(
+                                  child: CircleAvatar(
+                                    radius: 16.5,
+                                  ),
                                 ),
                               ),
                               const SizedBox(
