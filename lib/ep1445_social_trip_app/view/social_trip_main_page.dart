@@ -126,6 +126,7 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
                   child: Column(
                     children: [
                       Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Row(
                             children: [
@@ -182,25 +183,25 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
                           ),
                           Row(
                             children: [
-                              Text(
+                              const Text(
                                 "Amazing Days in\nSeoul",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 24,
                                 ),
                               ),
-                              Spacer(),
+                              const Spacer(),
                               IconButton(
                                 onPressed: () {},
-                                icon: Icon(
+                                icon: const Icon(
                                   Icons.bookmark_border,
                                 ),
                                 iconSize: 28,
                               )
                             ],
                           ),
-                          Padding(
-                            padding: const EdgeInsets.symmetric(vertical: 16),
+                          const Padding(
+                            padding: EdgeInsets.symmetric(vertical: 16),
                             child: Text("February 13"),
                           ),
                           Row(
@@ -211,8 +212,8 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
                                   color: Colors.grey[200],
                                   borderRadius: BorderRadius.circular(24),
                                 ),
-                                padding: EdgeInsets.symmetric(vertical: 12),
-                                child: Row(
+                                padding: const EdgeInsets.symmetric(vertical: 10),
+                                child: const Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Text(
@@ -231,11 +232,43 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
                                   ],
                                 ),
                               )),
-                              SizedBox(
+                              const SizedBox(
                                 width: 24,
                               ),
-                              Expanded(child: Container()),
+                              Expanded(
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.grey[200],
+                                    borderRadius: BorderRadius.circular(24),
+                                  ),
+                                  padding: const EdgeInsets.symmetric(vertical: 10),
+                                  child: const Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Text(
+                                        "🚶‍♂",
+                                        style: TextStyle(
+                                          fontSize: 24,
+                                        ),
+                                      ),
+                                      Text(
+                                        "Park/ Trail",
+                                        style: TextStyle(
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
                             ],
+                          ),
+                          SizedBox(
+                            height: 24,
+                          ),
+                          Text(
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
                           )
                         ],
                       ),
