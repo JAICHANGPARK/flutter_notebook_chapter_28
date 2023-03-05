@@ -25,7 +25,7 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
                         ),
                         borderRadius: BorderRadius.circular(24),
                       ),
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                         right: 8,
                       ),
                       child: Row(
@@ -34,10 +34,10 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
                             radius: 16,
                             backgroundColor: Colors.red[300],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 8,
                           ),
-                          Text("3K")
+                          const Text("3K")
                         ],
                       ),
                     ),
