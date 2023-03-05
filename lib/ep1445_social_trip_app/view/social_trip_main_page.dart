@@ -14,31 +14,35 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
+            Stack(
               children: [
-                Container(
-                  decoration: BoxDecoration(
-                    border: Border.all(
-                      color: Colors.grey[400]!,
+                Row(
+                  children: [
+                    Container(
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.grey[400]!,
+                        ),
+                        borderRadius: BorderRadius.circular(24),
+                      ),
+                      padding: EdgeInsets.only(
+                        right: 8,
+                      ),
+                      child: Row(
+                        children: [
+                          CircleAvatar(
+                            radius: 16,
+                            backgroundColor: Colors.red[300],
+                          ),
+                          SizedBox(
+                            width: 8,
+                          ),
+                          Text("3K")
+                        ],
+                      ),
                     ),
-                    borderRadius: BorderRadius.circular(24),
-                  ),
-                  padding: EdgeInsets.only(
-                    right: 8,
-                  ),
-                  child: Row(
-                    children: [
-                      CircleAvatar(
-                        radius: 16,
-                        backgroundColor: Colors.red[300],
-                      ),
-                      SizedBox(
-                        width: 8,
-                      ),
-                      Text("3K")
-                    ],
-                  ),
-                )
+                  ],
+                ),
               ],
             )
           ],
