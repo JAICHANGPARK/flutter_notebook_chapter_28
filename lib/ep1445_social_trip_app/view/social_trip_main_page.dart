@@ -168,9 +168,39 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
                               )
                             ],
                           ),
+                          Container(
+                            margin: const EdgeInsets.symmetric(vertical: 16),
+                            height: 300,
+                            decoration: const BoxDecoration(
+                              color: Colors.red,
+                              image: DecorationImage(
+                                image: NetworkImage(
+                                    "https://cdn.pixabay.com/photo/2018/04/08/23/19/wood-3302802_960_720.jpg"),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                          Row(
+                            children: [
+                              Text(
+                                "Amazing Days in\nSeoul",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 24,
+                                ),
+                              ),
+                              Spacer(),
+                              IconButton(
+                                onPressed: () {},
+                                icon: Icon(
+                                  Icons.bookmark_border,
+                                ),
+                                iconSize: 28,
+                              )
+                            ],
+                          )
                         ],
-                      )
-
+                      ),
                     ],
                   ),
                 ),
