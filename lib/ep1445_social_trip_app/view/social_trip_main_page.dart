@@ -18,7 +18,9 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
               children: [
                 Container(
                   decoration: BoxDecoration(
-                    border: Border.all(),
+                    border: Border.all(
+                      color: Colors.grey[400]!,
+                    ),
                     borderRadius: BorderRadius.circular(24),
                   ),
                   padding: EdgeInsets.only(
@@ -28,6 +30,7 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
                     children: [
                       CircleAvatar(
                         radius: 16,
+                        backgroundColor: Colors.red[300],
                       ),
                       SizedBox(
                         width: 8,
