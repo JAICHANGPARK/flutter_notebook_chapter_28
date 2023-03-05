@@ -33,7 +33,7 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
                             borderRadius: BorderRadius.circular(24),
                           ),
                           padding: const EdgeInsets.only(
-                            right: 8,
+                            right: 12,
                           ),
                           child: Row(
                             children: [
@@ -54,7 +54,7 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
                             ],
                           ),
                         ),
-                        Spacer(),
+                        const Spacer(),
                         Container(
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
@@ -63,11 +63,11 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
                             ),
                           ),
                           child: IconButton(
-                            icon: Icon(Icons.add),
+                            icon: const Icon(Icons.add),
                             onPressed: () {},
                           ),
                         ),
-                        SizedBox(width: 8),
+                        const SizedBox(width: 8),
                         Container(
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
@@ -76,14 +76,14 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
                             ),
                           ),
                           child: IconButton(
-                            icon: Icon(Icons.tune),
+                            icon: const Icon(Icons.tune),
                             onPressed: () {},
                           ),
                         )
                       ],
                     ),
                   ),
-                  Positioned(
+                  const Positioned(
                     left: 16,
                     right: 16,
                     bottom: 0,
@@ -99,6 +99,24 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
                     ),
                   )
                 ],
+              ),
+            ),
+            Container(
+              height: 54,
+              margin: EdgeInsets.all(16),
+              decoration: BoxDecoration(
+                border: Border.all(
+                  color: Colors.grey,
+                ),
+                borderRadius: BorderRadius.circular(8),
+              ),
+              padding: EdgeInsets.symmetric(horizontal: 16),
+              child: TextField(
+                decoration: InputDecoration(
+                  hintText: "Search",
+                  icon: Icon(Icons.search),
+                  border: InputBorder.none,
+                ),
               ),
             )
           ],
