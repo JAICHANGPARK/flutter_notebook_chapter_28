@@ -198,7 +198,22 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
                                 iconSize: 28,
                               )
                             ],
-                          )
+                          ),
+                          Text("February 13"),
+                          Row(children: [
+                            Expanded(child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.grey[200],
+                                borderRadius: BorderRadius.circular(24)
+                              ),
+                              child: Row(
+                                children: [
+                                  
+                                ],
+                              ),
+                            )),
+                            Expanded(child: Container()),
+                          ],)
                         ],
                       ),
                     ],
