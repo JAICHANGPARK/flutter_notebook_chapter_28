@@ -46,7 +46,10 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
                               ),
                               const Text(
                                 "3K",
-                                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 16,
+                                ),
                               )
                             ],
                           ),
@@ -88,7 +91,10 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
                     child: Center(
                       child: Text(
                         "Trips",
-                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20,
+                        ),
                       ),
                     ),
                   )
