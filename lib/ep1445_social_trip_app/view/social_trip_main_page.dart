@@ -199,20 +199,41 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
                               )
                             ],
                           ),
-                          Text("February 13"),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 16),
+                            child: Text("February 13"),
+                          ),
                           Row(
                             children: [
                               Expanded(
                                   child: Container(
-                                decoration:
-                                    BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(24)),
+                                decoration: BoxDecoration(
+                                  color: Colors.grey[200],
+                                  borderRadius: BorderRadius.circular(24),
+                                ),
+                                padding: EdgeInsets.symmetric(vertical: 12),
                                 child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    Text(""),
-                                    Text("Climbing"),
+                                    Text(
+                                      "🧗‍♂",
+                                      style: TextStyle(
+                                        fontSize: 24,
+                                      ),
+                                    ),
+                                    Text(
+                                      "Climbing",
+                                      style: TextStyle(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
                                   ],
                                 ),
                               )),
+                              SizedBox(
+                                width: 24,
+                              ),
                               Expanded(child: Container()),
                             ],
                           )
