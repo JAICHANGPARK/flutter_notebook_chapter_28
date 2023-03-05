@@ -124,122 +124,96 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16),
                   child: Column(
-                    children: [
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Row(
-                            children: [
-                              const CircleAvatar(
-                                radius: 18,
-                                backgroundColor: Colors.red,
-                                child: Center(
-                                  child: CircleAvatar(
-                                    radius: 16.5,
-                                    backgroundColor: Colors.grey,
-                                  ),
-                                ),
-                              ),
-                              const SizedBox(
-                                width: 6,
-                              ),
-                              const Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    "Dreamwalker",
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 16,
+                    children: List.generate(
+                      10,
+                      (index) => Padding(
+                        padding: const EdgeInsets.only(bottom: 16),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Row(
+                              children: [
+                                const CircleAvatar(
+                                  radius: 18,
+                                  backgroundColor: Colors.red,
+                                  child: Center(
+                                    child: CircleAvatar(
+                                      radius: 16.5,
+                                      backgroundColor: Colors.grey,
                                     ),
                                   ),
-                                  SizedBox(
-                                    height: 4,
-                                  ),
-                                  Text(
-                                    "Seoul, Republic of Korea",
-                                    style: TextStyle(
-                                      fontSize: 12,
-                                      color: Colors.grey,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              const Spacer(),
-                              IconButton(
-                                onPressed: () {},
-                                icon: const Icon(Icons.more_vert),
-                              )
-                            ],
-                          ),
-                          Container(
-                            margin: const EdgeInsets.symmetric(vertical: 16),
-                            height: 300,
-                            decoration: const BoxDecoration(
-                              color: Colors.red,
-                              image: DecorationImage(
-                                image: NetworkImage(
-                                    "https://cdn.pixabay.com/photo/2018/04/08/23/19/wood-3302802_960_720.jpg"),
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                          ),
-                          Row(
-                            children: [
-                              const Text(
-                                "Amazing Days in\nSeoul",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 24,
                                 ),
-                              ),
-                              const Spacer(),
-                              IconButton(
-                                onPressed: () {},
-                                icon: const Icon(
-                                  Icons.bookmark_border,
+                                const SizedBox(
+                                  width: 6,
                                 ),
-                                iconSize: 28,
-                              )
-                            ],
-                          ),
-                          const Padding(
-                            padding: EdgeInsets.symmetric(vertical: 16),
-                            child: Text("February 13"),
-                          ),
-                          Row(
-                            children: [
-                              Expanded(
-                                  child: Container(
-                                decoration: BoxDecoration(
-                                  color: Colors.grey[200],
-                                  borderRadius: BorderRadius.circular(24),
-                                ),
-                                padding: const EdgeInsets.symmetric(vertical: 10),
-                                child: const Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
+                                const Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      "🧗‍♂",
+                                      "Dreamwalker",
                                       style: TextStyle(
-                                        fontSize: 24,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 16,
                                       ),
                                     ),
+                                    SizedBox(
+                                      height: 4,
+                                    ),
                                     Text(
-                                      "Climbing",
+                                      "Seoul, Republic of Korea",
                                       style: TextStyle(
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.bold,
+                                        fontSize: 12,
+                                        color: Colors.grey,
                                       ),
                                     ),
                                   ],
                                 ),
-                              )),
-                              const SizedBox(
-                                width: 24,
+                                const Spacer(),
+                                IconButton(
+                                  onPressed: () {},
+                                  icon: const Icon(Icons.more_vert),
+                                )
+                              ],
+                            ),
+                            Container(
+                              margin: const EdgeInsets.symmetric(vertical: 16),
+                              height: 300,
+                              decoration: const BoxDecoration(
+                                color: Colors.red,
+                                image: DecorationImage(
+                                  image: NetworkImage(
+                                      "https://cdn.pixabay.com/photo/2018/04/08/23/19/wood-3302802_960_720.jpg"),
+                                  fit: BoxFit.cover,
+                                ),
                               ),
-                              Expanded(
-                                child: Container(
+                            ),
+                            Row(
+                              children: [
+                                const Text(
+                                  "Amazing Days in\nSeoul",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 24,
+                                  ),
+                                ),
+                                const Spacer(),
+                                IconButton(
+                                  onPressed: () {},
+                                  icon: const Icon(
+                                    Icons.bookmark_border,
+                                  ),
+                                  iconSize: 28,
+                                )
+                              ],
+                            ),
+                            const Padding(
+                              padding: EdgeInsets.symmetric(vertical: 16),
+                              child: Text("February 13"),
+                            ),
+                            Row(
+                              children: [
+                                Expanded(
+                                    child: Container(
                                   decoration: BoxDecoration(
                                     color: Colors.grey[200],
                                     borderRadius: BorderRadius.circular(24),
@@ -249,13 +223,13 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
                                       Text(
-                                        "🚶‍♂",
+                                        "🧗‍♂",
                                         style: TextStyle(
                                           fontSize: 24,
                                         ),
                                       ),
                                       Text(
-                                        "Park/ Trail",
+                                        "Climbing",
                                         style: TextStyle(
                                           fontSize: 16,
                                           fontWeight: FontWeight.bold,
@@ -263,19 +237,52 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
                                       ),
                                     ],
                                   ),
+                                )),
+                                const SizedBox(
+                                  width: 24,
                                 ),
-                              ),
-                            ],
-                          ),
-                          SizedBox(
-                            height: 24,
-                          ),
-                          Text(
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-                          )
-                        ],
+                                Expanded(
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey[200],
+                                      borderRadius: BorderRadius.circular(24),
+                                    ),
+                                    padding: const EdgeInsets.symmetric(vertical: 10),
+                                    child: const Row(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [
+                                        Text(
+                                          "🚶‍♂",
+                                          style: TextStyle(
+                                            fontSize: 24,
+                                          ),
+                                        ),
+                                        Text(
+                                          "Park/ Trail",
+                                          style: TextStyle(
+                                            fontSize: 16,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            SizedBox(
+                              height: 24,
+                            ),
+                            Text(
+                              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, "
+                                  "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+                                  "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris "
+                                  "nisi ut aliquip ex ea commodo consequat. ",
+                            )
+                          ],
+                        ),
                       ),
-                    ],
+                    ),
                   ),
                 ),
               ),
