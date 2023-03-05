@@ -125,47 +125,52 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
                   padding: const EdgeInsets.symmetric(horizontal: 16),
                   child: Column(
                     children: [
-                      Row(
+                      Column(
                         children: [
-                          const CircleAvatar(
-                            radius: 18,
-                            backgroundColor: Colors.red,
-                            child: CircleAvatar(
-                              radius: 16,
-                            ),
-                          ),
-                          const SizedBox(
-                            width: 6,
-                          ),
-                          const Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
+                          Row(
                             children: [
-                              Text(
-                                "Dreamwalker",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 16,
+                              const CircleAvatar(
+                                radius: 18,
+                                backgroundColor: Colors.red,
+                                child: CircleAvatar(
+                                  radius: 16,
                                 ),
                               ),
-                              SizedBox(
-                                height: 4,
+                              const SizedBox(
+                                width: 6,
                               ),
-                              Text(
-                                "Seoul, Republic of Korea",
-                                style: TextStyle(
-                                  fontSize: 12,
-                                  color: Colors.grey,
-                                ),
+                              const Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    "Dreamwalker",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 16,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 4,
+                                  ),
+                                  Text(
+                                    "Seoul, Republic of Korea",
+                                    style: TextStyle(
+                                      fontSize: 12,
+                                      color: Colors.grey,
+                                    ),
+                                  ),
+                                ],
                               ),
+                              const Spacer(),
+                              IconButton(
+                                onPressed: () {},
+                                icon: const Icon(Icons.more_vert),
+                              )
                             ],
                           ),
-                          const Spacer(),
-                          IconButton(
-                            onPressed: () {},
-                            icon: const Icon(Icons.more_vert),
-                          )
                         ],
                       )
+
                     ],
                   ),
                 ),
