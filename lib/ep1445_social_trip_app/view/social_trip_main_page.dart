@@ -14,44 +14,59 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Stack(
-              children: [
-                Row(
-                  children: [
-                    Container(
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                          color: Colors.grey[400]!,
+            SizedBox(
+              height: 64,
+              child: Stack(
+                children: [
+                  Positioned(
+                    left: 16,
+                    right: 16,
+                    bottom: 0,
+                    top: 0,
+                    child: Row(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.grey[400]!,
+                            ),
+                            borderRadius: BorderRadius.circular(24),
+                          ),
+                          padding: const EdgeInsets.only(
+                            right: 8,
+                          ),
+                          child: Row(
+                            children: [
+                              CircleAvatar(
+                                radius: 16,
+                                backgroundColor: Colors.red[300],
+                              ),
+                              const SizedBox(
+                                width: 8,
+                              ),
+                              const Text("3K")
+                            ],
+                          ),
                         ),
-                        borderRadius: BorderRadius.circular(24),
-                      ),
-                      padding: const EdgeInsets.only(
-                        right: 8,
-                      ),
-                      child: Row(
-                        children: [
-                          CircleAvatar(
-                            radius: 16,
-                            backgroundColor: Colors.red[300],
-                          ),
-                          const SizedBox(
-                            width: 8,
-                          ),
-                          const Text("3K")
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-                Center(
-                  child: Text(
-                    "Trips",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
+                      ],
                     ),
                   ),
-                )
-              ],
+                  Positioned(
+                    left: 16,
+                    right: 16,
+                    bottom: 0,
+                    top: 0,
+                    child: Center(
+                      child: Text(
+                        "Trips",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  )
+                ],
+              ),
             )
           ],
         ),
