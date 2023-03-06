@@ -14,8 +14,8 @@ class _SocialTripMessageScreenState extends State<SocialTripMessageScreen> {
       padding: const EdgeInsets.symmetric(horizontal: 16),
       child: Column(
         children: [
-          Padding(
-            padding: const EdgeInsets.symmetric(
+          const Padding(
+            padding: EdgeInsets.symmetric(
               vertical: 8,
             ),
             child: Text(
@@ -28,17 +28,18 @@ class _SocialTripMessageScreenState extends State<SocialTripMessageScreen> {
           ),
           Container(
             height: 48,
-            margin: EdgeInsets.symmetric(vertical: 16),
+            margin: const EdgeInsets.symmetric(vertical: 16),
             decoration: BoxDecoration(
               border: Border.all(
                 color: Colors.grey[400]!,
               ),
               borderRadius: BorderRadius.circular(8),
             ),
-            child: TextField(
+            child: const TextField(
               decoration: InputDecoration(
                 icon: Icon(Icons.search),
                 hintText: "Search",
+                border: InputBorder.none,
               ),
             ),
           ),
@@ -46,12 +47,12 @@ class _SocialTripMessageScreenState extends State<SocialTripMessageScreen> {
             children: [
               Expanded(
                 child: Container(
-                  padding: EdgeInsets.symmetric(vertical: 8),
+                  padding: const EdgeInsets.symmetric(vertical: 8),
                   decoration: BoxDecoration(
                     color: Colors.grey[200],
                     borderRadius: BorderRadius.circular(6),
                   ),
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Direct",
                       style: TextStyle(
@@ -61,15 +62,15 @@ class _SocialTripMessageScreenState extends State<SocialTripMessageScreen> {
                   ),
                 ),
               ),
-              SizedBox(width: 12),
+              const SizedBox(width: 12),
               Expanded(
                 child: Container(
                   decoration: BoxDecoration(
                     color: Colors.grey[200],
                     borderRadius: BorderRadius.circular(6),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 8),
-                  child: Center(
+                  padding: const EdgeInsets.symmetric(vertical: 8),
+                  child: const Center(
                     child: Text(
                       "Connect",
                       style: TextStyle(
@@ -79,15 +80,15 @@ class _SocialTripMessageScreenState extends State<SocialTripMessageScreen> {
                   ),
                 ),
               ),
-              SizedBox(width: 12),
+              const SizedBox(width: 12),
               Expanded(
                 child: Container(
                   decoration: BoxDecoration(
                     color: Colors.grey[200],
                     borderRadius: BorderRadius.circular(6),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 8),
-                  child: Center(
+                  padding: const EdgeInsets.symmetric(vertical: 8),
+                  child: const Center(
                     child: Text(
                       "Requests",
                       style: TextStyle(
@@ -102,7 +103,7 @@ class _SocialTripMessageScreenState extends State<SocialTripMessageScreen> {
           Expanded(
             child: ListView.separated(
               itemBuilder: (context, index) {},
-              separatorBuilder: (context, _) => Divider(),
+              separatorBuilder: (context, _) => const Divider(),
               itemCount: 10,
             ),
           ),
