@@ -122,16 +122,39 @@ class _SocialTripMessageScreenState extends State<SocialTripMessageScreen> {
                         backgroundColor: Colors.grey,
                       ),
                     ),
+                    SizedBox(
+                      width: 16,
+                    ),
+                    Expanded(
+                      child: Column(
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text("Dreamwalker"),
+                              Text("14:11"),
+                            ],
+                          ),
+                          SizedBox(
+                            height: 8,
+                          ),
+                          Row(
+                            children: [
+                              Expanded(
+                                child: Text(
+                                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                                  maxLines: 1,
+                                ),
+                              ),
+                              CircleAvatar(
+                                radius: 10,
+                                backgroundColor: Colors.red,
 
-                    Column(
-                      children: [
-                        Row(
-                          children: [
-                            Text("Dreamwalker"),
-                          ],
-                        ),
-                        Text("")
-                      ],
+                              )
+                            ],
+                          ),
+                        ],
+                      ),
                     )
                   ],
                 );
