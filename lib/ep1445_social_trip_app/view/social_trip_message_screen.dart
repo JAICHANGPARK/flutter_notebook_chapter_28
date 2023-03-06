@@ -52,6 +52,7 @@ class _SocialTripMessageScreenState extends State<SocialTripMessageScreen> {
                 ),
               ),
             ),
+            SizedBox(width: 12),
             Expanded(
               child: Container(
                 child: Center(
@@ -64,6 +65,7 @@ class _SocialTripMessageScreenState extends State<SocialTripMessageScreen> {
                 ),
               ),
             ),
+            SizedBox(width: 12),
             Expanded(
               child: Container(
                 child: Center(
