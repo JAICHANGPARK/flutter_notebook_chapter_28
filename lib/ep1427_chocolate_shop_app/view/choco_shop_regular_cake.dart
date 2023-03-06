@@ -85,7 +85,7 @@ class _ChocoShopRegularCakePageState extends State<ChocoShopRegularCakePage> {
                           ),
                           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
                           margin: const EdgeInsets.only(right: 12),
-                          child: const Row(
+                          child: Row(
                             children: [
                               Text(
                                 "Price",
@@ -108,7 +108,7 @@ class _ChocoShopRegularCakePageState extends State<ChocoShopRegularCakePage> {
                           ),
                           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                           margin: const EdgeInsets.only(right: 12),
-                          child: const Row(
+                          child:  Row(
                             children: [
                               Text(
                                 "Popular",
@@ -128,7 +128,7 @@ class _ChocoShopRegularCakePageState extends State<ChocoShopRegularCakePage> {
                           ),
                           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                           margin: const EdgeInsets.only(right: 12),
-                          child: const Row(
+                          child:  Row(
                             children: [
                               Text(
                                 "Rated 4+",
@@ -179,7 +179,7 @@ class _ChocoShopRegularCakePageState extends State<ChocoShopRegularCakePage> {
                                             color: Colors.orange[300],
                                             borderRadius: BorderRadius.circular(16),
                                           ),
-                                          child: const Row(
+                                          child:  Row(
                                             children: [
                                               Icon(
                                                 Icons.star,
@@ -199,7 +199,7 @@ class _ChocoShopRegularCakePageState extends State<ChocoShopRegularCakePage> {
                                     ],
                                   ),
                                 ),
-                                const Expanded(
+                                 Expanded(
                                   child: Padding(
                                     padding: EdgeInsets.all(16.0),
                                     child: Column(

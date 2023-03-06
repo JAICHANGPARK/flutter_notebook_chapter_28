@@ -32,7 +32,7 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                   const SizedBox(
                     width: 12,
                   ),
-                  const Column(
+                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text("Hello👋,"),
@@ -59,7 +59,7 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
               const SizedBox(
                 height: 24,
               ),
-              const Row(
+               Row(
                 children: [
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -501,7 +501,7 @@ class _HealthCheckHomeScreenState extends State<HealthCheckHomeScreen> {
                         const SizedBox(
                           width: 16,
                         ),
-                        const Column(
+                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(

@@ -43,7 +43,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                         borderRadius: BorderRadius.circular(24),
                       ),
                       padding: const EdgeInsets.only(left: 2, bottom: 2, top: 2, right: 8),
-                      child: const Row(
+                      child:  Row(
                         children: [
                           CircleAvatar(
                             radius: 22,
@@ -158,7 +158,7 @@ class _FinanceCalculatorPageState extends State<FinanceCalculatorPage> {
                         ),
                       ),
                     ),
-                    const Padding(
+                     Padding(
                       padding: EdgeInsets.all(8.0),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,

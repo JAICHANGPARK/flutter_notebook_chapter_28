@@ -32,7 +32,7 @@ class _ESSAMainPageState extends State<ESSAMainPage> {
                                 borderRadius: BorderRadius.circular(8),
                               ),
                               padding: const EdgeInsets.all(16),
-                              child: const Column(
+                              child:  Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   CircleAvatar(
@@ -223,7 +223,7 @@ class _ESSAMainPageState extends State<ESSAMainPage> {
                                 borderRadius: BorderRadius.circular(8),
                               ),
                               padding: const EdgeInsets.all(16),
-                              child: const Column(
+                              child:  Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   CircleAvatar(

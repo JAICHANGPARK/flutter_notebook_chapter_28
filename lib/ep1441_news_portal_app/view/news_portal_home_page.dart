@@ -142,7 +142,7 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                                               ),
                                             ),
                                           ),
-                                          const Row(
+                                           Row(
                                             children: [
                                               CircleAvatar(
                                                 radius: 18,
@@ -251,7 +251,7 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                                   padding: const EdgeInsets.fromLTRB(16.0, 8, 16, 16),
                                   child: Column(
                                     children: [
-                                      const Row(
+                                       Row(
                                         children: [
                                           CircleAvatar(
                                             radius: 16,
@@ -300,7 +300,7 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                                       const SizedBox(
                                         height: 8,
                                       ),
-                                      const Row(
+                                       Row(
                                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                         children: [
                                           Text("5 min read - 31m ago"),

@@ -20,7 +20,7 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Row(
+               Row(
                 children: [
                   Text(
                     "Hey, ",
@@ -178,7 +178,7 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                                       color: Colors.grey[200],
                                       borderRadius: BorderRadius.circular(32),
                                     ),
-                                    child: const Row(
+                                    child:  Row(
                                       children: [
                                         Icon(
                                           Icons.location_on_outlined,
@@ -203,7 +203,7 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                                     ),
                                   ),
                                 ),
-                                const Padding(
+                                 Padding(
                                   padding: EdgeInsets.only(bottom: 8.0),
                                   child: Row(
                                     children: [
@@ -236,7 +236,7 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                                           ),
                                         ),
                                         padding: const EdgeInsets.symmetric(vertical: 8),
-                                        child: const Column(
+                                        child:  Column(
                                           children: [
                                             Text(
                                               "\$290",
@@ -268,7 +268,7 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                                           ),
                                         ),
                                         padding: const EdgeInsets.symmetric(vertical: 8),
-                                        child: const Column(
+                                        child:  Column(
                                           children: [
                                             Text(
                                               "\$290",
@@ -300,7 +300,7 @@ class _FreelancerMainPageState extends State<FreelancerMainPage> {
                                           ),
                                         ),
                                         padding: const EdgeInsets.symmetric(vertical: 8),
-                                        child: const Column(
+                                        child:  Column(
                                           children: [
                                             Text(
                                               "\$290",

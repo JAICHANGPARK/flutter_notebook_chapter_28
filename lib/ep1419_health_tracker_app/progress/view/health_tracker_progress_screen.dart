@@ -315,7 +315,7 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
                       color: Colors.white,
                     ),
                     padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 16),
-                    child: const Row(
+                    child:  Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Column(
@@ -437,7 +437,7 @@ class _HealthTrackerProgressScreenState extends State<HealthTrackerProgressScree
                         const SizedBox(
                           width: 16,
                         ),
-                        const Column(
+                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(

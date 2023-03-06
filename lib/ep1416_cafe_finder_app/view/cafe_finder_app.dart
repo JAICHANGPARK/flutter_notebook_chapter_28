@@ -260,7 +260,7 @@ class _CafeFinderMainPageState extends State<CafeFinderMainPage> {
                                               decoration: const BoxDecoration(
                                                 color: Colors.black,
                                               ),
-                                              child: const Row(
+                                              child:  Row(
                                                 children: [
                                                   Icon(
                                                     Icons.percent,

@@ -69,7 +69,7 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
             Container(
               margin: const EdgeInsets.symmetric(vertical: 16),
               height: 180,
-              child: const Column(
+              child:  Column(
                 children: [
                   Expanded(
                       child: Row(
@@ -414,7 +414,7 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                         "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
                         " nisi ut aliquip ex ea commodo consequat",
                       ),
-                      const Padding(
+                       Padding(
                         padding: EdgeInsets.symmetric(vertical: 16),
                         child: Row(
                           children: [
@@ -434,7 +434,7 @@ class _TimeTrackerHomePageState extends State<TimeTrackerHomePage> {
                           ],
                         ),
                       ),
-                      const Row(
+                       Row(
                         children: [
                           Icon(Icons.tag),
                           SizedBox(

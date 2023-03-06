@@ -25,7 +25,7 @@ class _EssaHomePageState extends State<EssaHomePage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Row(
+                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Column(
@@ -84,7 +84,7 @@ class _EssaHomePageState extends State<EssaHomePage> {
                                               fontSize: 18,
                                             ),
                                           ),
-                                          const Row(
+                                           Row(
                                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                             children: [
                                               Text(
@@ -139,7 +139,7 @@ class _EssaHomePageState extends State<EssaHomePage> {
                                               fontSize: 18,
                                             ),
                                           ),
-                                          const Row(
+                                           Row(
                                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                             children: [
                                               Text(
@@ -200,7 +200,7 @@ class _EssaHomePageState extends State<EssaHomePage> {
                                               fontSize: 18,
                                             ),
                                           ),
-                                          const Row(
+                                           Row(
                                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                             children: [
                                               Text(
@@ -255,7 +255,7 @@ class _EssaHomePageState extends State<EssaHomePage> {
                                               fontSize: 18,
                                             ),
                                           ),
-                                          const Row(
+                                           Row(
                                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                             children: [
                                               Text(
@@ -332,7 +332,7 @@ class _EssaHomePageState extends State<EssaHomePage> {
                                 const SizedBox(
                                   width: 16,
                                 ),
-                                const Column(
+                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
@@ -352,7 +352,7 @@ class _EssaHomePageState extends State<EssaHomePage> {
                                   ],
                                 ),
                                 const Spacer(),
-                                const Column(
+                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.end,
                                   children: [
                                     Text(

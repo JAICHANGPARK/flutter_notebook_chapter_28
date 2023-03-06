@@ -26,7 +26,7 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
               children: [
                 Container(
                   padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
-                  child: const Row(
+                  child:  Row(
                     children: [
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -384,7 +384,7 @@ class _ChocolateShopMainPageState extends State<ChocolateShopMainPage> {
                             color: Colors.brown[600]!,
                             borderRadius: BorderRadius.circular(8),
                           ),
-                          child: const Row(
+                          child:  Row(
                             children: [
                               Icon(
                                 Icons.confirmation_number,

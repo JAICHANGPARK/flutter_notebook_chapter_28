@@ -115,7 +115,7 @@ class _NewsPortalBookmarkPageState extends State<NewsPortalBookmarkPage> {
                 padding: const EdgeInsets.fromLTRB(16.0, 8, 16, 16),
                 child: Column(
                   children: [
-                    const Row(
+                     Row(
                       children: [
                         CircleAvatar(
                           radius: 16,
