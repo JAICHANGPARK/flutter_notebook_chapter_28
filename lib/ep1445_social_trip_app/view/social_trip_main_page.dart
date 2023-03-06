@@ -146,9 +146,9 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
                                 const SizedBox(
                                   width: 6,
                                 ),
-                                const Column(
+                                Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
+                                  children: const [
                                     Text(
                                       "Dreamwalker",
                                       style: TextStyle(
@@ -219,9 +219,9 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
                                     borderRadius: BorderRadius.circular(24),
                                   ),
                                   padding: const EdgeInsets.symmetric(vertical: 10),
-                                  child: const Row(
+                                  child:  Row(
                                     mainAxisAlignment: MainAxisAlignment.center,
-                                    children: [
+                                    children: const [
                                       Text(
                                         "🧗‍♂",
                                         style: TextStyle(
@@ -248,9 +248,9 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
                                       borderRadius: BorderRadius.circular(24),
                                     ),
                                     padding: const EdgeInsets.symmetric(vertical: 10),
-                                    child: const Row(
+                                    child:  Row(
                                       mainAxisAlignment: MainAxisAlignment.center,
-                                      children: [
+                                      children: const [
                                         Text(
                                           "🚶‍♂",
                                           style: TextStyle(
@@ -270,10 +270,10 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
                                 ),
                               ],
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 24,
                             ),
-                            Text(
+                            const Text(
                               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, "
                                   "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
                                   "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris "
