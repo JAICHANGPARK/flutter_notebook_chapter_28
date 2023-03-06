@@ -48,7 +48,7 @@ class _SocialTripMessageScreenState extends State<SocialTripMessageScreen> {
                 child: Container(
                   padding: EdgeInsets.symmetric(vertical: 8),
                   decoration: BoxDecoration(
-                    color: Colors.grey[300],
+                    color: Colors.grey[200],
                     borderRadius: BorderRadius.circular(6),
                   ),
                   child: Center(
@@ -64,6 +64,10 @@ class _SocialTripMessageScreenState extends State<SocialTripMessageScreen> {
               SizedBox(width: 12),
               Expanded(
                 child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.grey[200],
+                    borderRadius: BorderRadius.circular(6),
+                  ),
                   padding: EdgeInsets.symmetric(vertical: 8),
                   child: Center(
                     child: Text(
@@ -78,6 +82,10 @@ class _SocialTripMessageScreenState extends State<SocialTripMessageScreen> {
               SizedBox(width: 12),
               Expanded(
                 child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.grey[200],
+                    borderRadius: BorderRadius.circular(6),
+                  ),
                   padding: EdgeInsets.symmetric(vertical: 8),
                   child: Center(
                     child: Text(
