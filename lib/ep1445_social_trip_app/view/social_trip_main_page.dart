@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_28/ep1445_social_trip_app/view/social_trip_message_screen.dart';
 import 'package:flutter_notebook_chapter_28/ep1445_social_trip_app/view/social_trip_screen.dart';
 
 class SocialTripMainPage extends StatefulWidget {
@@ -23,6 +24,7 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
             Container(),
             const SocialTripScreen(),
             Container(),
+            const SocialTripMessageScreen(),
           ],
         ),
       ),
