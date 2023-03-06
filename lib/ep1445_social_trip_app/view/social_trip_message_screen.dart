@@ -79,7 +79,14 @@ class _SocialTripMessageScreenState extends State<SocialTripMessageScreen> {
               ),
             ),
           ],
-        )
+        ),
+        Expanded(
+          child: ListView.separated(
+            itemBuilder: (context, index) {},
+            separatorBuilder: (context, _) => Divider(),
+            itemCount: 10,
+          ),
+        ),
       ],
     );
   }
