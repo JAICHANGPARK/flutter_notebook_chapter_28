@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class SocialTripMessageScreen extends StatefulWidget {
@@ -13,7 +12,28 @@ class _SocialTripMessageScreenState extends State<SocialTripMessageScreen> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-
+        Text(
+          "Message",
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 20,
+          ),
+        ),
+        Container(
+          height: 48,
+          decoration: BoxDecoration(
+            border: Border.all(
+              color: Colors.grey[400]!,
+            ),
+            borderRadius: BorderRadius.circular(8),
+          ),
+          child: TextField(
+            decoration: InputDecoration(
+              icon: Icon(Icons.search),
+              hintText: "Search",
+            ),
+          ),
+        )
       ],
     );
   }
