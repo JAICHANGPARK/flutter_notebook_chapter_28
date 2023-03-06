@@ -36,28 +36,44 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  setState(() {
+                    pageIndex = 0;
+                  });
+                },
                 icon: const Icon(
                   Icons.home_filled,
                 ),
                 iconSize: 28,
               ),
               IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  setState(() {
+                    pageIndex = 1;
+                  });
+                },
                 icon: const Icon(
                   Icons.explore_outlined,
                 ),
                 iconSize: 28,
               ),
               IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  setState(() {
+                    pageIndex = 2;
+                  });
+                },
                 icon: const Icon(
                   Icons.public_outlined,
                 ),
                 iconSize: 28,
               ),
               IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  setState(() {
+                    pageIndex = 3;
+                  });
+                },
                 icon: const Icon(
                   Icons.business_center_outlined,
                 ),
