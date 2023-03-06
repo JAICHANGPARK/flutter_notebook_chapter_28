@@ -16,6 +16,9 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
         child: IndexedStack(
           index: pageIndex,
           children: [
+            Container(),
+            Container(),
+            Container(),
             Column(
               children: [
                 SizedBox(
@@ -293,6 +296,7 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
                 )
               ],
             ),
+            Container(),
           ],
         ),
       ),
