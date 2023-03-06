@@ -117,6 +117,21 @@ class _SocialTripMessageScreenState extends State<SocialTripMessageScreen> {
                         ),
                         shape: BoxShape.circle,
                       ),
+                      padding: EdgeInsets.all(3),
+                      child: CircleAvatar(
+                        backgroundColor: Colors.grey,
+                      ),
+                    ),
+
+                    Column(
+                      children: [
+                        Row(
+                          children: [
+                            Text("Dreamwalker"),
+                          ],
+                        ),
+                        Text("")
+                      ],
                     )
                   ],
                 );
