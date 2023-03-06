@@ -33,6 +33,43 @@ class _SocialTripMessageScreenState extends State<SocialTripMessageScreen> {
               hintText: "Search",
             ),
           ),
+        ),
+        Row(
+          children: [
+            Expanded(
+                child: Container(
+              child: Center(
+                child: Text(
+                  "Direct",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            )),
+            Expanded(
+                child: Container(
+                  child: Center(
+                    child: Text(
+                      "Direct",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                )),
+            Expanded(
+                child: Container(
+                  child: Center(
+                    child: Text(
+                      "Direct",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                )),
+          ],
         )
       ],
     );
