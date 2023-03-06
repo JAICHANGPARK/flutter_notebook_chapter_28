@@ -402,11 +402,11 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                               ],
                             ),
                           )),
-                          const Expanded(child: Column()),
-                          const Expanded(
+                          Expanded(child: Column()),
+                          Expanded(
                               child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
+                            children: const [
                               Badge(
                                 child: Icon(
                                   Icons.notifications_none,
@@ -426,10 +426,10 @@ class _NewsPortalHomePageState extends State<NewsPortalHomePage> {
                               )
                             ],
                           )),
-                          const Expanded(
+                          Expanded(
                               child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
+                            children: const [
                               CircleAvatar(),
                               SizedBox(
                                 height: 6,
