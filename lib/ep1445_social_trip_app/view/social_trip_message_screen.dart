@@ -100,10 +100,31 @@ class _SocialTripMessageScreenState extends State<SocialTripMessageScreen> {
               ),
             ],
           ),
+          SizedBox(
+            height: 24,
+          ),
           Expanded(
             child: ListView.separated(
-              itemBuilder: (context, index) {},
-              separatorBuilder: (context, _) => const Divider(),
+              itemBuilder: (context, index) {
+                return Row(
+                  children: [
+                    Container(
+                      height: 64,
+                      width: 64,
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.red,
+                        ),
+                        shape: BoxShape.circle,
+                      ),
+                    )
+                  ],
+                );
+              },
+              separatorBuilder: (context, _) => const Divider(
+                height: 48,
+                color: Colors.grey,
+              ),
               itemCount: 10,
             ),
           ),
