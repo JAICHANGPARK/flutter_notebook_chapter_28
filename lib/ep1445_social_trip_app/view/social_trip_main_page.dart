@@ -81,7 +81,16 @@ class _SocialTripMainPageState extends State<SocialTripMainPage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          setState(() {
+            if(pageIndex == 5){
+              pageIndex = 0;
+            }else{
+              pageIndex = 5;
+            }
+
+          });
+        },
         backgroundColor: Colors.red[300],
         child: const Icon(Icons.chat_outlined),
       ),
