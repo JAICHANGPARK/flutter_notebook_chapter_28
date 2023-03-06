@@ -37,38 +37,45 @@ class _SocialTripMessageScreenState extends State<SocialTripMessageScreen> {
         Row(
           children: [
             Expanded(
-                child: Container(
-              child: Center(
-                child: Text(
-                  "Direct",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.grey[300],
+                  borderRadius: BorderRadius.circular(6),
+                ),
+                child: Center(
+                  child: Text(
+                    "Direct",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),
-            )),
+            ),
             Expanded(
-                child: Container(
-                  child: Center(
-                    child: Text(
-                      "Direct",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                      ),
+              child: Container(
+                child: Center(
+                  child: Text(
+                    "Connect",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
-                )),
+                ),
+              ),
+            ),
             Expanded(
-                child: Container(
-                  child: Center(
-                    child: Text(
-                      "Direct",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                      ),
+              child: Container(
+                child: Center(
+                  child: Text(
+                    "Requests",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
-                )),
+                ),
+              ),
+            ),
           ],
         )
       ],
