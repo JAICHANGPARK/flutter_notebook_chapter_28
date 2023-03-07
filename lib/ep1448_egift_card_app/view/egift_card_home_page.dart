@@ -18,15 +18,31 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
               children: [
                 IconButton(
                   onPressed: () {},
-                  icon: Icon(Icons.menu),
+                  icon: const Icon(Icons.menu),
                 ),
                 IconButton(
                   onPressed: () {},
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.shopping_bag_outlined,
                   ),
                 )
               ],
+            ),
+            Container(
+              height: 48,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                border: Border.all(),
+                borderRadius: BorderRadius.circular(2),
+              ),
+              child: const TextField(
+                decoration: InputDecoration(
+                  hintText: "Search",
+                  icon: Icon(
+                    Icons.search,
+                  ),
+                ),
+              ),
             )
           ],
         ),
