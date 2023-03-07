@@ -73,64 +73,72 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            Expanded(
+                child: SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    "Special promotions",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20,
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "Special promotions",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20,
+                          ),
+                        ),
+                        DotsIndicator(
+                          dotsCount: 3,
+                        )
+                      ],
                     ),
                   ),
-                  DotsIndicator(
-                    dotsCount: 3,
+                  Container(
+                    height: 260,
+                    margin: EdgeInsets.all(16),
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                      border: Border.all(),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "Bestsellers",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20,
+                          ),
+                        ),
+                        OutlinedButton(onPressed: () {}, child: Text("view all"))
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: SizedBox(
+                      height: 180,
+                      child: Row(
+                        children: [
+                          Expanded(child: Placeholder()),
+                          SizedBox(
+                            width: 16,
+                          ),
+                          Expanded(child: Placeholder()),
+                        ],
+                      ),
+                    ),
                   )
                 ],
               ),
-            ),
-            Container(
-              height: 260,
-              margin: EdgeInsets.all(16),
-              decoration: BoxDecoration(
-                color: Colors.blue,
-                border: Border.all(),
-                borderRadius: BorderRadius.circular(8),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    "Bestsellers",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20,
-                    ),
-                  ),
-                  OutlinedButton(onPressed: () {}, child: Text("view all"))
-                ],
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: SizedBox(
-                height: 180,
-                child: Row(
-                  children: [
-                    Expanded(child: Placeholder()),
-                    SizedBox(
-                      width: 16,
-                    ),
-                    Expanded(child: Placeholder()),
-                  ],
-                ),
-              ),
-            )
+            )),
           ],
         ),
       ),
