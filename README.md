@@ -1,6 +1,14 @@
 # flutter_notebook_chapter_28
 
-### EP1445
+### EP1445-1447
+
+- Giftie - e-gift card app
+- by Yuliia Bulyndina for Fireart Studio
+- https://dribbble.com/shots/20815993-Giftie-e-gift-card-app
+
+<img src="https://cdn.dribbble.com/userupload/5088928/file/original-9afe1923ce02d6507f058d1a5b129014.png?compress=1&resize=1024x768" width="500px"/>
+
+### EP1445-1447
 
 - Social Trip App - UX/UI
 - by IKAKO®
