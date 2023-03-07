@@ -11,6 +11,7 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.blue[50],
       body: SafeArea(
         child: Column(
           children: [
