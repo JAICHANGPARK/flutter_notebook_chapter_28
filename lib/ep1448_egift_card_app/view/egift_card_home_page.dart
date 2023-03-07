@@ -112,10 +112,22 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                       fontSize: 20,
                     ),
                   ),
-                  OutlinedButton(onPressed: (){}, child: Text("view all"))
+                  OutlinedButton(onPressed: () {}, child: Text("view all"))
                 ],
               ),
             ),
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: SizedBox(
+                height: 200,
+                child: Row(
+                  children: [
+                    Expanded(child: Placeholder()),
+                    Expanded(child: Placeholder()),
+                  ],
+                ),
+              ),
+            )
           ],
         ),
       ),
