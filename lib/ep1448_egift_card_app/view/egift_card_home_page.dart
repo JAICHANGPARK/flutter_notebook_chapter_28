@@ -52,16 +52,25 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                 ),
               ),
             ),
-            SizedBox(
-              height: 48,
-              child: ListView.builder(
-                itemBuilder: (context, index) {
-                  return Container(
-                    color: Colors.blue,
-                    margin: EdgeInsets.only(right: 16),
-                  );
-                },
-                scrollDirection: Axis.horizontal,
+            Padding(
+              padding: const EdgeInsets.only(left: 16, bottom: 24, top: 8),
+              child: SizedBox(
+                height: 48,
+                child: ListView.builder(
+                  itemBuilder: (context, index) {
+                    return Container(
+                      padding: EdgeInsets.symmetric(horizontal: 16),
+                      color: Colors.blue,
+                      margin: EdgeInsets.only(right: 16),
+                      child: Center(
+                        child: Text(
+                          'Shopping',
+                        ),
+                      ),
+                    );
+                  },
+                  scrollDirection: Axis.horizontal,
+                ),
               ),
             ),
             Padding(
@@ -81,7 +90,11 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                   )
                 ],
               ),
-            )
+            ),
+            Container(height: 240,
+            decoration: BoxDecoration(
+              
+            ),)
           ],
         ),
       ),
