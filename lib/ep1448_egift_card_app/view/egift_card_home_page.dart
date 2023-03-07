@@ -64,13 +64,23 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                 scrollDirection: Axis.horizontal,
               ),
             ),
-            Row(
-              children: [
-                Text("Special promotions"),
-                DotsIndicator(
-                  dotsCount: 3,
-                )
-              ],
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    "Special promotions",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18,
+                    ),
+                  ),
+                  DotsIndicator(
+                    dotsCount: 3,
+                  )
+                ],
+              ),
             )
           ],
         ),
