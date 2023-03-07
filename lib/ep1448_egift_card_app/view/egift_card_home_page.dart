@@ -38,7 +38,7 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
               decoration: BoxDecoration(
                 color: Colors.white,
                 border: Border.all(),
-                borderRadius: BorderRadius.circular(2),
+                borderRadius: BorderRadius.circular(3),
               ),
               margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
               padding: EdgeInsets.symmetric(horizontal: 8),
@@ -50,7 +50,19 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                   ),
                 ),
               ),
-            )
+            ),
+            SizedBox(
+              height: 48,
+              child: ListView.builder(
+                itemBuilder: (context, index) {
+                  return Container(
+                    color: Colors.blue,
+                    margin: EdgeInsets.only(right: 16),
+                  );
+                },
+                scrollDirection: Axis.horizontal,
+              ),
+            ),
           ],
         ),
       ),
