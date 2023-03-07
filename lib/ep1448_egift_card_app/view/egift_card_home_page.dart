@@ -82,7 +82,7 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                     "Special promotions",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 18,
+                      fontSize: 20,
                     ),
                   ),
                   DotsIndicator(
@@ -91,10 +91,15 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                 ],
               ),
             ),
-            Container(height: 240,
-            decoration: BoxDecoration(
-              
-            ),)
+            Container(
+              height: 260,
+              margin: EdgeInsets.all(16),
+              decoration: BoxDecoration(
+                color: Colors.blue,
+                border: Border.all(),
+                borderRadius: BorderRadius.circular(8),
+              ),
+            )
           ],
         ),
       ),
