@@ -1,3 +1,4 @@
+import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 
 class EGiftCardHomePage extends StatefulWidget {
@@ -63,6 +64,14 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                 scrollDirection: Axis.horizontal,
               ),
             ),
+            Row(
+              children: [
+                Text("Special promotions"),
+                DotsIndicator(
+                  dotsCount: 3,
+                )
+              ],
+            )
           ],
         ),
       ),
