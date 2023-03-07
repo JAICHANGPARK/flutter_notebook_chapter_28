@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-
-
 class EGiftCardHomePage extends StatefulWidget {
   const EGiftCardHomePage({Key? key}) : super(key: key);
 
@@ -12,6 +10,14 @@ class EGiftCardHomePage extends StatefulWidget {
 class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [
+            
+          ],
+        ),
+      ),
+    );
   }
 }
