@@ -119,10 +119,13 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: SizedBox(
-                height: 200,
+                height: 180,
                 child: Row(
                   children: [
                     Expanded(child: Placeholder()),
+                    SizedBox(
+                      width: 16,
+                    ),
                     Expanded(child: Placeholder()),
                   ],
                 ),
