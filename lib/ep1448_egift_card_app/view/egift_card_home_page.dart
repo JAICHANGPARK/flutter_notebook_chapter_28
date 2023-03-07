@@ -14,7 +14,20 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
       body: SafeArea(
         child: Column(
           children: [
-            
+            Row(
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.menu),
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.shopping_bag_outlined,
+                  ),
+                )
+              ],
+            )
           ],
         ),
       ),
