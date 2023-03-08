@@ -137,7 +137,7 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                           flex: 6,
                           child: Container(),
                         ),
-                        Divider(
+                        const Divider(
                           color: Colors.black,
                           height: 0,
                           thickness: 1.2,
@@ -168,7 +168,7 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 8,
                   ),
                   Padding(
@@ -187,7 +187,7 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                           onPressed: () {},
                           style: OutlinedButton.styleFrom(
                             foregroundColor: Colors.black,
-                            side: BorderSide(),
+                            side: const BorderSide(),
                           ),
                           child: const Text(
                             "view all",
@@ -211,10 +211,10 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                               ),
                               child: Column(
                                 children: [
-                                  Expanded(child: Placeholder()),
+                                  const Expanded(child: Placeholder()),
                                   Container(
-                                    padding: EdgeInsets.all(4),
-                                    decoration: BoxDecoration(
+                                    padding: const EdgeInsets.all(4),
+                                    decoration: const BoxDecoration(
                                         gradient: LinearGradient(colors: [
                                           Color.fromRGBO(183, 230, 192, 1),
                                           Color.fromRGBO(180, 212, 224, 1),
@@ -226,7 +226,7 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                                         )),
                                     height: 42,
                                     child: Row(
-                                      children: [
+                                      children: const [
                                         Expanded(child: Text("Netflix")),
                                         VerticalDivider(
                                           color: Colors.black,
@@ -239,10 +239,10 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                               ),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 16,
                           ),
-                          Expanded(child: Placeholder()),
+                          const Expanded(child: Placeholder()),
                         ],
                       ),
                     ),
