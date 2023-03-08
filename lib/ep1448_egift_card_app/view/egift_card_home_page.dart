@@ -106,8 +106,8 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                         DotsIndicator(
                           dotsCount: 3,
                           decorator: DotsDecorator(
-                            activeSize: Size(32, 8),
-                            size: Size.square(9),
+                            activeSize: const Size(32, 8),
+                            size: const Size.square(9),
                             activeShape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(8),
                             ),
@@ -124,7 +124,7 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                       color: Colors.white,
                       border: Border.all(),
                       borderRadius: BorderRadius.circular(8),
-                      boxShadow: [
+                      boxShadow: const [
                         BoxShadow(
                           color: Colors.black,
                           offset: Offset(2, 2),
@@ -133,18 +133,21 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                     ),
                     child: Column(
                       children: [
-                        Expanded(child: Placeholder()),
+                        const Expanded(child: Placeholder()),
                         Expanded(
-                            child: Column(
-                          children: [
-                            Text(
-                              "Woman's day",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
+                          child: Column(
+                            children: const [
+                              Text(
+                                "Woman's day",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
-                            )
-                          ],
-                        )),
+                              Text("Make your beloved feel special with our new designs."
+                                  " 20% off on each card!"),
+                            ],
+                          ),
+                        ),
                       ],
                     ),
                   ),
@@ -169,12 +172,12 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                     child: SizedBox(
                       height: 180,
                       child: Row(
-                        children: [
-                          const Expanded(child: Placeholder()),
-                          const SizedBox(
+                        children: const [
+                          Expanded(child: Placeholder()),
+                          SizedBox(
                             width: 16,
                           ),
-                          const Expanded(child: Placeholder()),
+                          Expanded(child: Placeholder()),
                         ],
                       ),
                     ),
