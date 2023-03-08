@@ -182,12 +182,12 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                         ),
                         OutlinedButton(
                           onPressed: () {},
-                          child: const Text(
-                            "view all",
-                          ),
                           style: OutlinedButton.styleFrom(
                             foregroundColor: Colors.black,
-                            side: BorderSide()
+                            side: BorderSide(),
+                          ),
+                          child: const Text(
+                            "view all",
                           ),
                         )
                       ],
@@ -198,8 +198,21 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                     child: SizedBox(
                       height: 180,
                       child: Row(
-                        children: const [
-                          Expanded(child: Placeholder()),
+                        children: [
+                          Expanded(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                border: Border.all(),
+                                borderRadius: BorderRadius.circular(8)
+                              ),
+                              child: Column(
+                                children: [
+                                  Expanded(child: Placeholder()),
+                                  
+                                ],
+                              ),
+                            ),
+                          ),
                           SizedBox(
                             width: 16,
                           ),
