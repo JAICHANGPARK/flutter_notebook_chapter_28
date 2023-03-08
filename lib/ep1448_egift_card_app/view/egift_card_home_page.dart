@@ -133,9 +133,9 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                     ),
                     child: Column(
                       children: [
-                        const Expanded(
+                         Expanded(
                           flex: 6,
-                          child: Placeholder(),
+                          child: Container(),
                         ),
                         Expanded(
                           flex: 4,
