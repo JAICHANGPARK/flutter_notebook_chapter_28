@@ -105,6 +105,14 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                         ),
                         DotsIndicator(
                           dotsCount: 3,
+                          decorator: DotsDecorator(
+                            activeSize: Size(32, 8),
+                            size: Size.square(9),
+                            activeShape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            activeColor: Colors.black,
+                          ),
                         )
                       ],
                     ),
