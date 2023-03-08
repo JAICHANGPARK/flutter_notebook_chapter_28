@@ -60,7 +60,9 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                   itemBuilder: (context, index) {
                     return Container(
                       padding: EdgeInsets.symmetric(horizontal: 16),
-                      color: Colors.blue,
+                      decoration: BoxDecoration(
+                        color: Colors.blue,
+                      ),
                       margin: EdgeInsets.only(right: 16),
                       child: Center(
                         child: Text(
