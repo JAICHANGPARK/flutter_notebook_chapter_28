@@ -117,8 +117,9 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                       ],
                     ),
                   ),
+
                   Container(
-                    height: 260,
+                    height: 280,
                     margin: const EdgeInsets.all(16),
                     decoration: BoxDecoration(
                       color: Colors.white,
@@ -168,6 +169,9 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                       ],
                     ),
                   ),
+                  SizedBox(
+                    height: 8,
+                  ),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16),
                     child: Row(
@@ -202,13 +206,10 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                           Expanded(
                             child: Container(
                               decoration: BoxDecoration(
-                                border: Border.all(),
-                                borderRadius: BorderRadius.circular(8)
-                              ),
+                                  border: Border.all(), borderRadius: BorderRadius.circular(8), color: Colors.white),
                               child: Column(
                                 children: [
                                   Expanded(child: Placeholder()),
-                                  
                                 ],
                               ),
                             ),
