@@ -124,6 +124,12 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                       color: Colors.blue,
                       border: Border.all(),
                       borderRadius: BorderRadius.circular(8),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black,
+                          offset: Offset(2, 2),
+                        ),
+                      ],
                     ),
                   ),
                   Padding(
