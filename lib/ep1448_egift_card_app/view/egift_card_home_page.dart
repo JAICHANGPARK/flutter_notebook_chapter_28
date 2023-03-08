@@ -61,9 +61,19 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                     return Container(
                       padding: EdgeInsets.symmetric(horizontal: 16),
                       decoration: BoxDecoration(
-                        color: Colors.blue,
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(24),
+                        border: Border.all(
+                          color: Colors.black,
+                        ),
+                        boxShadow: [
+                          if(index == 0)BoxShadow(
+                            color: Colors.black,
+                            offset: Offset(2, 2),
+                          ),
+                        ],
                       ),
-                      margin: EdgeInsets.only(right: 16),
+                      margin: EdgeInsets.only(right: 16, bottom: 2),
                       child: Center(
                         child: Text(
                           'Shopping',
