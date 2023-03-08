@@ -133,19 +133,28 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                     ),
                     child: Column(
                       children: [
-                        const Expanded(child: Placeholder()),
+                        const Expanded(
+                          flex: 6,
+                          child: Placeholder(),
+                        ),
                         Expanded(
-                          child: Column(
-                            children: const [
-                              Text(
-                                "Woman's day",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
+                          flex: 4,
+                          child: Padding(
+                            padding: const EdgeInsets.all(16.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: const [
+                                Text(
+                                  "Woman's day",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 24,
+                                  ),
                                 ),
-                              ),
-                              Text("Make your beloved feel special with our new designs."
-                                  " 20% off on each card!"),
-                            ],
+                                Text("Make your beloved feel special with our new designs."
+                                    " 20% off on each card!"),
+                              ],
+                            ),
                           ),
                         ),
                       ],
