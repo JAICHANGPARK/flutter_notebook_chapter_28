@@ -226,12 +226,13 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                                   )),
                                   Container(
                                     padding: const EdgeInsets.all(4),
-                                    decoration: const BoxDecoration(
+                                    decoration:  BoxDecoration(
                                         gradient: LinearGradient(colors: [
                                           Color.fromRGBO(183, 230, 192, 1),
                                           Color.fromRGBO(180, 212, 224, 1),
                                           Color.fromRGBO(175, 193, 252, 1),
                                         ]),
+                                        border: Border.all(),
                                         borderRadius: BorderRadius.only(
                                           bottomLeft: Radius.circular(8),
                                           bottomRight: Radius.circular(8),
