@@ -137,6 +137,7 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                           flex: 6,
                           child: Container(),
                         ),
+                        Divider(color: Colors.black,),
                         Expanded(
                           flex: 4,
                           child: Padding(
