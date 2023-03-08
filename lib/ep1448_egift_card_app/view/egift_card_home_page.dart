@@ -121,7 +121,7 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                     height: 260,
                     margin: const EdgeInsets.all(16),
                     decoration: BoxDecoration(
-                      color: Colors.blue,
+                      color: Colors.white,
                       border: Border.all(),
                       borderRadius: BorderRadius.circular(8),
                       boxShadow: [
@@ -129,6 +129,22 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                           color: Colors.black,
                           offset: Offset(2, 2),
                         ),
+                      ],
+                    ),
+                    child: Column(
+                      children: [
+                        Expanded(child: Placeholder()),
+                        Expanded(
+                            child: Column(
+                          children: [
+                            Text(
+                              "Woman's day",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            )
+                          ],
+                        )),
                       ],
                     ),
                   ),
