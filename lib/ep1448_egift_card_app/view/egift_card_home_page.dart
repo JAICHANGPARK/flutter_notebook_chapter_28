@@ -212,6 +212,29 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                               child: Column(
                                 children: [
                                   Expanded(child: Placeholder()),
+                                  Container(
+                                    padding: EdgeInsets.all(4),
+                                    decoration: BoxDecoration(
+                                        gradient: LinearGradient(colors: [
+                                          Color.fromRGBO(183, 230, 192, 1),
+                                          Color.fromRGBO(180, 212, 224, 1),
+                                          Color.fromRGBO(175, 193, 252, 1),
+                                        ]),
+                                        borderRadius: BorderRadius.only(
+                                          bottomLeft: Radius.circular(8),
+                                          bottomRight: Radius.circular(8),
+                                        )),
+                                    height: 42,
+                                    child: Row(
+                                      children: [
+                                        Expanded(child: Text("Netflix")),
+                                        VerticalDivider(
+                                          color: Colors.black,
+                                        ),
+                                        Expanded(child: Text("\$20-250")),
+                                      ],
+                                    ),
+                                  )
                                 ],
                               ),
                             ),
