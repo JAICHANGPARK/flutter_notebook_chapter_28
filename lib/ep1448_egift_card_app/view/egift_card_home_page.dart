@@ -41,8 +41,8 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                 border: Border.all(),
                 borderRadius: BorderRadius.circular(3),
               ),
-              margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-              padding: EdgeInsets.symmetric(horizontal: 8),
+              margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+              padding: const EdgeInsets.symmetric(horizontal: 8),
               child: const TextField(
                 decoration: InputDecoration(
                   hintText: "Search",
@@ -59,7 +59,7 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                 child: ListView.builder(
                   itemBuilder: (context, index) {
                     return Container(
-                      padding: EdgeInsets.symmetric(horizontal: 16),
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(24),
@@ -67,14 +67,15 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                           color: Colors.black,
                         ),
                         boxShadow: [
-                          if(index == 0)BoxShadow(
-                            color: Colors.black,
-                            offset: Offset(2, 2),
-                          ),
+                          if (index == 0)
+                            const BoxShadow(
+                              color: Colors.black,
+                              offset: Offset(2, 2),
+                            ),
                         ],
                       ),
-                      margin: EdgeInsets.only(right: 16, bottom: 2),
-                      child: Center(
+                      margin: const EdgeInsets.only(right: 16, bottom: 2),
+                      child: const Center(
                         child: Text(
                           'Shopping',
                         ),
@@ -95,7 +96,7 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(
+                        const Text(
                           "Special promotions",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
@@ -110,7 +111,7 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                   ),
                   Container(
                     height: 260,
-                    margin: EdgeInsets.all(16),
+                    margin: const EdgeInsets.all(16),
                     decoration: BoxDecoration(
                       color: Colors.blue,
                       border: Border.all(),
@@ -122,14 +123,14 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(
+                        const Text(
                           "Bestsellers",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 20,
                           ),
                         ),
-                        OutlinedButton(onPressed: () {}, child: Text("view all"))
+                        OutlinedButton(onPressed: () {}, child: const Text("view all"))
                       ],
                     ),
                   ),
@@ -139,11 +140,11 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                       height: 180,
                       child: Row(
                         children: [
-                          Expanded(child: Placeholder()),
-                          SizedBox(
+                          const Expanded(child: Placeholder()),
+                          const SizedBox(
                             width: 16,
                           ),
-                          Expanded(child: Placeholder()),
+                          const Expanded(child: Placeholder()),
                         ],
                       ),
                     ),
