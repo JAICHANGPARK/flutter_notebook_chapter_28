@@ -133,11 +133,15 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                     ),
                     child: Column(
                       children: [
-                         Expanded(
+                        Expanded(
                           flex: 6,
                           child: Container(),
                         ),
-                        Divider(color: Colors.black,),
+                        Divider(
+                          color: Colors.black,
+                          height: 0,
+                          thickness: 1.2,
+                        ),
                         Expanded(
                           flex: 4,
                           child: Padding(
@@ -151,6 +155,9 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                                     fontWeight: FontWeight.bold,
                                     fontSize: 24,
                                   ),
+                                ),
+                                SizedBox(
+                                  height: 4,
                                 ),
                                 Text("Make your beloved feel special with our new designs."
                                     " 20% off on each card!"),
