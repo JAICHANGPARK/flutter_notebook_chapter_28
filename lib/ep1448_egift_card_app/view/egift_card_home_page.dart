@@ -255,7 +255,194 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                           const SizedBox(
                             width: 16,
                           ),
-                          const Expanded(child: Placeholder()),
+                          Expanded(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                border: Border.all(),
+                                borderRadius: BorderRadius.circular(8),
+                                color: Colors.white,
+                              ),
+                              child: Column(
+                                children: [
+                                  Expanded(
+                                      child: Stack(
+                                        children: [
+                                          Positioned(
+                                            right: 0,
+                                            top: 0,
+                                            child: IconButton(
+                                              onPressed: () {},
+                                              icon: const Icon(Icons.favorite_border),
+                                            ),
+                                          )
+                                        ],
+                                      )),
+                                  Container(
+                                    padding: const EdgeInsets.all(4),
+                                    decoration:  BoxDecoration(
+                                        gradient: const LinearGradient(colors: [
+                                          Color.fromRGBO(183, 230, 192, 1),
+                                          Color.fromRGBO(180, 212, 224, 1),
+                                          Color.fromRGBO(175, 193, 252, 1),
+                                        ]),
+                                        border: Border.all(),
+                                        borderRadius: const BorderRadius.only(
+                                          bottomLeft: Radius.circular(8),
+                                          bottomRight: Radius.circular(8),
+                                        )),
+                                    height: 42,
+                                    child: Row(
+                                      children: const [
+                                        Expanded(child: Text("PlayStation")),
+                                        VerticalDivider(
+                                          color: Colors.black,
+                                        ),
+                                        Expanded(child: Text("\$20-250")),
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        const Text(
+                          "Popular",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20,
+                          ),
+                        ),
+                        OutlinedButton(
+                          onPressed: () {},
+                          style: OutlinedButton.styleFrom(
+                            foregroundColor: Colors.black,
+                            side: const BorderSide(),
+                          ),
+                          child: const Text(
+                            "view all",
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: SizedBox(
+                      height: 180,
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                border: Border.all(),
+                                borderRadius: BorderRadius.circular(8),
+                                color: Colors.white,
+                              ),
+                              child: Column(
+                                children: [
+                                  Expanded(
+                                      child: Stack(
+                                        children: [
+                                          Positioned(
+                                            right: 0,
+                                            top: 0,
+                                            child: IconButton(
+                                              onPressed: () {},
+                                              icon: const Icon(Icons.favorite_border),
+                                            ),
+                                          )
+                                        ],
+                                      )),
+                                  Container(
+                                    padding: const EdgeInsets.all(4),
+                                    decoration:  BoxDecoration(
+                                        gradient: const LinearGradient(colors: [
+                                          Color.fromRGBO(183, 230, 192, 1),
+                                          Color.fromRGBO(180, 212, 224, 1),
+                                          Color.fromRGBO(175, 193, 252, 1),
+                                        ]),
+                                        border: Border.all(),
+                                        borderRadius: const BorderRadius.only(
+                                          bottomLeft: Radius.circular(8),
+                                          bottomRight: Radius.circular(8),
+                                        )),
+                                    height: 42,
+                                    child: Row(
+                                      children: const [
+                                        Expanded(child: Text("Netflix")),
+                                        VerticalDivider(
+                                          color: Colors.black,
+                                        ),
+                                        Expanded(child: Text("\$20-250")),
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                          ),
+                          const SizedBox(
+                            width: 16,
+                          ),
+                          Expanded(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                border: Border.all(),
+                                borderRadius: BorderRadius.circular(8),
+                                color: Colors.white,
+                              ),
+                              child: Column(
+                                children: [
+                                  Expanded(
+                                      child: Stack(
+                                        children: [
+                                          Positioned(
+                                            right: 0,
+                                            top: 0,
+                                            child: IconButton(
+                                              onPressed: () {},
+                                              icon: const Icon(Icons.favorite_border),
+                                            ),
+                                          )
+                                        ],
+                                      )),
+                                  Container(
+                                    padding: const EdgeInsets.all(4),
+                                    decoration:  BoxDecoration(
+                                        gradient: const LinearGradient(colors: [
+                                          Color.fromRGBO(183, 230, 192, 1),
+                                          Color.fromRGBO(180, 212, 224, 1),
+                                          Color.fromRGBO(175, 193, 252, 1),
+                                        ]),
+                                        border: Border.all(),
+                                        borderRadius: const BorderRadius.only(
+                                          bottomLeft: Radius.circular(8),
+                                          bottomRight: Radius.circular(8),
+                                        )),
+                                    height: 42,
+                                    child: Row(
+                                      children: const [
+                                        Expanded(child: Text("PlayStation")),
+                                        VerticalDivider(
+                                          color: Colors.black,
+                                        ),
+                                        Expanded(child: Text("\$20-250")),
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                          ),
                         ],
                       ),
                     ),
