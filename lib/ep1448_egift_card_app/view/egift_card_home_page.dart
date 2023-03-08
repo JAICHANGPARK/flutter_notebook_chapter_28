@@ -211,7 +211,19 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                               ),
                               child: Column(
                                 children: [
-                                  const Expanded(child: Placeholder()),
+                                  Expanded(
+                                      child: Stack(
+                                    children: [
+                                      Positioned(
+                                        right: 0,
+                                        top: 0,
+                                        child: IconButton(
+                                          onPressed: () {},
+                                          icon: Icon(Icons.favorite_border),
+                                        ),
+                                      )
+                                    ],
+                                  )),
                                   Container(
                                     padding: const EdgeInsets.all(4),
                                     decoration: const BoxDecoration(
