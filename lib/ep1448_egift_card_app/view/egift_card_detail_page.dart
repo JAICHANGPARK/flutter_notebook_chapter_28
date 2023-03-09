@@ -33,7 +33,7 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              height: 300,
+              height: 280,
               decoration: BoxDecoration(
                 border: Border.all(),
                 borderRadius: BorderRadius.circular(8),
@@ -68,6 +68,7 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
             Row(
               children: [
                 Container(
+                  margin: EdgeInsets.only(right: 16),
                   decoration: BoxDecoration(
                     border: Border.all(),
                     boxShadow: [
@@ -88,6 +89,7 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
                   ),
                 ),
                 Container(
+                  margin: EdgeInsets.only(right: 16),
                   decoration: BoxDecoration(
                     border: Border.all(),
                     borderRadius: BorderRadius.circular(8),
@@ -99,6 +101,7 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
                   ),
                 ),
                 Container(
+                  margin: EdgeInsets.only(right: 16),
                   decoration: BoxDecoration(
                     border: Border.all(),
                     borderRadius: BorderRadius.circular(8),
@@ -110,6 +113,7 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
                   ),
                 ),
                 Container(
+                  margin: EdgeInsets.only(right: 16),
                   decoration: BoxDecoration(
                     border: Border.all(),
                     borderRadius: BorderRadius.circular(8),
