@@ -1,5 +1,6 @@
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_28/ep1448_egift_card_app/view/egift_card_detail_page.dart';
 
 class EGiftCardHomePage extends StatefulWidget {
   const EGiftCardHomePage({Key? key}) : super(key: key);
@@ -203,6 +204,68 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                       child: Row(
                         children: [
                           Expanded(
+                            child: GestureDetector(
+                              onTap: () {
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: (context) => EGiftCardDetailPage(),
+                                  ),
+                                );
+                              },
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  border: Border.all(),
+                                  borderRadius: BorderRadius.circular(8),
+                                  color: Colors.white,
+                                ),
+                                child: Column(
+                                  children: [
+                                    Expanded(
+                                        child: Stack(
+                                      children: [
+                                        Positioned(
+                                          right: 0,
+                                          top: 0,
+                                          child: IconButton(
+                                            onPressed: () {},
+                                            icon: const Icon(Icons.favorite_border),
+                                          ),
+                                        )
+                                      ],
+                                    )),
+                                    Container(
+                                      padding: const EdgeInsets.all(4),
+                                      decoration: BoxDecoration(
+                                          gradient: const LinearGradient(colors: [
+                                            Color.fromRGBO(183, 230, 192, 1),
+                                            Color.fromRGBO(180, 212, 224, 1),
+                                            Color.fromRGBO(175, 193, 252, 1),
+                                          ]),
+                                          border: Border.all(),
+                                          borderRadius: const BorderRadius.only(
+                                            bottomLeft: Radius.circular(8),
+                                            bottomRight: Radius.circular(8),
+                                          )),
+                                      height: 42,
+                                      child: Row(
+                                        children: const [
+                                          Expanded(child: Text("Netflix")),
+                                          VerticalDivider(
+                                            color: Colors.black,
+                                          ),
+                                          Expanded(child: Text("\$20-250")),
+                                        ],
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ),
+                          const SizedBox(
+                            width: 16,
+                          ),
+                          Expanded(
                             child: Container(
                               decoration: BoxDecoration(
                                 border: Border.all(),
@@ -226,60 +289,7 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                                   )),
                                   Container(
                                     padding: const EdgeInsets.all(4),
-                                    decoration:  BoxDecoration(
-                                        gradient: const LinearGradient(colors: [
-                                          Color.fromRGBO(183, 230, 192, 1),
-                                          Color.fromRGBO(180, 212, 224, 1),
-                                          Color.fromRGBO(175, 193, 252, 1),
-                                        ]),
-                                        border: Border.all(),
-                                        borderRadius: const BorderRadius.only(
-                                          bottomLeft: Radius.circular(8),
-                                          bottomRight: Radius.circular(8),
-                                        )),
-                                    height: 42,
-                                    child: Row(
-                                      children: const [
-                                        Expanded(child: Text("Netflix")),
-                                        VerticalDivider(
-                                          color: Colors.black,
-                                        ),
-                                        Expanded(child: Text("\$20-250")),
-                                      ],
-                                    ),
-                                  )
-                                ],
-                              ),
-                            ),
-                          ),
-                          const SizedBox(
-                            width: 16,
-                          ),
-                          Expanded(
-                            child: Container(
-                              decoration: BoxDecoration(
-                                border: Border.all(),
-                                borderRadius: BorderRadius.circular(8),
-                                color: Colors.white,
-                              ),
-                              child: Column(
-                                children: [
-                                  Expanded(
-                                      child: Stack(
-                                        children: [
-                                          Positioned(
-                                            right: 0,
-                                            top: 0,
-                                            child: IconButton(
-                                              onPressed: () {},
-                                              icon: const Icon(Icons.favorite_border),
-                                            ),
-                                          )
-                                        ],
-                                      )),
-                                  Container(
-                                    padding: const EdgeInsets.all(4),
-                                    decoration:  BoxDecoration(
+                                    decoration: BoxDecoration(
                                         gradient: const LinearGradient(colors: [
                                           Color.fromRGBO(183, 230, 192, 1),
                                           Color.fromRGBO(180, 212, 224, 1),
@@ -351,20 +361,20 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                                 children: [
                                   Expanded(
                                       child: Stack(
-                                        children: [
-                                          Positioned(
-                                            right: 0,
-                                            top: 0,
-                                            child: IconButton(
-                                              onPressed: () {},
-                                              icon: const Icon(Icons.favorite_border),
-                                            ),
-                                          )
-                                        ],
-                                      )),
+                                    children: [
+                                      Positioned(
+                                        right: 0,
+                                        top: 0,
+                                        child: IconButton(
+                                          onPressed: () {},
+                                          icon: const Icon(Icons.favorite_border),
+                                        ),
+                                      )
+                                    ],
+                                  )),
                                   Container(
                                     padding: const EdgeInsets.all(4),
-                                    decoration:  BoxDecoration(
+                                    decoration: BoxDecoration(
                                         gradient: const LinearGradient(colors: [
                                           Color.fromRGBO(183, 230, 192, 1),
                                           Color.fromRGBO(180, 212, 224, 1),
@@ -404,20 +414,20 @@ class _EGiftCardHomePageState extends State<EGiftCardHomePage> {
                                 children: [
                                   Expanded(
                                       child: Stack(
-                                        children: [
-                                          Positioned(
-                                            right: 0,
-                                            top: 0,
-                                            child: IconButton(
-                                              onPressed: () {},
-                                              icon: const Icon(Icons.favorite_border),
-                                            ),
-                                          )
-                                        ],
-                                      )),
+                                    children: [
+                                      Positioned(
+                                        right: 0,
+                                        top: 0,
+                                        child: IconButton(
+                                          onPressed: () {},
+                                          icon: const Icon(Icons.favorite_border),
+                                        ),
+                                      )
+                                    ],
+                                  )),
                                   Container(
                                     padding: const EdgeInsets.all(4),
-                                    decoration:  BoxDecoration(
+                                    decoration: BoxDecoration(
                                         gradient: const LinearGradient(colors: [
                                           Color.fromRGBO(183, 230, 192, 1),
                                           Color.fromRGBO(180, 212, 224, 1),
