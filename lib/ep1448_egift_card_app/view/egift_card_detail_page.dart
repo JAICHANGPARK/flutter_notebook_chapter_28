@@ -17,7 +17,7 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
       ),
       body: Column(
         children: [
-          
+
         ],
       ),
     );
