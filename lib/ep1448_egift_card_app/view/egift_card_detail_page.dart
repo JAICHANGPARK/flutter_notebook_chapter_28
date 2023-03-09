@@ -181,9 +181,17 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
                     color: Colors.purple,
                   ),
                 ),
-
               ],
-            )
+            ),
+            Container(
+              height: 52,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(6),
+                border: Border.all(
+                  color: Colors.black,
+                ),
+              ),
+            ),
           ],
         ),
       ),
