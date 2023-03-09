@@ -128,7 +128,9 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
             ),
             Text(
               "Choose a design",
-              style: TextStyle(),
+              style: TextStyle(
+                fontSize: 18,
+              ),
             )
           ],
         ),
