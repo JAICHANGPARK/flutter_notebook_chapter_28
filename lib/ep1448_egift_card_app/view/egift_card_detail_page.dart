@@ -59,11 +59,11 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
               "Choose an amount",
               style: TextStyle(
                 fontSize: 18,
-                fontWeight: FontWeight.bold,
+
               ),
             ),
             SizedBox(
-              height: 8,
+              height: 12,
             ),
             Row(
               children: [
@@ -74,10 +74,7 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
                     boxShadow: [
                       const BoxShadow(
                         color: Colors.black,
-                        offset: Offset(
-                          2,
-                          2,
-                        ),
+                        offset: Offset(2, 2),
                       ),
                     ],
                     borderRadius: BorderRadius.circular(8),
@@ -123,9 +120,16 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
                   child: const Center(
                     child: Text("\$other amount"),
                   ),
-                )
+                ),
               ],
             ),
+            SizedBox(
+              height: 16,
+            ),
+            Text(
+              "Choose a design",
+              style: TextStyle(),
+            )
           ],
         ),
       ),
