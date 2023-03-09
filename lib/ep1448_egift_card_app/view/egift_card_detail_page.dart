@@ -28,7 +28,16 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
         ],
       ),
       body: Column(
-        children: [],
+        children: [
+          Container(
+            height: 300,
+            margin: EdgeInsets.all(8),
+            decoration: BoxDecoration(
+              border: Border.all(),
+              borderRadius: BorderRadius.circular(8),
+            ),
+          )
+        ],
       ),
     );
   }
