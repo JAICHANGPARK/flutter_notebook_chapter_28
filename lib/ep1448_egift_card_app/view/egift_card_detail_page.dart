@@ -123,7 +123,7 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
               ],
             ),
             SizedBox(
-              height: 16,
+              height: 24,
             ),
             Text(
               "Choose a design",
@@ -132,7 +132,7 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
               ),
             ),
             SizedBox(
-              height: 16,
+              height: 12,
             ),
             Row(
               children: [
