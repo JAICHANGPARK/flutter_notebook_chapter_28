@@ -13,8 +13,19 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
     return Scaffold(
       backgroundColor: Colors.blue[50],
       appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        foregroundColor: Colors.black,
+        elevation: 0,
         centerTitle: true,
         title: Text("E-gift card"),
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Icon(
+              Icons.shopping_bag_outlined,
+            ),
+          ),
+        ],
       ),
       body: Column(
         children: [],
