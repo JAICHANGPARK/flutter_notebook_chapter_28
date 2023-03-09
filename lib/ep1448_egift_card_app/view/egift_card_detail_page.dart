@@ -17,11 +17,11 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
         foregroundColor: Colors.black,
         elevation: 0,
         centerTitle: true,
-        title: Text("E-gift card"),
+        title: const Text("E-gift card"),
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(
+            icon: const Icon(
               Icons.shopping_bag_outlined,
             ),
           ),
@@ -39,8 +39,8 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
                 borderRadius: BorderRadius.circular(8),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 16),
+            const Padding(
+              padding: EdgeInsets.symmetric(vertical: 16),
               child: Text(
                 "Netflix gift card",
                 style: TextStyle(
@@ -48,24 +48,76 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
                 ),
               ),
             ),
-            Text(
+            const Text(
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
               "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
             ),
-            Text(
+            SizedBox(
+              height: 24,
+            ),
+            const Text(
               "Choose an amount",
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            SizedBox(
+              height: 8,
             ),
             Row(
               children: [
                 Container(
                   decoration: BoxDecoration(
                     border: Border.all(),
-                    boxShadow: [],
+                    boxShadow: [
+                      const BoxShadow(
+                        color: Colors.black,
+                        offset: Offset(
+                          2,
+                          2,
+                        ),
+                      ),
+                    ],
+                    borderRadius: BorderRadius.circular(8),
                     color: Colors.white,
                   ),
-                  padding: EdgeInsets.all(12),
-                  child: Center(
+                  padding: const EdgeInsets.all(12),
+                  child: const Center(
                     child: Text("\$25"),
+                  ),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(),
+                    borderRadius: BorderRadius.circular(8),
+                    color: Colors.white,
+                  ),
+                  padding: const EdgeInsets.all(12),
+                  child: const Center(
+                    child: Text("\$50"),
+                  ),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(),
+                    borderRadius: BorderRadius.circular(8),
+                    color: Colors.white,
+                  ),
+                  padding: const EdgeInsets.all(12),
+                  child: const Center(
+                    child: Text("\$100"),
+                  ),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(),
+                    borderRadius: BorderRadius.circular(8),
+                    color: Colors.white,
+                  ),
+                  padding: const EdgeInsets.all(12),
+                  child: const Center(
+                    child: Text("\$other amount"),
                   ),
                 )
               ],
