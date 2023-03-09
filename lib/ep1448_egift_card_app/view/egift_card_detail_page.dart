@@ -132,7 +132,7 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
               ),
             ),
             SizedBox(
-              height: 12,
+              height: 16,
             ),
             Row(
               children: [
@@ -159,6 +159,26 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
                         offset: Offset(2, 2),
                       )
                     ],
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.only(right: 12),
+                  height: 42,
+                  width: 42,
+                  decoration: BoxDecoration(
+                    border: Border.all(),
+                    borderRadius: BorderRadius.circular(4),
+                    color: Colors.red,
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.only(right: 12),
+                  height: 42,
+                  width: 42,
+                  decoration: BoxDecoration(
+                    border: Border.all(),
+                    borderRadius: BorderRadius.circular(4),
+                    color: Colors.purple,
                   ),
                 ),
 
