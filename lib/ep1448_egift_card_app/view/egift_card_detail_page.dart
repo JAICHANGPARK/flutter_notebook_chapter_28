@@ -197,12 +197,13 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
                   Expanded(
                     flex: 4,
                     child: Container(
-
-                      decoration:  BoxDecoration(
+                      decoration: BoxDecoration(
                         color: Colors.white,
                         border: Border(
-                          right: BorderSide(color: Colors.black)
-                        )
+                          right: BorderSide(
+                            color: Colors.black,
+                          ),
+                        ),
                       ),
                       child: const Center(
                         child: Text("\$25"),
@@ -215,6 +216,9 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
                       child: const Center(
                         child: Text(
                           "Select card",
+                          style: TextStyle(
+                            fontSize: 18,
+                          ),
                         ),
                       ),
                     ),
