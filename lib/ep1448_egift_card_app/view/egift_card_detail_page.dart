@@ -11,14 +11,13 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.blue[50],
       appBar: AppBar(
         centerTitle: true,
         title: Text("E-gift card"),
       ),
       body: Column(
-        children: [
-
-        ],
+        children: [],
       ),
     );
   }
