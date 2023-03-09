@@ -10,6 +10,16 @@ class EGiftCardDetailPage extends StatefulWidget {
 class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text("E-gift card"),
+      ),
+      body: Column(
+        children: [
+          
+        ],
+      ),
+    );
   }
 }
