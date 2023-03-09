@@ -39,7 +39,6 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
                 borderRadius: BorderRadius.circular(8),
               ),
             ),
-
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 16),
               child: Text(
@@ -53,12 +52,24 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
               "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
             ),
-            Text("Choose an amount"),
+            Text(
+              "Choose an amount",
+            ),
             Row(
               children: [
-
+                Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(),
+                    boxShadow: [],
+                    color: Colors.white,
+                  ),
+                  padding: EdgeInsets.all(12),
+                  child: Center(
+                    child: Text("\$25"),
+                  ),
+                )
               ],
-            )
+            ),
           ],
         ),
       ),
