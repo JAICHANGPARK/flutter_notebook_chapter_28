@@ -30,6 +30,7 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
               height: 300,
@@ -45,6 +46,16 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
                 fontSize: 18,
               ),
             ),
+            Text(
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+              "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+            ),
+            Text("Choose an amount"),
+            Row(
+              children: [
+                
+              ],
+            )
           ],
         ),
       ),
