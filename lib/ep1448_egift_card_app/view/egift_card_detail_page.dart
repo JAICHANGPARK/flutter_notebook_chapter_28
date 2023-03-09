@@ -59,7 +59,6 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
               "Choose an amount",
               style: TextStyle(
                 fontSize: 18,
-
               ),
             ),
             SizedBox(
@@ -131,6 +130,31 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
               style: TextStyle(
                 fontSize: 18,
               ),
+            ),
+            SizedBox(
+              height: 12,
+            ),
+            Row(
+              children: [
+                Container(
+                  margin: EdgeInsets.only(right: 8),
+                  height: 48,
+                  width: 48,
+                  decoration: BoxDecoration(
+                    border: Border.all(),
+                    borderRadius: BorderRadius.circular(4),
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.only(right: 8),
+                  height: 48,
+                  width: 48,
+                  decoration: BoxDecoration(
+                    border: Border.all(),
+                    borderRadius: BorderRadius.circular(4),
+                  ),
+                ),
+              ],
             )
           ],
         ),
