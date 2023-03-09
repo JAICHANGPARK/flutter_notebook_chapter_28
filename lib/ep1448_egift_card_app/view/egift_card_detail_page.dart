@@ -138,22 +138,30 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
               children: [
                 Container(
                   margin: EdgeInsets.only(right: 8),
-                  height: 48,
-                  width: 48,
+                  height: 42,
+                  width: 42,
                   decoration: BoxDecoration(
                     border: Border.all(),
                     borderRadius: BorderRadius.circular(4),
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.only(right: 8),
-                  height: 48,
-                  width: 48,
+                  margin: EdgeInsets.only(right: 12),
+                  height: 42,
+                  width: 42,
                   decoration: BoxDecoration(
                     border: Border.all(),
                     borderRadius: BorderRadius.circular(4),
+                    color: Colors.white,
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black,
+                        offset: Offset(2, 2),
+                      )
+                    ],
                   ),
                 ),
+
               ],
             )
           ],
