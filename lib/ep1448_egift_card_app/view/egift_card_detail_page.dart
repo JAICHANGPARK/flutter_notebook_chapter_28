@@ -27,17 +27,20 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
           ),
         ],
       ),
-      body: Column(
-        children: [
-          Container(
-            height: 300,
-            margin: EdgeInsets.all(8),
-            decoration: BoxDecoration(
-              border: Border.all(),
-              borderRadius: BorderRadius.circular(8),
-            ),
-          )
-        ],
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          children: [
+            Container(
+              height: 300,
+              margin: EdgeInsets.all(8),
+              decoration: BoxDecoration(
+                border: Border.all(),
+                borderRadius: BorderRadius.circular(8),
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
