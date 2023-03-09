@@ -52,7 +52,7 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
               "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
             ),
-            SizedBox(
+            const SizedBox(
               height: 24,
             ),
             const Text(
@@ -61,13 +61,13 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
                 fontSize: 18,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 12,
             ),
             Row(
               children: [
                 Container(
-                  margin: EdgeInsets.only(right: 16),
+                  margin: const EdgeInsets.only(right: 16),
                   decoration: BoxDecoration(
                     border: Border.all(),
                     boxShadow: [
@@ -85,7 +85,7 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.only(right: 16),
+                  margin: const EdgeInsets.only(right: 16),
                   decoration: BoxDecoration(
                     border: Border.all(),
                     borderRadius: BorderRadius.circular(8),
@@ -97,7 +97,7 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.only(right: 16),
+                  margin: const EdgeInsets.only(right: 16),
                   decoration: BoxDecoration(
                     border: Border.all(),
                     borderRadius: BorderRadius.circular(8),
@@ -109,7 +109,7 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.only(right: 16),
+                  margin: const EdgeInsets.only(right: 16),
                   decoration: BoxDecoration(
                     border: Border.all(),
                     borderRadius: BorderRadius.circular(8),
@@ -122,22 +122,22 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 24,
             ),
-            Text(
+            const Text(
               "Choose a design",
               style: TextStyle(
                 fontSize: 18,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 12,
             ),
             Row(
               children: [
                 Container(
-                  margin: EdgeInsets.only(right: 8),
+                  margin: const EdgeInsets.only(right: 8),
                   height: 42,
                   width: 42,
                   decoration: BoxDecoration(
@@ -146,7 +146,7 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.only(right: 12),
+                  margin: const EdgeInsets.only(right: 12),
                   height: 42,
                   width: 42,
                   decoration: BoxDecoration(
@@ -154,7 +154,7 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
                     borderRadius: BorderRadius.circular(4),
                     color: Colors.white,
                     boxShadow: [
-                      BoxShadow(
+                      const BoxShadow(
                         color: Colors.black,
                         offset: Offset(2, 2),
                       )
@@ -162,7 +162,7 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.only(right: 12),
+                  margin: const EdgeInsets.only(right: 12),
                   height: 42,
                   width: 42,
                   decoration: BoxDecoration(
@@ -172,7 +172,7 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.only(right: 12),
+                  margin: const EdgeInsets.only(right: 12),
                   height: 42,
                   width: 42,
                   decoration: BoxDecoration(
@@ -184,7 +184,7 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
               ],
             ),
             Container(
-              margin: EdgeInsets.only(top: 24),
+              margin: const EdgeInsets.only(top: 24),
               height: 58,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(6),
@@ -197,8 +197,14 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
                   Expanded(
                     flex: 4,
                     child: Container(
-                      color: Colors.white,
-                      child: Center(
+
+                      decoration:  BoxDecoration(
+                        color: Colors.white,
+                        border: Border(
+                          right: BorderSide(color: Colors.black)
+                        )
+                      ),
+                      child: const Center(
                         child: Text("\$25"),
                       ),
                     ),
@@ -206,7 +212,7 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
                   Expanded(
                     flex: 15,
                     child: Container(
-                      child: Center(
+                      child: const Center(
                         child: Text(
                           "Select card",
                         ),
