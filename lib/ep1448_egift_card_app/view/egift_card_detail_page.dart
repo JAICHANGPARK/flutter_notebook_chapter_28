@@ -184,12 +184,36 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
               ],
             ),
             Container(
-              height: 52,
+              margin: EdgeInsets.only(top: 24),
+              height: 58,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(6),
                 border: Border.all(
                   color: Colors.black,
                 ),
+              ),
+              child: Row(
+                children: [
+                  Expanded(
+                    flex: 4,
+                    child: Container(
+                      color: Colors.white,
+                      child: Center(
+                        child: Text("\$25"),
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    flex: 15,
+                    child: Container(
+                      child: Center(
+                        child: Text(
+                          "Select card",
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ),
           ],
