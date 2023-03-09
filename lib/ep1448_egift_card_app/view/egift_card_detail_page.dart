@@ -34,16 +34,19 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
           children: [
             Container(
               height: 300,
-              margin: EdgeInsets.all(8),
               decoration: BoxDecoration(
                 border: Border.all(),
                 borderRadius: BorderRadius.circular(8),
               ),
             ),
-            Text(
-              "Netflix gift card",
-              style: TextStyle(
-                fontSize: 18,
+
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 16),
+              child: Text(
+                "Netflix gift card",
+                style: TextStyle(
+                  fontSize: 20,
+                ),
               ),
             ),
             Text(
@@ -53,7 +56,7 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
             Text("Choose an amount"),
             Row(
               children: [
-                
+
               ],
             )
           ],
