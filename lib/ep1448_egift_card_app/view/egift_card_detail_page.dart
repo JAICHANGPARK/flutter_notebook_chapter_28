@@ -38,7 +38,8 @@ class _EGiftCardDetailPageState extends State<EGiftCardDetailPage> {
                 border: Border.all(),
                 borderRadius: BorderRadius.circular(8),
               ),
-            )
+            ),
+            Text("Netflix gift card"),
           ],
         ),
       ),
