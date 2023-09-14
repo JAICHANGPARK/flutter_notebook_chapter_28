@@ -1,6 +1,6 @@
 # flutter_notebook_chapter_28
 
-### EP1448
+### EP1448-1500
 
 - Giftie - e-gift card app
 - by Yuliia Bulyndina for Fireart Studio
